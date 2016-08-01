@@ -42,5 +42,5 @@ pod 'pop', '~> 1.0'
 #pod 'iOS-Echarts', '~> 1.1.4'
 
 #蒲公英 版本更新
-pod 'Pgyer'
-pod 'PgyUpdate'
+#pod 'Pgyer'
+#pod 'PgyUpdate'

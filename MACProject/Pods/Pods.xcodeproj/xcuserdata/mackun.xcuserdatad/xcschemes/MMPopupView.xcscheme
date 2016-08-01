@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '04539E1384473D71563E2C3A'
+               BlueprintIdentifier = '1C788BCAB2961DD1E41DCBA5'
                BlueprintName = 'MMPopupView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libMMPopupView.a'>
