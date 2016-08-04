@@ -121,27 +121,6 @@ static NSString *securityAuthKey = @"!@#WeSchoolTeacher123_";
     return useridStr;
 }
 
-- (NSString*)sid{
-    NSUserDefaults *sid = [NSUserDefaults standardUserDefaults];
-    NSString *sidStr = [sid secretStringForKey:kSessionId ];
-    return sidStr;
-}
-
--(NSString *)schoolName{
-    NSUserDefaults *sid = [NSUserDefaults standardUserDefaults];
-    NSString *sidStr = [sid secretStringForKey:kSchoolName ];
-    return sidStr;
-}
--(NSString *)schoolCode{
-    NSUserDefaults *sid = [NSUserDefaults standardUserDefaults];
-    NSString *sidStr = [sid secretStringForKey:kSchoolCode ];
-    return sidStr;
-}
--(NSString *)userIdentify{
-    NSUserDefaults *sid = [NSUserDefaults standardUserDefaults];
-    NSString *sidStr = [sid secretStringForKey:kUserIdentify ];
-    return sidStr;
-}
 #pragma mark save
 
 
@@ -149,16 +128,6 @@ static NSString *securityAuthKey = @"!@#WeSchoolTeacher123_";
     NSUserDefaults *save = [NSUserDefaults standardUserDefaults];
     //id obj=dictionary.mj_JSONObject;
     id dic=dictionary.mj_JSONObject;
-//    __block NSMutableDictionary *dict=[NSMutableDictionary new];
-//  
-//    for (NSString *key in dic) {
-//    
-//        NSString *value = dic[key];
-//        if(!value){
-//            value=@"";
-//        }
-//        [dict setValue:value forKey:key];
-//    }
     [save setSecretObject:dic forKey:kUserInfo];
     
 }
@@ -180,27 +149,6 @@ static NSString *securityAuthKey = @"!@#WeSchoolTeacher123_";
     NSUserDefaults *save = [NSUserDefaults standardUserDefaults];
     [save setSecretObject:passWord forKey:kPassword];
     
-}
-
-+ (void)saveSid:(NSString*)sid{
-    NSUserDefaults *save = [NSUserDefaults standardUserDefaults];
-    [save setSecretObject:sid forKey:kSessionId];
-}
-+ (void)saveVistedCityName:(NSString *) cityName{
-    NSUserDefaults *save = [NSUserDefaults standardUserDefaults];
-    [save setSecretObject:cityName forKey:kCityName];
-}
-+ (void)saveSchoolName:(NSString *)schoolName{
-    NSUserDefaults *save = [NSUserDefaults standardUserDefaults];
-    [save setSecretObject:schoolName forKey:kSchoolName];
-}
-+(void)saveSchoolCode:(NSString *)schoolCode{
-    NSUserDefaults *save = [NSUserDefaults standardUserDefaults];
-    [save setSecretObject:schoolCode forKey:kSchoolCode];
-}
-+(void)saveUserIdentify:(NSString *)userIdentify{
-    NSUserDefaults *save = [NSUserDefaults standardUserDefaults];
-    [save setSecretObject:userIdentify forKey:kUserIdentify];
 }
 
 #pragma mark other methods
