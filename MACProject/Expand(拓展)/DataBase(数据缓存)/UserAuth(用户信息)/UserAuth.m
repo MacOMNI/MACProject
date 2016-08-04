@@ -56,7 +56,7 @@ static NSString * kUserIdentify = @"app_UserIdentify";
 /**
  *  securityAuthKey
  */
-static NSString *securityAuthKey = @"!@#WeSchoolTeacher123_";
+static NSString *securityAuthKey = @"!@#MacProject123_";
 
 
 @interface UserAuth ()

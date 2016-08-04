@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '0E7C339A4780074C822D3220'
+               BlueprintIdentifier = '5BB7C85D418E722E3E2232F7'
                BlueprintName = 'GMGridView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libGMGridView.a'>
