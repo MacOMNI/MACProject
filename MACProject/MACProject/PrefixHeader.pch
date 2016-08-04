@@ -1,0 +1,51 @@
+//
+//  PrefixHeader.pch
+//  MACProject
+//
+//  Created by MacKun on 16/4/18.
+//  Copyright © 2016年 com.soullon.MACProject. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#ifdef __OBJC__
+#import<UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//常用宏
+#import "MACMacro.h"
+#import "CommonMacro.h"
+#import "GTFixHeader.h"
+#import "AppDelegate.h"
+//常用 UI
+#import "UIColor+MACProject.h"
+#import "MACTableView.h"
+
+
+//category  常用扩展类
+#import "NSString+MAC.h"
+
+#import "NSArray+SafeAccess.h"
+#import "NSObjcet+MAC.h"
+#import "UIColor+MACProject.h"
+#import "UIView+MAC.h"
+#import "UIView+HUD.h"
+#import "UIView+Nib.h"
+#import "UIImageView+WebCache.h"
+//#import "UIView+BlockGesture.h"
+#import "UITableViewCell+MAC.h"
+#import "UIViewController+MAC.h"
+//#import "UINavigationBar+Awesome.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
+
+#import "UINavigationController+MAC.h"
+#import "UIApplication+AppInfo.h"
+
+#import "GCD.h"
+#import "UserAuth.h"
+#import "MJExtension.h"
+//#import "BaseService.h"
+#import "IQKeyboardManager.h"
+#endif
+#endif /* PrefixHeader_pch */

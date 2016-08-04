@@ -2,12 +2,13 @@ inhibit_all_warnings!
 pod 'MBProgressHUD', '~> 0.9.1'
 
 pod 'Masonry', '~> 0.6.2'
+# netWork
 pod 'AFNetworking', '~> 3.1.0'
 # 下拉刷新
 pod 'MJRefresh', '~> 3.1.0'
 # 图片网络访问
 pod 'SDWebImage', '~> 3.7.5'
-# 键盘
+# IQ键盘
 pod 'IQKeyboardManager', '~> 4.0.0'
 # Json Model
 pod 'MJExtension', '~> 3.0.10'
