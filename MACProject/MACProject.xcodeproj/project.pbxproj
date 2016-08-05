@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AAFAE931D543A11002F7FC3 /* UITableView+CellClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFAE921D543A11002F7FC3 /* UITableView+CellClass.m */; };
+		5AAFAE9C1D546E17002F7FC3 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFAE9A1D546E17002F7FC3 /* TableViewCell.m */; };
+		5AAFAE9D1D546E17002F7FC3 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AAFAE9B1D546E17002F7FC3 /* TableViewCell.xib */; };
 		5AB5208C1D53290F000C3C80 /* NSArray+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB51F731D53290F000C3C80 /* NSArray+Block.m */; };
 		5AB5208D1D53290F000C3C80 /* NSArray+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB51F751D53290F000C3C80 /* NSArray+SafeAccess.m */; };
 		5AB5208E1D53290F000C3C80 /* Array.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5AB51F781D53290F000C3C80 /* Array.mm */; };
@@ -150,6 +153,11 @@
 		1F2C67CD8D42386069B5979A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		321BB15FFFC4F19C1369A0FA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		34ED505CBF42FA657FA65818 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AAFAE911D543A11002F7FC3 /* UITableView+CellClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+CellClass.h"; sourceTree = "<group>"; };
+		5AAFAE921D543A11002F7FC3 /* UITableView+CellClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CellClass.m"; sourceTree = "<group>"; };
+		5AAFAE991D546E17002F7FC3 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		5AAFAE9A1D546E17002F7FC3 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		5AAFAE9B1D546E17002F7FC3 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		5AB51F721D53290F000C3C80 /* NSArray+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Block.h"; sourceTree = "<group>"; };
 		5AB51F731D53290F000C3C80 /* NSArray+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Block.m"; sourceTree = "<group>"; };
 		5AB51F741D53290F000C3C80 /* NSArray+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SafeAccess.h"; sourceTree = "<group>"; };
@@ -911,6 +919,8 @@
 		5AB5203B1D53290F000C3C80 /* UITableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				5AAFAE911D543A11002F7FC3 /* UITableView+CellClass.h */,
+				5AAFAE921D543A11002F7FC3 /* UITableView+CellClass.m */,
 				5AB521321D534D65000C3C80 /* MACBaseCell.h */,
 				5AB521331D534D65000C3C80 /* MACBaseCell.m */,
 				5AB5203C1D53290F000C3C80 /* MGSwipeCell */,
@@ -1119,6 +1129,9 @@
 		5AB5210E1D532E3D000C3C80 /* View(视图) */ = {
 			isa = PBXGroup;
 			children = (
+				5AAFAE991D546E17002F7FC3 /* TableViewCell.h */,
+				5AAFAE9A1D546E17002F7FC3 /* TableViewCell.m */,
+				5AAFAE9B1D546E17002F7FC3 /* TableViewCell.xib */,
 			);
 			path = "View(视图)";
 			sourceTree = "<group>";
@@ -1251,6 +1264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AB520E11D53290F000C3C80 /* icon_refresh_3@3x.png in Resources */,
+				5AAFAE9D1D546E17002F7FC3 /* TableViewCell.xib in Resources */,
 				5AB5208F1D53290F000C3C80 /* multipy_unicode.dat in Resources */,
 				5AF9AF9E1D4A0F9800F23C1E /* LaunchScreen.storyboard in Resources */,
 				5AB520E01D53290F000C3C80 /* icon_refresh_3@2x.png in Resources */,
@@ -1323,6 +1337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AB520A71D53290F000C3C80 /* NSString+Emoji.m in Sources */,
+				5AAFAE9C1D546E17002F7FC3 /* TableViewCell.m in Sources */,
 				5AB520BB1D53290F000C3C80 /* UIButton+MiddleAligning.m in Sources */,
 				5AB520F21D53290F000C3C80 /* UIView+RecursiveDescription.m in Sources */,
 				5AB520A51D53290F000C3C80 /* NSString+HLHanZiToPinYin.m in Sources */,
@@ -1432,6 +1447,7 @@
 				5AB520E91D53290F000C3C80 /* UIPlaceholderTextView.m in Sources */,
 				5AB520E51D53290F000C3C80 /* MGSwipeTableCell.m in Sources */,
 				5AB520A01D53290F000C3C80 /* NSObject+Blocks.m in Sources */,
+				5AAFAE931D543A11002F7FC3 /* UITableView+CellClass.m in Sources */,
 				5AB520AE1D53290F000C3C80 /* ChineseToPinyin.m in Sources */,
 				5AB520DA1D53290F000C3C80 /* MACScrollView.m in Sources */,
 				5AB520A21D53290F000C3C80 /* NSObject+KVOBlocks.m in Sources */,

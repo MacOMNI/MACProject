@@ -39,13 +39,16 @@
 -(void)initUI{
     self.tableFooterView=[UIView new];
     self.firstShowEmpty=YES;
-   self.titleForEmpty= @"";
+    self.titleForEmpty= @"";
     self.descriptionForEmpty=@"";
     self.imageNameForEmpty=@"img_placehoder_icon";
     self.emptyDataSetDelegate=self;
     self.emptyDataSetSource=self;
     self.isRefresh=YES;
     self.isLoadMore=YES;
+    self.showsHorizontalScrollIndicator=NO;
+    self.showsVerticalScrollIndicator=NO;
+   // self.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.page=0;
 }
 -(void)setMacTableViewDelegate:(id<MACTableViewDelegate>)macTableViewDelegate{

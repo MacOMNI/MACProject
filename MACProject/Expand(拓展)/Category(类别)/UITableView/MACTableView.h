@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UIScrollView+EmptyDataSet.h"
+#import "CellDataAdapter.h"
 typedef NS_ENUM(NSInteger, MACRefreshState) {
 
     /** 下拉刷新的状态 */
@@ -64,6 +65,10 @@ typedef NS_ENUM(NSInteger, MACRefreshState) {
  *  空白页展位图名称 默认为 “img_placehoder_icon" 为空或nil无图片
  */
 @property(nonatomic,copy) NSString *imageNameForEmpty;
+/**
+ *  CellDataAdapter arr
+ */
+@property(nonatomic,strong) NSMutableArray *cellDataArr;
 
 /**
  *

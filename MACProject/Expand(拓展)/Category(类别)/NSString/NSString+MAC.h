@@ -22,7 +22,7 @@
 /**
  *  计算相应字体下指定宽度的字符串高度
  */
-- (CGFloat)textHeightWithFont:(UIFont *)font width:(CGFloat)width;
+- (CGFloat)stringHeightWithFont:(UIFont *)font width:(CGFloat)width;
 
 
 
