@@ -18,6 +18,7 @@
 		5A15AA731D586D78000ED86E /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AA711D586D78000ED86E /* FileManager.m */; };
 		5A15AA761D587544000ED86E /* UITableView+CellClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AA751D587544000ED86E /* UITableView+CellClass.m */; };
 		5A15AA7C1D5878EB000ED86E /* BadgeValueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AA7B1D5878EB000ED86E /* BadgeValueView.m */; };
+		5A15AA801D587E85000ED86E /* POPNumberAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AA7F1D587E85000ED86E /* POPNumberAnimation.m */; };
 		5AAFAE9C1D546E17002F7FC3 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFAE9A1D546E17002F7FC3 /* TableViewCell.m */; };
 		5AAFAE9D1D546E17002F7FC3 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AAFAE9B1D546E17002F7FC3 /* TableViewCell.xib */; };
 		5AB5208C1D53290F000C3C80 /* NSArray+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB51F731D53290F000C3C80 /* NSArray+Block.m */; };
@@ -180,6 +181,8 @@
 		5A15AA751D587544000ED86E /* UITableView+CellClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CellClass.m"; sourceTree = "<group>"; };
 		5A15AA7A1D5878EB000ED86E /* BadgeValueView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeValueView.h; sourceTree = "<group>"; };
 		5A15AA7B1D5878EB000ED86E /* BadgeValueView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeValueView.m; sourceTree = "<group>"; };
+		5A15AA7E1D587E85000ED86E /* POPNumberAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPNumberAnimation.h; sourceTree = "<group>"; };
+		5A15AA7F1D587E85000ED86E /* POPNumberAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POPNumberAnimation.m; sourceTree = "<group>"; };
 		5AAFAE991D546E17002F7FC3 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		5AAFAE9A1D546E17002F7FC3 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		5AAFAE9B1D546E17002F7FC3 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
@@ -495,6 +498,15 @@
 				5A15AA621D585C9F000ED86E /* DefaultNotificationCenter.m */,
 			);
 			path = NSNotificationCenter;
+			sourceTree = "<group>";
+		};
+		5A15AA7D1D587E80000ED86E /* POPNumberAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				5A15AA7E1D587E85000ED86E /* POPNumberAnimation.h */,
+				5A15AA7F1D587E85000ED86E /* POPNumberAnimation.m */,
+			);
+			path = POPNumberAnimation;
 			sourceTree = "<group>";
 		};
 		5AB51F6F1D53290F000C3C80 /* Expand(拓展) */ = {
@@ -1139,6 +1151,7 @@
 		5AB5208B1D53290F000C3C80 /* Tool(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				5A15AA7D1D587E80000ED86E /* POPNumberAnimation */,
 				5AB521101D532EAC000C3C80 /* GCD */,
 			);
 			path = "Tool(工具类)";
@@ -1498,6 +1511,7 @@
 				5AB520D21D53290F000C3C80 /* UINavigationController+MAC.m in Sources */,
 				5AB520BE1D53290F000C3C80 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */,
 				5AB520E91D53290F000C3C80 /* UIPlaceholderTextView.m in Sources */,
+				5A15AA801D587E85000ED86E /* POPNumberAnimation.m in Sources */,
 				5AB520E51D53290F000C3C80 /* MGSwipeTableCell.m in Sources */,
 				5AB520A01D53290F000C3C80 /* NSObject+Blocks.m in Sources */,
 				5AB520AE1D53290F000C3C80 /* ChineseToPinyin.m in Sources */,
