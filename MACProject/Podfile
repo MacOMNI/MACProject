@@ -31,6 +31,9 @@ pod 'SDCycleScrollView', '~> 1.62'
 #  paged, scrolling views
 pod 'iCarousel', '~> 1.8.2'
 
+# app  UIImage crop
+#pod 'TOCropViewController', '~> 2.0.7'
+
 # app pop pan gesture
 #pod 'FDFullscreenPopGesture', '~> 1.1'
 #  paged, scrolling views

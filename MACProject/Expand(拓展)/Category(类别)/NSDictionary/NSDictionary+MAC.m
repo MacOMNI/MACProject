@@ -53,5 +53,44 @@
     }
     return string;
 }
+/**
+ *  @brief NSDictionary转换成JSON字符串
+ *
+ *  @return  JSON字符串
+ */
+-(NSString *)jk_JSONString{
+    NSError *error = nil;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self
+                                                       options:NSJSONWritingPrettyPrinted
+                                                         error:&error];
+    if (jsonData == nil) {
+#ifdef DEBUG
+        NSLog(@"fail to get JSON from dictionary: %@, error: %@", self, error);
+#endif
+        return nil;
+    }
+    NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    return jsonString;
+}
+/**
+ *  @brief  将NSDictionary转换成XML 字符串
+ *
+ *  @return XML 字符串
+ */
+- (NSString *)jk_XMLString {
+    
+    NSString *xmlStr = @"<xml>";
+    
+    for (NSString *key in self.allKeys) {
+        
+        NSString *value = [self objectForKey:key];
+        
+        xmlStr = [xmlStr stringByAppendingString:[NSString stringWithFormat:@"<%@>%@</%@>", key, value, key]];
+    }
+    
+    xmlStr = [xmlStr stringByAppendingString:@"</xml>"];
+    
+    return xmlStr;
+}
 
 @end

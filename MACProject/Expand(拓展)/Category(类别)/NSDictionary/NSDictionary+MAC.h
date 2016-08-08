@@ -23,5 +23,16 @@
  *  @return url 参数字符串
  */
 - (NSString *)urlQueryString;
-
+/**
+ *  @brief NSDictionary转换成JSON字符串
+ *
+ *  @return  JSON字符串
+ */
+-(NSString *)jk_JSONString;
+/**
+ *  @brief  将NSDictionary转换成XML 字符串
+ *
+ *  @return XML 字符串
+ */
+- (NSString *)jk_XMLString;
 @end
