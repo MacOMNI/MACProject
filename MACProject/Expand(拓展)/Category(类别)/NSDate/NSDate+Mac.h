@@ -188,7 +188,28 @@
 + (NSString *)stringWithDate:(NSDate *)date format:(NSString *)format;
 - (NSString *)stringWithFormat:(NSString *)format;
 + (NSDate *)dateWithString:(NSString *)string format:(NSString *)format;
+/**
+ *  本地英文的格式
+ *
+ *  @param string
+ *  @param format  eg @"MM/d/yyyy h:mm:ss aa"
+ *
+ *  @return NSDate
+ */
 + (NSDate *)dateWithLocaleEN_USString:(NSString *)string format:(NSString *)format;
+/**
+ *  Use DateFormatter to transform dateString to specified date string.
+ *
+ *  @param dateString                Date string. (eg. 2015-06-26 08:08:08)
+ *  @param inputDateStringFormatter  Input date string formatter. (eg. yyyy-MM-dd HH:mm:ss)
+ *  @param outputDateStringFormatter Output date string formatter. (eg. yy/MM/dd)
+ *
+ *  @return Specified date string.
+ */
++ (NSString *)dateFormatterWithInputDateString:(NSString *)dateString
+                      inputDateStringFormatter:(NSString *)inputDateStringFormatter
+                     outputDateStringFormatter:(NSString *)outputDateStringFormatter;
+
 
 
 /**

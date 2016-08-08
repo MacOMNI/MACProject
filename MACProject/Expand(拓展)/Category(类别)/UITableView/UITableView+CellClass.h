@@ -1,13 +1,12 @@
 //
-//  UITableView+CellClass.h
-//  Animations
+//  MACBaseCell.h
+//  MACProject
 //
-//  Created by YouXianMing on 16/6/12.
-//  Copyright © 2016年 YouXianMing. All rights reserved.
+//  Created by MacKun on 15/12/18.
+//  Copyright © 2015年 MacKun. All rights reserved.
 //
-
 #import <UIKit/UIKit.h>
-@class CustomCell;
+@class MACBaseCell;
 @class CellDataAdapter;
 
 @interface CellClassType : NSObject
@@ -50,8 +49,8 @@ NS_INLINE CellClassType *cellClass(NSString *classString, NSString *reuseIdentif
  */
 - (void)registerCellsClass:(NSArray <CellClassType *> *)cellClasses;
 
-- (CustomCell *)dequeueAndLoadContentReusableCellFromAdapter:(CellDataAdapter *)adapter indexPath:(NSIndexPath *)indexPath;
-- (CustomCell *)dequeueAndLoadContentReusableCellFromAdapter:(CellDataAdapter *)adapter indexPath:(NSIndexPath *)indexPath
+- (MACBaseCell *)dequeueAndLoadContentReusableCellFromAdapter:(CellDataAdapter *)adapter indexPath:(NSIndexPath *)indexPath;
+- (MACBaseCell *)dequeueAndLoadContentReusableCellFromAdapter:(CellDataAdapter *)adapter indexPath:(NSIndexPath *)indexPath
                                                   controller:(UIViewController *)controller;
 
 @end

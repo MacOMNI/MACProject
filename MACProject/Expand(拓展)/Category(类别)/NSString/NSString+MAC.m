@@ -29,6 +29,7 @@
     
     return [output copy];
 }
+
 - (CGFloat)stringHeightWithFont:(UIFont *)font width:(CGFloat)width{
     CGSize size = CGSizeMake(width, CGFLOAT_MAX);
     

@@ -390,6 +390,30 @@
     NSDate* inputDate = [outputFormatter dateFromString:string];
     return inputDate;
 }
++ (NSString *)dateFormatterWithInputDateString:(NSString *)dateString
+                      inputDateStringFormatter:(NSString *)inputDateStringFormatter
+                     outputDateStringFormatter:(NSString *)outputDateStringFormatter {
+    
+    NSParameterAssert(dateString);
+    NSParameterAssert(inputDateStringFormatter);
+    NSParameterAssert(outputDateStringFormatter);
+    
+    NSString *outputString = nil;
+    
+    NSDateFormatter *inputFormatter  = [[NSDateFormatter alloc] init] ;
+    inputFormatter.dateFormat        = inputDateStringFormatter;
+    
+    NSDate *date = [inputFormatter dateFromString:dateString];
+    
+    if (date) {
+        
+        NSDateFormatter *outputFormatter = [[NSDateFormatter alloc] init];
+        outputFormatter.dateFormat       = outputDateStringFormatter;
+        outputString                     = [outputFormatter stringFromDate:date];
+    }
+    
+    return outputString;
+}
 
 
 - (NSUInteger)daysInMonth:(NSUInteger)month {

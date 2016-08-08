@@ -1,0 +1,124 @@
+//
+//  UIButton+MAC.m
+//  MACProject
+//
+//  Created by MacKun on 16/8/8.
+//  Copyright © 2016年 com.mackun. All rights reserved.
+//
+
+#import "UIButton+MAC.h"
+
+@implementation UIButton(MAC)
+/**
+ *  @brief  使用颜色设置按钮背景
+ *
+ *  @param backgroundColor 背景颜色
+ *  @param state           按钮状态
+ */
+- (void)setBackgroundColor:(UIColor *)backgroundColor forState:(UIControlState)state
+{
+    [self setBackgroundImage:[UIButton imageWithColor:backgroundColor] forState:state];
+}
++ (UIButton *)createButtonWithFrame:(CGRect)frame title:(NSString *)title tag:(NSInteger)tag target:(id)target action:(SEL)selector {
+    
+    UIButton *button          = [[UIButton alloc] initWithFrame:frame];
+    button.titleLabel.font    = [UIFont fontWithName:@"Avenir-Book" size:16.f];
+    button.layer.borderWidth  = 1.f;
+    button.layer.cornerRadius = 3.f;
+    button.tag                = tag;
+    
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
+    
+    [button setTitle:title forState:UIControlStateNormal];
+    [button addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
+    
+    return button;
+}
+
++ (UIButton *)createButtonWithFrame:(CGRect)frame
+                         buttonType:(EButtonType)type
+                              title:(NSString *)title
+                                tag:(NSInteger)tag
+                             target:(id)target
+                             action:(SEL)selector {
+    
+    UIButton *button          = [[UIButton alloc] initWithFrame:frame];
+    button.titleLabel.font    = [UIFont fontWithName:@"Avenir-Book" size:16.f];
+    button.layer.borderWidth  = 1.f;
+    button.layer.cornerRadius = 3.f;
+    button.tag                = tag;
+    
+    if (type == kButtonNormal) {
+        
+        button.layer.borderColor = [UIColor blackColor].CGColor;
+        [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [button setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
+        
+    } else if (type == kButtonRed) {
+        
+        button.layer.borderColor = [UIColor redColor].CGColor;
+        [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [button setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
+        
+    } else {
+        
+        button.layer.borderColor = [UIColor blackColor].CGColor;
+        [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [button setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
+        
+    }
+    
+    [button setTitle:title forState:UIControlStateNormal];
+    [button addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
+    
+    return button;
+}
+
+- (void)setHighlightedImage:(UIImage *)image {
+    
+    [self setImage:image forState:UIControlStateHighlighted];
+}
+
+- (UIImage *)highlightedImage {
+    
+    return [self imageForState:UIControlStateHighlighted];
+}
+
+- (void)setSelectedImage:(UIImage *)image {
+    
+    [self setImage:image forState:UIControlStateSelected];
+}
+
+- (UIImage *)selectedImage {
+    
+    return [self imageForState:UIControlStateSelected];
+}
+
+- (void)setNormalImage:(UIImage *)image {
+    
+    [self setImage:image forState:UIControlStateNormal];
+}
+
+- (UIImage *)normalImage {
+    
+    return [self imageForState:UIControlStateNormal];
+}
+
+
++ (UIImage *)imageWithColor:(UIColor *)color
+{
+    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
+@end

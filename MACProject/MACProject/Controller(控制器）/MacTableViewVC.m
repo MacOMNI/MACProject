@@ -60,8 +60,8 @@
             [dataArr addObject:adapter];
             [indexPaths addObject:[NSIndexPath indexPathForRow:i inSection:0]];
         }
-        
-        [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationFade];
+        WEAKSELF
+        [weakSelf.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationFade];
         
     } afterDelaySecs:0.5f];
 
@@ -83,9 +83,9 @@
             [dataArr addObject:adapter];
             [indexPaths addObject:[NSIndexPath indexPathForRow:i inSection:0]];
         }
-        
-        [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationFade];
-        
+        WEAKSELF
+        //[weakSelf.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationFade];
+        [weakSelf.tableView reloadData];
     } afterDelaySecs:0.5f];
 
 }
@@ -101,11 +101,14 @@
     return dataArr.count;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    DLog(@"cell %ld",(long)indexPath.row);
+
     return [tableView dequeueAndLoadContentReusableCellFromAdapter:dataArr[indexPath.row] indexPath:indexPath];
 
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return dataArr[indexPath.row].cellHeight+1;
+    DLog(@"cellheight %ld",(long)indexPath.row);
+    return dataArr[indexPath.row].cellHeight;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
