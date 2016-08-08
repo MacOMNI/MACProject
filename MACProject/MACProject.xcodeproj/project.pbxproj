@@ -34,6 +34,8 @@
 		5A15AAB01D58ADD9000ED86E /* UITextField+JKBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AAAF1D58ADD9000ED86E /* UITextField+JKBlocks.m */; };
 		5A15AABD1D58B327000ED86E /* MMTweenAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AABA1D58B327000ED86E /* MMTweenAnimation.m */; };
 		5A15AABE1D58B327000ED86E /* MMTweenFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AABC1D58B327000ED86E /* MMTweenFunction.m */; };
+		5A15AAC21D58B3D2000ED86E /* CoreAnimationEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AAC11D58B3D2000ED86E /* CoreAnimationEffect.m */; };
+		5A15AAC61D58B409000ED86E /* FSMediaPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AAC51D58B409000ED86E /* FSMediaPicker.m */; };
 		5AAFAE9C1D546E17002F7FC3 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFAE9A1D546E17002F7FC3 /* TableViewCell.m */; };
 		5AAFAE9D1D546E17002F7FC3 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AAFAE9B1D546E17002F7FC3 /* TableViewCell.xib */; };
 		5AB5208C1D53290F000C3C80 /* NSArray+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB51F731D53290F000C3C80 /* NSArray+Block.m */; };
@@ -226,6 +228,10 @@
 		5A15AABA1D58B327000ED86E /* MMTweenAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTweenAnimation.m; sourceTree = "<group>"; };
 		5A15AABB1D58B327000ED86E /* MMTweenFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTweenFunction.h; sourceTree = "<group>"; };
 		5A15AABC1D58B327000ED86E /* MMTweenFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTweenFunction.m; sourceTree = "<group>"; };
+		5A15AAC01D58B3D2000ED86E /* CoreAnimationEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreAnimationEffect.h; sourceTree = "<group>"; };
+		5A15AAC11D58B3D2000ED86E /* CoreAnimationEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationEffect.m; sourceTree = "<group>"; };
+		5A15AAC41D58B409000ED86E /* FSMediaPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMediaPicker.h; sourceTree = "<group>"; };
+		5A15AAC51D58B409000ED86E /* FSMediaPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMediaPicker.m; sourceTree = "<group>"; };
 		5AAFAE991D546E17002F7FC3 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		5AAFAE9A1D546E17002F7FC3 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		5AAFAE9B1D546E17002F7FC3 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
@@ -591,6 +597,24 @@
 				5A15AABC1D58B327000ED86E /* MMTweenFunction.m */,
 			);
 			path = MMTweenAnimation;
+			sourceTree = "<group>";
+		};
+		5A15AABF1D58B3C7000ED86E /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				5A15AAC01D58B3D2000ED86E /* CoreAnimationEffect.h */,
+				5A15AAC11D58B3D2000ED86E /* CoreAnimationEffect.m */,
+			);
+			path = CoreAnimation;
+			sourceTree = "<group>";
+		};
+		5A15AAC31D58B404000ED86E /* MediaPicker */ = {
+			isa = PBXGroup;
+			children = (
+				5A15AAC41D58B409000ED86E /* FSMediaPicker.h */,
+				5A15AAC51D58B409000ED86E /* FSMediaPicker.m */,
+			);
+			path = MediaPicker;
 			sourceTree = "<group>";
 		};
 		5AB51F6F1D53290F000C3C80 /* Expand(拓展) */ = {
@@ -1239,6 +1263,8 @@
 		5AB5208B1D53290F000C3C80 /* Tool(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				5A15AAC31D58B404000ED86E /* MediaPicker */,
+				5A15AABF1D58B3C7000ED86E /* CoreAnimation */,
 				5A15AAB81D58B321000ED86E /* MMTweenAnimation */,
 				5A15AA7D1D587E80000ED86E /* POPNumberAnimation */,
 				5AB521101D532EAC000C3C80 /* GCD */,
@@ -1599,6 +1625,7 @@
 				5AB520AA1D53290F000C3C80 /* NSString+MIME.m in Sources */,
 				5AB520911D53290F000C3C80 /* SearchCoreManager.mm in Sources */,
 				5A15AAA11D58AB56000ED86E /* NSObject+JKReflection.m in Sources */,
+				5A15AAC61D58B409000ED86E /* FSMediaPicker.m in Sources */,
 				5AB520F31D53290F000C3C80 /* UIView+Screenshot.m in Sources */,
 				5AB520BC1D53290F000C3C80 /* UIButton+Submitting.m in Sources */,
 				5AB520991D53290F000C3C80 /* NSDecimalNumber+CalculatingByString.m in Sources */,
@@ -1609,6 +1636,7 @@
 				5AB520D21D53290F000C3C80 /* UINavigationController+MAC.m in Sources */,
 				5AB520BE1D53290F000C3C80 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */,
 				5AB520E91D53290F000C3C80 /* UIPlaceholderTextView.m in Sources */,
+				5A15AAC21D58B3D2000ED86E /* CoreAnimationEffect.m in Sources */,
 				5A15AA801D587E85000ED86E /* POPNumberAnimation.m in Sources */,
 				5AB520E51D53290F000C3C80 /* MGSwipeTableCell.m in Sources */,
 				5AB520A01D53290F000C3C80 /* NSObject+Blocks.m in Sources */,
