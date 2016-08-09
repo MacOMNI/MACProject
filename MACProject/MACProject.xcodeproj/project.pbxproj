@@ -16,7 +16,6 @@
 		5A15AA721D586D78000ED86E /* File.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AA6F1D586D78000ED86E /* File.m */; };
 		5A15AA731D586D78000ED86E /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AA711D586D78000ED86E /* FileManager.m */; };
 		5A15AA761D587544000ED86E /* UITableView+CellClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AA751D587544000ED86E /* UITableView+CellClass.m */; };
-		5A15AA7C1D5878EB000ED86E /* BadgeValueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AA7B1D5878EB000ED86E /* BadgeValueView.m */; };
 		5A15AA801D587E85000ED86E /* POPNumberAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AA7F1D587E85000ED86E /* POPNumberAnimation.m */; };
 		5A15AA831D58A98D000ED86E /* NSData+JKGzip.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AA821D58A98D000ED86E /* NSData+JKGzip.m */; };
 		5A15AA861D58A9A7000ED86E /* NSData+JKDataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AA851D58A9A7000ED86E /* NSData+JKDataCache.m */; };
@@ -40,6 +39,9 @@
 		5AA23F321D59DA60005A67FF /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA23F301D59DA60005A67FF /* HTTPClient.m */; };
 		5AA23F351D59DA9C005A67FF /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA23F341D59DA9C005A67FF /* BaseModel.m */; };
 		5AA23F381D59DFAD005A67FF /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA23F371D59DFAD005A67FF /* EGOCache.m */; };
+		5AA23F3B1D59F665005A67FF /* UIImageView+MAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA23F3A1D59F665005A67FF /* UIImageView+MAC.m */; };
+		5AA23F451D59FB77005A67FF /* BadgeValueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA23F441D59FB77005A67FF /* BadgeValueView.m */; };
+		5AA23F481D59FB90005A67FF /* UIView+AnimationProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA23F471D59FB90005A67FF /* UIView+AnimationProperty.m */; };
 		5AAFAE9C1D546E17002F7FC3 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFAE9A1D546E17002F7FC3 /* TableViewCell.m */; };
 		5AAFAE9D1D546E17002F7FC3 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AAFAE9B1D546E17002F7FC3 /* TableViewCell.xib */; };
 		5AB5208C1D53290F000C3C80 /* NSArray+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB51F731D53290F000C3C80 /* NSArray+Block.m */; };
@@ -194,8 +196,6 @@
 		5A15AA711D586D78000ED86E /* FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
 		5A15AA741D587544000ED86E /* UITableView+CellClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+CellClass.h"; sourceTree = "<group>"; };
 		5A15AA751D587544000ED86E /* UITableView+CellClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CellClass.m"; sourceTree = "<group>"; };
-		5A15AA7A1D5878EB000ED86E /* BadgeValueView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeValueView.h; sourceTree = "<group>"; };
-		5A15AA7B1D5878EB000ED86E /* BadgeValueView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeValueView.m; sourceTree = "<group>"; };
 		5A15AA7E1D587E85000ED86E /* POPNumberAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPNumberAnimation.h; sourceTree = "<group>"; };
 		5A15AA7F1D587E85000ED86E /* POPNumberAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POPNumberAnimation.m; sourceTree = "<group>"; };
 		5A15AA811D58A98D000ED86E /* NSData+JKGzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+JKGzip.h"; sourceTree = "<group>"; };
@@ -242,6 +242,12 @@
 		5AA23F341D59DA9C005A67FF /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		5AA23F361D59DFAD005A67FF /* EGOCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOCache.h; sourceTree = "<group>"; };
 		5AA23F371D59DFAD005A67FF /* EGOCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOCache.m; sourceTree = "<group>"; };
+		5AA23F391D59F665005A67FF /* UIImageView+MAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MAC.h"; sourceTree = "<group>"; };
+		5AA23F3A1D59F665005A67FF /* UIImageView+MAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MAC.m"; sourceTree = "<group>"; };
+		5AA23F431D59FB77005A67FF /* BadgeValueView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeValueView.h; sourceTree = "<group>"; };
+		5AA23F441D59FB77005A67FF /* BadgeValueView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeValueView.m; sourceTree = "<group>"; };
+		5AA23F461D59FB90005A67FF /* UIView+AnimationProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AnimationProperty.h"; sourceTree = "<group>"; };
+		5AA23F471D59FB90005A67FF /* UIView+AnimationProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AnimationProperty.m"; sourceTree = "<group>"; };
 		5AAFAE991D546E17002F7FC3 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		5AAFAE9A1D546E17002F7FC3 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		5AAFAE9B1D546E17002F7FC3 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
@@ -533,15 +539,6 @@
 			path = UIFont;
 			sourceTree = "<group>";
 		};
-		5A15AA591D5835BE000ED86E /* BadgeValueView */ = {
-			isa = PBXGroup;
-			children = (
-				5A15AA7A1D5878EB000ED86E /* BadgeValueView.h */,
-				5A15AA7B1D5878EB000ED86E /* BadgeValueView.m */,
-			);
-			path = BadgeValueView;
-			sourceTree = "<group>";
-		};
 		5A15AA601D585C96000ED86E /* NSNotificationCenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -636,6 +633,15 @@
 				5AA23F301D59DA60005A67FF /* HTTPClient.m */,
 			);
 			path = BaseService;
+			sourceTree = "<group>";
+		};
+		5AA23F421D59FB77005A67FF /* BadgeValueView */ = {
+			isa = PBXGroup;
+			children = (
+				5AA23F431D59FB77005A67FF /* BadgeValueView.h */,
+				5AA23F441D59FB77005A67FF /* BadgeValueView.m */,
+			);
+			path = BadgeValueView;
 			sourceTree = "<group>";
 		};
 		5AB51F6F1D53290F000C3C80 /* Expand(拓展) */ = {
@@ -969,6 +975,8 @@
 				5AB51FFE1D53290F000C3C80 /* UIImageView+Letters.m */,
 				5AB51FFF1D53290F000C3C80 /* UIImageView+Reflect.h */,
 				5AB520001D53290F000C3C80 /* UIImageView+Reflect.m */,
+				5AA23F391D59F665005A67FF /* UIImageView+MAC.h */,
+				5AA23F3A1D59F665005A67FF /* UIImageView+MAC.m */,
 			);
 			path = UIImageView;
 			sourceTree = "<group>";
@@ -1153,7 +1161,9 @@
 		5AB5204D1D53290F000C3C80 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				5A15AA591D5835BE000ED86E /* BadgeValueView */,
+				5AA23F461D59FB90005A67FF /* UIView+AnimationProperty.h */,
+				5AA23F471D59FB90005A67FF /* UIView+AnimationProperty.m */,
+				5AA23F421D59FB77005A67FF /* BadgeValueView */,
 				5A15AA4D1D5830AE000ED86E /* UIView+GlowView.h */,
 				5A15AA4E1D5830AE000ED86E /* UIView+GlowView.m */,
 				5A15AA4A1D583093000ED86E /* UIView+Shake.h */,
@@ -1582,7 +1592,9 @@
 				5AB520971D53290F000C3C80 /* NSException+Trace.m in Sources */,
 				5A15AA721D586D78000ED86E /* File.m in Sources */,
 				5AA23F311D59DA60005A67FF /* BaseService.m in Sources */,
+				5AA23F481D59FB90005A67FF /* UIView+AnimationProperty.m in Sources */,
 				5AB520FD1D53290F000C3C80 /* UIViewController+MAC.m in Sources */,
+				5AA23F3B1D59F665005A67FF /* UIImageView+MAC.m in Sources */,
 				5AB520D31D53290F000C3C80 /* UINavigationItem+Loading.m in Sources */,
 				5AB520EF1D53290F000C3C80 /* UIView+HUD.m in Sources */,
 				5AB520C71D53290F000C3C80 /* UIImageView+CornerRadius.m in Sources */,
@@ -1599,7 +1611,6 @@
 				5A15AA631D585C9F000ED86E /* DefaultNotificationCenter.m in Sources */,
 				5A15AA431D582AA0000ED86E /* UIFont+Fonts.m in Sources */,
 				5AA23F381D59DFAD005A67FF /* EGOCache.m in Sources */,
-				5A15AA7C1D5878EB000ED86E /* BadgeValueView.m in Sources */,
 				5AB520A61D53290F000C3C80 /* MF_Base64Additions.m in Sources */,
 				5AB520AF1D53290F000C3C80 /* NSTimer+MAC.m in Sources */,
 				5AB520EA1D53290F000C3C80 /* UITextView+Placeholder.m in Sources */,
@@ -1613,6 +1624,7 @@
 				5AB520C41D53290F000C3C80 /* UIImage+SuperCompress.m in Sources */,
 				5AB520EB1D53290F000C3C80 /* UIView+BlockGesture.m in Sources */,
 				5AB520F41D53290F000C3C80 /* UIView+ViewController.m in Sources */,
+				5AA23F451D59FB77005A67FF /* BadgeValueView.m in Sources */,
 				5AB5211D1D532EAC000C3C80 /* GCDTimer.m in Sources */,
 				5AA23F351D59DA9C005A67FF /* BaseModel.m in Sources */,
 				5AF9AF931D4A0F9800F23C1E /* AppDelegate.m in Sources */,
