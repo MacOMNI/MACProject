@@ -16,17 +16,16 @@ NSLocalizedStringFromTableInBundle(key, @"FSMediaPicker", [NSBundle bundleWithPa
 
 @class FSMediaPicker;
 
-typedef enum {
+typedef NS_ENUM(NSUInteger,FSMediaType) {
     FSMediaTypePhoto = 0,
     FSMediaTypeVideo = 1,
     FSMediaTypeAll   = 2
-} FSMediaType;
-
-typedef enum {
+} ;
+typedef NS_ENUM(NSUInteger,FSEditMode) {
     FSEditModeStandard = 0,
     FSEditModeCircular = 1,
     FSEditModeNone     = 2
-} FSEditMode;
+} ;
 
 UIKIT_EXTERN NSString const * UIImagePickerControllerCircularEditedImage;
 
