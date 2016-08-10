@@ -11,15 +11,7 @@
 
 @implementation HTTPClient
 static HTTPClient *_sharedHTTPClient=nil;
-/**
- *  测试地址：班班通218-查询48-点餐42
- */
 
-
-//static NSString *baseUrl=@"http://10.8.1.121:86";
-//static NSString *baseUrl=@"http://10.8.1.42:86";
-//static NSString *baseUrl=@"http://10.8.1.237:86";
-//static NSString *baseUrl=@"http://10.8.1.48:86";
 static NSString *baseUrl=@"http://www.361school.com:74";
 
 
