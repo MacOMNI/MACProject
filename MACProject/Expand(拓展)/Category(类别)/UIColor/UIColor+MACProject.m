@@ -13,26 +13,26 @@
 
 +(UIColor *)appMainColor{
 
-    return [UIColor colorWithMacHexString:@"#ff5353"];
+    return [UIColor colorWithMacHexString:@"#323542"];
 }
 //导航条颜色
 + (UIColor *)appNavigationBarColor{
-    return [UIColor colorWithMacHexString:@"#ff5353"];//#1aa7f2 2da4f6
+    return [UIColor colorWithMacHexString:@"#323542"];//#1aa7f2 2da4f6
 }
 
 //app蓝色
 + (UIColor *)appBlueColor{
-    return [UIColor colorWithMacHexString:@"#099fde"];//099fde
+    return [UIColor colorWithMacHexString:@"#7687f1"];//099fde
 }
 
 //app红色
 + (UIColor *)appRedColor{
-    return [UIColor colorWithMacHexString:@"#cc3333"];
+    return [UIColor colorWithMacHexString:@"#ff415b"];
 }
 
 //app黄色
 + (UIColor *)appYellowColor{
-    return [UIColor colorWithMacHexString:@"#ffb400"];
+    return [UIColor colorWithMacHexString:@"#f7ba5b"];
 }
 
 
@@ -43,18 +43,18 @@
 
 //app绿色
 + (UIColor *)appGreenColor{
-    return [UIColor colorWithMacHexString:@"#1ec8c0"];
+    return [UIColor colorWithMacHexString:@"#52cbb9"];
 }
 
 //app背景色
 + (UIColor *)appBackGroundColor{
-    return [UIColor colorWithMacHexString:@"#f8f8f8"];
+    return [UIColor colorWithMacHexString:@"#e6e6e6"];
 }
 
 //app直线色
 + (UIColor *)appLineColor{
 //    return [UIColor colorWithMacHexString:@"#c8c8c8"];
-    return [UIColor colorWithMacHexString:@"#dddddd"];
+    return [UIColor colorWithMacHexString:@"#D6D6D6"];
 }
 //app导航栏文字颜色
 + (UIColor *)appNavTitleColor{

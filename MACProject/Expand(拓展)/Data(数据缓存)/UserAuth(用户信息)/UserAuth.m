@@ -105,11 +105,7 @@ static NSString *securityAuthKey = @"!@#MacProject123_";
     NSString *pwdStr = [passWord secretStringForKey:kCityName];
     return pwdStr;
 }
-- (NSString*)passWord{
-    NSUserDefaults *passWord = [NSUserDefaults standardUserDefaults];
-    NSString *pwdStr = [passWord secretStringForKey:kPassword ];
-    return pwdStr;
-}
+
 
 - (NSString*)userid{
     NSUserDefaults *userid = [NSUserDefaults standardUserDefaults];
@@ -145,11 +141,6 @@ static NSString *securityAuthKey = @"!@#MacProject123_";
     
 }
 
-+ (void)savePassWord:(NSString*)passWord{
-    NSUserDefaults *save = [NSUserDefaults standardUserDefaults];
-    [save setSecretObject:passWord forKey:kPassword];
-    
-}
 
 #pragma mark other methods
 

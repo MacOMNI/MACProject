@@ -11,7 +11,7 @@
 #import "MMSheetView.h"
 
 @interface UIViewController(MAC)
-
+#pragma mark 设置 展示AlertView or SheetView
 /**
  *  展示Alert提示信息
  */
@@ -38,7 +38,7 @@
  *  @param clickIndex 点击的下标
  */
 -(void)showSheetTitle:(NSString *)title clickArr:(NSArray *)arr click:(MMPopupItemHandler) clickIndex;
-
+#pragma mark 设置navBar Item
 /**
  *  设置左侧文字形式的BarItem
  */
@@ -59,7 +59,7 @@
  *  设置右侧文字形式的BarItem
  */
 - (void)setRightBarItemImage:(UIImage *)imgage title:(NSString *)str;
-#pragma mark 进入聊天界面
+
 
 
 
@@ -72,5 +72,15 @@
  *  需继承实现右侧点击事件
  */
 - (void)rightBarItemAction:(UITapGestureRecognizer *)gesture;
+
+#pragma mark - TabBarItem
+/**
+ *  设置TabBarItemImage
+ *
+ *  @param imageName       默认图片名称
+ *  @param selectImageName 选中图片名称
+ *  @param titleString 标题
+ */
+-(void)setTabBarItemImage:(NSString *)imageName selectedImage:(NSString *)selectImageName title:(NSString *)titleString;
 
 @end

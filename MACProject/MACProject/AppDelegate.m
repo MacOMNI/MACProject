@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "MacTableViewVC.h"
+#import "MainTabBarController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,9 +18,21 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:[[MacTableViewVC alloc]init]];
-    self.window.rootViewController=nav;
+    MainTabBarController *nav = [[MainTabBarController alloc]init];
+    self.window.rootViewController = nav;
     self.window.backgroundColor    = [UIColor whiteColor];
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor colorWithWhite:0.0f alpha:1.0f];
+    shadow.shadowOffset = CGSizeMake(0, 0);
+    [[UINavigationBar appearance] setTitleTextAttributes:@{
+                                                           NSForegroundColorAttributeName: [UIColor whiteColor],
+                                                           NSShadowAttributeName: shadow,
+                                                           NSFontAttributeName: [UIFont fontWithName:@"Arial-BoldMT" size:17.0f]
+                                                           }];
+
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor appNavigationBarColor]];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     [self.window makeKeyAndVisible];
     return YES;
 }

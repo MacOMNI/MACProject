@@ -16,10 +16,6 @@
 @property(nonatomic, strong, readonly) NSString *userName;
 
 
-/**
- *  用户密码
- */
-@property(nonatomic, strong, readonly) NSString *passWord;
 
 /**
  *  用户id

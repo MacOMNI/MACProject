@@ -183,5 +183,14 @@
     
 }
 
+#pragma mark - TabBarItem
+
+-(void)setTabBarItemImage:(NSString *)imageName selectedImage:(NSString *)selectImageName title:(NSString *)titleString{
+    UITabBarItem *tabBarItem = [[UITabBarItem alloc ]init];
+    tabBarItem.title=titleString;
+    tabBarItem.image=[[UIImage imageNamed:imageName]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    tabBarItem.selectedImage=[[UIImage imageNamed:selectImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    self.tabBarItem=tabBarItem;
+}
 
 @end

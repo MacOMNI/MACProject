@@ -17,7 +17,7 @@
 /**
  *  用户密码
  */
-@property(nonatomic,copy) NSString *YHMM;
+//@property(nonatomic,copy) NSString *YHMM;
 /**
  *  姓名
  */

@@ -12,9 +12,6 @@
 #import "UIView+AnimationProperty.h"
 
 static char imageURLKey;
-static char TAG_ACTIVITY_INDICATOR;
-static char TAG_ACTIVITY_STYLE;
-static char TAG_ACTIVITY_SHOW;
 
 @implementation UIImageView(MAC)
 
