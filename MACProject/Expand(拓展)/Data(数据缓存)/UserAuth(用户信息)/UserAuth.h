@@ -56,12 +56,6 @@
 + (void)saveUserId:(NSString*)userId;
 
 /**
- *  保存密码 输入的密码
- *
- *  @param passWord 密码
- */
-+ (void)savePassWord:(NSString*)passWord;
-/**
  *  清空用户信息
  */
 + (void)clean;

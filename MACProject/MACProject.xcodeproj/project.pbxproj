@@ -55,6 +55,8 @@
 		5A546EBA1D5C16BA00F9361E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A546EB81D5C16BA00F9361E /* HomeViewController.xib */; };
 		5A546EBE1D5C16C700F9361E /* NearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546EBC1D5C16C700F9361E /* NearViewController.m */; };
 		5A546EBF1D5C16C700F9361E /* NearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A546EBD1D5C16C700F9361E /* NearViewController.xib */; };
+		5A546ECF1D5C737500F9361E /* LocalPushCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546ECE1D5C737500F9361E /* LocalPushCenter.m */; };
+		5A546ED21D5C764B00F9361E /* ScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546ED11D5C764B00F9361E /* ScrollView+Additions.m */; };
 		5AA23F3B1D59F665005A67FF /* UIImageView+MAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA23F3A1D59F665005A67FF /* UIImageView+MAC.m */; };
 		5AA23F451D59FB77005A67FF /* BadgeValueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA23F441D59FB77005A67FF /* BadgeValueView.m */; };
 		5AA23F481D59FB90005A67FF /* UIView+AnimationProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA23F471D59FB90005A67FF /* UIView+AnimationProperty.m */; };
@@ -280,6 +282,10 @@
 		5A546EBB1D5C16C700F9361E /* NearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearViewController.h; sourceTree = "<group>"; };
 		5A546EBC1D5C16C700F9361E /* NearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearViewController.m; sourceTree = "<group>"; };
 		5A546EBD1D5C16C700F9361E /* NearViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearViewController.xib; sourceTree = "<group>"; };
+		5A546ECD1D5C737500F9361E /* LocalPushCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalPushCenter.h; sourceTree = "<group>"; };
+		5A546ECE1D5C737500F9361E /* LocalPushCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalPushCenter.m; sourceTree = "<group>"; };
+		5A546ED01D5C764B00F9361E /* ScrollView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScrollView+Additions.h"; sourceTree = "<group>"; };
+		5A546ED11D5C764B00F9361E /* ScrollView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ScrollView+Additions.m"; sourceTree = "<group>"; };
 		5AA23F391D59F665005A67FF /* UIImageView+MAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MAC.h"; sourceTree = "<group>"; };
 		5AA23F3A1D59F665005A67FF /* UIImageView+MAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MAC.m"; sourceTree = "<group>"; };
 		5AA23F431D59FB77005A67FF /* BadgeValueView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeValueView.h; sourceTree = "<group>"; };
@@ -579,6 +585,7 @@
 		5A09C08C1D5B0BFC00B0AB5B /* Utils(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				5A546ECC1D5C736A00F9361E /* LocalPushCenter */,
 				5ABE82421D5B161200E78309 /* SearchCore */,
 				5A09C08D1D5B0BFC00B0AB5B /* BaseService */,
 				5A09C0961D5B0BFC00B0AB5B /* CoreAnimation */,
@@ -795,6 +802,15 @@
 			children = (
 			);
 			path = "Near(云周边)";
+			sourceTree = "<group>";
+		};
+		5A546ECC1D5C736A00F9361E /* LocalPushCenter */ = {
+			isa = PBXGroup;
+			children = (
+				5A546ECD1D5C737500F9361E /* LocalPushCenter.h */,
+				5A546ECE1D5C737500F9361E /* LocalPushCenter.m */,
+			);
+			path = LocalPushCenter;
 			sourceTree = "<group>";
 		};
 		5AA23F421D59FB77005A67FF /* BadgeValueView */ = {
@@ -1204,6 +1220,8 @@
 		5AB520251D53290F000C3C80 /* UIScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				5A546ED01D5C764B00F9361E /* ScrollView+Additions.h */,
+				5A546ED11D5C764B00F9361E /* ScrollView+Additions.m */,
 				5AB520261D53290F000C3C80 /* APParallaxHeader */,
 				5AB520291D53290F000C3C80 /* MACScrollView.h */,
 				5AB5202A1D53290F000C3C80 /* MACScrollView.m */,
@@ -1683,6 +1701,7 @@
 				5A15AA981D58AAD1000ED86E /* NSDictionary+JKSafeAccess.m in Sources */,
 				5AAFAE9C1D546E17002F7FC3 /* TableViewCell.m in Sources */,
 				5AB520BB1D53290F000C3C80 /* UIButton+MiddleAligning.m in Sources */,
+				5A546ECF1D5C737500F9361E /* LocalPushCenter.m in Sources */,
 				5AB520F21D53290F000C3C80 /* UIView+RecursiveDescription.m in Sources */,
 				5AB520A51D53290F000C3C80 /* NSString+HLHanZiToPinYin.m in Sources */,
 				5AB5209C1D53290F000C3C80 /* NSNumber+RomanNumerals.m in Sources */,
@@ -1731,6 +1750,7 @@
 				5AB520A81D53290F000C3C80 /* NSString+MAC.m in Sources */,
 				5A09C0BE1D5B0BFC00B0AB5B /* POPNumberAnimation.m in Sources */,
 				5A09C0B31D5B0BFC00B0AB5B /* BaseService.m in Sources */,
+				5A546ED21D5C764B00F9361E /* ScrollView+Additions.m in Sources */,
 				5AB520B81D53290F000C3C80 /* UIButton+CountDown.m in Sources */,
 				5A15AA4F1D5830AE000ED86E /* UIView+GlowView.m in Sources */,
 				5ABE82401D5B137D00E78309 /* FSMediaPicker.m in Sources */,

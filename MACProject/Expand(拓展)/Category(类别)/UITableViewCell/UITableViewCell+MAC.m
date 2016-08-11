@@ -24,4 +24,14 @@
 
     return  [[[UINib nibWithNibName:NSStringFromClass([self class]) bundle:nil]instantiateWithOwner:nil options:nil] objectAtIndex:0];
 }
++ (NSString*)cellIdentifier {
+    
+    return NSStringFromClass(self);
+}
+
++ (id)loadFromCellStyle:(UITableViewCellStyle)cellStyle {
+    
+    return [[self alloc] initWithStyle:cellStyle reuseIdentifier:NSStringFromClass(self)];
+}
+
 @end

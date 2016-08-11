@@ -15,7 +15,9 @@ typedef NS_ENUM(NSUInteger ,GradientType) {
 @end
 
 @interface UIImage (Additions)
-
+/**
+ *   纯色图片
+ */
 + (UIImage *)imageWithColor:(UIColor *)color;
 + (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size andRoundSize:(CGFloat)roundSize;
 
@@ -34,7 +36,12 @@ typedef NS_ENUM(NSUInteger ,GradientType) {
 +(UIImage*)imageWithFrame:(CGSize)size Colors:(NSArray*)colors GradientType:(GradientType)gradientType;
 
 - (id)roundedSize:(CGSize)size radius:(NSInteger)r;
-
+/**
+ 获取图片上某一点的颜色
+ 
+ @param point  图片内的一个点。范围是 [0, image.width-1],[0, image.height-1]
+ 超出图片范围则返回nil
+ */
 - (UIColor *) getPixelColorAtLocation:(CGPoint)point;
 
 - (instancetype)imageWithOverlayColor:(UIColor *)overlayColor;

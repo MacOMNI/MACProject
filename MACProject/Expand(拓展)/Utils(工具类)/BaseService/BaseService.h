@@ -15,6 +15,7 @@
  *  @param error     错误描述
  */
 typedef void(^ResultBlock)(NSInteger stateCode, NSMutableArray* result, NSError *error);
+//block不是self的属性或者变量时，在block内使用self也不会循环引用：
 
 @interface BaseService : NSObject
 

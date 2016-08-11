@@ -15,4 +15,18 @@
  *  @return nib
  */
 +(id)nibCell;
+/**
+ *  用代码创建Cell时候设置的cellIdentifier
+ *
+ *  @return cellIdentifier;
+ */
++(NSString*)cellIdentifier;
+/**
+ *  用代码创建Cell
+ *
+ *  @return self;
+ */
+
++(id)loadFromCellStyle:(UITableViewCellStyle)cellStyle;
+
 @end

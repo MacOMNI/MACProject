@@ -9,7 +9,9 @@
 
 @interface UIView (Nib)
 + (UINib *)loadNib;
-
+/**
+ *  快速根据xib创建View
+ */
 + (instancetype )loadNibView;
 
 + (UINib *)loadNibNamed:(NSString*)nibName;

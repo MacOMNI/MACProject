@@ -83,4 +83,8 @@ typedef NS_ENUM(NSUInteger ,EButtonType) {
  */
 - (void)setBackgroundColor:(UIColor *)backgroundColor forState:(UIControlState)state;
 
+
+- (void)lf_setEnlargeEdge:(CGFloat) size;
+- (void)lf_setEnlargeEdgeWithTop:(CGFloat) top right:(CGFloat) right bottom:(CGFloat) bottom left:(CGFloat) left;
+
 @end
