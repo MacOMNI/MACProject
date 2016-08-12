@@ -21,6 +21,11 @@
     MainTabBarController *nav = [[MainTabBarController alloc]init];
     self.window.rootViewController = nav;
     self.window.backgroundColor    = [UIColor whiteColor];
+    [self appConfig];
+    [self.window makeKeyAndVisible];
+    return YES;
+}
+-(void)appConfig{
     NSShadow *shadow = [[NSShadow alloc] init];
     shadow.shadowColor = [UIColor colorWithWhite:0.0f alpha:1.0f];
     shadow.shadowOffset = CGSizeMake(0, 0);
@@ -29,12 +34,10 @@
                                                            NSShadowAttributeName: shadow,
                                                            NSFontAttributeName: [UIFont fontWithName:@"Arial-BoldMT" size:17.0f]
                                                            }];
-
+    
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setBarTintColor:[UIColor appNavigationBarColor]];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    [self.window makeKeyAndVisible];
-    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

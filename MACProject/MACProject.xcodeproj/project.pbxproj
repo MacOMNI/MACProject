@@ -51,11 +51,15 @@
 		5A546EB01D5C169700F9361E /* FindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A546EAE1D5C169700F9361E /* FindViewController.xib */; };
 		5A546EB41D5C16A700F9361E /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546EB21D5C16A700F9361E /* FriendsViewController.m */; };
 		5A546EB51D5C16A700F9361E /* FriendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A546EB31D5C16A700F9361E /* FriendsViewController.xib */; };
-		5A546EB91D5C16BA00F9361E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546EB71D5C16BA00F9361E /* HomeViewController.m */; };
 		5A546EBE1D5C16C700F9361E /* NearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546EBC1D5C16C700F9361E /* NearViewController.m */; };
 		5A546EBF1D5C16C700F9361E /* NearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A546EBD1D5C16C700F9361E /* NearViewController.xib */; };
 		5A546ECF1D5C737500F9361E /* LocalPushCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546ECE1D5C737500F9361E /* LocalPushCenter.m */; };
 		5A546ED21D5C764B00F9361E /* ScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546ED11D5C764B00F9361E /* ScrollView+Additions.m */; };
+		5A994F971D5D7813000F1A17 /* ParallaxHeaderViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A994F951D5D7813000F1A17 /* ParallaxHeaderViewCell.m */; };
+		5A994F981D5D7813000F1A17 /* ParallaxHeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A994F961D5D7813000F1A17 /* ParallaxHeaderViewCell.xib */; };
+		5A994F9C1D5D7C08000F1A17 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A994F9A1D5D7C08000F1A17 /* HomeViewController.m */; };
+		5A994FAF1D5DEDA3000F1A17 /* ParallaxHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A994FAE1D5DEDA3000F1A17 /* ParallaxHeader.m */; };
+		5A994FB11D5DEDC0000F1A17 /* ParallaxHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A994FB01D5DEDC0000F1A17 /* ParallaxHeader.xib */; };
 		5AA23F3B1D59F665005A67FF /* UIImageView+MAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA23F3A1D59F665005A67FF /* UIImageView+MAC.m */; };
 		5AA23F451D59FB77005A67FF /* BadgeValueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA23F441D59FB77005A67FF /* BadgeValueView.m */; };
 		5AA23F481D59FB90005A67FF /* UIView+AnimationProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA23F471D59FB90005A67FF /* UIView+AnimationProperty.m */; };
@@ -180,7 +184,6 @@
 		5AF9AF931D4A0F9800F23C1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF9AF921D4A0F9800F23C1E /* AppDelegate.m */; };
 		5AF9AF991D4A0F9800F23C1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF9AF971D4A0F9800F23C1E /* Main.storyboard */; };
 		5AF9AF9B1D4A0F9800F23C1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AF9AF9A1D4A0F9800F23C1E /* Assets.xcassets */; };
-		5AF9AF9E1D4A0F9800F23C1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF9AF9C1D4A0F9800F23C1E /* LaunchScreen.storyboard */; };
 		ED95D17053554ACAC069B19E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34ED505CBF42FA657FA65818 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -275,8 +278,6 @@
 		5A546EB11D5C16A700F9361E /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
 		5A546EB21D5C16A700F9361E /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
 		5A546EB31D5C16A700F9361E /* FriendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendsViewController.xib; sourceTree = "<group>"; };
-		5A546EB61D5C16BA00F9361E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		5A546EB71D5C16BA00F9361E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		5A546EBB1D5C16C700F9361E /* NearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearViewController.h; sourceTree = "<group>"; };
 		5A546EBC1D5C16C700F9361E /* NearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearViewController.m; sourceTree = "<group>"; };
 		5A546EBD1D5C16C700F9361E /* NearViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearViewController.xib; sourceTree = "<group>"; };
@@ -284,6 +285,24 @@
 		5A546ECE1D5C737500F9361E /* LocalPushCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalPushCenter.m; sourceTree = "<group>"; };
 		5A546ED01D5C764B00F9361E /* ScrollView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScrollView+Additions.h"; sourceTree = "<group>"; };
 		5A546ED11D5C764B00F9361E /* ScrollView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ScrollView+Additions.m"; sourceTree = "<group>"; };
+		5A994F941D5D7813000F1A17 /* ParallaxHeaderViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxHeaderViewCell.h; sourceTree = "<group>"; };
+		5A994F951D5D7813000F1A17 /* ParallaxHeaderViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxHeaderViewCell.m; sourceTree = "<group>"; };
+		5A994F961D5D7813000F1A17 /* ParallaxHeaderViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParallaxHeaderViewCell.xib; sourceTree = "<group>"; };
+		5A994F991D5D7C08000F1A17 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		5A994F9A1D5D7C08000F1A17 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		5A994F9F1D5DA8BD000F1A17 /* NSDictionaryHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionaryHeader.h; sourceTree = "<group>"; };
+		5A994FA01D5DA939000F1A17 /* NSArrayHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArrayHeader.h; sourceTree = "<group>"; };
+		5A994FA11D5DA99E000F1A17 /* NSDateHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateHeader.h; sourceTree = "<group>"; };
+		5A994FA21D5DA9D7000F1A17 /* NSStringHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringHeader.h; sourceTree = "<group>"; };
+		5A994FA41D5DAB31000F1A17 /* UIImageHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageHeader.h; sourceTree = "<group>"; };
+		5A994FA51D5DAB69000F1A17 /* UIImageViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewHeader.h; sourceTree = "<group>"; };
+		5A994FA61D5DAC05000F1A17 /* UINavigationHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINavigationHeader.h; sourceTree = "<group>"; };
+		5A994FA71D5DAC9C000F1A17 /* UITableViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewHeader.h; sourceTree = "<group>"; };
+		5A994FA81D5DACD6000F1A17 /* UIViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewHeader.h; sourceTree = "<group>"; };
+		5A994FA91D5DAE13000F1A17 /* UIViewControllerHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewControllerHeader.h; sourceTree = "<group>"; };
+		5A994FAD1D5DEDA3000F1A17 /* ParallaxHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxHeader.h; sourceTree = "<group>"; };
+		5A994FAE1D5DEDA3000F1A17 /* ParallaxHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxHeader.m; sourceTree = "<group>"; };
+		5A994FB01D5DEDC0000F1A17 /* ParallaxHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParallaxHeader.xib; sourceTree = "<group>"; };
 		5AA23F391D59F665005A67FF /* UIImageView+MAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MAC.h"; sourceTree = "<group>"; };
 		5AA23F3A1D59F665005A67FF /* UIImageView+MAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MAC.m"; sourceTree = "<group>"; };
 		5AA23F431D59FB77005A67FF /* BadgeValueView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeValueView.h; sourceTree = "<group>"; };
@@ -524,7 +543,6 @@
 		5AF9AF921D4A0F9800F23C1E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5AF9AF981D4A0F9800F23C1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5AF9AF9A1D4A0F9800F23C1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = MACProject/Assets.xcassets; sourceTree = "<group>"; };
-		5AF9AF9D1D4A0F9800F23C1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AF9AF9F1D4A0F9800F23C1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -693,6 +711,7 @@
 				5A15AA8F1D58AAC5000ED86E /* NSDictionary+MAC.h */,
 				5A15AA901D58AAC5000ED86E /* NSDictionary+MAC.m */,
 				5A15AA911D58AAC5000ED86E /* XMLDictionary */,
+				5A994F9F1D5DA8BD000F1A17 /* NSDictionaryHeader.h */,
 			);
 			path = NSDictionary;
 			sourceTree = "<group>";
@@ -729,8 +748,8 @@
 		5A546EA21D5C151600F9361E /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
-				5A546EB61D5C16BA00F9361E /* HomeViewController.h */,
-				5A546EB71D5C16BA00F9361E /* HomeViewController.m */,
+				5A994F991D5D7C08000F1A17 /* HomeViewController.h */,
+				5A994F9A1D5D7C08000F1A17 /* HomeViewController.m */,
 			);
 			path = "Home(首页)";
 			sourceTree = "<group>";
@@ -762,6 +781,12 @@
 		5A546EA61D5C153B00F9361E /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				5A994F941D5D7813000F1A17 /* ParallaxHeaderViewCell.h */,
+				5A994F951D5D7813000F1A17 /* ParallaxHeaderViewCell.m */,
+				5A994F961D5D7813000F1A17 /* ParallaxHeaderViewCell.xib */,
+				5A994FAD1D5DEDA3000F1A17 /* ParallaxHeader.h */,
+				5A994FAE1D5DEDA3000F1A17 /* ParallaxHeader.m */,
+				5A994FB01D5DEDC0000F1A17 /* ParallaxHeader.xib */,
 			);
 			path = "Home(首页)";
 			sourceTree = "<group>";
@@ -880,6 +905,7 @@
 				5AB51F731D53290F000C3C80 /* NSArray+Block.m */,
 				5AB51F741D53290F000C3C80 /* NSArray+SafeAccess.h */,
 				5AB51F751D53290F000C3C80 /* NSArray+SafeAccess.m */,
+				5A994FA01D5DA939000F1A17 /* NSArrayHeader.h */,
 			);
 			path = NSArray;
 			sourceTree = "<group>";
@@ -910,6 +936,7 @@
 				5AB51F871D53290F000C3C80 /* NSDate+Mac.m */,
 				5AB51F881D53290F000C3C80 /* NSDate+MacFormatter.h */,
 				5AB51F891D53290F000C3C80 /* NSDate+MacFormatter.m */,
+				5A994FA11D5DA99E000F1A17 /* NSDateHeader.h */,
 			);
 			path = NSDate;
 			sourceTree = "<group>";
@@ -1004,6 +1031,7 @@
 				5AB51FBE1D53290F000C3C80 /* NSString+UUID.h */,
 				5AB51FBF1D53290F000C3C80 /* NSString+UUID.m */,
 				5AB51FC01D53290F000C3C80 /* Pinyin */,
+				5A994FA21D5DA9D7000F1A17 /* NSStringHeader.h */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -1118,6 +1146,7 @@
 				5AB51FF31D53290F000C3C80 /* UIImage+Additions.m */,
 				5AB51FF41D53290F000C3C80 /* UIImage+SuperCompress.h */,
 				5AB51FF51D53290F000C3C80 /* UIImage+SuperCompress.m */,
+				5A994FA41D5DAB31000F1A17 /* UIImageHeader.h */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -1137,6 +1166,7 @@
 				5AB520001D53290F000C3C80 /* UIImageView+Reflect.m */,
 				5AA23F391D59F665005A67FF /* UIImageView+MAC.h */,
 				5AA23F3A1D59F665005A67FF /* UIImageView+MAC.m */,
+				5A994FA51D5DAB69000F1A17 /* UIImageViewHeader.h */,
 			);
 			path = UIImageView;
 			sourceTree = "<group>";
@@ -1159,6 +1189,7 @@
 			children = (
 				5AB520091D53290F000C3C80 /* UINavigationBar+Awesome.h */,
 				5AB5200A1D53290F000C3C80 /* UINavigationBar+Awesome.m */,
+				5A994FA61D5DAC05000F1A17 /* UINavigationHeader.h */,
 			);
 			path = UINavigationBar;
 			sourceTree = "<group>";
@@ -1252,6 +1283,7 @@
 				5AB520301D53290F000C3C80 /* MACRefresh(刷新) */,
 				5AB520391D53290F000C3C80 /* MACTableView.h */,
 				5AB5203A1D53290F000C3C80 /* MACTableView.m */,
+				5A994FA71D5DAC9C000F1A17 /* UITableViewHeader.h */,
 			);
 			path = UITableView;
 			sourceTree = "<group>";
@@ -1350,6 +1382,7 @@
 				5AB5205F1D53290F000C3C80 /* UIView+Screenshot.m */,
 				5AB520601D53290F000C3C80 /* UIView+ViewController.h */,
 				5AB520611D53290F000C3C80 /* UIView+ViewController.m */,
+				5A994FA81D5DACD6000F1A17 /* UIViewHeader.h */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -1367,6 +1400,7 @@
 				5AB520781D53290F000C3C80 /* UIViewController+MAC.m */,
 				5AB520791D53290F000C3C80 /* UIViewController+RecursiveDescription.h */,
 				5AB5207A1D53290F000C3C80 /* UIViewController+RecursiveDescription.m */,
+				5A994FA91D5DAE13000F1A17 /* UIViewControllerHeader.h */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -1440,7 +1474,6 @@
 				5AB521041D532A2C000C3C80 /* MACMacro.h */,
 				5AB521051D532A38000C3C80 /* PrefixHeader.pch */,
 				5AF9AF971D4A0F9800F23C1E /* Main.storyboard */,
-				5AF9AF9C1D4A0F9800F23C1E /* LaunchScreen.storyboard */,
 				5AF9AF9F1D4A0F9800F23C1E /* Info.plist */,
 				5A546E9D1D5C0ACC00F9361E /* MainTabBarController.h */,
 				5A546E9E1D5C0ACC00F9361E /* MainTabBarController.m */,
@@ -1623,13 +1656,14 @@
 				5AB520E11D53290F000C3C80 /* icon_refresh_3@3x.png in Resources */,
 				5AAFAE9D1D546E17002F7FC3 /* TableViewCell.xib in Resources */,
 				5ABE824B1D5B161200E78309 /* multipy_unicode.dat in Resources */,
-				5AF9AF9E1D4A0F9800F23C1E /* LaunchScreen.storyboard in Resources */,
 				5AB520E01D53290F000C3C80 /* icon_refresh_3@2x.png in Resources */,
 				5A546EB01D5C169700F9361E /* FindViewController.xib in Resources */,
 				5AB520DD1D53290F000C3C80 /* icon_refresh_1@3x.png in Resources */,
 				5AB520DF1D53290F000C3C80 /* icon_refresh_2@3x.png in Resources */,
+				5A994F981D5D7813000F1A17 /* ParallaxHeaderViewCell.xib in Resources */,
 				5AB521221D533BC5000C3C80 /* MacTableViewVC.xib in Resources */,
 				5AF9AF9B1D4A0F9800F23C1E /* Assets.xcassets in Resources */,
+				5A994FB11D5DEDC0000F1A17 /* ParallaxHeader.xib in Resources */,
 				5AB520DE1D53290F000C3C80 /* icon_refresh_2@2x.png in Resources */,
 				5A546EBF1D5C16C700F9361E /* NearViewController.xib in Resources */,
 				5A546EB51D5C16A700F9361E /* FriendsViewController.xib in Resources */,
@@ -1703,6 +1737,7 @@
 				5AB520A51D53290F000C3C80 /* NSString+HLHanZiToPinYin.m in Sources */,
 				5AB5209C1D53290F000C3C80 /* NSNumber+RomanNumerals.m in Sources */,
 				5AB520AC1D53290F000C3C80 /* NSString+Trims.m in Sources */,
+				5A994FAF1D5DEDA3000F1A17 /* ParallaxHeader.m in Sources */,
 				5AB520C01D53290F000C3C80 /* UIColor+MACProject.m in Sources */,
 				5AB520C91D53290F000C3C80 /* UIImageView+Reflect.m in Sources */,
 				5A15AA9E1D58AB17000ED86E /* NSDictionary+JKBlock.m in Sources */,
@@ -1723,7 +1758,6 @@
 				5A15AA941D58AAC5000ED86E /* NSDictionary+MAC.m in Sources */,
 				5AB520BF1D53290F000C3C80 /* UIColor+Mac.m in Sources */,
 				5AB520961D53290F000C3C80 /* NSDate+MacFormatter.m in Sources */,
-				5A546EB91D5C16BA00F9361E /* HomeViewController.m in Sources */,
 				5AB520DB1D53290F000C3C80 /* UISearchBar+Blocks.m in Sources */,
 				5AB520CA1D53290F000C3C80 /* CopyLabel.m in Sources */,
 				5A09C0B91D5B0BFC00B0AB5B /* GCDSemaphore.m in Sources */,
@@ -1798,6 +1832,7 @@
 				5AF9AF931D4A0F9800F23C1E /* AppDelegate.m in Sources */,
 				5AB520CE1D53290F000C3C80 /* KMSwizzle.m in Sources */,
 				5AB5209D1D53290F000C3C80 /* NSNumber+Round.m in Sources */,
+				5A994F971D5D7813000F1A17 /* ParallaxHeaderViewCell.m in Sources */,
 				5AB520D61D53290F000C3C80 /* UIResponder+Chain.m in Sources */,
 				5AB520D11D53290F000C3C80 /* UIViewController+KMNavigationBarTransition.m in Sources */,
 				5A15AA831D58A98D000ED86E /* NSData+JKGzip.m in Sources */,
@@ -1852,6 +1887,7 @@
 				5A09C0BA1D5B0BFC00B0AB5B /* GCDTimer.m in Sources */,
 				5AB520D81D53290F000C3C80 /* UIResponder+UIAdapt.m in Sources */,
 				5AB520FE1D53290F000C3C80 /* UIViewController+RecursiveDescription.m in Sources */,
+				5A994F9C1D5D7C08000F1A17 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1864,14 +1900,6 @@
 				5AF9AF981D4A0F9800F23C1E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5AF9AF9C1D4A0F9800F23C1E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5AF9AF9D1D4A0F9800F23C1E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

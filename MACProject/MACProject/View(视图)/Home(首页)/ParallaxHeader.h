@@ -1,5 +1,5 @@
 //
-//  HomeViewController.h
+//  ParallaxHeader.h
 //  MACProject
 //
 //  Created by MacKun on 16/8/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController
+@interface ParallaxHeader : UIView
 
 @end

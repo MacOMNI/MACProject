@@ -28,6 +28,7 @@
 
 #import "NSArray+SafeAccess.h"
 #import "NSObjcet+MAC.h"
+#import "UIColor+Mac.h"
 #import "UIColor+MACProject.h"
 #import "UIView+MAC.h"
 #import "UIView+HUD.h"
@@ -36,7 +37,7 @@
 //#import "UIView+BlockGesture.h"
 #import "UITableViewCell+MAC.h"
 #import "UIViewController+MAC.h"
-//#import "UINavigationBar+Awesome.h"
+#import "UINavigationBar+Awesome.h"
 #import "UINavigationController+FDFullscreenPopGesture.h"
 
 #import "UINavigationController+MAC.h"

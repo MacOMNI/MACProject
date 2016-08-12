@@ -29,12 +29,16 @@
     NSArray *iconArr=@[@"chaweizhang_gray",@"cheyouquan_gray",@"chazhoubian_gray",@"faxian_gray"];
     NSArray *selectIconArr=@[@"chaweizhang_red",@"cheyouquan_red",@"chazhoubian_red",@"faxian_red"];
     NSArray *controllerArr=@[@"HomeViewController",@"FriendsViewController",@"NearViewController",@"FindViewController"];
-    for(int i=0;i<controllerArr.count;i++)
+    for(NSInteger i=0;i<controllerArr.count;i++)
     {
-        UIViewController *viewController=[[NSClassFromString(controllerArr[i]) alloc]init];
-        [viewController setTabBarItemImage:iconArr[i] selectedImage:selectIconArr[i] title:titleArr[i]];
-        UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:viewController];
-        [self addChildViewController:nav];
+
+      
+            UIViewController *viewController=[[NSClassFromString(controllerArr[i]) alloc]init];
+
+            [viewController setTabBarItemImage:iconArr[i] selectedImage:selectIconArr[i] title:titleArr[i]];
+            UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:viewController];
+            [self addChildViewController:nav];
+       
     }
     self.tabBar.selectionIndicatorImage=[UIImage imageNamed:@"bottom_bg"];
 
