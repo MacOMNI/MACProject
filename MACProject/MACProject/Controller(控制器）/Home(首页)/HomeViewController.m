@@ -21,7 +21,7 @@
     // Do any additional setup after loading the view from its nib.
 }
 -(void)initUI{
-   self.title=@"车微联";
+   //self.title=@"";
 }
 -(void)initData{
     

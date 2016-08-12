@@ -1,6 +1,6 @@
 //
 //  CoreAnimationEffect.m
-//  catogery
+//  
 //  MacKun
 //
 

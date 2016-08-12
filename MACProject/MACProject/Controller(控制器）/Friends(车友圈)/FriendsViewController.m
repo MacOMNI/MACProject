@@ -21,7 +21,7 @@
     // Do any additional setup after loading the view from its nib.
 }
 -(void)initUI{
-    self.title=@"车友圈";
+    self.title=@"朋友圈";
 }
 -(void)initData{
     

@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '91E8C59EF3C905C1CE58F8C3'
-               BlueprintName = 'HMSegmentedControl'
+               BlueprintIdentifier = '025745AC89F1653620E80655'
+               BlueprintName = 'CSStickyHeaderFlowLayout'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libHMSegmentedControl.a'>
+               BuildableName = 'libCSStickyHeaderFlowLayout.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

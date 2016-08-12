@@ -52,7 +52,6 @@
 		5A546EB41D5C16A700F9361E /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546EB21D5C16A700F9361E /* FriendsViewController.m */; };
 		5A546EB51D5C16A700F9361E /* FriendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A546EB31D5C16A700F9361E /* FriendsViewController.xib */; };
 		5A546EB91D5C16BA00F9361E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546EB71D5C16BA00F9361E /* HomeViewController.m */; };
-		5A546EBA1D5C16BA00F9361E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A546EB81D5C16BA00F9361E /* HomeViewController.xib */; };
 		5A546EBE1D5C16C700F9361E /* NearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546EBC1D5C16C700F9361E /* NearViewController.m */; };
 		5A546EBF1D5C16C700F9361E /* NearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A546EBD1D5C16C700F9361E /* NearViewController.xib */; };
 		5A546ECF1D5C737500F9361E /* LocalPushCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546ECE1D5C737500F9361E /* LocalPushCenter.m */; };
@@ -278,7 +277,6 @@
 		5A546EB31D5C16A700F9361E /* FriendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendsViewController.xib; sourceTree = "<group>"; };
 		5A546EB61D5C16BA00F9361E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		5A546EB71D5C16BA00F9361E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		5A546EB81D5C16BA00F9361E /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		5A546EBB1D5C16C700F9361E /* NearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearViewController.h; sourceTree = "<group>"; };
 		5A546EBC1D5C16C700F9361E /* NearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearViewController.m; sourceTree = "<group>"; };
 		5A546EBD1D5C16C700F9361E /* NearViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearViewController.xib; sourceTree = "<group>"; };
@@ -733,7 +731,6 @@
 			children = (
 				5A546EB61D5C16BA00F9361E /* HomeViewController.h */,
 				5A546EB71D5C16BA00F9361E /* HomeViewController.m */,
-				5A546EB81D5C16BA00F9361E /* HomeViewController.xib */,
 			);
 			path = "Home(首页)";
 			sourceTree = "<group>";
@@ -1596,6 +1593,7 @@
 				TargetAttributes = {
 					5AF9AF8A1D4A0F9800F23C1E = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 5W5PJ9YVUX;
 					};
 				};
 			};
@@ -1638,7 +1636,6 @@
 				5AB520F61D53290F000C3C80 /* .gitkeep in Resources */,
 				5AB520DC1D53290F000C3C80 /* icon_refresh_1@2x.png in Resources */,
 				5AF9AF991D4A0F9800F23C1E /* Main.storyboard in Resources */,
-				5A546EBA1D5C16BA00F9361E /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1968,11 +1965,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "${SRCROOT}/MACProject/prefixHeader.pch";
 				INFOPLIST_FILE = MACProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mackun.MACProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "${PODS_ROOT}/**";
 			};
 			name = Debug;
@@ -1983,11 +1982,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "${SRCROOT}/MACProject/prefixHeader.pch";
 				INFOPLIST_FILE = MACProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mackun.MACProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "${PODS_ROOT}/**";
 			};
 			name = Release;

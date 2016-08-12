@@ -1,6 +1,6 @@
 //
 //  CoreAnimationEffect.h
-//  catogery
+//
 //  MacKun
 //
 
