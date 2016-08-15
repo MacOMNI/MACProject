@@ -8,6 +8,8 @@
 
 #import "HomeViewController.h"
 #import "CSStickyHeaderFlowLayout.h"
+#import "ParallaxHeaderViewCell.h"
+#import "NewCarouselListCell.h"
 @interface HomeViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate>{
     CGFloat headerHeight;
 }
@@ -62,9 +64,8 @@ static NSString * const reuseIdentifier = @"Cell";
     [self.collectionView registerNib:self.headerNib
           forSupplementaryViewOfKind:CSStickyHeaderParallaxHeader
                  withReuseIdentifier:@"ParallaxHeaderViewCell"];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"NewCarouselListCell" bundle:nil] forCellWithReuseIdentifier:@"newCarouselListCell"];
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-
-
 }
 -(void)initData{
     
@@ -102,11 +103,24 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell
-    cell.backgroundColor=[UIColor RandomColor];
-    return cell;
+    switch (indexPath.section) {
+        case 0:
+        {
+           NewCarouselListCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:@"newCarouselListCell" forIndexPath:indexPath];
+            return cell;
+        }
+            break;
+        
+        default:{
+         UICollectionViewCell   *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+            // Configure the cell
+            cell.backgroundColor=[UIColor RandomColor];
+            return cell;
+
+
+        }
+            break;
+    }
 }
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
@@ -115,12 +129,25 @@ static NSString * const reuseIdentifier = @"Cell";
         cell = [collectionView dequeueReusableSupplementaryViewOfKind:kind
                                                                             withReuseIdentifier:@"ParallaxHeaderViewCell"
                                                                                    forIndexPath:indexPath];
+      //  DLog(@"row %ld section %ld",(long)indexPath.row,(long)indexPath.section);
     }
     return cell;
 }
 #pragma  mark UICollectionViewDelegateFlowLayout
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    return CGSizeMake(self.view.width, headerHeight);
+    switch (indexPath.section) {
+        case 0:
+        {
+            return CGSizeMake(self.view.width, GTFixHeightFlaot(150.f));
+        }
+            break;
+            
+        default:{
+            return CGSizeMake(self.view.width, headerHeight);
+
+        }
+            break;
+    }
 }
 #pragma mark - UIScrollViewDelegate
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{

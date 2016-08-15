@@ -83,7 +83,11 @@ typedef NS_ENUM(NSUInteger ,EButtonType) {
  */
 - (void)setBackgroundColor:(UIColor *)backgroundColor forState:(UIControlState)state;
 
-
+/**
+ *  扩大点击热区
+ *
+ *  @param size
+ */
 - (void)lf_setEnlargeEdge:(CGFloat) size;
 - (void)lf_setEnlargeEdgeWithTop:(CGFloat) top right:(CGFloat) right bottom:(CGFloat) bottom left:(CGFloat) left;
 

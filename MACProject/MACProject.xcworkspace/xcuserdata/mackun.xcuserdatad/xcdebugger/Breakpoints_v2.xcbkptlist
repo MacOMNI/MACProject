@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Home(&#x9996;&#x9875;)/HomeViewController.m"
-            timestampString = "492692330.527738"
+            timestampString = "492941447.967474"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "@implementation HomeViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -86,15 +86,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Home(&#x9996;&#x9875;)/HomeViewController.m"
-            timestampString = "492696359.675324"
+            timestampString = "492941447.967474"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "-didReceiveMemoryWarning"
             landmarkType = "5">
          </BreakpointContent>
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Home(&#x9996;&#x9875;)/HomeViewController.m"
-            timestampString = "492692330.527738"
+            timestampString = "492941447.967474"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Home(&#x9996;&#x9875;)/HomeViewController.m"
-            timestampString = "492696711.63137"
+            timestampString = "492945801.167533"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
             landmarkName = "-scrollViewDidScroll:"
             landmarkType = "5">
          </BreakpointContent>
@@ -170,13 +170,93 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Home(&#x9996;&#x9875;)/HomeViewController.m"
-            timestampString = "492696714.791283"
+            timestampString = "492945801.167533"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
             landmarkName = "-scrollViewDidScroll:"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Home(&#x9996;&#x9875;)/HomeViewController.m"
+            timestampString = "492945801.167533"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "-collectionView:viewForSupplementaryElementOfKind:atIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Home(&#x9996;&#x9875;)/HomeViewController.m"
+            timestampString = "492945801.167533"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "-collectionView:viewForSupplementaryElementOfKind:atIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Home(&#x9996;&#x9875;)/HomeViewController.m"
+            timestampString = "492941447.967474"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "-initUI"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MACProject/View(&#x89c6;&#x56fe;)/Home(&#x9996;&#x9875;)/NewCarouselListCell.m"
+            timestampString = "492950002.291478"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "-numberOfItemsInCarousel:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Expand(&#x62d3;&#x5c55;)/Macros(&#x5b8f;)/GTFixHeader.h"
+            timestampString = "492941816.325149"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "GTFixHeightFlaot(CGFloat height)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -55,6 +55,10 @@
 		5A546EBF1D5C16C700F9361E /* NearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A546EBD1D5C16C700F9361E /* NearViewController.xib */; };
 		5A546ECF1D5C737500F9361E /* LocalPushCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546ECE1D5C737500F9361E /* LocalPushCenter.m */; };
 		5A546ED21D5C764B00F9361E /* ScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546ED11D5C764B00F9361E /* ScrollView+Additions.m */; };
+		5A90A2181D61AC28005298B3 /* NewCarouselListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A90A2161D61AC28005298B3 /* NewCarouselListCell.m */; };
+		5A90A2191D61AC28005298B3 /* NewCarouselListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A90A2171D61AC28005298B3 /* NewCarouselListCell.xib */; };
+		5A90A21F1D61CFA4005298B3 /* CarouseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A90A21E1D61CFA4005298B3 /* CarouseView.m */; };
+		5A90A2211D61CFB9005298B3 /* CarouseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A90A2201D61CFB9005298B3 /* CarouseView.xib */; };
 		5A994F971D5D7813000F1A17 /* ParallaxHeaderViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A994F951D5D7813000F1A17 /* ParallaxHeaderViewCell.m */; };
 		5A994F981D5D7813000F1A17 /* ParallaxHeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A994F961D5D7813000F1A17 /* ParallaxHeaderViewCell.xib */; };
 		5A994F9C1D5D7C08000F1A17 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A994F9A1D5D7C08000F1A17 /* HomeViewController.m */; };
@@ -285,6 +289,13 @@
 		5A546ECE1D5C737500F9361E /* LocalPushCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalPushCenter.m; sourceTree = "<group>"; };
 		5A546ED01D5C764B00F9361E /* ScrollView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScrollView+Additions.h"; sourceTree = "<group>"; };
 		5A546ED11D5C764B00F9361E /* ScrollView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ScrollView+Additions.m"; sourceTree = "<group>"; };
+		5A90A2141D61A98E005298B3 /* UIButtonHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonHeader.h; sourceTree = "<group>"; };
+		5A90A2151D61AC28005298B3 /* NewCarouselListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewCarouselListCell.h; sourceTree = "<group>"; };
+		5A90A2161D61AC28005298B3 /* NewCarouselListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewCarouselListCell.m; sourceTree = "<group>"; };
+		5A90A2171D61AC28005298B3 /* NewCarouselListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewCarouselListCell.xib; sourceTree = "<group>"; };
+		5A90A21D1D61CFA4005298B3 /* CarouseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarouseView.h; sourceTree = "<group>"; };
+		5A90A21E1D61CFA4005298B3 /* CarouseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarouseView.m; sourceTree = "<group>"; };
+		5A90A2201D61CFB9005298B3 /* CarouseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarouseView.xib; sourceTree = "<group>"; };
 		5A994F941D5D7813000F1A17 /* ParallaxHeaderViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxHeaderViewCell.h; sourceTree = "<group>"; };
 		5A994F951D5D7813000F1A17 /* ParallaxHeaderViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxHeaderViewCell.m; sourceTree = "<group>"; };
 		5A994F961D5D7813000F1A17 /* ParallaxHeaderViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParallaxHeaderViewCell.xib; sourceTree = "<group>"; };
@@ -787,6 +798,12 @@
 				5A994FAD1D5DEDA3000F1A17 /* ParallaxHeader.h */,
 				5A994FAE1D5DEDA3000F1A17 /* ParallaxHeader.m */,
 				5A994FB01D5DEDC0000F1A17 /* ParallaxHeader.xib */,
+				5A90A2151D61AC28005298B3 /* NewCarouselListCell.h */,
+				5A90A2161D61AC28005298B3 /* NewCarouselListCell.m */,
+				5A90A2171D61AC28005298B3 /* NewCarouselListCell.xib */,
+				5A90A21D1D61CFA4005298B3 /* CarouseView.h */,
+				5A90A21E1D61CFA4005298B3 /* CarouseView.m */,
+				5A90A2201D61CFB9005298B3 /* CarouseView.xib */,
 			);
 			path = "Home(首页)";
 			sourceTree = "<group>";
@@ -1104,6 +1121,7 @@
 				5AB51FE31D53290F000C3C80 /* UIButton+TouchAreaInsets.m */,
 				5A15AA441D582C0C000ED86E /* UIButton+MAC.h */,
 				5A15AA451D582C0C000ED86E /* UIButton+MAC.m */,
+				5A90A2141D61A98E005298B3 /* UIButtonHeader.h */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
@@ -1655,6 +1673,7 @@
 			files = (
 				5AB520E11D53290F000C3C80 /* icon_refresh_3@3x.png in Resources */,
 				5AAFAE9D1D546E17002F7FC3 /* TableViewCell.xib in Resources */,
+				5A90A2211D61CFB9005298B3 /* CarouseView.xib in Resources */,
 				5ABE824B1D5B161200E78309 /* multipy_unicode.dat in Resources */,
 				5AB520E01D53290F000C3C80 /* icon_refresh_3@2x.png in Resources */,
 				5A546EB01D5C169700F9361E /* FindViewController.xib in Resources */,
@@ -1663,6 +1682,7 @@
 				5A994F981D5D7813000F1A17 /* ParallaxHeaderViewCell.xib in Resources */,
 				5AB521221D533BC5000C3C80 /* MacTableViewVC.xib in Resources */,
 				5AF9AF9B1D4A0F9800F23C1E /* Assets.xcassets in Resources */,
+				5A90A2191D61AC28005298B3 /* NewCarouselListCell.xib in Resources */,
 				5A994FB11D5DEDC0000F1A17 /* ParallaxHeader.xib in Resources */,
 				5AB520DE1D53290F000C3C80 /* icon_refresh_2@2x.png in Resources */,
 				5A546EBF1D5C16C700F9361E /* NearViewController.xib in Resources */,
@@ -1787,6 +1807,7 @@
 				5ABE82401D5B137D00E78309 /* FSMediaPicker.m in Sources */,
 				5A09C0BD1D5B0BFC00B0AB5B /* MMTweenFunction.m in Sources */,
 				5AB520C21D53290F000C3C80 /* UIControl+Block.m in Sources */,
+				5A90A21F1D61CFA4005298B3 /* CarouseView.m in Sources */,
 				5AB520B21D53290F000C3C80 /* UIApplication+AppInfo.m in Sources */,
 				5AB520951D53290F000C3C80 /* NSDate+Mac.m in Sources */,
 				5AB520E41D53290F000C3C80 /* MGSwipeButton.m in Sources */,
@@ -1880,6 +1901,7 @@
 				5A15AAA41D58ABAC000ED86E /* NSObject+JKRuntime.m in Sources */,
 				5A15AA9B1D58AB0E000ED86E /* NSDictionary+JKMerge.m in Sources */,
 				5AB5209A1D53290F000C3C80 /* NSDecimalNumber+Extensions.m in Sources */,
+				5A90A2181D61AC28005298B3 /* NewCarouselListCell.m in Sources */,
 				5AB520B01D53290F000C3C80 /* NSUserDefaults+iCloudSync.m in Sources */,
 				5AB520941D53290F000C3C80 /* NSData+Encrypt.m in Sources */,
 				5AB520E21D53290F000C3C80 /* MACRefreshHeader.m in Sources */,

@@ -16,20 +16,38 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sy_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Wg3-3Z-3YK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                     </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPK-iM-f8C">
+                        <rect key="frame" x="8" y="156" width="60" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="Fq6-nC-uvt"/>
+                            <constraint firstAttribute="height" constant="44" id="vtN-NQ-yL4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <state key="normal" title="济南" image="sy_bottom_arrow"/>
+                        <connections>
+                            <action selector="cityAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Sbb-cN-4Yr"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="Wg3-3Z-3YK" secondAttribute="trailing" id="2CD-bF-hsE"/>
-                <constraint firstItem="Wg3-3Z-3YK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="B55-eR-BY4"/>
-                <constraint firstItem="Wg3-3Z-3YK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="L0k-k6-2Dq"/>
-                <constraint firstAttribute="bottom" secondItem="Wg3-3Z-3YK" secondAttribute="bottom" id="wkO-Ic-FM1"/>
+                <constraint firstAttribute="bottom" secondItem="Wg3-3Z-3YK" secondAttribute="bottom" id="28q-Uj-wxB"/>
+                <constraint firstAttribute="trailing" secondItem="Wg3-3Z-3YK" secondAttribute="trailing" id="6E1-pV-t1c"/>
+                <constraint firstItem="hPK-iM-f8C" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="GVC-KC-QBs"/>
+                <constraint firstItem="Wg3-3Z-3YK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VDy-fw-rX3"/>
+                <constraint firstItem="Wg3-3Z-3YK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WWu-UE-Ddl"/>
+                <constraint firstAttribute="bottom" secondItem="hPK-iM-f8C" secondAttribute="bottom" id="maI-z5-JSI"/>
             </constraints>
             <size key="customSize" width="310" height="184"/>
+            <connections>
+                <outlet property="btnCity" destination="hPK-iM-f8C" id="17Z-vF-iDh"/>
+            </connections>
             <point key="canvasLocation" x="348" y="306"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="sy_bg" width="320" height="224"/>
+        <image name="sy_bottom_arrow" width="9" height="6"/>
     </resources>
 </document>

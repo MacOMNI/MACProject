@@ -10,4 +10,5 @@
 
 @interface ParallaxHeaderViewCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UIButton *btnCity;
 @end

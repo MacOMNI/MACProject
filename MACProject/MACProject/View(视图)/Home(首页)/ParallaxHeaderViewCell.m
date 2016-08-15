@@ -7,11 +7,15 @@
 //
 
 #import "ParallaxHeaderViewCell.h"
-
+#import "UIButton+LXMImagePosition.h"
 @implementation ParallaxHeaderViewCell
+- (IBAction)cityAction:(id)sender {
+    DLog(@"点击城市选择！");
+}
 
 - (void)awakeFromNib {
     // Initialization code
+    [_btnCity setImagePosition:LXMImagePositionRight spacing:5.0f];
 }
 
 @end
