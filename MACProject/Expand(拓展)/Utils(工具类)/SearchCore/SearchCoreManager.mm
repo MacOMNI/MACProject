@@ -69,7 +69,7 @@ static SearchCoreManager *searchCoreManager = nil;
 }
 
 
--(void)addSchoolList:(NSNumber*)localID name:(NSString *)name
+-(void)addDataList:(NSNumber*)localID name:(NSString *)name
 {
     NSMutableString *str = [[NSMutableString alloc] init];
 

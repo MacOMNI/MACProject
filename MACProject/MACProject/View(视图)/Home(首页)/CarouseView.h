@@ -10,4 +10,8 @@
 
 @interface CarouseView : UIView
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+@property(nonatomic ,strong)NSArray *imgNameArr;
+-(void)randomCoreAnimation;
 @end

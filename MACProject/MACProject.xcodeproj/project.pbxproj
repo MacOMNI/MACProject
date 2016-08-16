@@ -23,6 +23,8 @@
 		5A09C0BC1D5B0BFC00B0AB5B /* MMTweenAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A09C0A81D5B0BFC00B0AB5B /* MMTweenAnimation.m */; };
 		5A09C0BD1D5B0BFC00B0AB5B /* MMTweenFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A09C0AA1D5B0BFC00B0AB5B /* MMTweenFunction.m */; };
 		5A09C0BE1D5B0BFC00B0AB5B /* POPNumberAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A09C0AD1D5B0BFC00B0AB5B /* POPNumberAnimation.m */; };
+		5A1585821D634445006618D3 /* CitysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1585801D634445006618D3 /* CitysViewController.m */; };
+		5A1585831D634445006618D3 /* CitysViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A1585811D634445006618D3 /* CitysViewController.xib */; };
 		5A15AA431D582AA0000ED86E /* UIFont+Fonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AA421D582AA0000ED86E /* UIFont+Fonts.m */; };
 		5A15AA461D582C0C000ED86E /* UIButton+MAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AA451D582C0C000ED86E /* UIButton+MAC.m */; };
 		5A15AA4C1D583093000ED86E /* UIView+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AA4B1D583093000ED86E /* UIView+Shake.m */; };
@@ -228,6 +230,9 @@
 		5A09C0AA1D5B0BFC00B0AB5B /* MMTweenFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTweenFunction.m; sourceTree = "<group>"; };
 		5A09C0AC1D5B0BFC00B0AB5B /* POPNumberAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPNumberAnimation.h; sourceTree = "<group>"; };
 		5A09C0AD1D5B0BFC00B0AB5B /* POPNumberAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POPNumberAnimation.m; sourceTree = "<group>"; };
+		5A15857F1D634445006618D3 /* CitysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitysViewController.h; sourceTree = "<group>"; };
+		5A1585801D634445006618D3 /* CitysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitysViewController.m; sourceTree = "<group>"; };
+		5A1585811D634445006618D3 /* CitysViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CitysViewController.xib; sourceTree = "<group>"; };
 		5A15AA411D582AA0000ED86E /* UIFont+Fonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Fonts.h"; sourceTree = "<group>"; };
 		5A15AA421D582AA0000ED86E /* UIFont+Fonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Fonts.m"; sourceTree = "<group>"; };
 		5A15AA441D582C0C000ED86E /* UIButton+MAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+MAC.h"; sourceTree = "<group>"; };
@@ -761,6 +766,9 @@
 			children = (
 				5A994F991D5D7C08000F1A17 /* HomeViewController.h */,
 				5A994F9A1D5D7C08000F1A17 /* HomeViewController.m */,
+				5A15857F1D634445006618D3 /* CitysViewController.h */,
+				5A1585801D634445006618D3 /* CitysViewController.m */,
+				5A1585811D634445006618D3 /* CitysViewController.xib */,
 			);
 			path = "Home(首页)";
 			sourceTree = "<group>";
@@ -1674,6 +1682,7 @@
 				5AB520E11D53290F000C3C80 /* icon_refresh_3@3x.png in Resources */,
 				5AAFAE9D1D546E17002F7FC3 /* TableViewCell.xib in Resources */,
 				5A90A2211D61CFB9005298B3 /* CarouseView.xib in Resources */,
+				5A1585831D634445006618D3 /* CitysViewController.xib in Resources */,
 				5ABE824B1D5B161200E78309 /* multipy_unicode.dat in Resources */,
 				5AB520E01D53290F000C3C80 /* icon_refresh_3@2x.png in Resources */,
 				5A546EB01D5C169700F9361E /* FindViewController.xib in Resources */,
@@ -1826,6 +1835,7 @@
 				5A09C0AE1D5B0BFC00B0AB5B /* Base64.m in Sources */,
 				5A546EB41D5C16A700F9361E /* FriendsViewController.m in Sources */,
 				5AB520A11D53290F000C3C80 /* NSObject+GCD.m in Sources */,
+				5A1585821D634445006618D3 /* CitysViewController.m in Sources */,
 				5AB521211D533BC5000C3C80 /* MacTableViewVC.m in Sources */,
 				5AB520AB1D53290F000C3C80 /* NSString+RemoveEmoji.m in Sources */,
 				5A15AA951D58AAC5000ED86E /* XMLDictionary.m in Sources */,

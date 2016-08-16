@@ -8,9 +8,13 @@
 
 #import "ParallaxHeaderViewCell.h"
 #import "UIButton+LXMImagePosition.h"
+#import "CitysViewController.h"
 @implementation ParallaxHeaderViewCell
 - (IBAction)cityAction:(id)sender {
     DLog(@"点击城市选择！");
+    
+    CitysViewController *citysVC=[[CitysViewController alloc]init];
+    [_btnCity.viewController.navigationController pushViewControllerHideTabBar:citysVC animated:YES];
 }
 
 - (void)awakeFromNib {

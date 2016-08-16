@@ -32,12 +32,12 @@
 
 
 /**
- *  添加学校列表
+ *  添加数据列表
  *
- *  @param localID 学校ID
+ *  @param localID KeyID
  *  @param name    学习名称
  */
--(void)addSchoolList:(NSNumber*)localID name:(NSString *)name;
+-(void)addDataList:(NSNumber*)localID name:(NSString *)name;
 
 /*
  联系人变动，替换搜索中的数据

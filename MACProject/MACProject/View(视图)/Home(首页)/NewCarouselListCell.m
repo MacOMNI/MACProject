@@ -8,16 +8,42 @@
 
 #import "NewCarouselListCell.h"
 #import "CarouseView.h"
-@implementation NewCarouselListCell
+#import "NSTimer+MAC.h"
 
+@interface NewCarouselListCell(){
+    NSTimer *_timer;
+}
+@end
+@implementation NewCarouselListCell
+-(void)dealloc{
+    _carousel.dataSource=nil;
+    _carousel.delegate=nil;
+}
 - (void)awakeFromNib {
     // Initialization code
+    DLog(@"NewCarouselListCell");
     _carousel.type = iCarouselTypeLinear;
     _carousel.dataSource=self;
     _carousel.delegate=self;
-    _carousel.backgroundColor=[UIColor appBackGroundColor];
+    _carousel.backgroundColor=[UIColor groupTableViewBackgroundColor];
   //  [_carousel scrollToItemAtIndex:1 animated:NO];
-    
+//    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:self.autoScrollTimeInterval target:self selector:@selector(automaticScroll) userInfo:nil repeats:YES];
+//    _timer = timer;
+//    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:2.5 block:^{
+        if (_carousel.numberOfVisibleItems) {
+            CarouseView *view=_carousel.visibleItemViews[rand()%_carousel.numberOfVisibleItems];
+            [view randomCoreAnimation];
+        }
+    } repeats:YES];
+    [[NSRunLoop mainRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
+
+}
+-(void)willMoveToSuperview:(UIView *)newSuperview{
+    if (!newSuperview) {
+        [_timer invalidate];
+        _timer=nil;
+    }
 }
 -(void)setDataArr:(NSArray *)dataArr{
     
@@ -32,10 +58,10 @@
 
 - (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSInteger)index reusingView:(UIView *)view
 {
-    if (!view) {
+   // if (!view) {//复用性
        view = [CarouseView loadNibView];
        view.frame=CGRectMake(5, 10, self.width/3.0-5, self.height-20);
-    }
+   // }
     //[view setBackgroundColor:[UIColor RandomColor]];
     return view;
 }
