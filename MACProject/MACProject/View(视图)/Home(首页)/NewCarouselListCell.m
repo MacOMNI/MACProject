@@ -30,7 +30,7 @@
 //    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:self.autoScrollTimeInterval target:self selector:@selector(automaticScroll) userInfo:nil repeats:YES];
 //    _timer = timer;
 //    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
-    _timer = [NSTimer scheduledTimerWithTimeInterval:2.5 block:^{
+    _timer = [NSTimer scheduledTimerWithTimeInterval:1.0 block:^{
         if (_carousel.numberOfVisibleItems) {
             CarouseView *view=_carousel.visibleItemViews[rand()%_carousel.numberOfVisibleItems];
             [view randomCoreAnimation];

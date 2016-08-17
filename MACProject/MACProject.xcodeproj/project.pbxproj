@@ -61,6 +61,9 @@
 		5A90A2191D61AC28005298B3 /* NewCarouselListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A90A2171D61AC28005298B3 /* NewCarouselListCell.xib */; };
 		5A90A21F1D61CFA4005298B3 /* CarouseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A90A21E1D61CFA4005298B3 /* CarouseView.m */; };
 		5A90A2211D61CFB9005298B3 /* CarouseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A90A2201D61CFB9005298B3 /* CarouseView.xib */; };
+		5A97EC791D6469AF00A29247 /* CarLightViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A97EC771D6469AF00A29247 /* CarLightViewCell.m */; };
+		5A97EC7A1D6469AF00A29247 /* CarLightViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A97EC781D6469AF00A29247 /* CarLightViewCell.xib */; };
+		5A97EC7D1D647EB200A29247 /* LightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A97EC7C1D647EB200A29247 /* LightCell.m */; };
 		5A994F971D5D7813000F1A17 /* ParallaxHeaderViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A994F951D5D7813000F1A17 /* ParallaxHeaderViewCell.m */; };
 		5A994F981D5D7813000F1A17 /* ParallaxHeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A994F961D5D7813000F1A17 /* ParallaxHeaderViewCell.xib */; };
 		5A994F9C1D5D7C08000F1A17 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A994F9A1D5D7C08000F1A17 /* HomeViewController.m */; };
@@ -301,6 +304,11 @@
 		5A90A21D1D61CFA4005298B3 /* CarouseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarouseView.h; sourceTree = "<group>"; };
 		5A90A21E1D61CFA4005298B3 /* CarouseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarouseView.m; sourceTree = "<group>"; };
 		5A90A2201D61CFB9005298B3 /* CarouseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarouseView.xib; sourceTree = "<group>"; };
+		5A97EC761D6469AF00A29247 /* CarLightViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarLightViewCell.h; sourceTree = "<group>"; };
+		5A97EC771D6469AF00A29247 /* CarLightViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarLightViewCell.m; sourceTree = "<group>"; };
+		5A97EC781D6469AF00A29247 /* CarLightViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarLightViewCell.xib; sourceTree = "<group>"; };
+		5A97EC7B1D647EB200A29247 /* LightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightCell.h; sourceTree = "<group>"; };
+		5A97EC7C1D647EB200A29247 /* LightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightCell.m; sourceTree = "<group>"; };
 		5A994F941D5D7813000F1A17 /* ParallaxHeaderViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxHeaderViewCell.h; sourceTree = "<group>"; };
 		5A994F951D5D7813000F1A17 /* ParallaxHeaderViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxHeaderViewCell.m; sourceTree = "<group>"; };
 		5A994F961D5D7813000F1A17 /* ParallaxHeaderViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParallaxHeaderViewCell.xib; sourceTree = "<group>"; };
@@ -800,6 +808,8 @@
 		5A546EA61D5C153B00F9361E /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				5A97EC7B1D647EB200A29247 /* LightCell.h */,
+				5A97EC7C1D647EB200A29247 /* LightCell.m */,
 				5A994F941D5D7813000F1A17 /* ParallaxHeaderViewCell.h */,
 				5A994F951D5D7813000F1A17 /* ParallaxHeaderViewCell.m */,
 				5A994F961D5D7813000F1A17 /* ParallaxHeaderViewCell.xib */,
@@ -812,6 +822,9 @@
 				5A90A21D1D61CFA4005298B3 /* CarouseView.h */,
 				5A90A21E1D61CFA4005298B3 /* CarouseView.m */,
 				5A90A2201D61CFB9005298B3 /* CarouseView.xib */,
+				5A97EC761D6469AF00A29247 /* CarLightViewCell.h */,
+				5A97EC771D6469AF00A29247 /* CarLightViewCell.m */,
+				5A97EC781D6469AF00A29247 /* CarLightViewCell.xib */,
 			);
 			path = "Home(首页)";
 			sourceTree = "<group>";
@@ -1697,6 +1710,7 @@
 				5A546EBF1D5C16C700F9361E /* NearViewController.xib in Resources */,
 				5A546EB51D5C16A700F9361E /* FriendsViewController.xib in Resources */,
 				5AB520F61D53290F000C3C80 /* .gitkeep in Resources */,
+				5A97EC7A1D6469AF00A29247 /* CarLightViewCell.xib in Resources */,
 				5AB520DC1D53290F000C3C80 /* icon_refresh_1@2x.png in Resources */,
 				5AF9AF991D4A0F9800F23C1E /* Main.storyboard in Resources */,
 			);
@@ -1775,6 +1789,7 @@
 				5AB520FF1D53290F000C3C80 /* UIWebView+Blocks.m in Sources */,
 				5AB520D71D53290F000C3C80 /* UIResponder+FirstResponder.m in Sources */,
 				5AB521341D534D65000C3C80 /* MACBaseCell.m in Sources */,
+				5A97EC7D1D647EB200A29247 /* LightCell.m in Sources */,
 				5AB520A91D53290F000C3C80 /* NSString+MacRegexCategory.m in Sources */,
 				5A15AA8A1D58AA41000ED86E /* NSBundle+JKAppIcon.m in Sources */,
 				5A546EAF1D5C169700F9361E /* FindViewController.m in Sources */,
@@ -1887,6 +1902,7 @@
 				5A09C0B71D5B0BFC00B0AB5B /* GCDGroup.m in Sources */,
 				5AB520D41D53290F000C3C80 /* UINavigationItem+Lock.m in Sources */,
 				5AB520EC1D53290F000C3C80 /* UIView+Blur.m in Sources */,
+				5A97EC791D6469AF00A29247 /* CarLightViewCell.m in Sources */,
 				5A15AAA71D58ABC7000ED86E /* NSObject+JKKVOBlocks.m in Sources */,
 				5A15AA761D587544000ED86E /* UITableView+CellClass.m in Sources */,
 				5A09C0B61D5B0BFC00B0AB5B /* CoreAnimationEffect.m in Sources */,
@@ -2031,7 +2047,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mackun.MACProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "be254e3d-08e5-4e2c-a8b3-c416b5b3cb1c";
 				USER_HEADER_SEARCH_PATHS = "${PODS_ROOT}/**";
 			};
 			name = Debug;
@@ -2048,7 +2064,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mackun.MACProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "be254e3d-08e5-4e2c-a8b3-c416b5b3cb1c";
 				USER_HEADER_SEARCH_PATHS = "${PODS_ROOT}/**";
 			};
 			name = Release;

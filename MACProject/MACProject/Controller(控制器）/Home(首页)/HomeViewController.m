@@ -10,6 +10,7 @@
 #import "CSStickyHeaderFlowLayout.h"
 #import "ParallaxHeaderViewCell.h"
 #import "NewCarouselListCell.h"
+#import "CarLightViewCell.h"
 @interface HomeViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate>{
     CGFloat headerHeight;
 }
@@ -66,6 +67,7 @@ static NSString * const reuseIdentifier = @"Cell";
                  withReuseIdentifier:@"ParallaxHeaderViewCell"];
     [self.collectionView registerNib:[UINib nibWithNibName:@"NewCarouselListCell" bundle:nil] forCellWithReuseIdentifier:@"newCarouselListCell"];
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"CarLightViewCell" bundle:nil] forCellWithReuseIdentifier:@"carLightViewCell"];
 }
 -(void)initData{
     
@@ -110,7 +112,10 @@ static NSString * const reuseIdentifier = @"Cell";
             return cell;
         }
             break;
-        
+        case 1:{
+            CarLightViewCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:@"carLightViewCell" forIndexPath:indexPath];
+            return cell;
+        }break;
         default:{
          UICollectionViewCell   *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
             // Configure the cell
@@ -141,7 +146,10 @@ static NSString * const reuseIdentifier = @"Cell";
             return CGSizeMake(self.view.width, GTFixHeightFlaot(150.f));
         }
             break;
-            
+        case 1:{
+            return CGSizeMake(self.view.width, GTFixHeightFlaot(164.f));
+
+        }break;
         default:{
             return CGSizeMake(self.view.width, headerHeight);
 
