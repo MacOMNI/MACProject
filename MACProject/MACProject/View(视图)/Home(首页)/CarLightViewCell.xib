@@ -48,6 +48,7 @@
             <connections>
                 <outlet property="collectionView" destination="Pyt-9W-doZ" id="Ii9-Pa-H9h"/>
                 <outlet property="pageControl" destination="fGs-0b-SoN" id="CQY-Sc-OK5"/>
+                <outlet property="pageControlHeight" destination="Lsd-ZV-SL3" id="JNB-a0-Epd"/>
             </connections>
             <point key="canvasLocation" x="300" y="267"/>
         </collectionViewCell>

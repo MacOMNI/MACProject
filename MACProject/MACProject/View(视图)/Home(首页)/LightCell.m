@@ -8,7 +8,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor clearColor];
+        //self.backgroundColor = [UIColor clearColor];
         
 //        self.layer.borderWidth= 0.6;
 //        self.layer.borderColor = [UIColor appLineColor].CGColor;

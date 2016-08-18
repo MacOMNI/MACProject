@@ -11,6 +11,7 @@
 #import "ParallaxHeaderViewCell.h"
 #import "NewCarouselListCell.h"
 #import "CarLightViewCell.h"
+#import "BannerCell.h"
 @interface HomeViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate>{
     CGFloat headerHeight;
 }
@@ -67,6 +68,8 @@ static NSString * const reuseIdentifier = @"Cell";
                  withReuseIdentifier:@"ParallaxHeaderViewCell"];
     [self.collectionView registerNib:[UINib nibWithNibName:@"NewCarouselListCell" bundle:nil] forCellWithReuseIdentifier:@"newCarouselListCell"];
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    [self.collectionView registerClass:[BannerCell class] forCellWithReuseIdentifier:@"bannerCell"];
+
     [self.collectionView registerNib:[UINib nibWithNibName:@"CarLightViewCell" bundle:nil] forCellWithReuseIdentifier:@"carLightViewCell"];
 }
 -(void)initData{
@@ -116,6 +119,11 @@ static NSString * const reuseIdentifier = @"Cell";
             CarLightViewCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:@"carLightViewCell" forIndexPath:indexPath];
             return cell;
         }break;
+        case 2:{
+            BannerCell   *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"bannerCell" forIndexPath:indexPath];
+            
+            return cell;
+        }break;
         default:{
          UICollectionViewCell   *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
             // Configure the cell
@@ -150,6 +158,9 @@ static NSString * const reuseIdentifier = @"Cell";
             return CGSizeMake(self.view.width, GTFixHeightFlaot(164.f));
 
         }break;
+        case 2:{
+            return CGSizeMake(self.view.width, 150);
+        }break;
         default:{
             return CGSizeMake(self.view.width, headerHeight);
 
@@ -171,35 +182,5 @@ static NSString * const reuseIdentifier = @"Cell";
     }
 
 }
-#pragma mark <UICollectionViewDelegate>
-
-/*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
-}
-*/
-
-/*
-// Uncomment this method to specify if the specified item should be selected
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
-
-/*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
-}
-
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
-}
-
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
-}
-*/
 
 @end

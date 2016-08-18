@@ -23,8 +23,6 @@
 		5A09C0BC1D5B0BFC00B0AB5B /* MMTweenAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A09C0A81D5B0BFC00B0AB5B /* MMTweenAnimation.m */; };
 		5A09C0BD1D5B0BFC00B0AB5B /* MMTweenFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A09C0AA1D5B0BFC00B0AB5B /* MMTweenFunction.m */; };
 		5A09C0BE1D5B0BFC00B0AB5B /* POPNumberAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A09C0AD1D5B0BFC00B0AB5B /* POPNumberAnimation.m */; };
-		5A1585821D634445006618D3 /* CitysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1585801D634445006618D3 /* CitysViewController.m */; };
-		5A1585831D634445006618D3 /* CitysViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A1585811D634445006618D3 /* CitysViewController.xib */; };
 		5A15AA431D582AA0000ED86E /* UIFont+Fonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AA421D582AA0000ED86E /* UIFont+Fonts.m */; };
 		5A15AA461D582C0C000ED86E /* UIButton+MAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AA451D582C0C000ED86E /* UIButton+MAC.m */; };
 		5A15AA4C1D583093000ED86E /* UIView+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AA4B1D583093000ED86E /* UIView+Shake.m */; };
@@ -57,6 +55,11 @@
 		5A546EBF1D5C16C700F9361E /* NearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A546EBD1D5C16C700F9361E /* NearViewController.xib */; };
 		5A546ECF1D5C737500F9361E /* LocalPushCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546ECE1D5C737500F9361E /* LocalPushCenter.m */; };
 		5A546ED21D5C764B00F9361E /* ScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546ED11D5C764B00F9361E /* ScrollView+Additions.m */; };
+		5A6751BA1D65AE240069DF33 /* CitysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6751B91D65AE240069DF33 /* CitysViewController.m */; };
+		5A6751BD1D65AE960069DF33 /* CitysXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6751BC1D65AE960069DF33 /* CitysXMLParser.m */; };
+		5A6751C01D65AE9E0069DF33 /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6751BF1D65AE9E0069DF33 /* CityModel.m */; };
+		5A6751C21D65AEBB0069DF33 /* citys.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5A6751C11D65AEBB0069DF33 /* citys.xml */; };
+		5A9074DD1D6556D90049CEC9 /* BannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9074DC1D6556D90049CEC9 /* BannerCell.m */; };
 		5A90A2181D61AC28005298B3 /* NewCarouselListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A90A2161D61AC28005298B3 /* NewCarouselListCell.m */; };
 		5A90A2191D61AC28005298B3 /* NewCarouselListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A90A2171D61AC28005298B3 /* NewCarouselListCell.xib */; };
 		5A90A21F1D61CFA4005298B3 /* CarouseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A90A21E1D61CFA4005298B3 /* CarouseView.m */; };
@@ -233,9 +236,6 @@
 		5A09C0AA1D5B0BFC00B0AB5B /* MMTweenFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTweenFunction.m; sourceTree = "<group>"; };
 		5A09C0AC1D5B0BFC00B0AB5B /* POPNumberAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPNumberAnimation.h; sourceTree = "<group>"; };
 		5A09C0AD1D5B0BFC00B0AB5B /* POPNumberAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POPNumberAnimation.m; sourceTree = "<group>"; };
-		5A15857F1D634445006618D3 /* CitysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitysViewController.h; sourceTree = "<group>"; };
-		5A1585801D634445006618D3 /* CitysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitysViewController.m; sourceTree = "<group>"; };
-		5A1585811D634445006618D3 /* CitysViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CitysViewController.xib; sourceTree = "<group>"; };
 		5A15AA411D582AA0000ED86E /* UIFont+Fonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Fonts.h"; sourceTree = "<group>"; };
 		5A15AA421D582AA0000ED86E /* UIFont+Fonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Fonts.m"; sourceTree = "<group>"; };
 		5A15AA441D582C0C000ED86E /* UIButton+MAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+MAC.h"; sourceTree = "<group>"; };
@@ -297,6 +297,15 @@
 		5A546ECE1D5C737500F9361E /* LocalPushCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalPushCenter.m; sourceTree = "<group>"; };
 		5A546ED01D5C764B00F9361E /* ScrollView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScrollView+Additions.h"; sourceTree = "<group>"; };
 		5A546ED11D5C764B00F9361E /* ScrollView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ScrollView+Additions.m"; sourceTree = "<group>"; };
+		5A6751B81D65AE240069DF33 /* CitysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitysViewController.h; sourceTree = "<group>"; };
+		5A6751B91D65AE240069DF33 /* CitysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitysViewController.m; sourceTree = "<group>"; };
+		5A6751BB1D65AE960069DF33 /* CitysXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitysXMLParser.h; sourceTree = "<group>"; };
+		5A6751BC1D65AE960069DF33 /* CitysXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitysXMLParser.m; sourceTree = "<group>"; };
+		5A6751BE1D65AE9E0069DF33 /* CityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityModel.h; sourceTree = "<group>"; };
+		5A6751BF1D65AE9E0069DF33 /* CityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityModel.m; sourceTree = "<group>"; };
+		5A6751C11D65AEBB0069DF33 /* citys.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = citys.xml; sourceTree = "<group>"; };
+		5A9074DB1D6556D90049CEC9 /* BannerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerCell.h; sourceTree = "<group>"; };
+		5A9074DC1D6556D90049CEC9 /* BannerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerCell.m; sourceTree = "<group>"; };
 		5A90A2141D61A98E005298B3 /* UIButtonHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonHeader.h; sourceTree = "<group>"; };
 		5A90A2151D61AC28005298B3 /* NewCarouselListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewCarouselListCell.h; sourceTree = "<group>"; };
 		5A90A2161D61AC28005298B3 /* NewCarouselListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewCarouselListCell.m; sourceTree = "<group>"; };
@@ -774,9 +783,8 @@
 			children = (
 				5A994F991D5D7C08000F1A17 /* HomeViewController.h */,
 				5A994F9A1D5D7C08000F1A17 /* HomeViewController.m */,
-				5A15857F1D634445006618D3 /* CitysViewController.h */,
-				5A1585801D634445006618D3 /* CitysViewController.m */,
-				5A1585811D634445006618D3 /* CitysViewController.xib */,
+				5A6751B81D65AE240069DF33 /* CitysViewController.h */,
+				5A6751B91D65AE240069DF33 /* CitysViewController.m */,
 			);
 			path = "Home(首页)";
 			sourceTree = "<group>";
@@ -825,6 +833,8 @@
 				5A97EC761D6469AF00A29247 /* CarLightViewCell.h */,
 				5A97EC771D6469AF00A29247 /* CarLightViewCell.m */,
 				5A97EC781D6469AF00A29247 /* CarLightViewCell.xib */,
+				5A9074DB1D6556D90049CEC9 /* BannerCell.h */,
+				5A9074DC1D6556D90049CEC9 /* BannerCell.m */,
 			);
 			path = "Home(首页)";
 			sourceTree = "<group>";
@@ -853,6 +863,10 @@
 		5A546EAA1D5C154200F9361E /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				5A6751BE1D65AE9E0069DF33 /* CityModel.h */,
+				5A6751BF1D65AE9E0069DF33 /* CityModel.m */,
+				5A6751BB1D65AE960069DF33 /* CitysXMLParser.h */,
+				5A6751BC1D65AE960069DF33 /* CitysXMLParser.m */,
 			);
 			path = "Home(首页)";
 			sourceTree = "<group>";
@@ -1514,6 +1528,7 @@
 				5AB521051D532A38000C3C80 /* PrefixHeader.pch */,
 				5AF9AF971D4A0F9800F23C1E /* Main.storyboard */,
 				5AF9AF9F1D4A0F9800F23C1E /* Info.plist */,
+				5A6751C11D65AEBB0069DF33 /* citys.xml */,
 				5A546E9D1D5C0ACC00F9361E /* MainTabBarController.h */,
 				5A546E9E1D5C0ACC00F9361E /* MainTabBarController.m */,
 			);
@@ -1695,7 +1710,7 @@
 				5AB520E11D53290F000C3C80 /* icon_refresh_3@3x.png in Resources */,
 				5AAFAE9D1D546E17002F7FC3 /* TableViewCell.xib in Resources */,
 				5A90A2211D61CFB9005298B3 /* CarouseView.xib in Resources */,
-				5A1585831D634445006618D3 /* CitysViewController.xib in Resources */,
+				5A6751C21D65AEBB0069DF33 /* citys.xml in Resources */,
 				5ABE824B1D5B161200E78309 /* multipy_unicode.dat in Resources */,
 				5AB520E01D53290F000C3C80 /* icon_refresh_3@2x.png in Resources */,
 				5A546EB01D5C169700F9361E /* FindViewController.xib in Resources */,
@@ -1796,6 +1811,7 @@
 				5AB5208C1D53290F000C3C80 /* NSArray+Block.m in Sources */,
 				5AB520C11D53290F000C3C80 /* UIControl+ActionBlocks.m in Sources */,
 				5AB520B71D53290F000C3C80 /* UIButton+Block.m in Sources */,
+				5A6751BA1D65AE240069DF33 /* CitysViewController.m in Sources */,
 				5AB520C61D53290F000C3C80 /* UIImageView+Addition.m in Sources */,
 				5AB520C81D53290F000C3C80 /* UIImageView+Letters.m in Sources */,
 				5A15AA8D1D58AA48000ED86E /* NSData+JKzlib.m in Sources */,
@@ -1850,7 +1866,6 @@
 				5A09C0AE1D5B0BFC00B0AB5B /* Base64.m in Sources */,
 				5A546EB41D5C16A700F9361E /* FriendsViewController.m in Sources */,
 				5AB520A11D53290F000C3C80 /* NSObject+GCD.m in Sources */,
-				5A1585821D634445006618D3 /* CitysViewController.m in Sources */,
 				5AB521211D533BC5000C3C80 /* MacTableViewVC.m in Sources */,
 				5AB520AB1D53290F000C3C80 /* NSString+RemoveEmoji.m in Sources */,
 				5A15AA951D58AAC5000ED86E /* XMLDictionary.m in Sources */,
@@ -1859,6 +1874,7 @@
 				5AB520F91D53290F000C3C80 /* RESideMenu.m in Sources */,
 				5AB520D51D53290F000C3C80 /* UINavigationItem+Margin.m in Sources */,
 				5A09C0B01D5B0BFC00B0AB5B /* NSUserDefaults+SecureAdditions.m in Sources */,
+				5A6751C01D65AE9E0069DF33 /* CityModel.m in Sources */,
 				5A15AA631D585C9F000ED86E /* DefaultNotificationCenter.m in Sources */,
 				5A15AA431D582AA0000ED86E /* UIFont+Fonts.m in Sources */,
 				5AB520A61D53290F000C3C80 /* MF_Base64Additions.m in Sources */,
@@ -1896,6 +1912,7 @@
 				5AB521281D53441B000C3C80 /* CellDataAdapter.m in Sources */,
 				5AB520E31D53290F000C3C80 /* MACTableView.m in Sources */,
 				5A15AA731D586D78000ED86E /* FileManager.m in Sources */,
+				5A9074DD1D6556D90049CEC9 /* BannerCell.m in Sources */,
 				5AB520CF1D53290F000C3C80 /* MACNavigationController.m in Sources */,
 				5AB520F71D53290F000C3C80 /* MONActivityIndicatorView.m in Sources */,
 				5A15AA4C1D583093000ED86E /* UIView+Shake.m in Sources */,
@@ -1923,6 +1940,7 @@
 				5AB520AE1D53290F000C3C80 /* ChineseToPinyin.m in Sources */,
 				5AB520DA1D53290F000C3C80 /* MACScrollView.m in Sources */,
 				5AB520A21D53290F000C3C80 /* NSObject+KVOBlocks.m in Sources */,
+				5A6751BD1D65AE960069DF33 /* CitysXMLParser.m in Sources */,
 				5A15AAB01D58ADD9000ED86E /* UITextField+JKBlocks.m in Sources */,
 				5A15AAA41D58ABAC000ED86E /* NSObject+JKRuntime.m in Sources */,
 				5A15AA9B1D58AB0E000ED86E /* NSDictionary+JKMerge.m in Sources */,

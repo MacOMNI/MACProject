@@ -20,5 +20,6 @@
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *pageControlHeight;
 @property(weak,nonatomic) id<CarLightViewDelegate> delegate;
 @end

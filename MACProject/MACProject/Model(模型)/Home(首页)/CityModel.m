@@ -1,17 +1,15 @@
 //
-//  CitysViewController.h
+//  CityModel.m
 //  MainProject
 //
 //  Created by MacKun on 16/5/16.
 //  Copyright © 2016年 com.soullon.EnjoyLearning. All rights reserved.
 //
 
+#import "CityModel.h"
 
-#import <UIKit/UIKit.h>
+@implementation CityModel
 
-/**
- *  城市选择
- */
-@interface CitysViewController : UIViewController
+
 
 @end

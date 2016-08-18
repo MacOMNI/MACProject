@@ -44,6 +44,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>INTULocationManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>IQKeyboardManager.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -137,17 +142,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>23A59E04728CC4AF60B0ACD34FBFBFDC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>2AB49797D14D57FA43A345254AFB9F18</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>327AAE3C03F0B4AC7703B082993C4E22</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>351D334B3C0B49938E167678166C1A44</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3973E5F835F38732B7F65F1EFE11FD81</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -162,17 +172,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>518FFCDFD346333C8F44486D60CFC40D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>53480ED0BE09FF49E34B1702D485CAAB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>695839A356C61BDDE527F97CC16D44F4</key>
+		<key>536D3652A038B22C4787535EA493963F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6B9626F4E0A3F15D9006193ABFD8D4D3</key>
+		<key>695839A356C61BDDE527F97CC16D44F4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -187,7 +202,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7D2386F195984B62AF87418626B97CAE</key>
+		<key>814BF23D4C037153F474728C27CCAE9D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -202,22 +217,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>99DB7B78BBB584B5DF968CEE86EDC14C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9A148AD6F06E121F8158F677E129A1F9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>9EAB3E42EF957541E6C3C76D35FD008E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C2BB74326D61FBFD83E43297184E153A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -232,12 +232,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>E07A1B93D0B5E99C6E979FACDA81D9B4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>E9EF397B95762DDB254C71DDCB4B1381</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>F0408F4524DC707FB9009FA7C22CB6DB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F9DD8223B1774F86734AD128B2B35C45</key>
 		<dict>
 			<key>primary</key>
 			<true/>
