@@ -10,10 +10,10 @@
     if (self) {
         self.backgroundColor = [UIColor clearColor];
         
-        self.layer.borderWidth= 0.6;
-        self.layer.borderColor = [UIColor appLineColor].CGColor;
+//        self.layer.borderWidth= 0.6;
+//        self.layer.borderColor = [UIColor appLineColor].CGColor;
         
-        self.imageView = [[UIImageView alloc]initWithFrame:CGRectMake(self.centerX-17.5, 5.0f, 35.0f, 35.0f)];
+        self.imageView = [[UIImageView alloc]initWithFrame:CGRectMake(self.width/2.0-17.5, 5.0f, 35.0f, 35.0f)];
         self.imageView.backgroundColor = [UIColor clearColor];
         [self addSubview:self.imageView];
         
@@ -22,6 +22,7 @@
         self.textLabel.textColor = [UIColor appTitleColor];
         self.textLabel.font = [UIFont systemFontOfSize:14.0f];
         self.textLabel.textAlignment = NSTextAlignmentCenter;
+        
         [self addSubview:self.textLabel];
     }
     return self;
