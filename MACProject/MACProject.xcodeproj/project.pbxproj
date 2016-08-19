@@ -55,6 +55,7 @@
 		5A546EBF1D5C16C700F9361E /* NearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A546EBD1D5C16C700F9361E /* NearViewController.xib */; };
 		5A546ECF1D5C737500F9361E /* LocalPushCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546ECE1D5C737500F9361E /* LocalPushCenter.m */; };
 		5A546ED21D5C764B00F9361E /* ScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546ED11D5C764B00F9361E /* ScrollView+Additions.m */; };
+		5A58C00B1D669EC900875C65 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 5A58C00A1D669EC900875C65 /* README.md */; };
 		5A6751BA1D65AE240069DF33 /* CitysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6751B91D65AE240069DF33 /* CitysViewController.m */; };
 		5A6751BD1D65AE960069DF33 /* CitysXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6751BC1D65AE960069DF33 /* CitysXMLParser.m */; };
 		5A6751C01D65AE9E0069DF33 /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6751BF1D65AE9E0069DF33 /* CityModel.m */; };
@@ -297,6 +298,7 @@
 		5A546ECE1D5C737500F9361E /* LocalPushCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalPushCenter.m; sourceTree = "<group>"; };
 		5A546ED01D5C764B00F9361E /* ScrollView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScrollView+Additions.h"; sourceTree = "<group>"; };
 		5A546ED11D5C764B00F9361E /* ScrollView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ScrollView+Additions.m"; sourceTree = "<group>"; };
+		5A58C00A1D669EC900875C65 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5A6751B81D65AE240069DF33 /* CitysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitysViewController.h; sourceTree = "<group>"; };
 		5A6751B91D65AE240069DF33 /* CitysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitysViewController.m; sourceTree = "<group>"; };
 		5A6751BB1D65AE960069DF33 /* CitysXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitysXMLParser.h; sourceTree = "<group>"; };
@@ -1608,6 +1610,7 @@
 		5AF9AF821D4A0F9800F23C1E = {
 			isa = PBXGroup;
 			children = (
+				5A58C00A1D669EC900875C65 /* README.md */,
 				5AF9AF9A1D4A0F9800F23C1E /* Assets.xcassets */,
 				5AF9AF8D1D4A0F9800F23C1E /* MACProject */,
 				5AB51F6F1D53290F000C3C80 /* Expand(拓展) */,
@@ -1816,6 +1819,7 @@
 				5AB520C81D53290F000C3C80 /* UIImageView+Letters.m in Sources */,
 				5A15AA8D1D58AA48000ED86E /* NSData+JKzlib.m in Sources */,
 				5A15AA941D58AAC5000ED86E /* NSDictionary+MAC.m in Sources */,
+				5A58C00B1D669EC900875C65 /* README.md in Sources */,
 				5AB520BF1D53290F000C3C80 /* UIColor+Mac.m in Sources */,
 				5AB520961D53290F000C3C80 /* NSDate+MacFormatter.m in Sources */,
 				5AB520DB1D53290F000C3C80 /* UISearchBar+Blocks.m in Sources */,
