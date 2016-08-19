@@ -1,0 +1,1 @@
+../../../VGParallaxHeader/VGParallaxHeader/UIScrollView+VGParallaxHeader.h
