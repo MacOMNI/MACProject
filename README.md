@@ -8,7 +8,7 @@
 ##首页
 ###仿闲鱼同城界面：
 >GCD、CollectionView、Xib 约束、Frame 约束、AutoLayout 代码约束简单应用，抛砖引玉；
-   ![图片](http://oc4tpefat.bkt.clouddn.com/XIANYU1.jpg)
+   ![图片](http://oc4tpefat.bkt.clouddn.com/XIANYU3.jpg)
   ![图片](http://oc4tpefat.bkt.clouddn.com/XIANYU2.jpg)
 ###城市模糊查询：
 >定位 、 KMP & SearchTree 搜索实现快速数据检索；
