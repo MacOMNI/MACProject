@@ -19,8 +19,12 @@
   ![image](http://oc4tpefat.bkt.clouddn.com/city2.png)
 
 
-##朋友圈（暂未开放）
->图文混排、表情键盘、动态计算高度等；
+##朋友圈
+###仿QQ通信录：
+>高仿QQ聊天通讯录，人员分组：
+  ![图片](http://oc4tpefat.bkt.clouddn.com/groupView.png)
+
+###图文混排、表情键盘、动态计算高度等（暂未开放）
 ##云周边（暂未开放）
 
 >地图定位、大头针等；
