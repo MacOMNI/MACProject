@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="contactsCell" rowHeight="60" id="KGk-i7-Jjw" customClass="ContactsCell">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="334" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OhZ-Ws-WSJ">
+                        <rect key="frame" x="20" y="8" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="5Te-kl-wfI"/>
+                            <constraint firstAttribute="width" constant="44" id="7P5-aR-RXP"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="22"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="李白" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="34" translatesAutoresizingMaskIntoConstraints="NO" id="dcn-I3-uLB">
+                        <rect key="frame" x="75" y="19" width="34" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dhy-Dk-sgQ">
+                        <rect key="frame" x="119" y="21" width="29" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="EFE-Jt-a3a"/>
+                            <constraint firstAttribute="width" constant="29" id="Uss-ix-9s6"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OhZ-Ws-WSJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="0K6-TS-wXY"/>
+                    <constraint firstItem="Dhy-Dk-sgQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="13" id="BIb-Pm-XCm"/>
+                    <constraint firstItem="Dhy-Dk-sgQ" firstAttribute="leading" secondItem="dcn-I3-uLB" secondAttribute="trailing" constant="10" id="BeV-an-emw"/>
+                    <constraint firstItem="OhZ-Ws-WSJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="DHk-E9-RSK"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="dcn-I3-uLB" secondAttribute="bottom" constant="11" id="isn-t0-D9h"/>
+                    <constraint firstItem="dcn-I3-uLB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="11" id="p4P-Qo-DYd"/>
+                    <constraint firstItem="dcn-I3-uLB" firstAttribute="leading" secondItem="OhZ-Ws-WSJ" secondAttribute="trailing" constant="11" id="pHM-fM-I1W"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avctar" destination="OhZ-Ws-WSJ" id="Njk-fp-A3U"/>
+                <outlet property="imgType" destination="Dhy-Dk-sgQ" id="Xml-W9-ZLF"/>
+                <outlet property="nameLabel" destination="dcn-I3-uLB" id="MMb-Zr-i1X"/>
+            </connections>
+            <point key="canvasLocation" x="373" y="264"/>
+        </tableViewCell>
+    </objects>
+</document>

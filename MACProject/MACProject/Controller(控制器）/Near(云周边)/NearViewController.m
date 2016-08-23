@@ -7,9 +7,13 @@
 //
 
 #import "NearViewController.h"
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface NearViewController ()
-
+@interface NearViewController ()<MKMapViewDelegate>{
+    
+}
+@property(nonatomic,strong) MKMapView *mapView;
 @end
 
 @implementation NearViewController
@@ -21,10 +25,22 @@
     // Do any additional setup after loading the view from its nib.
 }
 -(void)initUI{
- self.title=@"云周边";
+    self.title=@"云周边";
+    self.mapView=[[MKMapView alloc]initWithFrame:self.view.bounds];
+    self.mapView.delegate=self;
+    self.mapView.showsUserLocation=YES;
+    [self.view addSubview:self.mapView];
 }
 -(void)initData{
     
+}
+#pragma mark MKMapView delegate
+//MapView委托方法，当定位自身时调用
+-(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation{
+    CLLocationCoordinate2D loc = [userLocation coordinate];
+    //放大地图到自身的经纬度位置。
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(loc, 250, 250);
+    [self.mapView setRegion:region animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

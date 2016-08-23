@@ -7,10 +7,13 @@
 //
 
 #import "FriendsViewController.h"
-
+#import "FriendsCell.h"
+#import "ContactsVC.h"
 @interface FriendsViewController ()<UITableViewDataSource,UITableViewDelegate>{
     NSMutableArray *titleArr;
     NSMutableArray *iconArr;
+    NSMutableArray *classArr;
+
 }
 @property (strong, nonatomic)  UITableView *tableView;
 
@@ -30,11 +33,15 @@
     self.tableView.delegate=self;
     self.tableView.dataSource=self;
     self.tableView.tableFooterView=[UIView new];
+    self.tableView.backgroundColor=[UIColor groupTableViewBackgroundColor];
+    self.tableView.rowHeight=49.f;
+    [self.tableView registerNib:[FriendsCell loadNib] forCellReuseIdentifier:@"FriendsCell"];
     [self.view addSubview:self.tableView];
 }
 -(void)initData{
-    titleArr=[[NSMutableArray alloc]initWithArray:@[@[@"车友圈",@"我的车友"],@[@"我的奖品",@"精彩活动"]]];
-    iconArr=[[NSMutableArray alloc]initWithArray:@[]];
+    titleArr=[[NSMutableArray alloc]initWithArray:@[@[@"车友圈",@"我的车友"],@[@"我的奖品",@"限时活动"]]];
+    iconArr=[[NSMutableArray alloc]initWithArray:@[@[@"user_identify_icon",@"user_introduce_icon"],@[@"user_phone_icon",@"user_registerTime_icon"]]];
+    classArr=[[NSMutableArray alloc]initWithArray:@[@[@"ContactsVC",@"ContactsVC"],@[@"ContactsVC",@"ContactsVC"]]];
    // [self.tableView reloadData];
 }
 #pragma mark TableView delegate datasource
@@ -45,16 +52,23 @@
     return [titleArr arrayWithIndex:section].count;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:@"cell"];
-    if (!cell) {
-        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-    }
-    cell.textLabel.text=[titleArr arrayWithIndex:indexPath.section][indexPath.row];
+    FriendsCell *cell=[tableView dequeueReusableCellWithIdentifier:@"FriendsCell"];
+    cell.nameLabel.text=[titleArr arrayWithIndex:indexPath.section][indexPath.row];
+    cell.imgView.image=[UIImage imageNamed:[iconArr arrayWithIndex:indexPath.section][indexPath.row]];
+    cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
+    cell.selectionStyle=UITableViewCellSelectionStyleNone;
     return cell;
     
 }
-
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return GTFixHeightFlaot(10.f);
+}
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UIViewController *viewController=[[NSClassFromString([classArr arrayWithIndex:indexPath.section][indexPath.row]) alloc]init];
+
+    [self.navigationController pushViewControllerHideTabBar:viewController animated:YES];
+
     
 }
 

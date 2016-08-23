@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Friends(&#x8f66;&#x53cb;&#x5708;)/FriendsViewController.m"
-            timestampString = "492695310.957262"
+            timestampString = "493647279.783898"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Friends(&#x8f66;&#x53cb;&#x5708;)/FriendsViewController.m"
-            timestampString = "492695415.507938"
+            timestampString = "493647279.783898"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>

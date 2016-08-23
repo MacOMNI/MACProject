@@ -12,7 +12,7 @@
 @implementation HTTPClient
 static HTTPClient *_sharedHTTPClient=nil;
 
-static NSString *baseUrl=@"http://www.361school.com:74";
+static NSString *baseUrl=@"http://www.361school.com:73/";
 
 
 +(instancetype)sharedHTTPClient{
@@ -45,9 +45,9 @@ static NSString *baseUrl=@"http://www.361school.com:74";
     [_sharedHTTPClient.reachabilityManager startMonitoring];
 }
 -(BOOL)isReachable{
-   // BOOL isReachable=_sharedHTTPClient.reachabilityManager.reachable;
-   // DLog(@"reache %d",isReachable);
-    return _sharedHTTPClient.reachabilityManager.reachable;
+
+    return YES;
+    //return _sharedHTTPClient.reachabilityManager.reachable;
 
 }
 -(instancetype)initWithBaseURL:(nullable NSURL *)url{
