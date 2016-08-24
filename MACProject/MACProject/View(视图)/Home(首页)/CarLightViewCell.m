@@ -10,8 +10,8 @@
 #include "CSStickyHeaderFlowLayout.h"
 #import "LightCell.h"
 @interface CarLightViewCell()<UICollectionViewDataSource,UICollectionViewDelegate,UIScrollViewDelegate>{
-    NSArray *_titlesArray;
-    NSArray *_imagesArray;
+    NSArray<NSString *> *_titlesArray;
+    NSArray<NSString *> *_imagesArray;
 }
 
 @end
@@ -45,7 +45,7 @@
             LightCell   *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"lightCell" forIndexPath:indexPath];
     
             // Configure the cell
-    cell.imageView.image  = [UIImage imageNamed:_imagesArray[indexPath.row]];
+    cell.imageView.image  = _imagesArray[indexPath.row].macImage;
     cell.textLabel.text = _titlesArray[indexPath.row];
            // cell.backgroundColor=[UIColor RandomColor];
             return cell;

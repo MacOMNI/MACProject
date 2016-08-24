@@ -32,16 +32,7 @@
         img2.image=[UIImage imageNamed:@"sy_banner"];
         [self.bannerView addSubview:img1];
         [self.bannerView addSubview:img2];
-//        [img1 mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.left.top.bottom.width.equalTo(self.bannerView);
-//            
-//        }];
-//        [img2 mas_makeConstraints:^(MASConstraintMaker *make) {
-//           // make.left.mas_equalTo(self.bannerView.right);
-//            make.top.bottom.width.equalTo(self.bannerView);
-//            make.left.mas_equalTo(self.width);
-//        }];
-        //pageControl
+       //pageControl
         self.pageControl=[[UIPageControl alloc]init];
         self.pageControl.numberOfPages=2;
         self.pageControl.pageIndicatorTintColor=[UIColor lightGrayColor];

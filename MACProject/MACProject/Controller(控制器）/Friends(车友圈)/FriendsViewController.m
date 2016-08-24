@@ -9,6 +9,7 @@
 #import "FriendsViewController.h"
 #import "FriendsCell.h"
 #import "ContactsVC.h"
+#import "SOFViewController.h"
 @interface FriendsViewController ()<UITableViewDataSource,UITableViewDelegate>{
     NSMutableArray *titleArr;
     NSMutableArray *iconArr;
@@ -41,7 +42,7 @@
 -(void)initData{
     titleArr=[[NSMutableArray alloc]initWithArray:@[@[@"车友圈",@"我的车友"],@[@"我的奖品",@"限时活动"]]];
     iconArr=[[NSMutableArray alloc]initWithArray:@[@[@"user_identify_icon",@"user_introduce_icon"],@[@"user_phone_icon",@"user_registerTime_icon"]]];
-    classArr=[[NSMutableArray alloc]initWithArray:@[@[@"ContactsVC",@"ContactsVC"],@[@"ContactsVC",@"ContactsVC"]]];
+    classArr=[[NSMutableArray alloc]initWithArray:@[@[@"SOFViewController",@"ContactsVC"],@[@"ContactsVC",@"ContactsVC"]]];
    // [self.tableView reloadData];
 }
 #pragma mark TableView delegate datasource
@@ -61,7 +62,7 @@
     
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return GTFixHeightFlaot(10.f);
+    return GTFixHeightFlaot(15.f);
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
@@ -77,14 +78,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -33,19 +33,19 @@
     self =[super initWithFrame:frame];
     if (self) {
         [self initUI];
+        self.firstShowEmpty=NO;
     }
     return self;
 }
 -(void)initUI{
     self.tableFooterView=[UIView new];
+    self.titleForEmpty= @"咋没数据呢,刷新试试~~";
+    self.descriptionForEmpty=@"您的数据被程序猿搬走咯~~";
+    self.imageNameForEmpty=@"placeholder_dropbox";
     self.firstShowEmpty=YES;
-    self.titleForEmpty= @"";
-    self.descriptionForEmpty=@"";
-    self.imageNameForEmpty=@"img_placehoder_icon";
-    self.emptyDataSetDelegate=self;
-    self.emptyDataSetSource=self;
     self.isRefresh=YES;
     self.isLoadMore=YES;
+    self.isShowEmpty=YES;
     self.showsHorizontalScrollIndicator=NO;
     self.showsVerticalScrollIndicator=NO;
    // self.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -72,10 +72,11 @@
     if (isShowEmpty) {
         self.emptyDataSetDelegate=self;
         self.emptyDataSetSource=self;
-    }else{
-        self.emptyDataSetDelegate=nil;
-        self.emptyDataSetSource=nil;
     }
+//    } else{
+//        self.emptyDataSetDelegate=nil;
+//        self.emptyDataSetSource=nil;
+//    }
 }
 -(void)setIsLoadMore:(BOOL)isLoadMore{
     _isLoadMore=isLoadMore;

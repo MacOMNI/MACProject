@@ -209,6 +209,7 @@
 		5ABE824B1D5B161200E78309 /* multipy_unicode.dat in Resources */ = {isa = PBXBuildFile; fileRef = 5ABE82451D5B161200E78309 /* multipy_unicode.dat */; };
 		5ABE824C1D5B161200E78309 /* SearchCore.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE82471D5B161200E78309 /* SearchCore.mm */; };
 		5ABE824D1D5B161200E78309 /* SearchCoreManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE82491D5B161200E78309 /* SearchCoreManager.mm */; };
+		5AF82FF61D6D382900DB6C67 /* SOFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF82FF51D6D382900DB6C67 /* SOFViewController.m */; };
 		5AF9AF901D4A0F9800F23C1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF9AF8F1D4A0F9800F23C1E /* main.m */; };
 		5AF9AF931D4A0F9800F23C1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF9AF921D4A0F9800F23C1E /* AppDelegate.m */; };
 		5AF9AF991D4A0F9800F23C1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF9AF971D4A0F9800F23C1E /* Main.storyboard */; };
@@ -619,6 +620,8 @@
 		5ABE82471D5B161200E78309 /* SearchCore.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SearchCore.mm; sourceTree = "<group>"; };
 		5ABE82481D5B161200E78309 /* SearchCoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCoreManager.h; sourceTree = "<group>"; };
 		5ABE82491D5B161200E78309 /* SearchCoreManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SearchCoreManager.mm; sourceTree = "<group>"; };
+		5AF82FF41D6D382900DB6C67 /* SOFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOFViewController.h; sourceTree = "<group>"; };
+		5AF82FF51D6D382900DB6C67 /* SOFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOFViewController.m; sourceTree = "<group>"; };
 		5AF9AF8B1D4A0F9800F23C1E /* MACProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MACProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF9AF8F1D4A0F9800F23C1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5AF9AF911D4A0F9800F23C1E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -825,6 +828,8 @@
 				5A557C331D6C6DDD00DF26DC /* ContactsVC.xib */,
 				5A02CEC51D6C27390009CBDD /* FriendsViewController.h */,
 				5A02CEC41D6C27390009CBDD /* FriendsViewController.m */,
+				5AF82FF41D6D382900DB6C67 /* SOFViewController.h */,
+				5AF82FF51D6D382900DB6C67 /* SOFViewController.m */,
 			);
 			path = "Friends(车友圈)";
 			sourceTree = "<group>";
@@ -2018,6 +2023,7 @@
 				5A15AA861D58A9A7000ED86E /* NSData+JKDataCache.m in Sources */,
 				5AB521281D53441B000C3C80 /* CellDataAdapter.m in Sources */,
 				5AB520E31D53290F000C3C80 /* MACTableView.m in Sources */,
+				5AF82FF61D6D382900DB6C67 /* SOFViewController.m in Sources */,
 				5A15AA731D586D78000ED86E /* FileManager.m in Sources */,
 				5A9074DD1D6556D90049CEC9 /* BannerCell.m in Sources */,
 				5A557C5B1D6C6F5100DF26DC /* mask.c in Sources */,

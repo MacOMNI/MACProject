@@ -3,7 +3,8 @@
 //  NetworkEgOc
 //
 //  Created by iosdev on 15/3/17.
-//  Copyright (c) 2015年 iosdev. All rights reserved.
+//  Modify by MacKun
+//
 //
 
 #import "UIButton+countDown.h"

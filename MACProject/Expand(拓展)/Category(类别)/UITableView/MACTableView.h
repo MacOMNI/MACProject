@@ -53,6 +53,7 @@ typedef NS_ENUM(NSInteger, MACRefreshState) {
  */
 @property(nonatomic,assign)BOOL isShowEmpty;
 
+
 /**
  *  空白页的标题 默认为 “" 为空不显示
  */
@@ -65,6 +66,7 @@ typedef NS_ENUM(NSInteger, MACRefreshState) {
  *  空白页展位图名称 默认为 “img_placehoder_icon" 为空或nil无图片
  */
 @property(nonatomic,copy) NSString *imageNameForEmpty;
+
 /**
  *  CellDataAdapter arr
  */
