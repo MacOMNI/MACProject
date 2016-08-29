@@ -91,6 +91,11 @@
 		5A90A2191D61AC28005298B3 /* NewCarouselListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A90A2171D61AC28005298B3 /* NewCarouselListCell.xib */; };
 		5A90A21F1D61CFA4005298B3 /* CarouseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A90A21E1D61CFA4005298B3 /* CarouseView.m */; };
 		5A90A2211D61CFB9005298B3 /* CarouseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A90A2201D61CFB9005298B3 /* CarouseView.xib */; };
+		5A95530F1D743C4100A75C3C /* EAFeatureItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A95530C1D743C4100A75C3C /* EAFeatureItem.m */; };
+		5A9553101D743C4100A75C3C /* UIView+EAFeatureGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A95530E1D743C4100A75C3C /* UIView+EAFeatureGuideView.m */; };
+		5A9553131D743E8A00A75C3C /* SpecialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9553121D743E8A00A75C3C /* SpecialViewController.m */; };
+		5A9553171D74405100A75C3C /* SpecailShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9553151D74405100A75C3C /* SpecailShowViewController.m */; };
+		5A9553181D74405100A75C3C /* SpecailShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A9553161D74405100A75C3C /* SpecailShowViewController.xib */; };
 		5A97EC791D6469AF00A29247 /* CarLightViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A97EC771D6469AF00A29247 /* CarLightViewCell.m */; };
 		5A97EC7A1D6469AF00A29247 /* CarLightViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A97EC781D6469AF00A29247 /* CarLightViewCell.xib */; };
 		5A97EC7D1D647EB200A29247 /* LightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A97EC7C1D647EB200A29247 /* LightCell.m */; };
@@ -389,6 +394,15 @@
 		5A90A21D1D61CFA4005298B3 /* CarouseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarouseView.h; sourceTree = "<group>"; };
 		5A90A21E1D61CFA4005298B3 /* CarouseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarouseView.m; sourceTree = "<group>"; };
 		5A90A2201D61CFB9005298B3 /* CarouseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarouseView.xib; sourceTree = "<group>"; };
+		5A95530B1D743C4100A75C3C /* EAFeatureItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAFeatureItem.h; sourceTree = "<group>"; };
+		5A95530C1D743C4100A75C3C /* EAFeatureItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAFeatureItem.m; sourceTree = "<group>"; };
+		5A95530D1D743C4100A75C3C /* UIView+EAFeatureGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EAFeatureGuideView.h"; sourceTree = "<group>"; };
+		5A95530E1D743C4100A75C3C /* UIView+EAFeatureGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EAFeatureGuideView.m"; sourceTree = "<group>"; };
+		5A9553111D743E8A00A75C3C /* SpecialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialViewController.h; sourceTree = "<group>"; };
+		5A9553121D743E8A00A75C3C /* SpecialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialViewController.m; sourceTree = "<group>"; };
+		5A9553141D74405100A75C3C /* SpecailShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecailShowViewController.h; sourceTree = "<group>"; };
+		5A9553151D74405100A75C3C /* SpecailShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecailShowViewController.m; sourceTree = "<group>"; };
+		5A9553161D74405100A75C3C /* SpecailShowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpecailShowViewController.xib; sourceTree = "<group>"; };
 		5A97EC761D6469AF00A29247 /* CarLightViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarLightViewCell.h; sourceTree = "<group>"; };
 		5A97EC771D6469AF00A29247 /* CarLightViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarLightViewCell.m; sourceTree = "<group>"; };
 		5A97EC781D6469AF00A29247 /* CarLightViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarLightViewCell.xib; sourceTree = "<group>"; };
@@ -879,6 +893,11 @@
 				5A546EAE1D5C169700F9361E /* FindViewController.xib */,
 				5A0528451D6EF4E9004ECE57 /* TransitionRandomVC.h */,
 				5A0528461D6EF4E9004ECE57 /* TransitionRandomVC.m */,
+				5A9553111D743E8A00A75C3C /* SpecialViewController.h */,
+				5A9553121D743E8A00A75C3C /* SpecialViewController.m */,
+				5A9553141D74405100A75C3C /* SpecailShowViewController.h */,
+				5A9553151D74405100A75C3C /* SpecailShowViewController.m */,
+				5A9553161D74405100A75C3C /* SpecailShowViewController.xib */,
 			);
 			path = "Find(发现)";
 			sourceTree = "<group>";
@@ -1040,6 +1059,17 @@
 				5A557C571D6C6F5100DF26DC /* split.h */,
 			);
 			path = libqrencode;
+			sourceTree = "<group>";
+		};
+		5A95530A1D743C4100A75C3C /* EAFeatureGuideView */ = {
+			isa = PBXGroup;
+			children = (
+				5A95530B1D743C4100A75C3C /* EAFeatureItem.h */,
+				5A95530C1D743C4100A75C3C /* EAFeatureItem.m */,
+				5A95530D1D743C4100A75C3C /* UIView+EAFeatureGuideView.h */,
+				5A95530E1D743C4100A75C3C /* UIView+EAFeatureGuideView.m */,
+			);
+			path = EAFeatureGuideView;
 			sourceTree = "<group>";
 		};
 		5AA23F421D59FB77005A67FF /* BadgeValueView */ = {
@@ -1563,6 +1593,7 @@
 		5AB5204D1D53290F000C3C80 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				5A95530A1D743C4100A75C3C /* EAFeatureGuideView */,
 				5AA23F421D59FB77005A67FF /* BadgeValueView */,
 				5AA23F461D59FB90005A67FF /* UIView+AnimationProperty.h */,
 				5AA23F471D59FB90005A67FF /* UIView+AnimationProperty.m */,
@@ -1856,6 +1887,7 @@
 				5AB520E01D53290F000C3C80 /* icon_refresh_3@2x.png in Resources */,
 				5A546EB01D5C169700F9361E /* FindViewController.xib in Resources */,
 				5A557C3D1D6C6ECA00DF26DC /* contacts_rocket@2x.png in Resources */,
+				5A9553181D74405100A75C3C /* SpecailShowViewController.xib in Resources */,
 				5AB520DD1D53290F000C3C80 /* icon_refresh_1@3x.png in Resources */,
 				5A557C2B1D6C3C2300DF26DC /* FriendsCell.xib in Resources */,
 				5AB520DF1D53290F000C3C80 /* icon_refresh_2@3x.png in Resources */,
@@ -1973,6 +2005,7 @@
 				5A557C221D6C3B5D00DF26DC /* CityModel.m in Sources */,
 				5AB520BD1D53290F000C3C80 /* UIButton+TouchAreaInsets.m in Sources */,
 				5A09C0AF1D5B0BFC00B0AB5B /* CocoaSecurity.m in Sources */,
+				5A9553171D74405100A75C3C /* SpecailShowViewController.m in Sources */,
 				5A0528201D6EEF4B004ECE57 /* MMTweenFunction.m in Sources */,
 				5AB520A41D53290F000C3C80 /* NSRunLoop+PerformBlock.m in Sources */,
 				5AB520FA1D53290F000C3C80 /* UIViewController+RESideMenu.m in Sources */,
@@ -1994,6 +2027,7 @@
 				5AB520B81D53290F000C3C80 /* UIButton+CountDown.m in Sources */,
 				5A15AA4F1D5830AE000ED86E /* UIView+GlowView.m in Sources */,
 				5ABE82401D5B137D00E78309 /* FSMediaPicker.m in Sources */,
+				5A9553131D743E8A00A75C3C /* SpecialViewController.m in Sources */,
 				5AB520C21D53290F000C3C80 /* UIControl+Block.m in Sources */,
 				5A557C5A1D6C6F5100DF26DC /* bitstream.c in Sources */,
 				5A90A21F1D61CFA4005298B3 /* CarouseView.m in Sources */,
@@ -2033,6 +2067,7 @@
 				5AB520A61D53290F000C3C80 /* MF_Base64Additions.m in Sources */,
 				5AB520AF1D53290F000C3C80 /* NSTimer+MAC.m in Sources */,
 				5AB520EA1D53290F000C3C80 /* UITextView+Placeholder.m in Sources */,
+				5A95530F1D743C4100A75C3C /* EAFeatureItem.m in Sources */,
 				5AB520E81D53290F000C3C80 /* UITextFieldView.m in Sources */,
 				5AB520921D53290F000C3C80 /* NSData+APNSToken.m in Sources */,
 				5AB520D91D53290F000C3C80 /* UIScrollView+APParallaxHeader.m in Sources */,
@@ -2110,6 +2145,7 @@
 				5A0528441D6EEF8B004ECE57 /* WXSTransitionProperty.m in Sources */,
 				5A15AAB01D58ADD9000ED86E /* UITextField+JKBlocks.m in Sources */,
 				5A15AAA41D58ABAC000ED86E /* NSObject+JKRuntime.m in Sources */,
+				5A9553101D743C4100A75C3C /* UIView+EAFeatureGuideView.m in Sources */,
 				5A02CEC61D6C27390009CBDD /* FriendsViewController.m in Sources */,
 				5A15AA9B1D58AB0E000ED86E /* NSDictionary+JKMerge.m in Sources */,
 				5AB5209A1D53290F000C3C80 /* NSDecimalNumber+Extensions.m in Sources */,

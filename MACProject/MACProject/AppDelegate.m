@@ -29,6 +29,7 @@
     NSShadow *shadow = [[NSShadow alloc] init];
     shadow.shadowColor = [UIColor colorWithWhite:0.0f alpha:1.0f];
     shadow.shadowOffset = CGSizeMake(0, 0);
+    [[UIApplication sharedApplication]registerNotifications];
     [[UINavigationBar appearance] setTitleTextAttributes:@{
                                                            NSForegroundColorAttributeName: [UIColor whiteColor],
                                                            NSShadowAttributeName: shadow,

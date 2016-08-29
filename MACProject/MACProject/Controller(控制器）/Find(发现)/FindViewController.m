@@ -8,6 +8,7 @@
 
 #import "FindViewController.h"
 #import "FriendsCell.h"
+//#import "SpecialViewController.h"
 @interface FindViewController ()<UITableViewDataSource,UITableViewDelegate>{
     NSMutableArray *titleArr;
     NSMutableArray *iconArr;
@@ -40,7 +41,7 @@
 -(void)initData{
     titleArr=[[NSMutableArray alloc]initWithArray:@[@[@"转场动画",@"基础动画",@"移动动画",@"乱象动画"],@[@"基础控件",@"乱象控件"]]];
     iconArr=[[NSMutableArray alloc]initWithArray:@[@[@"MoreMyAlbum",@"MoreMyBankCard",@"MoreMyFavorites",@"MyCardPackageIcon"],@[@"ff_IconShake",@"MoreSetting"]]];
-    classArr=[[NSMutableArray alloc]initWithArray:@[@[@"TransitionRandomVC",@"ContactsVC",@"ContactsVC",@"ContactsVC"],@[@"ContactsVC",@"ContactsVC"]]];
+    classArr=[[NSMutableArray alloc]initWithArray:@[@[@"TransitionRandomVC",@"ContactsVC",@"ContactsVC",@"ContactsVC"],@[@"ContactsVC",@"SpecialViewController"]]];
     // [self.tableView reloadData];
 }
 #pragma mark TableView delegate datasource
