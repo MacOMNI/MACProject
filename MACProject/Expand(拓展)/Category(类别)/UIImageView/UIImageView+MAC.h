@@ -22,5 +22,5 @@
  * @param placeholder The image to be set initially, until the image request finishes.
  * @see sd_setImageWithURL:placeholderImage:options:
  */
-- (void)setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder;
+- (void)mac_setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder;
 @end

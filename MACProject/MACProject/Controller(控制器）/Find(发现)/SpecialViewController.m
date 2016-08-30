@@ -10,6 +10,7 @@
 #import "SpecailShowViewController.h"
 @interface SpecialViewController ()<UITableViewDataSource,UITableViewDelegate>{
     NSArray *_names;
+    NSArray *_classArr;
 
 }
 @property(nonatomic,strong) UITableView *tableView;
@@ -24,15 +25,16 @@
     // Do any additional setup after loading the view.
 }
 -(void)initUI{
-    self.title=@"乱象动画";
+    self.title = @"乱象动画";
     
-    self.tableView=[[UITableView alloc]initWithFrame:self.view.bounds];
-    self.tableView.delegate=self;
-    self.tableView.dataSource=self;
+    self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
 }
 -(void)initData{
-    _names=@[@"EAGestureGuideView"];
+    _names = @[@"EAGestureGuideView(引导用户使用)",@"BasicControl(基础控件)"];
+    _classArr = @[@"SpecailShowViewController",@"BasicShowViewController"];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return _names.count;
@@ -56,7 +58,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
-    SpecailShowViewController *vc = [[SpecailShowViewController alloc] init];
+    UIViewController *vc = [[NSClassFromString(_classArr[indexPath.row]) alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
     
 }

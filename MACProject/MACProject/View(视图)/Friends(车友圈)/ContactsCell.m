@@ -22,7 +22,7 @@
 -(void)setContactStatus:(GroupModel*)contactStatus
 {
     _contactStatus=[GroupModel mj_objectWithKeyValues: contactStatus];
-    [_avctar sd_setImageWithURL:[NSURL URLWithString:_contactStatus.ZP] placeholderImage:[UIImage imageNamed:@"user_default_icon"] options:SDWebImageLowPriority | SDWebImageRetryFailed];
+    [_avctar mac_setImageWithURL:[NSURL URLWithString:_contactStatus.ZP] placeholderImage:[UIImage imageNamed:@"user_default_icon"]];
     _nameLabel.text=_contactStatus.XM;
     UITapGestureRecognizer *Gesture=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(TapAction:)];
     _avctar.userInteractionEnabled=YES;

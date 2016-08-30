@@ -32,6 +32,7 @@
 #import "UIColor+Mac.h"
 #import "UIColor+MACProject.h"
 #import "UIViewHeader.h"
+#import "UIImageViewHeader.h"
 #import "UIImageView+WebCache.h"
 #import "UITableViewCell+MAC.h"
 #import "UIViewController+MAC.h"

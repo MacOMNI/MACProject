@@ -60,7 +60,6 @@
 		5A15AAB01D58ADD9000ED86E /* UITextField+JKBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AAAF1D58ADD9000ED86E /* UITextField+JKBlocks.m */; };
 		5A546E9F1D5C0ACC00F9361E /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546E9E1D5C0ACC00F9361E /* MainTabBarController.m */; };
 		5A546EAF1D5C169700F9361E /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546EAD1D5C169700F9361E /* FindViewController.m */; };
-		5A546EB01D5C169700F9361E /* FindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A546EAE1D5C169700F9361E /* FindViewController.xib */; };
 		5A546EBE1D5C16C700F9361E /* NearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546EBC1D5C16C700F9361E /* NearViewController.m */; };
 		5A546ED21D5C764B00F9361E /* ScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546ED11D5C764B00F9361E /* ScrollView+Additions.m */; };
 		5A557C221D6C3B5D00DF26DC /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A557C1E1D6C3B5D00DF26DC /* CityModel.m */; };
@@ -219,6 +218,12 @@
 		5AB521221D533BC5000C3C80 /* MacTableViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AB521201D533BC5000C3C80 /* MacTableViewVC.xib */; };
 		5AB521281D53441B000C3C80 /* CellDataAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB521271D53441B000C3C80 /* CellDataAdapter.m */; };
 		5AB521341D534D65000C3C80 /* MACBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB521331D534D65000C3C80 /* MACBaseCell.m */; };
+		5AB771AF1D75868700D7E113 /* BasicShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB771AD1D75868700D7E113 /* BasicShowViewController.m */; };
+		5AB771B01D75868700D7E113 /* BasicShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AB771AE1D75868700D7E113 /* BasicShowViewController.xib */; };
+		5AB773551D75884E00D7E113 /* SepeicalAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB773531D75884E00D7E113 /* SepeicalAnimationViewController.m */; };
+		5AB773561D75884E00D7E113 /* SepeicalAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AB773541D75884E00D7E113 /* SepeicalAnimationViewController.xib */; };
+		5AB7735E1D758E2F00D7E113 /* POPNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7735C1D758E2F00D7E113 /* POPNumberViewController.m */; };
+		5AB7735F1D758E2F00D7E113 /* POPNumberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AB7735D1D758E2F00D7E113 /* POPNumberViewController.xib */; };
 		5ABE82401D5B137D00E78309 /* FSMediaPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE823F1D5B137D00E78309 /* FSMediaPicker.m */; };
 		5AF82FF61D6D382900DB6C67 /* SOFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF82FF51D6D382900DB6C67 /* SOFViewController.m */; };
 		5AF9AF901D4A0F9800F23C1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF9AF8F1D4A0F9800F23C1E /* main.m */; };
@@ -339,7 +344,6 @@
 		5A546E9E1D5C0ACC00F9361E /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 		5A546EAC1D5C169700F9361E /* FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
 		5A546EAD1D5C169700F9361E /* FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
-		5A546EAE1D5C169700F9361E /* FindViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindViewController.xib; sourceTree = "<group>"; };
 		5A546EBB1D5C16C700F9361E /* NearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearViewController.h; sourceTree = "<group>"; };
 		5A546EBC1D5C16C700F9361E /* NearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearViewController.m; sourceTree = "<group>"; };
 		5A546ED01D5C764B00F9361E /* ScrollView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScrollView+Additions.h"; sourceTree = "<group>"; };
@@ -651,6 +655,15 @@
 		5AB521271D53441B000C3C80 /* CellDataAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellDataAdapter.m; sourceTree = "<group>"; };
 		5AB521321D534D65000C3C80 /* MACBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACBaseCell.h; sourceTree = "<group>"; };
 		5AB521331D534D65000C3C80 /* MACBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACBaseCell.m; sourceTree = "<group>"; };
+		5AB771AC1D75868700D7E113 /* BasicShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicShowViewController.h; sourceTree = "<group>"; };
+		5AB771AD1D75868700D7E113 /* BasicShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicShowViewController.m; sourceTree = "<group>"; };
+		5AB771AE1D75868700D7E113 /* BasicShowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicShowViewController.xib; sourceTree = "<group>"; };
+		5AB773521D75884E00D7E113 /* SepeicalAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SepeicalAnimationViewController.h; sourceTree = "<group>"; };
+		5AB773531D75884E00D7E113 /* SepeicalAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SepeicalAnimationViewController.m; sourceTree = "<group>"; };
+		5AB773541D75884E00D7E113 /* SepeicalAnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SepeicalAnimationViewController.xib; sourceTree = "<group>"; };
+		5AB7735B1D758E2F00D7E113 /* POPNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPNumberViewController.h; sourceTree = "<group>"; };
+		5AB7735C1D758E2F00D7E113 /* POPNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POPNumberViewController.m; sourceTree = "<group>"; };
+		5AB7735D1D758E2F00D7E113 /* POPNumberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = POPNumberViewController.xib; sourceTree = "<group>"; };
 		5ABE823E1D5B137D00E78309 /* FSMediaPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMediaPicker.h; sourceTree = "<group>"; };
 		5ABE823F1D5B137D00E78309 /* FSMediaPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMediaPicker.m; sourceTree = "<group>"; };
 		5AF82FF41D6D382900DB6C67 /* SOFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOFViewController.h; sourceTree = "<group>"; };
@@ -890,14 +903,10 @@
 			children = (
 				5A546EAC1D5C169700F9361E /* FindViewController.h */,
 				5A546EAD1D5C169700F9361E /* FindViewController.m */,
-				5A546EAE1D5C169700F9361E /* FindViewController.xib */,
-				5A0528451D6EF4E9004ECE57 /* TransitionRandomVC.h */,
-				5A0528461D6EF4E9004ECE57 /* TransitionRandomVC.m */,
-				5A9553111D743E8A00A75C3C /* SpecialViewController.h */,
-				5A9553121D743E8A00A75C3C /* SpecialViewController.m */,
-				5A9553141D74405100A75C3C /* SpecailShowViewController.h */,
-				5A9553151D74405100A75C3C /* SpecailShowViewController.m */,
-				5A9553161D74405100A75C3C /* SpecailShowViewController.xib */,
+				5AB773581D758D5A00D7E113 /* 转场动画 */,
+				5AB773571D758D4900D7E113 /* 乱象控件 */,
+				5AB773591D758D6500D7E113 /* 基础控件 */,
+				5AB7735A1D758D7D00D7E113 /* 乱象动画 */,
 			);
 			path = "Find(发现)";
 			sourceTree = "<group>";
@@ -1760,6 +1769,50 @@
 			path = "Controller(控制器）";
 			sourceTree = "<group>";
 		};
+		5AB773571D758D4900D7E113 /* 乱象控件 */ = {
+			isa = PBXGroup;
+			children = (
+				5A9553111D743E8A00A75C3C /* SpecialViewController.h */,
+				5A9553121D743E8A00A75C3C /* SpecialViewController.m */,
+				5A9553141D74405100A75C3C /* SpecailShowViewController.h */,
+				5A9553151D74405100A75C3C /* SpecailShowViewController.m */,
+				5A9553161D74405100A75C3C /* SpecailShowViewController.xib */,
+			);
+			name = "乱象控件";
+			sourceTree = "<group>";
+		};
+		5AB773581D758D5A00D7E113 /* 转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+				5A0528451D6EF4E9004ECE57 /* TransitionRandomVC.h */,
+				5A0528461D6EF4E9004ECE57 /* TransitionRandomVC.m */,
+			);
+			name = "转场动画";
+			sourceTree = "<group>";
+		};
+		5AB773591D758D6500D7E113 /* 基础控件 */ = {
+			isa = PBXGroup;
+			children = (
+				5AB771AC1D75868700D7E113 /* BasicShowViewController.h */,
+				5AB771AD1D75868700D7E113 /* BasicShowViewController.m */,
+				5AB771AE1D75868700D7E113 /* BasicShowViewController.xib */,
+			);
+			name = "基础控件";
+			sourceTree = "<group>";
+		};
+		5AB7735A1D758D7D00D7E113 /* 乱象动画 */ = {
+			isa = PBXGroup;
+			children = (
+				5AB773521D75884E00D7E113 /* SepeicalAnimationViewController.h */,
+				5AB773531D75884E00D7E113 /* SepeicalAnimationViewController.m */,
+				5AB773541D75884E00D7E113 /* SepeicalAnimationViewController.xib */,
+				5AB7735B1D758E2F00D7E113 /* POPNumberViewController.h */,
+				5AB7735C1D758E2F00D7E113 /* POPNumberViewController.m */,
+				5AB7735D1D758E2F00D7E113 /* POPNumberViewController.xib */,
+			);
+			name = "乱象动画";
+			sourceTree = "<group>";
+		};
 		5ABE823C1D5B135700E78309 /* UIComponent(组件类) */ = {
 			isa = PBXGroup;
 			children = (
@@ -1885,7 +1938,6 @@
 				5A90A2211D61CFB9005298B3 /* CarouseView.xib in Resources */,
 				5A6751C21D65AEBB0069DF33 /* citys.xml in Resources */,
 				5AB520E01D53290F000C3C80 /* icon_refresh_3@2x.png in Resources */,
-				5A546EB01D5C169700F9361E /* FindViewController.xib in Resources */,
 				5A557C3D1D6C6ECA00DF26DC /* contacts_rocket@2x.png in Resources */,
 				5A9553181D74405100A75C3C /* SpecailShowViewController.xib in Resources */,
 				5AB520DD1D53290F000C3C80 /* icon_refresh_1@3x.png in Resources */,
@@ -1894,10 +1946,13 @@
 				5A0528311D6EEF4B004ECE57 /* multipy_unicode.dat in Resources */,
 				5A994F981D5D7813000F1A17 /* ParallaxHeaderViewCell.xib in Resources */,
 				5AB521221D533BC5000C3C80 /* MacTableViewVC.xib in Resources */,
+				5AB771B01D75868700D7E113 /* BasicShowViewController.xib in Resources */,
 				5AF9AF9B1D4A0F9800F23C1E /* Assets.xcassets in Resources */,
 				5A90A2191D61AC28005298B3 /* NewCarouselListCell.xib in Resources */,
 				5A994FB11D5DEDC0000F1A17 /* ParallaxHeader.xib in Resources */,
 				5AB520DE1D53290F000C3C80 /* icon_refresh_2@2x.png in Resources */,
+				5AB773561D75884E00D7E113 /* SepeicalAnimationViewController.xib in Resources */,
+				5AB7735F1D758E2F00D7E113 /* POPNumberViewController.xib in Resources */,
 				5A557C3F1D6C6ECA00DF26DC /* ContactsCell.xib in Resources */,
 				5AB520F61D53290F000C3C80 /* .gitkeep in Resources */,
 				5A97EC7A1D6469AF00A29247 /* CarLightViewCell.xib in Resources */,
@@ -2021,6 +2076,7 @@
 				5AB520F51D53290F000C3C80 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				5A0528331D6EEF4B004ECE57 /* SearchCoreManager.mm in Sources */,
 				5AB5209B1D53290F000C3C80 /* NSNumber+CGFloat.m in Sources */,
+				5AB773551D75884E00D7E113 /* SepeicalAnimationViewController.m in Sources */,
 				5AB520EE1D53290F000C3C80 /* UIView+GestureCallback.m in Sources */,
 				5AB520A81D53290F000C3C80 /* NSString+MAC.m in Sources */,
 				5A546ED21D5C764B00F9361E /* ScrollView+Additions.m in Sources */,
@@ -2072,6 +2128,7 @@
 				5AB520921D53290F000C3C80 /* NSData+APNSToken.m in Sources */,
 				5AB520D91D53290F000C3C80 /* UIScrollView+APParallaxHeader.m in Sources */,
 				5A557C601D6C6F5100DF26DC /* rscode.c in Sources */,
+				5AB7735E1D758E2F00D7E113 /* POPNumberViewController.m in Sources */,
 				5AB520C51D53290F000C3C80 /* HJCornerRadius.m in Sources */,
 				5AB520FC1D53290F000C3C80 /* UIViewController+BackButtonItemTitle.m in Sources */,
 				5AB520C41D53290F000C3C80 /* UIImage+SuperCompress.m in Sources */,
@@ -2093,6 +2150,7 @@
 				5AB520B91D53290F000C3C80 /* UIButton+Indicator.m in Sources */,
 				5AB520F11D53290F000C3C80 /* UIView+Nib.m in Sources */,
 				5A15AA661D586AB3000ED86E /* AppleSystemService.m in Sources */,
+				5AB771AF1D75868700D7E113 /* BasicShowViewController.m in Sources */,
 				5A05282D1D6EEF4B004ECE57 /* GCDSemaphore.m in Sources */,
 				5A546EBE1D5C16C700F9361E /* NearViewController.m in Sources */,
 				5AB520C31D53290F000C3C80 /* UIImage+Additions.m in Sources */,

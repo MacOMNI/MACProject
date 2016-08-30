@@ -422,7 +422,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Expand(&#x62d3;&#x5c55;)/Utils(&#x5de5;&#x5177;&#x7c7b;)/Animation/TransitionAnimation/UIViewController+WXSTransition.m"
@@ -512,6 +512,22 @@
             startingLineNumber = "226"
             endingLineNumber = "226"
             landmarkName = "-layoutWithFeatureItem:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Find(&#x53d1;&#x73b0;)/POPNumberViewController.m"
+            timestampString = "494251148.937371"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "-POPNumberAnimation:currentValue:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
