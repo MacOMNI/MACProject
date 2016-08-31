@@ -83,6 +83,8 @@
 		5A557C601D6C6F5100DF26DC /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A557C541D6C6F5100DF26DC /* rscode.c */; };
 		5A557C611D6C6F5100DF26DC /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A557C561D6C6F5100DF26DC /* split.c */; };
 		5A557C621D6C6F5100DF26DC /* QRScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A557C591D6C6F5100DF26DC /* QRScanViewController.m */; };
+		5A65A9E01D76C303009016C3 /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A65A9DD1D76C303009016C3 /* DownloadManager.m */; };
+		5A65A9E11D76C303009016C3 /* DownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A65A9DF1D76C303009016C3 /* DownloadOperation.m */; };
 		5A6751BA1D65AE240069DF33 /* CitysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6751B91D65AE240069DF33 /* CitysViewController.m */; };
 		5A6751C21D65AEBB0069DF33 /* citys.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5A6751C11D65AEBB0069DF33 /* citys.xml */; };
 		5A9074DD1D6556D90049CEC9 /* BannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9074DC1D6556D90049CEC9 /* BannerCell.m */; };
@@ -386,6 +388,10 @@
 		5A557C571D6C6F5100DF26DC /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
 		5A557C581D6C6F5100DF26DC /* QRScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRScanViewController.h; sourceTree = "<group>"; };
 		5A557C591D6C6F5100DF26DC /* QRScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRScanViewController.m; sourceTree = "<group>"; };
+		5A65A9DC1D76C303009016C3 /* DownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
+		5A65A9DD1D76C303009016C3 /* DownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
+		5A65A9DE1D76C303009016C3 /* DownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadOperation.h; sourceTree = "<group>"; };
+		5A65A9DF1D76C303009016C3 /* DownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadOperation.m; sourceTree = "<group>"; };
 		5A6751B81D65AE240069DF33 /* CitysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitysViewController.h; sourceTree = "<group>"; };
 		5A6751B91D65AE240069DF33 /* CitysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitysViewController.m; sourceTree = "<group>"; };
 		5A6751C11D65AEBB0069DF33 /* citys.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = citys.xml; sourceTree = "<group>"; };
@@ -836,6 +842,7 @@
 		5A09C08C1D5B0BFC00B0AB5B /* Utils(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				5A65A9DB1D76C303009016C3 /* DownloadManager */,
 				5A0527E91D6EEF4B004ECE57 /* Animation */,
 				5A0528001D6EEF4B004ECE57 /* BaseService */,
 				5A0528091D6EEF4B004ECE57 /* GCD */,
@@ -1068,6 +1075,17 @@
 				5A557C571D6C6F5100DF26DC /* split.h */,
 			);
 			path = libqrencode;
+			sourceTree = "<group>";
+		};
+		5A65A9DB1D76C303009016C3 /* DownloadManager */ = {
+			isa = PBXGroup;
+			children = (
+				5A65A9DC1D76C303009016C3 /* DownloadManager.h */,
+				5A65A9DD1D76C303009016C3 /* DownloadManager.m */,
+				5A65A9DE1D76C303009016C3 /* DownloadOperation.h */,
+				5A65A9DF1D76C303009016C3 /* DownloadOperation.m */,
+			);
+			path = DownloadManager;
 			sourceTree = "<group>";
 		};
 		5A95530A1D743C4100A75C3C /* EAFeatureGuideView */ = {
@@ -2098,6 +2116,7 @@
 				5A15AA721D586D78000ED86E /* File.m in Sources */,
 				5AA23F481D59FB90005A67FF /* UIView+AnimationProperty.m in Sources */,
 				5AB520FD1D53290F000C3C80 /* UIViewController+MAC.m in Sources */,
+				5A65A9E11D76C303009016C3 /* DownloadOperation.m in Sources */,
 				5AA23F3B1D59F665005A67FF /* UIImageView+MAC.m in Sources */,
 				5AB520D31D53290F000C3C80 /* UINavigationItem+Loading.m in Sources */,
 				5AB520EF1D53290F000C3C80 /* UIView+HUD.m in Sources */,
@@ -2196,6 +2215,7 @@
 				5AB520A01D53290F000C3C80 /* NSObject+Blocks.m in Sources */,
 				5A05282A1D6EEF4B004ECE57 /* HTTPClient.m in Sources */,
 				5AB520AE1D53290F000C3C80 /* ChineseToPinyin.m in Sources */,
+				5A65A9E01D76C303009016C3 /* DownloadManager.m in Sources */,
 				5A557C5F1D6C6F5100DF26DC /* qrspec.c in Sources */,
 				5AB520DA1D53290F000C3C80 /* MACScrollView.m in Sources */,
 				5A0528291D6EEF4B004ECE57 /* EGOCache.m in Sources */,
