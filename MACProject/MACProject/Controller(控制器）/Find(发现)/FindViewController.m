@@ -41,7 +41,7 @@
 -(void)initData{
     titleArr = [[NSMutableArray alloc]initWithArray:@[@[@"转场动画",@"基础动画",@"移动动画",@"乱象动画"],@[@"基础控件",@"乱象控件"]]];
     iconArr = [[NSMutableArray alloc]initWithArray:@[@[@"MoreMyAlbum",@"MoreMyBankCard",@"MoreMyFavorites",@"MyCardPackageIcon"],@[@"ff_IconShake",@"MoreSetting"]]];
-    classArr = [[NSMutableArray alloc]initWithArray:@[@[@"TransitionRandomVC",@"ContactsVC",@"ContactsVC",@"SepeicalAnimationViewController"],@[@"BasicShowViewController",@"SpecialViewController"]]];
+    classArr = [[NSMutableArray alloc]initWithArray:@[@[@"TransitionRandomVC",@"ContactsVC",@"MMAnimationViewController",@"SepeicalAnimationViewController"],@[@"BasicShowViewController",@"SpecialViewController"]]];
     // [self.tableView reloadData];
 }
 #pragma mark TableView delegate datasource

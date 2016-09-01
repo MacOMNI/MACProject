@@ -58,6 +58,10 @@
 		5A15AAA71D58ABC7000ED86E /* NSObject+JKKVOBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AAA61D58ABC7000ED86E /* NSObject+JKKVOBlocks.m */; };
 		5A15AAAD1D58ADD2000ED86E /* UITextField+JKShake.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AAAB1D58ADD2000ED86E /* UITextField+JKShake.m */; };
 		5A15AAB01D58ADD9000ED86E /* UITextField+JKBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AAAF1D58ADD9000ED86E /* UITextField+JKBlocks.m */; };
+		5A441DF91D783011008DF1AC /* MMAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A441DF81D783011008DF1AC /* MMAnimationViewController.m */; };
+		5A441DFD1D7830CE008DF1AC /* MMAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A441DFC1D7830CE008DF1AC /* MMAnimationController.m */; };
+		5A441E001D783132008DF1AC /* CGPointExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A441DFF1D783132008DF1AC /* CGPointExtension.m */; };
+		5A441E031D78313A008DF1AC /* MMPaintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A441E021D78313A008DF1AC /* MMPaintView.m */; };
 		5A546E9F1D5C0ACC00F9361E /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546E9E1D5C0ACC00F9361E /* MainTabBarController.m */; };
 		5A546EAF1D5C169700F9361E /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546EAD1D5C169700F9361E /* FindViewController.m */; };
 		5A546EBE1D5C16C700F9361E /* NearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546EBC1D5C16C700F9361E /* NearViewController.m */; };
@@ -342,6 +346,14 @@
 		5A15AAAB1D58ADD2000ED86E /* UITextField+JKShake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+JKShake.m"; sourceTree = "<group>"; };
 		5A15AAAE1D58ADD9000ED86E /* UITextField+JKBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+JKBlocks.h"; sourceTree = "<group>"; };
 		5A15AAAF1D58ADD9000ED86E /* UITextField+JKBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+JKBlocks.m"; sourceTree = "<group>"; };
+		5A441DF71D783011008DF1AC /* MMAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAnimationViewController.h; sourceTree = "<group>"; };
+		5A441DF81D783011008DF1AC /* MMAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAnimationViewController.m; sourceTree = "<group>"; };
+		5A441DFB1D7830CE008DF1AC /* MMAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAnimationController.h; sourceTree = "<group>"; };
+		5A441DFC1D7830CE008DF1AC /* MMAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAnimationController.m; sourceTree = "<group>"; };
+		5A441DFE1D783132008DF1AC /* CGPointExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPointExtension.h; sourceTree = "<group>"; };
+		5A441DFF1D783132008DF1AC /* CGPointExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPointExtension.m; sourceTree = "<group>"; };
+		5A441E011D78313A008DF1AC /* MMPaintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPaintView.h; sourceTree = "<group>"; };
+		5A441E021D78313A008DF1AC /* MMPaintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPaintView.m; sourceTree = "<group>"; };
 		5A546E9D1D5C0ACC00F9361E /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
 		5A546E9E1D5C0ACC00F9361E /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 		5A546EAC1D5C169700F9361E /* FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
@@ -905,6 +917,21 @@
 			path = XMLDictionary;
 			sourceTree = "<group>";
 		};
+		5A441DFA1D783018008DF1AC /* 移动动画 */ = {
+			isa = PBXGroup;
+			children = (
+				5A441E011D78313A008DF1AC /* MMPaintView.h */,
+				5A441E021D78313A008DF1AC /* MMPaintView.m */,
+				5A441DFE1D783132008DF1AC /* CGPointExtension.h */,
+				5A441DFF1D783132008DF1AC /* CGPointExtension.m */,
+				5A441DF71D783011008DF1AC /* MMAnimationViewController.h */,
+				5A441DF81D783011008DF1AC /* MMAnimationViewController.m */,
+				5A441DFB1D7830CE008DF1AC /* MMAnimationController.h */,
+				5A441DFC1D7830CE008DF1AC /* MMAnimationController.m */,
+			);
+			name = "移动动画";
+			sourceTree = "<group>";
+		};
 		5A546EA01D5C151600F9361E /* Find(发现) */ = {
 			isa = PBXGroup;
 			children = (
@@ -914,6 +941,7 @@
 				5AB773571D758D4900D7E113 /* 乱象控件 */,
 				5AB773591D758D6500D7E113 /* 基础控件 */,
 				5AB7735A1D758D7D00D7E113 /* 乱象动画 */,
+				5A441DFA1D783018008DF1AC /* 移动动画 */,
 			);
 			path = "Find(发现)";
 			sourceTree = "<group>";
@@ -2119,6 +2147,7 @@
 				5A65A9E11D76C303009016C3 /* DownloadOperation.m in Sources */,
 				5AA23F3B1D59F665005A67FF /* UIImageView+MAC.m in Sources */,
 				5AB520D31D53290F000C3C80 /* UINavigationItem+Loading.m in Sources */,
+				5A441E031D78313A008DF1AC /* MMPaintView.m in Sources */,
 				5AB520EF1D53290F000C3C80 /* UIView+HUD.m in Sources */,
 				5AB520C71D53290F000C3C80 /* UIImageView+CornerRadius.m in Sources */,
 				5AB520ED1D53290F000C3C80 /* UIView+Find.m in Sources */,
@@ -2141,6 +2170,7 @@
 				5A15AA431D582AA0000ED86E /* UIFont+Fonts.m in Sources */,
 				5AB520A61D53290F000C3C80 /* MF_Base64Additions.m in Sources */,
 				5AB520AF1D53290F000C3C80 /* NSTimer+MAC.m in Sources */,
+				5A441E001D783132008DF1AC /* CGPointExtension.m in Sources */,
 				5AB520EA1D53290F000C3C80 /* UITextView+Placeholder.m in Sources */,
 				5A95530F1D743C4100A75C3C /* EAFeatureItem.m in Sources */,
 				5AB520E81D53290F000C3C80 /* UITextFieldView.m in Sources */,
@@ -2162,6 +2192,7 @@
 				5A994F971D5D7813000F1A17 /* ParallaxHeaderViewCell.m in Sources */,
 				5AB520D61D53290F000C3C80 /* UIResponder+Chain.m in Sources */,
 				5AB520D11D53290F000C3C80 /* UIViewController+KMNavigationBarTransition.m in Sources */,
+				5A441DF91D783011008DF1AC /* MMAnimationViewController.m in Sources */,
 				5A15AA831D58A98D000ED86E /* NSData+JKGzip.m in Sources */,
 				5AB520E61D53290F000C3C80 /* UITableViewCell+MAC.m in Sources */,
 				5A09C0B11D5B0BFC00B0AB5B /* UserAuth.m in Sources */,
@@ -2191,6 +2222,7 @@
 				5A97EC791D6469AF00A29247 /* CarLightViewCell.m in Sources */,
 				5A15AAA71D58ABC7000ED86E /* NSObject+JKKVOBlocks.m in Sources */,
 				5A557C421D6C6ED000DF26DC /* HeadView.m in Sources */,
+				5A441DFD1D7830CE008DF1AC /* MMAnimationController.m in Sources */,
 				5A15AA761D587544000ED86E /* UITableView+CellClass.m in Sources */,
 				5A0528211D6EEF4B004ECE57 /* POPNumberAnimation.m in Sources */,
 				5AB520AA1D53290F000C3C80 /* NSString+MIME.m in Sources */,
