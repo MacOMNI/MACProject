@@ -26,8 +26,8 @@
 }
 -(void)initUI{
     self.title = @"乱象动画";
-    self.tableView.delegate=self;
-    self.tableView.dataSource=self;
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
 }
 -(void)initData{
     _nameArr = @[@"POPNumberAnimation(数字动画)"];

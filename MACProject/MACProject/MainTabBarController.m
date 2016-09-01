@@ -25,22 +25,22 @@
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor appRedColor]} forState:UIControlStateSelected];
     [self.tabBar setBackgroundImage:[UIImage imageWithColor:[UIColor appNavigationBarColor]]];
 
-    NSArray *titleArr=@[@"闲鱼",@"朋友圈",@"云周边",@"发现"];
-    NSArray *iconArr=@[@"chaweizhang_gray",@"cheyouquan_gray",@"chazhoubian_gray",@"faxian_gray"];
-    NSArray *selectIconArr=@[@"chaweizhang_red",@"cheyouquan_red",@"chazhoubian_red",@"faxian_red"];
-    NSArray *controllerArr=@[@"HomeViewController",@"FriendsViewController",@"NearViewController",@"FindViewController"];
-    for(NSInteger i=0;i<controllerArr.count;i++)
+    NSArray *titleArr = @[@"闲鱼",@"朋友圈",@"云周边",@"发现"];
+    NSArray *iconArr = @[@"chaweizhang_gray",@"cheyouquan_gray",@"chazhoubian_gray",@"faxian_gray"];
+    NSArray *selectIconArr = @[@"chaweizhang_red",@"cheyouquan_red",@"chazhoubian_red",@"faxian_red"];
+    NSArray *controllerArr = @[@"HomeViewController",@"FriendsViewController",@"NearViewController",@"FindViewController"];
+    for(NSInteger i = 0;i < controllerArr.count;i++)
     {
 
       
-            UIViewController *viewController=[[NSClassFromString(controllerArr[i]) alloc]init];
+            UIViewController *viewController = [[NSClassFromString(controllerArr[i]) alloc]init];
 
             [viewController setTabBarItemImage:iconArr[i] selectedImage:selectIconArr[i] title:titleArr[i]];
-            UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:viewController];
+            UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:viewController];
             [self addChildViewController:nav];
        
     }
-    self.tabBar.selectionIndicatorImage=[UIImage imageNamed:@"bottom_bg"];
+    self.tabBar.selectionIndicatorImage = [UIImage imageNamed:@"bottom_bg"];
 
 }
 - (void)didReceiveMemoryWarning {

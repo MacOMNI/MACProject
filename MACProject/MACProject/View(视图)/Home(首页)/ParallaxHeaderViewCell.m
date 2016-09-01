@@ -13,7 +13,7 @@
 - (IBAction)cityAction:(id)sender {
     DLog(@"点击城市选择！");
     
-    CitysViewController *citysVC=[[CitysViewController alloc]init];
+    CitysViewController *citysVC = [[CitysViewController alloc]init];
     [_btnCity.viewController.navigationController pushViewControllerHideTabBar:citysVC animated:YES];
 }
 

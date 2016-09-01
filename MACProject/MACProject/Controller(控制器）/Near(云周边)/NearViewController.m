@@ -25,10 +25,10 @@
     // Do any additional setup after loading the view from its nib.
 }
 -(void)initUI{
-    self.title=@"云周边";
-    self.mapView=[[MKMapView alloc]initWithFrame:self.view.bounds];
-    self.mapView.delegate=self;
-    self.mapView.showsUserLocation=YES;
+    self.title = @"云周边";
+    self.mapView = [[MKMapView alloc]initWithFrame:self.view.bounds];
+    self.mapView.delegate = self;
+    self.mapView.showsUserLocation = YES;
     [self.view addSubview:self.mapView];
 }
 -(void)initData{

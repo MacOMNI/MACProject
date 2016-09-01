@@ -18,8 +18,8 @@
 @implementation CarouseView
 
 -(void)awakeFromNib{
-    _imgNameArr=@[@"sy_bg",@"dl_toppic",@"sy_banner"];
-    randomAnimationArr=@[kCATransitionFromRight,kCATransitionFromLeft,kCATransitionFromTop,kCATransitionFromBottom];
+    _imgNameArr = @[@"sy_bg",@"dl_toppic",@"sy_banner"];
+    randomAnimationArr = @[kCATransitionFromRight,kCATransitionFromLeft,kCATransitionFromTop,kCATransitionFromBottom];
     /** type
      *
      *  kCATransitionFade            交叉淡化过渡
@@ -60,7 +60,7 @@
     
     
 
-    _imageView.image=[UIImage imageNamed:_imgNameArr[rand()%_imgNameArr.count]];
+    _imageView.image = [UIImage imageNamed:_imgNameArr[rand()%_imgNameArr.count]];
 
 }
 -(void)randomCoreAnimation{
@@ -78,7 +78,7 @@
 //    [UIView commitAnimations];
        [GCDQueue executeInMainQueue:^{
 
-        _imageView.image=[UIImage imageNamed:_imgNameArr[rand()%_imgNameArr.count]];
+        _imageView.image = [UIImage imageNamed:_imgNameArr[rand()%_imgNameArr.count]];
 
         [CoreAnimationEffect showAnimationType: @"fade"    withSubType:randomAnimationArr[rand()%randomAnimationArr.count] duration:1.0 timingFunction:kCAMediaTimingFunctionDefault view:_imageView];
         

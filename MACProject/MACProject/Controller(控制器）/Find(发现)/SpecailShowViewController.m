@@ -25,7 +25,7 @@
     // Do any additional setup after loading the view from its nib.
 }
 -(void)initUI{
-    self.title=@"EAFeatureGuideView";
+    self.title = @"EAFeatureGuideView";
     [[NSUserDefaults standardUserDefaults]removeObjectForKey:@"item2(null)"];
 
     EAFeatureItem *itemLeft = [[EAFeatureItem alloc] initWithFocusView:self.btnFirst focusCornerRadius:0 focusInsets:UIEdgeInsetsMake(-10, -10, 10, 10)];

@@ -26,10 +26,10 @@
     // Do any additional setup after loading the view.
 }
 -(void)initUI{
-    self.title=@"转场动画";
-    self.tableView=[[UITableView alloc]initWithFrame:self.view.bounds];
-    self.tableView.delegate=self;
-    self.tableView.dataSource=self;
+    self.title = @"转场动画";
+    self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
 }
 -(void)initData{

@@ -63,9 +63,9 @@
 }
 -(void)initData{
     [[SearchCoreManager share] Reset];
-    xmlParser=[[CitysXMLParser alloc]init];
+    xmlParser = [[CitysXMLParser alloc]init];
     [xmlParser start];
-    _cityArray=xmlParser.cityArr;
+    _cityArray = xmlParser.cityArr;
     [self getCityDic];
 
 }
@@ -76,40 +76,40 @@
     return _resultArray;
 }
 -(void)getCityDic{
-    self.cityDic=[NSMutableDictionary new];
+    self.cityDic = [NSMutableDictionary new];
 
-    arrayIndexs =[NSMutableArray array];
-    _indexTitleArr=[NSMutableArray array];
-    NSDictionary *dic=[NSDictionary new];
-    NSString *currentFirstCharactor=@"A";
-    NSString *preFirstCharactor=@"A";
-    CityModel *model=_cityArray[0];
+    arrayIndexs = [NSMutableArray array];
+    _indexTitleArr = [NSMutableArray array];
+    NSDictionary *dic = [NSDictionary new];
+    NSString *currentFirstCharactor = @"A";
+    NSString *preFirstCharactor = @"A";
+    CityModel *model = _cityArray[0];
 
     [[SearchCoreManager share]addDataList:[NSNumber numberWithInteger:model.CITY_CODE] name:model.CITY_NAME];
     [_cityDic setValue:model.CITY_NAME forKey:[NSString stringWithFormat:@"%ld",(long)model.CITY_CODE]];
-    NSInteger currentCount=1;
+    NSInteger currentCount = 1;
     for (NSInteger i=1; i<_cityArray.count; i++) {
         CityModel *currentModel=_cityArray[i];
         [[SearchCoreManager share]addDataList:[NSNumber numberWithInteger:currentModel.CITY_CODE] name:currentModel.CITY_NAME];
         [_cityDic setValue:currentModel.CITY_NAME forKey:[NSString stringWithFormat:@"%ld",(long)currentModel.CITY_CODE]];
 
-        CityModel *preModel=_cityArray[i-1];
-        preFirstCharactor=[[ChineseToPinyin pinyinFromChiniseString: preModel.CITY_NAME] substringToIndex:1];
-        currentFirstCharactor=[[ChineseToPinyin pinyinFromChiniseString: currentModel.CITY_NAME]substringToIndex:1];
+        CityModel *preModel = _cityArray[i-1];
+        preFirstCharactor = [[ChineseToPinyin pinyinFromChiniseString: preModel.CITY_NAME] substringToIndex:1];
+        currentFirstCharactor = [[ChineseToPinyin pinyinFromChiniseString: currentModel.CITY_NAME]substringToIndex:1];
         if ([currentFirstCharactor isEqualToString:preFirstCharactor]) {
             currentCount++;
         }else{
-            dic=@{
-                  @"sectionCharactor":preFirstCharactor,
-                  @"sectionCount":[NSNumber numberWithInteger:currentCount],
-                  @"sectionObjectIndex":[NSNumber numberWithInteger:i-currentCount]
-                  };
+            dic = @{
+                    @"sectionCharactor":preFirstCharactor,
+                    @"sectionCount":[NSNumber numberWithInteger:currentCount],
+                    @"sectionObjectIndex":[NSNumber numberWithInteger:i-currentCount]
+                    };
             [arrayIndexs addObject:dic];
             [_indexTitleArr addObject:preFirstCharactor];
-            currentCount=1;
+            currentCount = 1;
         }
     }
-    dic=@{
+    dic = @{
           @"sectionCharactor":preFirstCharactor,
           @"sectionCount":[NSNumber numberWithInteger:currentCount],
           @"sectionObjectIndex":[NSNumber numberWithInteger:_cityArray.count-currentCount]
@@ -124,9 +124,9 @@
         _cityTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 108.0f, self.view.width, self.view.height-64.0f-44.0f) style:UITableViewStylePlain];
         _cityTableView.dataSource = self;
         _cityTableView.delegate = self;
-        _cityTableView.tableFooterView=[UIView new];
+        _cityTableView.tableFooterView = [UIView new];
         _cityTableView.tableHeaderView = self.headerView;
-        _cityTableView.rowHeight=GTFixHeightFlaot(44.0f);
+        _cityTableView.rowHeight = GTFixHeightFlaot(44.0f);
         _cityTableView.sectionIndexColor = [UIColor appRedColor];
     }
     return _cityTableView;
@@ -152,12 +152,12 @@
         _currentCityLabel.text = @"当前定位城市";
         [_headerView addSubview:_currentCityLabel];
  
-        _currentCityButton=[UIButton buttonWithType:UIButtonTypeCustom];
-        _currentCityButton.frame=CGRectMake(8, _currentCityLabel.bottom+8.0f, 110, 44.0f);
+        _currentCityButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _currentCityButton.frame = CGRectMake(8, _currentCityLabel.bottom+8.0f, 110, 44.0f);
         _currentCityButton.layer.masksToBounds = YES;
-        _currentCityButton.tag=1;
-        _currentCityButton.layer.cornerRadius=1.0f;
-        _currentCityButton.backgroundColor=[UIColor appGreenColor];
+        _currentCityButton.tag = 1;
+        _currentCityButton.layer.cornerRadius = 1.0f;
+        _currentCityButton.backgroundColor = [UIColor appGreenColor];
                [_headerView addSubview:_currentCityButton];
         [_currentCityButton addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
 
@@ -170,7 +170,7 @@
     return _headerView;
 }
 -(void)btnAction:(id)sender{
-    UIButton *btn=sender;
+    UIButton *btn = sender;
     [self.view showMessage:[@"当前定位城市：" stringByAppendingString:btn.currentTitle] ];
 }
 -(void)getLocationCity{
@@ -272,15 +272,15 @@
     }
     
     if (!isSearch) {
-        NSDictionary *dic=arrayIndexs[indexPath.section];
-        NSInteger index=[[dic objectForKey:@"sectionObjectIndex"] integerValue]+indexPath.row;
-        CityModel *model=self.cityArray[index];
+        NSDictionary *dic = arrayIndexs[indexPath.section];
+        NSInteger index  = [[dic objectForKey:@"sectionObjectIndex"] integerValue]+indexPath.row;
+        CityModel *model = self.cityArray[index];
         cell.textLabel.text = model.CITY_NAME;
 
     }else{
-        NSInteger city_code=[self.resultArray[indexPath.row] integerValue];
-        NSString *city=[self.cityDic objectForKey:[NSString stringWithFormat:@"%ld",(long)city_code]];
-         cell.textLabel.text =city;
+        NSInteger city_code = [self.resultArray[indexPath.row] integerValue];
+        NSString *city = [self.cityDic objectForKey:[NSString stringWithFormat:@"%ld",(long)city_code]];
+         cell.textLabel.text = city;
     }
    
     return cell;
@@ -306,7 +306,7 @@
 #pragma mark - searchBar
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar{
     isSearch = YES;
-    self.cityTableView.tableHeaderView=nil;
+    self.cityTableView.tableHeaderView = nil;
     [self.cityTableView reloadData];
     searchBar.showsCancelButton = YES;
 }
@@ -332,7 +332,7 @@
 
 - (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar{
     isSearch = NO;
-    self.cityTableView.tableHeaderView=self.headerView;
+    self.cityTableView.tableHeaderView = self.headerView;
 
     searchBar.text = nil;
     searchBar.showsCancelButton = NO;

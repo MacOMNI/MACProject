@@ -21,8 +21,8 @@
 - (void)awakeFromNib {
     // Initialization code
    // CSStickyHeaderFlowLayout *flowLayout=(CSStickyHeaderFlowLayout *)_collectionView.collectionViewLayout;
-    self.collectionView.dataSource=self;
-    self.collectionView.delegate=self;
+    self.collectionView.dataSource = self;
+    self.collectionView.delegate = self;
     //self.collectionView.backgroundView.backgroundColor=[UIColor whiteColor];
     
     [self.collectionView registerClass:[LightCell class] forCellWithReuseIdentifier:@"lightCell"];

@@ -22,7 +22,7 @@
     // Do any additional setup after loading the view from its nib.
 }
 -(void)initUI{
-    self.title=@"基础控件";
+    self.title = @"基础控件";
 }
 -(void)initData{
     

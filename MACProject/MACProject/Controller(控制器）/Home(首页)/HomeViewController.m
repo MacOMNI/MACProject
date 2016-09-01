@@ -47,21 +47,21 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 -(void)initUI{
    // self.fd_prefersNavigationBarHidden=YES;
-    headerHeight=200;
-    self.title=@"闲鱼";
-    CSStickyHeaderFlowLayout *flowLayout=[[CSStickyHeaderFlowLayout alloc]init];
+    headerHeight = 200;
+    self.title = @"闲鱼";
+    CSStickyHeaderFlowLayout *flowLayout = [[CSStickyHeaderFlowLayout alloc]init];
     flowLayout.parallaxHeaderReferenceSize = CGSizeMake(self.view.width, headerHeight);
     
     flowLayout.parallaxHeaderMinimumReferenceSize = CGSizeMake(self.view.width, 100);
     flowLayout.itemSize = CGSizeMake(self.view.width, headerHeight);
     // If we want to disable the sticky header effect
-    self.automaticallyAdjustsScrollViewInsets=NO;//保证从0
+    self.automaticallyAdjustsScrollViewInsets = NO;//保证从0
    // flowLayout.disableStickyHeaders = NO;
-    self.collectionView=[[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, appWidth , appHeight-40) collectionViewLayout:flowLayout];
+    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, appWidth , appHeight-40) collectionViewLayout:flowLayout];
     //self.collectionView.scrollIndicatorInsets = UIEdgeInsetsMake(64, 0, 0, 0);
-    self.collectionView.backgroundColor=[UIColor whiteColor];
-    self.collectionView.dataSource=self;
-    self.collectionView.delegate=self;
+    self.collectionView.backgroundColor = [UIColor whiteColor];
+    self.collectionView.dataSource = self;
+    self.collectionView.delegate = self;
     [self.view addSubview:self.collectionView];
     [self.collectionView registerNib:self.headerNib
           forSupplementaryViewOfKind:CSStickyHeaderParallaxHeader
@@ -111,12 +111,12 @@ static NSString * const reuseIdentifier = @"Cell";
     switch (indexPath.section) {
         case 0:
         {
-           NewCarouselListCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:@"newCarouselListCell" forIndexPath:indexPath];
+           NewCarouselListCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"newCarouselListCell" forIndexPath:indexPath];
             return cell;
         }
             break;
         case 1:{
-            CarLightViewCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:@"carLightViewCell" forIndexPath:indexPath];
+            CarLightViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"carLightViewCell" forIndexPath:indexPath];
             return cell;
         }break;
         case 2:{
@@ -127,7 +127,7 @@ static NSString * const reuseIdentifier = @"Cell";
         default:{
          UICollectionViewCell   *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
             // Configure the cell
-            cell.backgroundColor=[UIColor RandomColor];
+            cell.backgroundColor = [UIColor RandomColor];
             return cell;
 
 

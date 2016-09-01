@@ -28,20 +28,20 @@
     // Do any additional setup after loading the view from its nib.
 }
 -(void)initUI{
-    self.title=@"发现";
-    self.tableView=[[UITableView alloc]initWithFrame:self.view.bounds];
-    self.tableView.delegate=self;
-    self.tableView.dataSource=self;
-    self.tableView.tableFooterView=[UIView new];
-    self.tableView.backgroundColor=[UIColor groupTableViewBackgroundColor];
-    self.tableView.rowHeight=49.f;
+    self.title = @"发现";
+    self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    self.tableView.tableFooterView = [UIView new];
+    self.tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    self.tableView.rowHeight = 49.f;
     [self.tableView registerNib:[FriendsCell loadNib] forCellReuseIdentifier:@"FriendsCell"];
     [self.view addSubview:self.tableView];
 }
 -(void)initData{
-    titleArr=[[NSMutableArray alloc]initWithArray:@[@[@"转场动画",@"基础动画",@"移动动画",@"乱象动画"],@[@"基础控件",@"乱象控件"]]];
-    iconArr=[[NSMutableArray alloc]initWithArray:@[@[@"MoreMyAlbum",@"MoreMyBankCard",@"MoreMyFavorites",@"MyCardPackageIcon"],@[@"ff_IconShake",@"MoreSetting"]]];
-    classArr=[[NSMutableArray alloc]initWithArray:@[@[@"TransitionRandomVC",@"ContactsVC",@"ContactsVC",@"SepeicalAnimationViewController"],@[@"BasicShowViewController",@"SpecialViewController"]]];
+    titleArr = [[NSMutableArray alloc]initWithArray:@[@[@"转场动画",@"基础动画",@"移动动画",@"乱象动画"],@[@"基础控件",@"乱象控件"]]];
+    iconArr = [[NSMutableArray alloc]initWithArray:@[@[@"MoreMyAlbum",@"MoreMyBankCard",@"MoreMyFavorites",@"MyCardPackageIcon"],@[@"ff_IconShake",@"MoreSetting"]]];
+    classArr = [[NSMutableArray alloc]initWithArray:@[@[@"TransitionRandomVC",@"ContactsVC",@"ContactsVC",@"SepeicalAnimationViewController"],@[@"BasicShowViewController",@"SpecialViewController"]]];
     // [self.tableView reloadData];
 }
 #pragma mark TableView delegate datasource
@@ -52,11 +52,11 @@
     return [titleArr arrayWithIndex:section].count;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    FriendsCell *cell=[tableView dequeueReusableCellWithIdentifier:@"FriendsCell"];
-    cell.nameLabel.text=[titleArr arrayWithIndex:indexPath.section][indexPath.row];
-    cell.imgView.image=[UIImage imageNamed:[iconArr arrayWithIndex:indexPath.section][indexPath.row]];
-    cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
-    cell.selectionStyle=UITableViewCellSelectionStyleNone;
+    FriendsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FriendsCell"];
+    cell.nameLabel.text = [titleArr arrayWithIndex:indexPath.section][indexPath.row];
+    cell.imgView.image = [UIImage imageNamed:[iconArr arrayWithIndex:indexPath.section][indexPath.row]];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
     
 }
@@ -65,7 +65,7 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UIViewController *viewController=[[NSClassFromString([classArr arrayWithIndex:indexPath.section][indexPath.row]) alloc]init];
+    UIViewController *viewController = [[NSClassFromString([classArr arrayWithIndex:indexPath.section][indexPath.row]) alloc]init];
     [self.navigationController pushViewControllerHideTabBar:viewController animated:YES];
     
     

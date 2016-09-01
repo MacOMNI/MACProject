@@ -24,9 +24,9 @@
     // Do any additional setup after loading the view.
 }
 -(void)initUI{
-    self.tableView=[[MACTableView alloc]initWithFrame: self.view.bounds];
-    self.tableView.macTableViewDelegate=self;
-    self.tableView.isShowEmpty=NO;
+    self.tableView = [[MACTableView alloc]initWithFrame: self.view.bounds];
+    self.tableView.macTableViewDelegate = self;
+    self.tableView.isShowEmpty = NO;
     [self.view addSubview:self.tableView];
 }
 -(void)initData{
@@ -50,8 +50,8 @@
     return 0;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:@"FriendsCell"];
-       cell.selectionStyle=UITableViewCellSelectionStyleNone;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FriendsCell"];
+       cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
     
 }

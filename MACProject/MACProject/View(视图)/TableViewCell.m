@@ -14,10 +14,10 @@
     // Initialization code
 }
 -(void)loadContent{
-    self.stringLabel.text= self.dataAdapter.data;
+    self.stringLabel.text = self.dataAdapter.data;
 }
 +(CGFloat)cellHeightWithData:(id)data{
-    NSString *str=data;
+    NSString *str = data;
     return [str stringHeightWithFont:[UIFont systemFontOfSize:17] width:appWidth-20]+20;
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

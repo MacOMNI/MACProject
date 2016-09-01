@@ -42,15 +42,15 @@
 
     WEAKSELF
     if (!timer) {
-        timer=[[GCDTimer alloc]init];
+        timer = [[GCDTimer alloc]init];
         
         [timer event:^{
-            CGFloat min=rand()%100;
-            CGFloat max=rand()%100;
+            CGFloat min = rand()%100;
+            CGFloat max = rand()%100;
             if (min>max) {
-                CGFloat temp=min;
-                min=max;
-                max=temp;
+                CGFloat temp = min;
+                min = max;
+                max = temp;
             }
             _popNumberAnimation.fromValue = min;
             _popNumberAnimation.toValue = max;

@@ -14,29 +14,29 @@
     self=[super initWithFrame:frame];
     if (self) {
         //bannerView
-        self.bannerView=[[UIScrollView alloc]init];
-        self.bannerView.delegate=self;
-        self.bannerView.pagingEnabled=YES;
+        self.bannerView = [[UIScrollView alloc]init];
+        self.bannerView.delegate = self;
+        self.bannerView.pagingEnabled = YES;
         
-        self.bannerView.showsHorizontalScrollIndicator=NO;
-        self.bannerView.showsVerticalScrollIndicator=NO;
-        self.bannerView.contentSize=CGSizeMake(self.width*2, 0);
+        self.bannerView.showsHorizontalScrollIndicator = NO;
+        self.bannerView.showsVerticalScrollIndicator = NO;
+        self.bannerView.contentSize = CGSizeMake(self.width*2, 0);
         [self addSubview:self.bannerView];
 
         [self.bannerView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.top.right.bottom.equalTo(self);
         }];
-        UIImageView *img1=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.width, self.height)];
-        img1.image=[UIImage imageNamed:@"dl_toppic"];
-        UIImageView *img2=[[UIImageView alloc] initWithFrame:CGRectMake(self.width, 0, self.width, self.height)];
-        img2.image=[UIImage imageNamed:@"sy_banner"];
+        UIImageView *img1 = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.width, self.height)];
+        img1.image = [UIImage imageNamed:@"dl_toppic"];
+        UIImageView *img2 = [[UIImageView alloc] initWithFrame:CGRectMake(self.width, 0, self.width, self.height)];
+        img2.image = [UIImage imageNamed:@"sy_banner"];
         [self.bannerView addSubview:img1];
         [self.bannerView addSubview:img2];
        //pageControl
-        self.pageControl=[[UIPageControl alloc]init];
-        self.pageControl.numberOfPages=2;
-        self.pageControl.pageIndicatorTintColor=[UIColor lightGrayColor];
-        self.pageControl.currentPageIndicatorTintColor=[UIColor appBlueColor];
+        self.pageControl = [[UIPageControl alloc]init];
+        self.pageControl.numberOfPages = 2;
+        self.pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+        self.pageControl.currentPageIndicatorTintColor = [UIColor appBlueColor];
         [self addSubview:self.pageControl];
 
         [self.pageControl mas_makeConstraints:^(MASConstraintMaker *make) {

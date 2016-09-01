@@ -38,19 +38,19 @@
     
 }
 -(void)initUI{
-     self.title=@"我的车友";
+     self.title = @"我的车友";
     [self setRightBarItemImage:[UIImage imageNamed:@"contact_add"] title:@"添加"];
     [self.headView setHeight:appWidth/4.0];
     self.headView.backgroundColor=[UIColor appBackGroundColor];
-    self.tableView.sectionFooterHeight=0.5;
+    self.tableView.sectionFooterHeight = 0.5;
     
 //    UIView *view=[[UIView alloc]initWithFrame:CGRectMake(0, 0, appWidth, 0.5)];
 //    [view setBackgroundColor:[UIColor clearColor]];
-    _tableView.tableFooterView =[UIView new];
+    _tableView.tableFooterView = [UIView new];
 
-    self.tableView.dataSource=self;
-    self.tableView.delegate=self;
-    self.tableView.estimatedRowHeight=60.0f;
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    self.tableView.estimatedRowHeight = 60.0f;
     //self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
 
@@ -65,17 +65,17 @@
 }
 -(void)initData{
     //以我的关注和我的粉丝为例
-    dataArr=@[@"我的关注",@"我的粉丝"];
-    fansArr=[NSMutableArray array];
-    friendsArr=[NSMutableArray array];
-   groupArr=[NSMutableArray array];
-    footArr=[NSMutableArray array];
-    for (NSInteger i=0;i<dataArr.count ; i++) {
-        HeadView *headView=[HeadView headViewWithTableView:self.tableView];
-        headView.name=dataArr[i];
+    dataArr = @[@"我的关注",@"我的粉丝"];
+    fansArr = [NSMutableArray array];
+    friendsArr = [NSMutableArray array];
+   groupArr = [NSMutableArray array];
+    footArr = [NSMutableArray array];
+    for (NSInteger i = 0;i< dataArr.count ; i++) {
+        HeadView *headView = [HeadView headViewWithTableView:self.tableView];
+        headView.name = dataArr[i];
         headView.headViewDelegate = self;
-        headView.section=i;
-        UIView *view=[UIView new];
+        headView.section = i;
+        UIView *view = [UIView new];
         [view setBackgroundColor:[UIColor appLineColor]];
         [footArr addObject:view];
         [groupArr addObject:headView];
@@ -163,19 +163,19 @@
     static NSString *cellIdentifier = @"contactsCell";
     ContactsCell *cell = (ContactsCell*)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (!cell) {
-        cell=(ContactsCell *)[ContactsCell nibCell];
+        cell = (ContactsCell *)[ContactsCell nibCell];
 //        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ContactsCell" owner:self options:nil];
 //        cell = (ContactsCell *)[nib objectAtIndex:0];
-        cell.contactDelegate=self;
+        cell.contactDelegate = self;
         //cell.selectionStyle =  UITableViewCellSelectionStyleGray;
     }
     cell.selectionStyle =  UITableViewCellSelectionStyleNone;
-    cell.row=indexPath.row;
-    cell.idx=indexPath.section;
+    cell.row = indexPath.row;
+    cell.idx = indexPath.section;
 
     if (indexPath.section==0) {
-        cell.contactStatus=friendsArr[indexPath.row];
-    }else cell.contactStatus=fansArr[indexPath.row];
+        cell.contactStatus = friendsArr[indexPath.row];
+    }else cell.contactStatus = fansArr[indexPath.row];
    
     return cell;
 }
@@ -223,7 +223,7 @@
 
 - (IBAction)qrScanAction:(id)sender {
     QRScanViewController *scanVC = [[QRScanViewController alloc]init];
-    scanVC.title=@"扫一扫";
+    scanVC.title = @"扫一扫";
     [scanVC doneScanBlock:^(id assetDicArray) {
         NSString *strResultWithBase64 = [NSString stringWithFormat:@"%@", assetDicArray];
         strResultWithBase64 = [strResultWithBase64 stringByReplacingOccurrencesOfString:@"\n" withString:@""];
