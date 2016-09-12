@@ -27,13 +27,11 @@
     [self initUI];
     // Do any additional setup after loading the view from its nib.
 }
+
 -(void)initUI{
     _popNumberAnimation = [[POPNumberAnimation alloc]init];
     _popNumberAnimation.delegate = self;
 
-    
-
-    
 }
 - (IBAction)popNumberAction:(id)sender {
    // [_btnPopNumber setBackgroundColor:[UIColor RandomColor]];
@@ -49,12 +47,12 @@
             CGFloat max = rand()%100;
             if (min>max) {
                 CGFloat temp = min;
-                min = max;
-                max = temp;
+                        min  = max;
+                        max  = temp;
             }
             _popNumberAnimation.fromValue = min;
-            _popNumberAnimation.toValue = max;
-            _popNumberAnimation.duration = 10;
+            _popNumberAnimation.toValue   = max;
+            _popNumberAnimation.duration  = 10;
             [_popNumberAnimation saveValues];
             [_popNumberAnimation startAnimation];
             

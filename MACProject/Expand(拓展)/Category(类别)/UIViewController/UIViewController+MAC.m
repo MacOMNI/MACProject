@@ -33,7 +33,7 @@
     if (!arr||arr.count<=0) {
         return;
     }
-   __block NSMutableArray *items=[NSMutableArray array];
+   __block NSMutableArray *items = [NSMutableArray array];
     [arr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [items addObject:MMItemMake(obj, MMItemTypeHighlight, clickIndex)];
     }];
@@ -47,7 +47,7 @@
         return;
     }
 
-    __block NSMutableArray *items=[NSMutableArray array];
+    __block NSMutableArray *items = [NSMutableArray array];
     [arr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [items addObject:MMItemMake(obj, MMItemTypeHighlight, clickIndex)];
     }];

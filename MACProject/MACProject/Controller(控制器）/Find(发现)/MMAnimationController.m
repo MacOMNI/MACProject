@@ -28,27 +28,27 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.paintView = [[MMPaintView alloc] initWithFrame:self.view.bounds];
+    self.paintView                 = [[MMPaintView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:self.paintView];
     self.paintView.backgroundColor = [UIColor whiteColor];
-    
-    self.dummy = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
-    self.dummy.layer.cornerRadius = 15.0f;
-    self.dummy.backgroundColor = [UIColor darkGrayColor];
-    self.dummy.center = CGPointMake(CGRectGetMaxX([UIScreen mainScreen].bounds)-50, 150);
-    
-    UIView *centerMark = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+
+    self.dummy                     = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    self.dummy.layer.cornerRadius  = 15.0f;
+    self.dummy.backgroundColor     = [UIColor darkGrayColor];
+    self.dummy.center              = CGPointMake(CGRectGetMaxX([UIScreen mainScreen].bounds)-50, 150);
+
+    UIView *centerMark             = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
     [self.dummy addSubview:centerMark];
-    centerMark.backgroundColor = [UIColor redColor];
-    centerMark.layer.cornerRadius = 5.0f;
-    centerMark.center = CGPointMake(15.0f, 15.0f);
+    centerMark.backgroundColor     = [UIColor redColor];
+    centerMark.layer.cornerRadius  = 5.0f;
+    centerMark.center              = CGPointMake(15.0f, 15.0f);
     
     [self.paintView addSubview:self.dummy];
-    
-    self.ball = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+
+    self.ball                    = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
     self.ball.layer.cornerRadius = 5.0f;
-    self.ball.backgroundColor = [UIColor redColor];
-    self.ball.center = CGPointMake(CGRectGetMinX([UIScreen mainScreen].bounds)+50, 150);
+    self.ball.backgroundColor    = [UIColor redColor];
+    self.ball.center             = CGPointMake(CGRectGetMinX([UIScreen mainScreen].bounds)+50, 150);
     
     [self.paintView addSubview:self.ball];
     
@@ -63,11 +63,11 @@
     self.anim.toValue        = @[@(self.dummy.center.y  + 200)];
     self.anim.animationBlock = ^(double c,double d,NSArray *v,id target,MMTweenAnimation *animation)
     {
-        double value = [v[0] doubleValue];
-        ws.dummy.center = CGPointMake(ws.dummy.center.x, value);
-        ws.ball.center = CGPointMake(50+(CGRectGetWidth([UIScreen mainScreen].bounds)-150)*(c/d), value);
+        double value    = [v[0] doubleValue];
+       // ws.dummy.center = CGPointMake(ws.dummy.center.x, value);
+        ws.ball.center  = CGPointMake(50+(CGRectGetWidth([UIScreen mainScreen].bounds)-150)*(c/d), value);
         
-        [ws.paintView addDot:ws.ball.center];
+       // [ws.paintView addDot:ws.ball.center];
     };
     
     

@@ -522,11 +522,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Find(&#x53d1;&#x73b0;)/POPNumberViewController.m"
-            timestampString = "494251148.937371"
+            timestampString = "494750060.372606"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "-POPNumberAnimation:currentValue:"
             landmarkType = "5">
          </BreakpointContent>

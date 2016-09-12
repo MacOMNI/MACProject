@@ -20,7 +20,7 @@
 
 ###城市模糊查询：
 
->定位 、 KMP & SearchTree 搜索实现快速数据检索；
+>定位 、 KMP & SearchTree 搜索实现快速数据检索 与 系统匹配不一样的感受；
 
 ![image](http://upload-images.jianshu.io/upload_images/335970-e9fb0281a4e59564.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -41,8 +41,13 @@
 ##云周边（暂未开放）
 
 >地图定位、大头针等；
+>![图片](http://oc4tpefat.bkt.clouddn.com/location.png)
+
+
 
 ##发现（动画&控件）
+
+![图片](http://oc4tpefat.bkt.clouddn.com/finder.png)
 
 
 
