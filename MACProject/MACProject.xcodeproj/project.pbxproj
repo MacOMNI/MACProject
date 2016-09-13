@@ -220,8 +220,6 @@
 		5AB520FE1D53290F000C3C80 /* UIViewController+RecursiveDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB5207A1D53290F000C3C80 /* UIViewController+RecursiveDescription.m */; };
 		5AB520FF1D53290F000C3C80 /* UIWebView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB5207D1D53290F000C3C80 /* UIWebView+Blocks.m */; };
 		5AB5210B1D532AFC000C3C80 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB521091D532AFC000C3C80 /* UserModel.m */; };
-		5AB521211D533BC5000C3C80 /* MacTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB5211F1D533BC5000C3C80 /* MacTableViewVC.m */; };
-		5AB521221D533BC5000C3C80 /* MacTableViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AB521201D533BC5000C3C80 /* MacTableViewVC.xib */; };
 		5AB521281D53441B000C3C80 /* CellDataAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB521271D53441B000C3C80 /* CellDataAdapter.m */; };
 		5AB521341D534D65000C3C80 /* MACBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB521331D534D65000C3C80 /* MACBaseCell.m */; };
 		5AB771AF1D75868700D7E113 /* BasicShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB771AD1D75868700D7E113 /* BasicShowViewController.m */; };
@@ -666,9 +664,6 @@
 		5AB521051D532A38000C3C80 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		5AB521081D532AFC000C3C80 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
 		5AB521091D532AFC000C3C80 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
-		5AB5211E1D533BC5000C3C80 /* MacTableViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacTableViewVC.h; sourceTree = "<group>"; };
-		5AB5211F1D533BC5000C3C80 /* MacTableViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacTableViewVC.m; sourceTree = "<group>"; };
-		5AB521201D533BC5000C3C80 /* MacTableViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MacTableViewVC.xib; sourceTree = "<group>"; };
 		5AB521261D53441B000C3C80 /* CellDataAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellDataAdapter.h; sourceTree = "<group>"; };
 		5AB521271D53441B000C3C80 /* CellDataAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellDataAdapter.m; sourceTree = "<group>"; };
 		5AB521321D534D65000C3C80 /* MACBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACBaseCell.h; sourceTree = "<group>"; };
@@ -1808,9 +1803,6 @@
 				5A546EA11D5C151600F9361E /* Friends(车友圈) */,
 				5A546EA21D5C151600F9361E /* Home(首页) */,
 				5A546EA31D5C151600F9361E /* Near(云周边) */,
-				5AB5211E1D533BC5000C3C80 /* MacTableViewVC.h */,
-				5AB5211F1D533BC5000C3C80 /* MacTableViewVC.m */,
-				5AB521201D533BC5000C3C80 /* MacTableViewVC.xib */,
 			);
 			path = "Controller(控制器）";
 			sourceTree = "<group>";
@@ -1991,7 +1983,6 @@
 				5AB520DF1D53290F000C3C80 /* icon_refresh_2@3x.png in Resources */,
 				5A0528311D6EEF4B004ECE57 /* multipy_unicode.dat in Resources */,
 				5A994F981D5D7813000F1A17 /* ParallaxHeaderViewCell.xib in Resources */,
-				5AB521221D533BC5000C3C80 /* MacTableViewVC.xib in Resources */,
 				5AB771B01D75868700D7E113 /* BasicShowViewController.xib in Resources */,
 				5AF9AF9B1D4A0F9800F23C1E /* Assets.xcassets in Resources */,
 				5A90A2191D61AC28005298B3 /* NewCarouselListCell.xib in Resources */,
@@ -2157,7 +2148,6 @@
 				5A557C5C1D6C6F5100DF26DC /* QRCodeGenerator.m in Sources */,
 				5A09C0AE1D5B0BFC00B0AB5B /* Base64.m in Sources */,
 				5AB520A11D53290F000C3C80 /* NSObject+GCD.m in Sources */,
-				5AB521211D533BC5000C3C80 /* MacTableViewVC.m in Sources */,
 				5AB520AB1D53290F000C3C80 /* NSString+RemoveEmoji.m in Sources */,
 				5A15AA951D58AAC5000ED86E /* XMLDictionary.m in Sources */,
 				5A15AA461D582C0C000ED86E /* UIButton+MAC.m in Sources */,

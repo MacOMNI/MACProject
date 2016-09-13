@@ -39,6 +39,37 @@
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setBarTintColor:[UIColor appNavigationBarColor]];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+       [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(statusBarOrientationChange:) name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
+}
+
+
+- (void)statusBarOrientationChange:(NSNotification *)notification
+{
+    
+    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
+
+    if (orientation == UIInterfaceOrientationLandscapeRight) // home键靠右
+    {
+        //
+    }
+    
+    if (
+        orientation ==UIInterfaceOrientationLandscapeLeft) // home键靠左
+    {
+        //
+    }
+    
+    if (orientation == UIInterfaceOrientationPortrait)
+    {
+        //
+    }
+    
+    if (orientation == UIInterfaceOrientationPortraitUpsideDown)
+    {
+        //
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
