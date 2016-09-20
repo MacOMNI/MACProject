@@ -9,6 +9,7 @@
 #import "FriendsViewController.h"
 #import "FriendsCell.h"
 #import "ContactsVC.h"
+#import "ChatKeyBoardViewController.h"
 #import "SOFViewController.h"
 @interface FriendsViewController ()<UITableViewDataSource,UITableViewDelegate>{
     NSMutableArray *titleArr;
@@ -42,7 +43,7 @@
 -(void)initData{
     titleArr = [[NSMutableArray alloc]initWithArray:@[@[@"车友圈",@"我的车友"],@[@"我的奖品",@"限时活动"]]];
     iconArr = [[NSMutableArray alloc]initWithArray:@[@[@"user_identify_icon",@"user_introduce_icon"],@[@"user_phone_icon",@"user_registerTime_icon"]]];
-    classArr = [[NSMutableArray alloc]initWithArray:@[@[@"SOFViewController",@"ContactsVC"],@[@"ContactsVC",@"ContactsVC"]]];
+    classArr = [[NSMutableArray alloc]initWithArray:@[@[@"SOFViewController",@"ContactsVC"],@[@"ChatKeyBoardViewController",@"ContactsVC"]]];
    // [self.tableView reloadData];
 }
 #pragma mark TableView delegate datasource

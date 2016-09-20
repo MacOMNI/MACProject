@@ -10,6 +10,12 @@
 
 @interface NSString (RemoveEmoji)
 /**
+ *  是否是emoji
+ *
+ *  @return 
+ */
+-(BOOL)isEmoji;
+/**
  *  @brief  是否包含emoji
  *
  *  @return 是否包含emoji
