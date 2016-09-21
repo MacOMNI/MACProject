@@ -46,6 +46,10 @@ PODS:
   - UITableView+FDTemplateLayoutCell (1.5.beta)
   - VGParallaxHeader (0.0.6):
     - PureLayout
+  - YYImage (1.0.3):
+    - YYImage/Core (= 1.0.3)
+  - YYImage/Core (1.0.3)
+  - YYText (1.0.5)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
@@ -67,6 +71,9 @@ DEPENDENCIES:
   - SDWebImage (~> 3.7.5)
   - TSMessages (~> 0.9.12)
   - UITableView+FDTemplateLayoutCell (~> 1.4.beta)
+  - UITableView+FDTemplateLayoutCell (~> 1.5.beta)
+  - YYImage (~> 1.0.3)
+  - YYText (~> 1.0.5)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -93,5 +100,7 @@ SPEC CHECKSUMS:
   TSMessages: c8cc7b80f2a833af533872cd02010cac061532cc
   UITableView+FDTemplateLayoutCell: 02b508ab1cb4cea16a8c17ac83d2cd1fd72124f9
   VGParallaxHeader: 1213aba58c9b0aea84f9e81ad526fde57aa4fe48
+  YYImage: 362f44ffba1fc498f2152060f3bb54ed84600981
+  YYText: ac09660c9ccd9b817f409a20caa6f5587444d2ae
 
 COCOAPODS: 0.39.0

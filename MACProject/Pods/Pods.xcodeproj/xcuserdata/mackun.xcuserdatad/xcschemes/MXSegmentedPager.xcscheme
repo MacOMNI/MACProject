@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '08C66A2238343C0C88D8130C'
+               BlueprintIdentifier = 'E4FD2FD4EF9E7EE8560B9AA6'
                BlueprintName = 'MXSegmentedPager'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libMXSegmentedPager.a'>

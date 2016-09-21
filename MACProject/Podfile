@@ -35,6 +35,12 @@ pod 'SDCycleScrollView', '~> 1.62'
 #  paged, scrolling views
 pod 'iCarousel', '~> 1.8.2'
 
+pod 'YYText', '~> 1.0.5'
+pod 'YYImage', '~> 1.0.3'
+
+# 自动布局计算高度
+
+pod 'UITableView+FDTemplateLayoutCell', '~> 1.5.beta'
 # app  UIImage crop
 #pod 'TOCropViewController', '~> 2.0.7'
 
