@@ -45,7 +45,7 @@
         _nameLabel                 = [[UILabel alloc]init];
         _nameLabel.numberOfLines   = 1;
         _nameLabel.text            = @"麦克坤";
-        _nameLabel.backgroundColor = [UIColor RandomColor];
+      //  _nameLabel.backgroundColor = [UIColor RandomColor];
         _nameLabel.font            = [UIFont systemFontOfSize:17.0f];
         [self.contentView addSubview:_nameLabel];
         [_nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -57,7 +57,7 @@
         //时间
         _timeLabel                 = [[UILabel alloc]init];
         _timeLabel.numberOfLines   = 1;
-        _timeLabel.backgroundColor = [UIColor RandomColor];
+        //_timeLabel.backgroundColor = [UIColor RandomColor];
         
         _timeLabel.font            = [UIFont systemFontOfSize:15.0f];
         _timeLabel.text            = @"2016.09.28 10:30";
@@ -85,7 +85,7 @@
         
         //图片
         _gridView = [MACImageGroupView new];
-        _gridView.backgroundColor = [UIColor RandomColor];
+       // _gridView.backgroundColor = [UIColor RandomColor];
         [self.contentView addSubview:_gridView];
         [_gridView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(_contentLabel.mas_bottom);
@@ -121,7 +121,7 @@
         //浏览量
         _browserNumLabel                 = [[UILabel alloc]init];
         _browserNumLabel.numberOfLines   = 1;
-        _browserNumLabel.backgroundColor = [UIColor RandomColor];
+        //_browserNumLabel.backgroundColor = [UIColor RandomColor];
         _browserNumLabel.text            = @"66次浏览";
         _browserNumLabel.font            = [UIFont systemFontOfSize:15.0f];
         
@@ -136,7 +136,7 @@
        //点赞数量
         _goodNumLabel                 = [[UILabel alloc]init];
         _goodNumLabel.numberOfLines   = 1;
-        _goodNumLabel.backgroundColor = [UIColor RandomColor];
+       // _goodNumLabel.backgroundColor = [UIColor RandomColor];
         _goodNumLabel.text            = @"66人点赞";
         _goodNumLabel.font            = [UIFont systemFontOfSize:15.0f];
         

@@ -262,7 +262,7 @@
     UIView *sourceView = self.sourceImagesContainerView.subviews[self.currentImageIndex];
     UIView *parentView = [self getParsentView:sourceView];
     CGRect targetTemp = [sourceView.superview convertRect:sourceView.frame toView:parentView];
-    targetTemp.origin.y =  targetTemp.origin.y+_topNavHeight;
+    targetTemp.origin.y =  targetTemp.origin.y;
     // 减去偏移量
     
     if ([parentView isKindOfClass:[UITableView class]]) {
