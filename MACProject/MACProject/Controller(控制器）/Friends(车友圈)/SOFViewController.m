@@ -65,9 +65,12 @@
     
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-   return  [tableView fd_heightForCellWithIdentifier:@"FriendsCell" cacheByKey:@"friendsCell" configuration:^(id cell) {
-       [self configureCell:cell atIndexPath:indexPath];
+    return [tableView fd_heightForCellWithIdentifier:@"FriendsCell" cacheByIndexPath:indexPath configuration:^(id cell) {
+        // configurations
+        [self configureCell:cell atIndexPath:indexPath];
+        
     }];
+
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return GTFixHeightFlaot(10.f);

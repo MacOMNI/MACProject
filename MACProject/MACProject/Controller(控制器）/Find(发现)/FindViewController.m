@@ -8,7 +8,6 @@
 
 #import "FindViewController.h"
 #import "FriendsCell.h"
-//#import "SpecialViewController.h"
 @interface FindViewController ()<UITableViewDataSource,UITableViewDelegate>{
     NSMutableArray *titleArr;
     NSMutableArray *iconArr;

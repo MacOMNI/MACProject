@@ -9,7 +9,10 @@
 #import "FriendsMessageCell.h"
 #import "YYText.h"
 #import "MACImageGroupView.h"
-@interface FriendsMessageCell(){
+#import "CommentCell.h"
+//#import "UITableView+FDTemplateLayoutCell.h"
+#import "UITableViewCell+HYBMasonryAutoCellHeight.h"
+@interface FriendsMessageCell()<UITableViewDataSource,UITableViewDelegate>{
     
 }
 @property (nonatomic,strong) UIImageView  *avactorImageView;
@@ -78,7 +81,7 @@
         _contentLabel.text            = @"简单测试一下";
         [self.contentView addSubview:_contentLabel];
         [_contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(_avactorImageView.mas_bottom).offset(5);
+            make.top.equalTo(_avactorImageView.mas_bottom);
             make.left.mas_equalTo(8);
             make.right.equalTo(self.contentView.mas_right).offset(-8);
         }];
@@ -146,22 +149,98 @@
             make.left.mas_equalTo(8.0);
             make.height.mas_equalTo(21.0);
             make.right.equalTo(self.contentView.mas_right).offset(-8);
-            make.bottom.equalTo(self.contentView.mas_bottom).offset(-8);
+         //   make.bottom.equalTo(self.contentView.mas_bottom).offset(-8);
+
         }];
         //评论列表
+        _commentTableView = [[UITableView alloc]init];
+        _commentTableView.scrollEnabled = NO;
+
+        _commentTableView.tableFooterView = [UIView new];
+        _commentTableView.dataSource = self;
+        _commentTableView.delegate = self;
+        _commentTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+
+        [_commentTableView registerClass:[CommentCell class] forCellReuseIdentifier:@"CommentCell"];
+        [self.contentView addSubview:_commentTableView];
+      //  _commentTableView.fd_debugLogEnabled=YES;
+        [_commentTableView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(_goodNumLabel.mas_bottom);
+            make.left.equalTo(self.contentView.mas_left);
+            make.right.equalTo(self.contentView.mas_right);
+            make.bottom.equalTo(self.contentView.mas_bottom);
+        }];
     }
     return self;
 }
 -(void)setModel:(FriendsMessageModel *)model{
     _model                = model;
     _browserNumLabel.text = @"66次浏览";
-    _contentLabel.text    = @"简单聊点什么呢,发生大股东嘎嘎的个区文工团去玩儿去问发搜噶搜噶搜噶傻吊噶啥的噶去等噶嘎嘎发噶发噶发嘎多发生的";
+    _contentLabel.text    = @"张三回复王五： 这是使用 Objective-C 整理的一套 iOS 轻量级框架，内部包含大量或自己整理或修改自网络的 Category 、Utils、DataManager、Macros & UIComponents 旨在快速构建中小型 iOS App，并尝试用其整理了个 MACProject 样例以来抛砖引玉，愿与大犇们相互学习交流，不足之处望批评指正， 更欢迎 Star。";
     _goodNumLabel.text    = @"66人点赞";
     _gridView.dataSource  = @[@"http://img4.imgtn.bdimg.com/it/u=625004603,817273667&fm=11&gp=0.jpg",
                              @"http://img6n.soufunimg.com/agents/2016_08/07/M02/09/06/wKgEUFem6FKIYzINAAB3D_rQ-MAAAOGfgCie9YAAHcn210.jpg",
                              @"http://pic1.882668.com.160cha.com/882668/2016/09/18/121526458.jpg"];
+    CGFloat height = 0;
+//    for (NSInteger i =0;i< 3; i++) {
+//        height += [_commentTableView fd_heightForCellWithIdentifier:@"CommentCell" configuration:^(id cell) {
+//            [self configureCell:cell atIndexPath:nil];
+//        }];
+//    }
+     for (NSInteger i = 0;i< 3; i++) {
+         height += [CommentCell hyb_heightForTableView:_commentTableView config:^(UITableViewCell *sourceCell) {
+             CommentCell *cell = (CommentCell *)sourceCell;
+             [self configureCell:cell atIndexPath:nil];
+
+         }];
+    }
+
+    [_commentTableView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(height);
+    }];
+   [_commentTableView reloadData];
+}
+#pragma  mark tableView datasource delegate
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 3;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    CommentCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CommentCell" forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    //    if (cell) {
+    //        cell=[[FriendsMessageCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"FriendsCell"];
+    //    }
+    [self configureCell:cell atIndexPath:indexPath];
+    return cell;
     
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    CGFloat cell_height = [CommentCell hyb_heightForTableView:tableView config:^(UITableViewCell *sourceCell) {
+        CommentCell *cell = (CommentCell *)sourceCell;
+       [self configureCell:cell atIndexPath:indexPath];
+    } cache:^NSDictionary *{
+        NSDictionary *cache = @{kHYBCacheUniqueKey : @(indexPath.row),
+                                kHYBCacheStateKey : @"",
+                                kHYBRecalculateForStateKey : @(NO)};
+        //        model.shouldUpdateCache = NO;
+        return cache;
+    }];
+    return cell_height;
     
+//    return [tableView fd_heightForCellWithIdentifier:@"CommentCell" cacheByIndexPath:indexPath configuration:^(id cell) {
+//        // configurations
+//        [self configureCell:cell atIndexPath:indexPath];
+//
+//    }];
+}
+#pragma  mark  configureCell
+- (void)configureCell:(CommentCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+   // cell.fd_enforceFrameLayout = NO; // Enable to use "-sizeThatFits:"
+    cell.model = nil;
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

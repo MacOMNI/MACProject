@@ -58,6 +58,10 @@
 		5A15AAA71D58ABC7000ED86E /* NSObject+JKKVOBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AAA61D58ABC7000ED86E /* NSObject+JKKVOBlocks.m */; };
 		5A15AAAD1D58ADD2000ED86E /* UITextField+JKShake.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AAAB1D58ADD2000ED86E /* UITextField+JKShake.m */; };
 		5A15AAB01D58ADD9000ED86E /* UITextField+JKBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A15AAAF1D58ADD9000ED86E /* UITextField+JKBlocks.m */; };
+		5A2E7CE61D93802500B6FBB7 /* CommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2E7CE51D93802500B6FBB7 /* CommentCell.m */; };
+		5A2E7CE91D93805A00B6FBB7 /* CommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2E7CE81D93805A00B6FBB7 /* CommentModel.m */; };
+		5A2E7CED1D93B1B000B6FBB7 /* FriendsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2E7CEB1D93B1B000B6FBB7 /* FriendsCell.m */; };
+		5A2E7CEE1D93B1B000B6FBB7 /* FriendsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A2E7CEC1D93B1B000B6FBB7 /* FriendsCell.xib */; };
 		5A441DF91D783011008DF1AC /* MMAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A441DF81D783011008DF1AC /* MMAnimationViewController.m */; };
 		5A441DFD1D7830CE008DF1AC /* MMAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A441DFC1D7830CE008DF1AC /* MMAnimationController.m */; };
 		5A441E001D783132008DF1AC /* CGPointExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A441DFF1D783132008DF1AC /* CGPointExtension.m */; };
@@ -73,8 +77,6 @@
 		5A546ED21D5C764B00F9361E /* ScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A546ED11D5C764B00F9361E /* ScrollView+Additions.m */; };
 		5A557C221D6C3B5D00DF26DC /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A557C1E1D6C3B5D00DF26DC /* CityModel.m */; };
 		5A557C231D6C3B5D00DF26DC /* CitysXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A557C201D6C3B5D00DF26DC /* CitysXMLParser.m */; };
-		5A557C2A1D6C3C2300DF26DC /* FriendsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A557C281D6C3C2300DF26DC /* FriendsCell.m */; };
-		5A557C2B1D6C3C2300DF26DC /* FriendsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A557C291D6C3C2300DF26DC /* FriendsCell.xib */; };
 		5A557C341D6C6DDD00DF26DC /* ContactsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A557C321D6C6DDD00DF26DC /* ContactsVC.m */; };
 		5A557C351D6C6DDD00DF26DC /* ContactsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A557C331D6C6DDD00DF26DC /* ContactsVC.xib */; };
 		5A557C3C1D6C6ECA00DF26DC /* ButtonImageWithTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A557C371D6C6ECA00DF26DC /* ButtonImageWithTitle.m */; };
@@ -263,6 +265,8 @@
 		5AF9AF931D4A0F9800F23C1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF9AF921D4A0F9800F23C1E /* AppDelegate.m */; };
 		5AF9AF991D4A0F9800F23C1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF9AF971D4A0F9800F23C1E /* Main.storyboard */; };
 		5AF9AF9B1D4A0F9800F23C1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AF9AF9A1D4A0F9800F23C1E /* Assets.xcassets */; };
+		5AFD7B151D941B0C007EC7C2 /* UITableView+HYBCacheHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD7B121D941B0C007EC7C2 /* UITableView+HYBCacheHeight.m */; };
+		5AFD7B161D941B0C007EC7C2 /* UITableViewCell+HYBMasonryAutoCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD7B141D941B0C007EC7C2 /* UITableViewCell+HYBMasonryAutoCellHeight.m */; };
 		ED95D17053554ACAC069B19E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34ED505CBF42FA657FA65818 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -373,6 +377,13 @@
 		5A15AAAB1D58ADD2000ED86E /* UITextField+JKShake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+JKShake.m"; sourceTree = "<group>"; };
 		5A15AAAE1D58ADD9000ED86E /* UITextField+JKBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+JKBlocks.h"; sourceTree = "<group>"; };
 		5A15AAAF1D58ADD9000ED86E /* UITextField+JKBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+JKBlocks.m"; sourceTree = "<group>"; };
+		5A2E7CE41D93802500B6FBB7 /* CommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentCell.h; sourceTree = "<group>"; };
+		5A2E7CE51D93802500B6FBB7 /* CommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentCell.m; sourceTree = "<group>"; };
+		5A2E7CE71D93805A00B6FBB7 /* CommentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentModel.h; sourceTree = "<group>"; };
+		5A2E7CE81D93805A00B6FBB7 /* CommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentModel.m; sourceTree = "<group>"; };
+		5A2E7CEA1D93B1B000B6FBB7 /* FriendsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsCell.h; sourceTree = "<group>"; };
+		5A2E7CEB1D93B1B000B6FBB7 /* FriendsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsCell.m; sourceTree = "<group>"; };
+		5A2E7CEC1D93B1B000B6FBB7 /* FriendsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendsCell.xib; sourceTree = "<group>"; };
 		5A441DF71D783011008DF1AC /* MMAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAnimationViewController.h; sourceTree = "<group>"; };
 		5A441DF81D783011008DF1AC /* MMAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAnimationViewController.m; sourceTree = "<group>"; };
 		5A441DFB1D7830CE008DF1AC /* MMAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAnimationController.h; sourceTree = "<group>"; };
@@ -403,9 +414,6 @@
 		5A557C1E1D6C3B5D00DF26DC /* CityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityModel.m; sourceTree = "<group>"; };
 		5A557C1F1D6C3B5D00DF26DC /* CitysXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitysXMLParser.h; sourceTree = "<group>"; };
 		5A557C201D6C3B5D00DF26DC /* CitysXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitysXMLParser.m; sourceTree = "<group>"; };
-		5A557C271D6C3C2300DF26DC /* FriendsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsCell.h; sourceTree = "<group>"; };
-		5A557C281D6C3C2300DF26DC /* FriendsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsCell.m; sourceTree = "<group>"; };
-		5A557C291D6C3C2300DF26DC /* FriendsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendsCell.xib; sourceTree = "<group>"; };
 		5A557C311D6C6DDD00DF26DC /* ContactsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsVC.h; sourceTree = "<group>"; };
 		5A557C321D6C6DDD00DF26DC /* ContactsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsVC.m; sourceTree = "<group>"; };
 		5A557C331D6C6DDD00DF26DC /* ContactsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsVC.xib; sourceTree = "<group>"; };
@@ -772,6 +780,10 @@
 		5AF9AF981D4A0F9800F23C1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5AF9AF9A1D4A0F9800F23C1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = MACProject/Assets.xcassets; sourceTree = "<group>"; };
 		5AF9AF9F1D4A0F9800F23C1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AFD7B111D941B0C007EC7C2 /* UITableView+HYBCacheHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+HYBCacheHeight.h"; sourceTree = "<group>"; };
+		5AFD7B121D941B0C007EC7C2 /* UITableView+HYBCacheHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+HYBCacheHeight.m"; sourceTree = "<group>"; };
+		5AFD7B131D941B0C007EC7C2 /* UITableViewCell+HYBMasonryAutoCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+HYBMasonryAutoCellHeight.h"; sourceTree = "<group>"; };
+		5AFD7B141D941B0C007EC7C2 /* UITableViewCell+HYBMasonryAutoCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+HYBMasonryAutoCellHeight.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1122,6 +1134,8 @@
 				5A557C441D6C6EFD00DF26DC /* GroupModel.m */,
 				5AB6D2391D922FAB00E9676B /* FriendsMessageModel.h */,
 				5AB6D23A1D922FAB00E9676B /* FriendsMessageModel.m */,
+				5A2E7CE71D93805A00B6FBB7 /* CommentModel.h */,
+				5A2E7CE81D93805A00B6FBB7 /* CommentModel.m */,
 			);
 			path = "Friends(车友圈)";
 			sourceTree = "<group>";
@@ -1154,6 +1168,9 @@
 		5A557C251D6C3B7800DF26DC /* Friends(车友圈) */ = {
 			isa = PBXGroup;
 			children = (
+				5A2E7CEA1D93B1B000B6FBB7 /* FriendsCell.h */,
+				5A2E7CEB1D93B1B000B6FBB7 /* FriendsCell.m */,
+				5A2E7CEC1D93B1B000B6FBB7 /* FriendsCell.xib */,
 				5A557C401D6C6ED000DF26DC /* HeadView.h */,
 				5A557C411D6C6ED000DF26DC /* HeadView.m */,
 				5A557C361D6C6ECA00DF26DC /* ButtonImageWithTitle.h */,
@@ -1162,11 +1179,10 @@
 				5A557C391D6C6ECA00DF26DC /* ContactsCell.h */,
 				5A557C3A1D6C6ECA00DF26DC /* ContactsCell.m */,
 				5A557C3B1D6C6ECA00DF26DC /* ContactsCell.xib */,
-				5A557C271D6C3C2300DF26DC /* FriendsCell.h */,
-				5A557C281D6C3C2300DF26DC /* FriendsCell.m */,
-				5A557C291D6C3C2300DF26DC /* FriendsCell.xib */,
 				5AB6D2341D92243000E9676B /* FriendsMessageCell.h */,
 				5AB6D2351D92243000E9676B /* FriendsMessageCell.m */,
+				5A2E7CE41D93802500B6FBB7 /* CommentCell.h */,
+				5A2E7CE51D93802500B6FBB7 /* CommentCell.m */,
 			);
 			path = "Friends(车友圈)";
 			sourceTree = "<group>";
@@ -1775,6 +1791,7 @@
 		5AB5202F1D53290F000C3C80 /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
+				5AFD7B101D941B0C007EC7C2 /* HYBMasonryAutoCellHeight */,
 				5A15AA741D587544000ED86E /* UITableView+CellClass.h */,
 				5A15AA751D587544000ED86E /* UITableView+CellClass.m */,
 				5AB520301D53290F000C3C80 /* MACRefresh(刷新) */,
@@ -2121,6 +2138,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5AFD7B101D941B0C007EC7C2 /* HYBMasonryAutoCellHeight */ = {
+			isa = PBXGroup;
+			children = (
+				5AFD7B111D941B0C007EC7C2 /* UITableView+HYBCacheHeight.h */,
+				5AFD7B121D941B0C007EC7C2 /* UITableView+HYBCacheHeight.m */,
+				5AFD7B131D941B0C007EC7C2 /* UITableViewCell+HYBMasonryAutoCellHeight.h */,
+				5AFD7B141D941B0C007EC7C2 /* UITableViewCell+HYBMasonryAutoCellHeight.m */,
+			);
+			path = HYBMasonryAutoCellHeight;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2192,7 +2220,6 @@
 				5A5452E51D92914000CD9838 /* whiteplaceholder.png in Resources */,
 				5A9553181D74405100A75C3C /* SpecailShowViewController.xib in Resources */,
 				5AB520DD1D53290F000C3C80 /* icon_refresh_1@3x.png in Resources */,
-				5A557C2B1D6C3C2300DF26DC /* FriendsCell.xib in Resources */,
 				5AB520DF1D53290F000C3C80 /* icon_refresh_2@3x.png in Resources */,
 				5A0528311D6EEF4B004ECE57 /* multipy_unicode.dat in Resources */,
 				5A994F981D5D7813000F1A17 /* ParallaxHeaderViewCell.xib in Resources */,
@@ -2206,6 +2233,7 @@
 				5AB773561D75884E00D7E113 /* SepeicalAnimationViewController.xib in Resources */,
 				5AB7735F1D758E2F00D7E113 /* POPNumberViewController.xib in Resources */,
 				5A557C3F1D6C6ECA00DF26DC /* ContactsCell.xib in Resources */,
+				5A2E7CEE1D93B1B000B6FBB7 /* FriendsCell.xib in Resources */,
 				5AAD6DF11D9117CE00E4C2A9 /* emotion.plist in Resources */,
 				5AB520F61D53290F000C3C80 /* .gitkeep in Resources */,
 				5A97EC7A1D6469AF00A29247 /* CarLightViewCell.xib in Resources */,
@@ -2278,8 +2306,8 @@
 				5AB520A51D53290F000C3C80 /* NSString+HLHanZiToPinYin.m in Sources */,
 				5AB5209C1D53290F000C3C80 /* NSNumber+RomanNumerals.m in Sources */,
 				5AB520AC1D53290F000C3C80 /* NSString+Trims.m in Sources */,
-				5A557C2A1D6C3C2300DF26DC /* FriendsCell.m in Sources */,
 				5A994FAF1D5DEDA3000F1A17 /* ParallaxHeader.m in Sources */,
+				5A2E7CE61D93802500B6FBB7 /* CommentCell.m in Sources */,
 				5A05282F1D6EEF4B004ECE57 /* LocalPushCenter.m in Sources */,
 				5AB520C01D53290F000C3C80 /* UIColor+MACProject.m in Sources */,
 				5AB520C91D53290F000C3C80 /* UIImageView+Reflect.m in Sources */,
@@ -2355,6 +2383,7 @@
 				5A05281E1D6EEF4B004ECE57 /* CoreAnimationEffect.m in Sources */,
 				5AB520D01D53290F000C3C80 /* UINavigationController+KMNavigationBarTransition.m in Sources */,
 				5AB520971D53290F000C3C80 /* NSException+Trace.m in Sources */,
+				5AFD7B161D941B0C007EC7C2 /* UITableViewCell+HYBMasonryAutoCellHeight.m in Sources */,
 				5A557C621D6C6F5100DF26DC /* QRScanViewController.m in Sources */,
 				5A15AA721D586D78000ED86E /* File.m in Sources */,
 				5AA23F481D59FB90005A67FF /* UIView+AnimationProperty.m in Sources */,
@@ -2409,6 +2438,7 @@
 				5AA23F451D59FB77005A67FF /* BadgeValueView.m in Sources */,
 				5AF9AF931D4A0F9800F23C1E /* AppDelegate.m in Sources */,
 				5A0528301D6EEF4B004ECE57 /* Array.mm in Sources */,
+				5A2E7CED1D93B1B000B6FBB7 /* FriendsCell.m in Sources */,
 				5AB520CE1D53290F000C3C80 /* KMSwizzle.m in Sources */,
 				5AB5209D1D53290F000C3C80 /* NSNumber+Round.m in Sources */,
 				5A994F971D5D7813000F1A17 /* ParallaxHeaderViewCell.m in Sources */,
@@ -2440,6 +2470,7 @@
 				5A557C5B1D6C6F5100DF26DC /* mask.c in Sources */,
 				5A5452E11D92914000CD9838 /* HZIndicatorView.m in Sources */,
 				5AB520CF1D53290F000C3C80 /* MACNavigationController.m in Sources */,
+				5AFD7B151D941B0C007EC7C2 /* UITableView+HYBCacheHeight.m in Sources */,
 				5AB520F71D53290F000C3C80 /* MONActivityIndicatorView.m in Sources */,
 				5A5452E41D92914000CD9838 /* MACImageGroupView.m in Sources */,
 				5A557C5E1D6C6F5100DF26DC /* qrinput.c in Sources */,
@@ -2462,6 +2493,7 @@
 				5AB520991D53290F000C3C80 /* NSDecimalNumber+CalculatingByString.m in Sources */,
 				5A557C341D6C6DDD00DF26DC /* ContactsVC.m in Sources */,
 				5A0528321D6EEF4B004ECE57 /* SearchCore.mm in Sources */,
+				5A2E7CE91D93805A00B6FBB7 /* CommentModel.m in Sources */,
 				5A05282E1D6EEF4B004ECE57 /* GCDTimer.m in Sources */,
 				5A15AAAD1D58ADD2000ED86E /* UITextField+JKShake.m in Sources */,
 				5A05282C1D6EEF4B004ECE57 /* GCDQueue.m in Sources */,

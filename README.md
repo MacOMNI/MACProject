@@ -186,7 +186,10 @@ typedef NS_ENUM(NSInteger, MACRefreshState) {
 
 ![图片](http://upload-images.jianshu.io/upload_images/335970-14e9d75772d5e991.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-###图文混排、表情键盘、动态计算高度等（暂未开放）
+### 高仿朋友圈 & QQ空间
+![图片](http://oc4tpefat.bkt.clouddn.com/friends.png)
+
+
 
 ##云周边（暂未开放）
 

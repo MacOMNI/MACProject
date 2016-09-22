@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FriendsMessageModel.h"
+//#import "FriendsMessageModel.h"
+@class FriendsMessageModel;
 @interface FriendsMessageCell : UITableViewCell
 
 @property(nonatomic,strong) FriendsMessageModel *model;

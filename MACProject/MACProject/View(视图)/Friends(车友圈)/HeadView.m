@@ -32,17 +32,17 @@
 - (id)initWithReuseIdentifier:(NSString *)reuseIdentifier
 {
     if (self = [super initWithReuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor=[UIColor whiteColor];
-        bgButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        self.contentView.backgroundColor = [UIColor whiteColor];
+        bgButton                         = [UIButton buttonWithType:UIButtonTypeCustom];
         // [bgButton setBackgroundImage:[UIImage imageNamed:@"buddy_header_bg"] forState:UIControlStateNormal];
         // [bgButton setBackgroundImage:[UIImage imageNamed:@"buddy_header_bg_highlighted"] forState:UIControlStateHighlighted];
         [bgButton setImage:[UIImage imageNamed:@"contacts_rocket"] forState:UIControlStateNormal];
         [bgButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        bgButton.imageView.contentMode = UIViewContentModeCenter;
-        bgButton.imageView.clipsToBounds = NO;
+        bgButton.imageView.contentMode      = UIViewContentModeCenter;
+        bgButton.imageView.clipsToBounds    = NO;
         bgButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-        bgButton.contentEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
-        bgButton.titleEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
+        bgButton.contentEdgeInsets          = UIEdgeInsetsMake(0, 10, 0, 0);
+        bgButton.titleEdgeInsets            = UIEdgeInsetsMake(0, 10, 0, 0);
         [bgButton addTarget:self action:@selector(headBtnClick) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:bgButton];
     }
@@ -60,7 +60,7 @@
 
 -(void)setName:(NSString *)name
 {
-    _name=name;
+    _name = name;
     [bgButton setTitle:name forState:UIControlStateNormal];
 }
 - (void)layoutSubviews
