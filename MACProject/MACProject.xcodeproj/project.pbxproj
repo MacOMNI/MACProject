@@ -110,6 +110,7 @@
 		5A9553131D743E8A00A75C3C /* SpecialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9553121D743E8A00A75C3C /* SpecialViewController.m */; };
 		5A9553171D74405100A75C3C /* SpecailShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9553151D74405100A75C3C /* SpecailShowViewController.m */; };
 		5A9553181D74405100A75C3C /* SpecailShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A9553161D74405100A75C3C /* SpecailShowViewController.xib */; };
+		5A95A1551D9504F900A7E725 /* MessageHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A95A1541D9504F900A7E725 /* MessageHeadView.m */; };
 		5A97EC791D6469AF00A29247 /* CarLightViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A97EC771D6469AF00A29247 /* CarLightViewCell.m */; };
 		5A97EC7A1D6469AF00A29247 /* CarLightViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A97EC781D6469AF00A29247 /* CarLightViewCell.xib */; };
 		5A97EC7D1D647EB200A29247 /* LightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A97EC7C1D647EB200A29247 /* LightCell.m */; };
@@ -474,6 +475,8 @@
 		5A9553141D74405100A75C3C /* SpecailShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecailShowViewController.h; sourceTree = "<group>"; };
 		5A9553151D74405100A75C3C /* SpecailShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecailShowViewController.m; sourceTree = "<group>"; };
 		5A9553161D74405100A75C3C /* SpecailShowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpecailShowViewController.xib; sourceTree = "<group>"; };
+		5A95A1531D9504F900A7E725 /* MessageHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageHeadView.h; sourceTree = "<group>"; };
+		5A95A1541D9504F900A7E725 /* MessageHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageHeadView.m; sourceTree = "<group>"; };
 		5A97EC761D6469AF00A29247 /* CarLightViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarLightViewCell.h; sourceTree = "<group>"; };
 		5A97EC771D6469AF00A29247 /* CarLightViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarLightViewCell.m; sourceTree = "<group>"; };
 		5A97EC781D6469AF00A29247 /* CarLightViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarLightViewCell.xib; sourceTree = "<group>"; };
@@ -1183,6 +1186,8 @@
 				5AB6D2351D92243000E9676B /* FriendsMessageCell.m */,
 				5A2E7CE41D93802500B6FBB7 /* CommentCell.h */,
 				5A2E7CE51D93802500B6FBB7 /* CommentCell.m */,
+				5A95A1531D9504F900A7E725 /* MessageHeadView.h */,
+				5A95A1541D9504F900A7E725 /* MessageHeadView.m */,
 			);
 			path = "Friends(车友圈)";
 			sourceTree = "<group>";
@@ -2464,6 +2469,7 @@
 				5AB521281D53441B000C3C80 /* CellDataAdapter.m in Sources */,
 				5AB520E31D53290F000C3C80 /* MACTableView.m in Sources */,
 				5AF82FF61D6D382900DB6C67 /* SOFViewController.m in Sources */,
+				5A95A1551D9504F900A7E725 /* MessageHeadView.m in Sources */,
 				5A15AA731D586D78000ED86E /* FileManager.m in Sources */,
 				5A9074DD1D6556D90049CEC9 /* BannerCell.m in Sources */,
 				5A0528471D6EF4E9004ECE57 /* TransitionRandomVC.m in Sources */,

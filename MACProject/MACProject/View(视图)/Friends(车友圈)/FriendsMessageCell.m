@@ -87,7 +87,7 @@
         }];
         
         //图片
-        _gridView = [MACImageGroupView new];
+        _gridView = [[MACImageGroupView alloc] init];
        // _gridView.backgroundColor = [UIColor RandomColor];
         [self.contentView addSubview:_gridView];
         [_gridView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -149,7 +149,7 @@
             make.left.mas_equalTo(8.0);
             make.height.mas_equalTo(21.0);
             make.right.equalTo(self.contentView.mas_right).offset(-8);
-         //   make.bottom.equalTo(self.contentView.mas_bottom).offset(-8);
+           // make.bottom.equalTo(self.contentView.mas_bottom).offset(-8);
 
         }];
         //评论列表
@@ -163,12 +163,9 @@
 
         [_commentTableView registerClass:[CommentCell class] forCellReuseIdentifier:@"CommentCell"];
         [self.contentView addSubview:_commentTableView];
-      //  _commentTableView.fd_debugLogEnabled=YES;
         [_commentTableView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(_goodNumLabel.mas_bottom);
-            make.left.equalTo(self.contentView.mas_left);
-            make.right.equalTo(self.contentView.mas_right);
-            make.bottom.equalTo(self.contentView.mas_bottom);
+            make.left.right.bottom.equalTo(self.contentView);
         }];
     }
     return self;
@@ -178,27 +175,39 @@
     _browserNumLabel.text = @"66次浏览";
     _contentLabel.text    = @"张三回复王五： 这是使用 Objective-C 整理的一套 iOS 轻量级框架，内部包含大量或自己整理或修改自网络的 Category 、Utils、DataManager、Macros & UIComponents 旨在快速构建中小型 iOS App，并尝试用其整理了个 MACProject 样例以来抛砖引玉，愿与大犇们相互学习交流，不足之处望批评指正， 更欢迎 Star。";
     _goodNumLabel.text    = @"66人点赞";
-    _gridView.dataSource  = @[@"http://img4.imgtn.bdimg.com/it/u=625004603,817273667&fm=11&gp=0.jpg",
-                             @"http://img6n.soufunimg.com/agents/2016_08/07/M02/09/06/wKgEUFem6FKIYzINAAB3D_rQ-MAAAOGfgCie9YAAHcn210.jpg",
+    _gridView.dataSource  = @[@"http://f1.diyitui.com/91/b2/f2/a3/5c/6d/5a/0a/97/bb/1a/09/90/d2/ff/cc.jpg",
+                             @"http://news.mydrivers.com/Img/20101001/11525723.jpg",
                              @"http://pic1.882668.com.160cha.com/882668/2016/09/18/121526458.jpg"];
     CGFloat height = 0;
+    //[_commentTableView reloadData];
+
 //    for (NSInteger i =0;i< 3; i++) {
 //        height += [_commentTableView fd_heightForCellWithIdentifier:@"CommentCell" configuration:^(id cell) {
 //            [self configureCell:cell atIndexPath:nil];
 //        }];
 //    }
      for (NSInteger i = 0;i< 3; i++) {
+//         height += [CommentCell hyb_heightForTableView:_commentTableView config:^(UITableViewCell *sourceCell) {
+//             CommentCell *cell = (CommentCell *)sourceCell;
+//             [self configureCell:cell atIndexPath:nil];
+//
+//         }];
          height += [CommentCell hyb_heightForTableView:_commentTableView config:^(UITableViewCell *sourceCell) {
              CommentCell *cell = (CommentCell *)sourceCell;
-             [self configureCell:cell atIndexPath:nil];
-
+             [self configureCell:cell atIndexPath:_indexPath];
+         } cache:^NSDictionary *{
+             NSDictionary *cache = @{kHYBCacheUniqueKey : @(_indexPath.row),
+                                     kHYBCacheStateKey : @"",
+                                     kHYBRecalculateForStateKey : @(NO)};
+             //        model.shouldUpdateCache = NO;
+             return cache;
          }];
+
     }
 
     [_commentTableView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(height);
     }];
-   [_commentTableView reloadData];
 }
 #pragma  mark tableView datasource delegate
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{

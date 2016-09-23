@@ -119,12 +119,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>YYCache.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>YYImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>YYText.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>YYWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -147,11 +157,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1E9D4B808F35F43F56143D9053DC530B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>21D519B4407B78E098634711DD1FA079</key>
 		<dict>
 			<key>primary</key>
@@ -167,7 +172,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>442746D81F0668EAC7B18B688438E281</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>44ECA6856733F59845126C1F936A60C8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4C9E99CC2B5F0FA4FC11C2E24D4EF986</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4F2267DA426D478FF4FF3DEB3A4826C5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -197,6 +217,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>7CD067CB2B1A10DDE48CE7ECEDFB76EE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>928353533005A4198EBDA5B700D37B64</key>
 		<dict>
 			<key>primary</key>
@@ -207,17 +232,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9C93E33629A4BA977BA880835FAAC023</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>9EAB3E42EF957541E6C3C76D35FD008E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BAFA572976726089ACC9A0EBDC091845</key>
+		<key>AB6E68DAC26994EB6897996D86B56027</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C0C734FD7401E66E51FA5CDC6D6BAA9E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -232,17 +257,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D55CE8E5700DE72E75FE2C23F1A01436</key>
+		<key>D762293894272510F55457A4F287A885</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D8C960E47C49D489D5BCFF1B27BB79FF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DCA78E640955EBC9583714D629239B06</key>
+		<key>DA7868EB37F98E4114FBB8861A6DCB9C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -252,17 +272,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E89DC97FDE4AC3148187256C9AC872F8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>E9EF397B95762DDB254C71DDCB4B1381</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EE4E251035E9374466535F3E9AE6A689</key>
+		<key>EDFA49DFC0D9A11ECD0F53C1C2BB5237</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE5EA4994D77C955434B175054844D2A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

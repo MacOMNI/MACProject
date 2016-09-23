@@ -12,5 +12,5 @@
 @interface FriendsMessageCell : UITableViewCell
 
 @property(nonatomic,strong) FriendsMessageModel *model;
-
+@property(nonatomic,assign) NSIndexPath *indexPath;
 @end

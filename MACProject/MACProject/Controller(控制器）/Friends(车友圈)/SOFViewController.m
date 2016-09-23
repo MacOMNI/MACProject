@@ -10,7 +10,7 @@
 #import "FriendsMessageCell.h"
 #import "UITableView+FDTemplateLayoutCell.h"
 #import "YYFPSLabel.h"
-@interface SOFViewController ()<MACTableViewDelegate,UITableViewDataSource,UITableViewDelegate>{
+@interface SOFViewController ()<MACTableViewDelegate,UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>{
     
 }
 @property(nonatomic,strong) MACTableView *tableView;
@@ -29,7 +29,8 @@
     self.title  = @"朋友圈";
     self.tableView = [[MACTableView alloc]initWithFrame: self.view.bounds];
     self.tableView.macTableViewDelegate = self;
-    self.tableView.isShowEmpty = NO;
+    //self.tableView.isShowEmpty = NO;
+    self.tableView.delegate = self;
     [self.view addSubview:self.tableView];
     [self.tableView registerClass:[FriendsMessageCell class] forCellReuseIdentifier:@"FriendsCell"];
         self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:[[YYFPSLabel alloc]initWithFrame:CGRectMake(0, 5, 60, 30)]];
@@ -49,7 +50,7 @@
 
 #pragma mark TableView delegate datasource
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 10;
+    return 20;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 1;
@@ -57,6 +58,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     FriendsMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FriendsCell" forIndexPath:indexPath];
        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+       cell.indexPath      = indexPath;
 //    if (cell) {
 //        cell=[[FriendsMessageCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"FriendsCell"];
 //    }
@@ -65,15 +67,15 @@
     
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return [tableView fd_heightForCellWithIdentifier:@"FriendsCell" cacheByIndexPath:indexPath configuration:^(id cell) {
+    CGFloat Height = [tableView fd_heightForCellWithIdentifier:@"FriendsCell" cacheByIndexPath:indexPath configuration:^(id cell) {
         // configurations
         [self configureCell:cell atIndexPath:indexPath];
         
     }];
-
+    return Height;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return GTFixHeightFlaot(10.f);
+    return 10.f;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
@@ -83,7 +85,10 @@
     cell.fd_enforceFrameLayout = NO; // Enable to use "-sizeThatFits:"
     cell.model = nil;
 }
-
+#pragma  mark scrollDelegate
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

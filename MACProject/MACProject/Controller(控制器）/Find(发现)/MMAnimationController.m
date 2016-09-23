@@ -64,13 +64,12 @@
     self.anim.animationBlock = ^(double c,double d,NSArray *v,id target,MMTweenAnimation *animation)
     {
         double value    = [v[0] doubleValue];
-       // ws.dummy.center = CGPointMake(ws.dummy.center.x, value);
+        ws.dummy.center = CGPointMake(ws.dummy.center.x, value);
         ws.ball.center  = CGPointMake(50+(CGRectGetWidth([UIScreen mainScreen].bounds)-150)*(c/d), value);
         
-       // [ws.paintView addDot:ws.ball.center];
+        [ws.paintView addDot:ws.ball.center];
     };
-    
-    
+
 }
 
 - (void)didReceiveMemoryWarning {

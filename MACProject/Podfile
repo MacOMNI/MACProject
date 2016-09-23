@@ -24,7 +24,6 @@ pod 'MXSegmentedPager', '~> 2.0.0'
 pod 'GMGridView', '~> 1.1.1'
 # Calendar 日期
 #pod 'JTCalendar', '~> 2.0'
-pod 'UITableView+FDTemplateLayoutCell', '~> 1.4.beta'
 #  UICollectionView
 pod 'CSStickyHeaderFlowLayout', '~> 0.2.10'
 
@@ -36,8 +35,10 @@ pod 'SDCycleScrollView', '~> 1.62'
 pod 'iCarousel', '~> 1.8.2'
 
 pod 'YYText', '~> 1.0.5'
+
 pod 'YYImage', '~> 1.0.3'
 
+pod 'YYWebImage', '~> 1.0.4'
 # 自动布局计算高度
 
 pod 'UITableView+FDTemplateLayoutCell', '~> 1.5.beta'
