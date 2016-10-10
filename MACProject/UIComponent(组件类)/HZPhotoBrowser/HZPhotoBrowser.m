@@ -385,7 +385,7 @@
     return shouldSupportLandscape;
 }
 
-- (NSUInteger)supportedInterfaceOrientations
+-(UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
     if (shouldSupportLandscape) {
         return UIInterfaceOrientationMaskAll;

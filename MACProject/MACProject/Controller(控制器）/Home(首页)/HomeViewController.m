@@ -16,7 +16,6 @@
     CGFloat headerHeight;
 }
 @property (nonatomic,strong) UICollectionView *collectionView;
-@property (nonatomic, strong) UINib *headerNib;
 
 @end
 
@@ -31,70 +30,49 @@ static NSString * const reuseIdentifier = @"Cell";
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     [self.navigationController.navigationBar lt_reset];
-
+    
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Register cell classes
     
     [self initUI];
     [self initData];
     // Do any additional setup after loading the view.
 }
 -(void)initUI{
-   // self.fd_prefersNavigationBarHidden=YES;
-    headerHeight = 200;
-    self.title = @"闲鱼";
-    CSStickyHeaderFlowLayout *flowLayout = [[CSStickyHeaderFlowLayout alloc]init];
-    flowLayout.parallaxHeaderReferenceSize = CGSizeMake(self.view.width, headerHeight);
+    // self.fd_prefersNavigationBarHidden=YES;
+    headerHeight                                  = 200;
+    self.title                                    = @"闲鱼";
+    CSStickyHeaderFlowLayout *flowLayout          = [[CSStickyHeaderFlowLayout alloc]init];
+    flowLayout.parallaxHeaderReferenceSize        = CGSizeMake(self.view.width, headerHeight);
     
     flowLayout.parallaxHeaderMinimumReferenceSize = CGSizeMake(self.view.width, 100);
-    flowLayout.itemSize = CGSizeMake(self.view.width, headerHeight);
+    flowLayout.itemSize                           = CGSizeMake(self.view.width, headerHeight);
     // If we want to disable the sticky header effect
-    self.automaticallyAdjustsScrollViewInsets = NO;//保证从0
-   // flowLayout.disableStickyHeaders = NO;
-    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, appWidth , appHeight-40) collectionViewLayout:flowLayout];
+    self.automaticallyAdjustsScrollViewInsets     = NO;//保证从0
+    // flowLayout.disableStickyHeaders = NO;
+    self.collectionView                           = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, appWidth , appHeight-40) collectionViewLayout:flowLayout];
     //self.collectionView.scrollIndicatorInsets = UIEdgeInsetsMake(64, 0, 0, 0);
-    self.collectionView.backgroundColor = [UIColor whiteColor];
-    self.collectionView.dataSource = self;
-    self.collectionView.delegate = self;
+    self.collectionView.backgroundColor           = [UIColor whiteColor];
+    self.collectionView.dataSource                = self;
+    self.collectionView.delegate                  = self;
     [self.view addSubview:self.collectionView];
-    [self.collectionView registerNib:self.headerNib
+    [self.collectionView registerNib:[ParallaxHeaderViewCell loadNib]
           forSupplementaryViewOfKind:CSStickyHeaderParallaxHeader
                  withReuseIdentifier:@"ParallaxHeaderViewCell"];
-    [self.collectionView registerNib:[UINib nibWithNibName:@"NewCarouselListCell" bundle:nil] forCellWithReuseIdentifier:@"newCarouselListCell"];
+    [self.collectionView registerNib:[NewCarouselListCell loadNib] forCellWithReuseIdentifier:@"newCarouselListCell"];
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     [self.collectionView registerClass:[BannerCell class] forCellWithReuseIdentifier:@"bannerCell"];
-
-    [self.collectionView registerNib:[UINib nibWithNibName:@"CarLightViewCell" bundle:nil] forCellWithReuseIdentifier:@"carLightViewCell"];
+    [self.collectionView registerNib:[CarLightViewCell loadNib] forCellWithReuseIdentifier:@"carLightViewCell"];
 }
 -(void)initData{
     
-}
--(UINib *)headerNib{
-    if (!_headerNib) {
-        _headerNib = [UINib nibWithNibName:@"ParallaxHeaderViewCell" bundle:nil];
-    }
-    return _headerNib;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 #pragma mark <UICollectionViewDataSource>
 
@@ -108,79 +86,50 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    switch (indexPath.section) {
-        case 0:
-        {
-           NewCarouselListCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"newCarouselListCell" forIndexPath:indexPath];
-            return cell;
-        }
-            break;
-        case 1:{
-            CarLightViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"carLightViewCell" forIndexPath:indexPath];
-            return cell;
-        }break;
-        case 2:{
-            BannerCell   *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"bannerCell" forIndexPath:indexPath];
-            
-            return cell;
-        }break;
-        default:{
-         UICollectionViewCell   *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-            // Configure the cell
-            cell.backgroundColor = [UIColor RandomColor];
-            return cell;
-
-
-        }
-            break;
+    NSArray *arr   = @[@"newCarouselListCell",@"carLightViewCell" ,@"bannerCell"];
+    UICollectionViewCell   *cell = nil;
+    if (indexPath.section < arr.count) {
+        cell = [collectionView dequeueReusableCellWithReuseIdentifier:arr[indexPath.section] forIndexPath:indexPath];
+    }else {
+        cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+        cell.backgroundColor = [UIColor RandomColor];
+        
     }
+    // Configure the cell
+    return cell;
 }
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     UICollectionReusableView *cell=nil;
     if ([kind isEqualToString:CSStickyHeaderParallaxHeader]) {
         cell = [collectionView dequeueReusableSupplementaryViewOfKind:kind
-                                                                            withReuseIdentifier:@"ParallaxHeaderViewCell"
-                                                                                   forIndexPath:indexPath];
-      //  DLog(@"row %ld section %ld",(long)indexPath.row,(long)indexPath.section);
+                                                  withReuseIdentifier:@"ParallaxHeaderViewCell"
+                                                         forIndexPath:indexPath];
     }
     return cell;
 }
 #pragma  mark UICollectionViewDelegateFlowLayout
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    switch (indexPath.section) {
-        case 0:
-        {
-            return CGSizeMake(self.view.width, GTFixHeightFlaot(150.f));
-        }
-            break;
-        case 1:{
-            return CGSizeMake(self.view.width, GTFixHeightFlaot(164.f));
-
-        }break;
-        case 2:{
-            return CGSizeMake(self.view.width, 150);
-        }break;
-        default:{
-            return CGSizeMake(self.view.width, headerHeight);
-
-        }
-            break;
+    NSArray *arr   = @[@150.0f,@164.f,@150.0f];
+    if (indexPath.section < arr.count) {
+        return CGSizeMake(self.view.width, [arr[indexPath.section] floatValue]);
     }
+    
+    return CGSizeMake(self.view.width, headerHeight);
 }
 #pragma mark - UIScrollViewDelegate
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     CGFloat offsetY = scrollView.contentOffset.y;
-    DLog(@"ScrollView offsetY = %f",offsetY);
-    CGFloat alpha=0;
-    if (offsetY>=64) {
-        alpha=((offsetY-64)/64<=1.0?(offsetY-64)/64:1);
+    CGFloat alpha = 0;
+    if (offsetY >= 64) {
+        alpha=((offsetY-64)/64 <= 1.0 ? (offsetY-64)/64:1);
         [self.navigationController.navigationBar lt_setBackgroundColor:[[UIColor appNavigationBarColor] colorWithAlphaComponent:alpha]];
-
+        
     }else{
         [self.navigationController.navigationBar lt_setBackgroundColor:[UIColor clearColor]];
     }
-
+    
 }
 
 @end
+
