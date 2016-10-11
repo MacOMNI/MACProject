@@ -41,20 +41,17 @@
      self.title = @"我的车友";
     [self setRightBarItemImage:[UIImage imageNamed:@"contact_add"] title:@"添加"];
     [self.headView setHeight:appWidth/4.0];
-    self.headView.backgroundColor=[UIColor appBackGroundColor];
+    self.headView.backgroundColor      = [UIColor appBackGroundColor];
     self.tableView.sectionFooterHeight = 0.5;
     
-//    UIView *view=[[UIView alloc]initWithFrame:CGRectMake(0, 0, appWidth, 0.5)];
-//    [view setBackgroundColor:[UIColor clearColor]];
-    _tableView.tableFooterView = [UIView new];
+    _tableView.tableFooterView        = [UIView new];
 
-    self.tableView.dataSource = self;
-    self.tableView.delegate = self;
+    self.tableView.dataSource         = self;
+    self.tableView.delegate           = self;
     self.tableView.estimatedRowHeight = 60.0f;
-    //self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+    self.tableView.separatorStyle     = UITableViewCellSeparatorStyleSingleLine;
 
-    self.tableView.mj_header = [MACRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadData)];
+    self.tableView.mj_header          = [MACRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadData)];
      //马上进入刷新状态
     [self.tableView.mj_header beginRefreshing];
     

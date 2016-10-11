@@ -37,6 +37,14 @@
     }
     return self;
 }
+-(instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style{
+    self =[super initWithFrame:frame style:style];
+    if (self) {
+        [self initUI];
+        self.firstShowEmpty=NO;
+    }
+    return self;
+}
 -(void)initUI{
     self.tableFooterView=[UIView new];
     self.titleForEmpty= @"咋没数据呢,刷新试试~~";

@@ -20,7 +20,7 @@
  */
 @property(nonatomic,assign) NSIndexPath *indexPath;
 
-@property(nonatomic,weak)id<MessageHeadViewDelegate> delegate;
+@property(nonatomic,weak) id<MessageHeadViewDelegate> delegate;
 
 @property(nonatomic,strong) FriendsMessageModel *model;
 

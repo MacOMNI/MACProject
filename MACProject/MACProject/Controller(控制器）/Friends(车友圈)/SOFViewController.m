@@ -7,14 +7,17 @@
 //
 
 #import "SOFViewController.h"
-#import "FriendsMessageCell.h"
+#import "MessageHeadView.h"
 #import "UITableView+FDTemplateLayoutCell.h"
+#import "UITableViewCell+HYBMasonryAutoCellHeight.h"
 #import "YYFPSLabel.h"
+#import "CommentCell.h"
+#import "FriendsMessageModel.h"
 @interface SOFViewController ()<MACTableViewDelegate,UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>{
     
 }
-@property(nonatomic,strong) MACTableView *tableView;
-
+@property (nonatomic,strong) MACTableView *tableView;
+@property (nonatomic,strong) NSMutableArray<FriendsMessageModel *> *dataArr;
 @end
 
 @implementation SOFViewController
@@ -26,17 +29,30 @@
     // Do any additional setup after loading the view.
 }
 -(void)initUI{
-    self.title  = @"朋友圈";
-    self.tableView = [[MACTableView alloc]initWithFrame: self.view.bounds];
-    self.tableView.macTableViewDelegate = self;
-    //self.tableView.isShowEmpty = NO;
-    self.tableView.delegate = self;
-    [self.view addSubview:self.tableView];
-    [self.tableView registerClass:[FriendsMessageCell class] forCellReuseIdentifier:@"FriendsCell"];
-        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:[[YYFPSLabel alloc]initWithFrame:CGRectMake(0, 5, 60, 30)]];
+    self.title                      = @"朋友圈";
+    _tableView                      = [[MACTableView alloc]initWithFrame: self.view.bounds style:UITableViewStyleGrouped];
+    _tableView.macTableViewDelegate = self;
+    _tableView.delegate             = self;
+    _tableView.tableHeaderView      = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)]
+    ;
+    [_tableView registerClass:[MessageHeadView class] forHeaderFooterViewReuseIdentifier:@"messageHeadView"];
+    [self.tableView registerClass:[CommentCell class] forCellReuseIdentifier:@"commentCell"];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:[[YYFPSLabel alloc]initWithFrame:CGRectMake(0, 5, 60, 30)]];
+    [self.view addSubview:_tableView];
+
 }
 -(void)initData{
-    [self.tableView reloadData];
+    _dataArr = [NSMutableArray arrayWithCapacity:20];
+    FriendsMessageModel *model = [FriendsMessageModel new];
+    for (NSInteger i = 0; i < 20; i++) {
+        model.commentHeight = [_tableView fd_heightForHeaderFooterViewWithIdentifier:@"messageHeadView" configuration:^(id headerFooterView) {
+           MessageHeadView *headView =(MessageHeadView *)headerFooterView;
+            headView.model = nil;
+        }];
+        [_dataArr addObject:model];
+    }
+
+    [_tableView reloadData];
 }
 #pragma mark macTableViewDelegate
 -(void)loadDataRefreshOrPull:(MACRefreshState)state{
@@ -45,7 +61,7 @@
     }else if (state==MACPulling){
         
     }
-    [self.tableView endLoading];
+    [_tableView endLoading];
 }
 
 #pragma mark TableView delegate datasource
@@ -53,42 +69,58 @@
     return 20;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    return 3;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    FriendsMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FriendsCell" forIndexPath:indexPath];
-       cell.selectionStyle = UITableViewCellSelectionStyleNone;
-       cell.indexPath      = indexPath;
-//    if (cell) {
-//        cell=[[FriendsMessageCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"FriendsCell"];
-//    }
+    CommentCell *cell = [tableView dequeueReusableCellWithIdentifier:@"commentCell" forIndexPath:indexPath];
     [self configureCell:cell atIndexPath:indexPath];
     return cell;
     
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    CGFloat Height = [tableView fd_heightForCellWithIdentifier:@"FriendsCell" cacheByIndexPath:indexPath configuration:^(id cell) {
-        // configurations
-        [self configureCell:cell atIndexPath:indexPath];
-        
+    
+    return [tableView fd_heightForCellWithIdentifier:@"commentCell" cacheByIndexPath:indexPath configuration:^(id cell) {
+         CommentCell *fdCell = (CommentCell *)cell;
+        [self configureCell:fdCell atIndexPath:indexPath];
+
     }];
-    return Height;
+//    
+//    CGFloat cell_height = [CommentCell hyb_heightForTableView:tableView config:^(UITableViewCell *sourceCell) {
+//        CommentCell *cell = (CommentCell *)sourceCell;
+//        [self configureCell:cell atIndexPath:indexPath];
+//    } cache:^NSDictionary *{
+//        NSDictionary *cache = @{kHYBCacheUniqueKey : @(indexPath.row),
+//                                kHYBCacheStateKey : @"cellHeight",
+//                                kHYBRecalculateForStateKey : @(NO)};
+//        //        model.shouldUpdateCache = NO;
+//        return cache;
+//    }];
+//    return cell_height;
+
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 10.f;
+    return _dataArr[section].commentHeight;
+}
+-(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    MessageHeadView *headView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"messageHeadView"];
+    headView.model = nil;
+    return headView;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
 }
-#pragma  mark  configureCell
-- (void)configureCell:(FriendsMessageCell *)cell atIndexPath:(NSIndexPath *)indexPath {
-    cell.fd_enforceFrameLayout = NO; // Enable to use "-sizeThatFits:"
+//#pragma  mark  configureCell
+- (void)configureCell:(CommentCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+    //cell.fd_enforceFrameLayout = NO; // Enable to use "-sizeThatFits:"
     cell.model = nil;
 }
-#pragma  mark scrollDelegate
--(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
-    
+-(void)configureHeadView:(MessageHeadView *)headView atIndexPath:(NSIndexPath *)indexPath{
+    headView.model = nil;
 }
+//#pragma  mark scrollDelegate
+//-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+//    
+//}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

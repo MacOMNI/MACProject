@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface FriendsMessageModel : NSObject
-@property (nonatomic,assign) CGFloat *commentHeight;
+@property (nonatomic,assign) CGFloat commentHeight;
 @end

@@ -29,15 +29,17 @@
         _commentLabel = [[YYLabel alloc] init];
         [self.contentView addSubview:self.commentLabel];
        // _commentLabel.backgroundColor  = [UIColor RandomColor];
-        _commentLabel.preferredMaxLayoutWidth = appWidth - 16;
+        _commentLabel.preferredMaxLayoutWidth = appWidth - 20;
         _commentLabel.numberOfLines = 0;
         _commentLabel.font = [UIFont systemFontOfSize:14.0];
         [self.commentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.top.right.equalTo(self.contentView);
+            make.left.top.equalTo(self.contentView).offset(10.0f);
+            make.right.equalTo(self.contentView).offset(-10.0f);
+            make.bottom.equalTo(self.contentView).offset(-3.0f);
         }];
         
-        self.hyb_lastViewInCell = _commentLabel;
-        self.hyb_bottomOffsetToCell = 3.0;//cell底部距离为3.0个间隙
+      //  self.hyb_lastViewInCell = _commentLabel;
+       // self.hyb_bottomOffsetToCell = 3.0;//cell底部距离为3.0个间隙
        // self.commentLabel.constraints.
     }
     return self;
@@ -54,7 +56,7 @@
 //    _commentLabel.attributedText = text;
    // self.textLabel.numberOfLines = 0;
     //self.textLabel.preferredMaxLayoutWidth = appWidth-16;
-    self.commentLabel.attributedText = text;
+    _commentLabel.attributedText = text;
   //  self.textLabel.font = [UIFont systemFontOfSize:15];
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

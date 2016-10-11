@@ -142,8 +142,6 @@
 		5AAD6E061D91283F00E4C2A9 /* FaceSourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD6E051D91283F00E4C2A9 /* FaceSourceManager.m */; };
 		5AAD6E0D1D91362A00E4C2A9 /* ChatKeyBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD6E0B1D91362A00E4C2A9 /* ChatKeyBoardViewController.m */; };
 		5AAD6E0E1D91362A00E4C2A9 /* ChatKeyBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AAD6E0C1D91362A00E4C2A9 /* ChatKeyBoardViewController.xib */; };
-		5AAFAE9C1D546E17002F7FC3 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFAE9A1D546E17002F7FC3 /* TableViewCell.m */; };
-		5AAFAE9D1D546E17002F7FC3 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AAFAE9B1D546E17002F7FC3 /* TableViewCell.xib */; };
 		5AB5208C1D53290F000C3C80 /* NSArray+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB51F731D53290F000C3C80 /* NSArray+Block.m */; };
 		5AB5208D1D53290F000C3C80 /* NSArray+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB51F751D53290F000C3C80 /* NSArray+SafeAccess.m */; };
 		5AB520921D53290F000C3C80 /* NSData+APNSToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB51F801D53290F000C3C80 /* NSData+APNSToken.m */; };
@@ -543,9 +541,6 @@
 		5AAD6E0A1D91362A00E4C2A9 /* ChatKeyBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatKeyBoardViewController.h; sourceTree = "<group>"; };
 		5AAD6E0B1D91362A00E4C2A9 /* ChatKeyBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatKeyBoardViewController.m; sourceTree = "<group>"; };
 		5AAD6E0C1D91362A00E4C2A9 /* ChatKeyBoardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatKeyBoardViewController.xib; sourceTree = "<group>"; };
-		5AAFAE991D546E17002F7FC3 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
-		5AAFAE9A1D546E17002F7FC3 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
-		5AAFAE9B1D546E17002F7FC3 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		5AB51F721D53290F000C3C80 /* NSArray+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Block.h"; sourceTree = "<group>"; };
 		5AB51F731D53290F000C3C80 /* NSArray+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Block.m"; sourceTree = "<group>"; };
 		5AB51F741D53290F000C3C80 /* NSArray+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SafeAccess.h"; sourceTree = "<group>"; };
@@ -2020,9 +2015,6 @@
 				5A557C241D6C3B7800DF26DC /* Find(发现) */,
 				5A557C251D6C3B7800DF26DC /* Friends(车友圈) */,
 				5A546EA61D5C153B00F9361E /* Home(首页) */,
-				5AAFAE991D546E17002F7FC3 /* TableViewCell.h */,
-				5AAFAE9A1D546E17002F7FC3 /* TableViewCell.m */,
-				5AAFAE9B1D546E17002F7FC3 /* TableViewCell.xib */,
 			);
 			path = "View(视图)";
 			sourceTree = "<group>";
@@ -2217,7 +2209,6 @@
 			files = (
 				5AB520E11D53290F000C3C80 /* icon_refresh_3@3x.png in Resources */,
 				5AAD6E0E1D91362A00E4C2A9 /* ChatKeyBoardViewController.xib in Resources */,
-				5AAFAE9D1D546E17002F7FC3 /* TableViewCell.xib in Resources */,
 				5A90A2211D61CFB9005298B3 /* CarouseView.xib in Resources */,
 				5A6751C21D65AEBB0069DF33 /* citys.xml in Resources */,
 				5AB520E01D53290F000C3C80 /* icon_refresh_3@2x.png in Resources */,
@@ -2305,7 +2296,6 @@
 			files = (
 				5AB520A71D53290F000C3C80 /* NSString+Emoji.m in Sources */,
 				5A15AA981D58AAD1000ED86E /* NSDictionary+JKSafeAccess.m in Sources */,
-				5AAFAE9C1D546E17002F7FC3 /* TableViewCell.m in Sources */,
 				5AB520BB1D53290F000C3C80 /* UIButton+MiddleAligning.m in Sources */,
 				5AB520F21D53290F000C3C80 /* UIView+RecursiveDescription.m in Sources */,
 				5AB520A51D53290F000C3C80 /* NSString+HLHanZiToPinYin.m in Sources */,
