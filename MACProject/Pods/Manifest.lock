@@ -74,7 +74,6 @@ DEPENDENCIES:
   - SDCycleScrollView (~> 1.62)
   - SDWebImage (~> 3.7.5)
   - TSMessages (~> 0.9.12)
-  - UITableView+FDTemplateLayoutCell (~> 1.4.beta)
   - UITableView+FDTemplateLayoutCell (~> 1.5.beta)
   - YYImage (~> 1.0.3)
   - YYText (~> 1.0.5)

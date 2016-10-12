@@ -100,6 +100,7 @@
 		5A65A9E11D76C303009016C3 /* DownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A65A9DF1D76C303009016C3 /* DownloadOperation.m */; };
 		5A6751BA1D65AE240069DF33 /* CitysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6751B91D65AE240069DF33 /* CitysViewController.m */; };
 		5A6751C21D65AEBB0069DF33 /* citys.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5A6751C11D65AEBB0069DF33 /* citys.xml */; };
+		5A8A55811DAE156A009F5D50 /* MessageJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A8A55801DAE156A009F5D50 /* MessageJSON.json */; };
 		5A9074DD1D6556D90049CEC9 /* BannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9074DC1D6556D90049CEC9 /* BannerCell.m */; };
 		5A90A2181D61AC28005298B3 /* NewCarouselListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A90A2161D61AC28005298B3 /* NewCarouselListCell.m */; };
 		5A90A2191D61AC28005298B3 /* NewCarouselListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A90A2171D61AC28005298B3 /* NewCarouselListCell.xib */; };
@@ -455,6 +456,7 @@
 		5A6751B81D65AE240069DF33 /* CitysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitysViewController.h; sourceTree = "<group>"; };
 		5A6751B91D65AE240069DF33 /* CitysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitysViewController.m; sourceTree = "<group>"; };
 		5A6751C11D65AEBB0069DF33 /* citys.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = citys.xml; sourceTree = "<group>"; };
+		5A8A55801DAE156A009F5D50 /* MessageJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MessageJSON.json; sourceTree = "<group>"; };
 		5A9074DB1D6556D90049CEC9 /* BannerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerCell.h; sourceTree = "<group>"; };
 		5A9074DC1D6556D90049CEC9 /* BannerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerCell.m; sourceTree = "<group>"; };
 		5A90A2141D61A98E005298B3 /* UIButtonHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonHeader.h; sourceTree = "<group>"; };
@@ -1993,6 +1995,7 @@
 				5A6751C11D65AEBB0069DF33 /* citys.xml */,
 				5A546E9D1D5C0ACC00F9361E /* MainTabBarController.h */,
 				5A546E9E1D5C0ACC00F9361E /* MainTabBarController.m */,
+				5A8A55801DAE156A009F5D50 /* MessageJSON.json */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -2234,6 +2237,7 @@
 				5AB520F61D53290F000C3C80 /* .gitkeep in Resources */,
 				5A97EC7A1D6469AF00A29247 /* CarLightViewCell.xib in Resources */,
 				5AB520DC1D53290F000C3C80 /* icon_refresh_1@2x.png in Resources */,
+				5A8A55811DAE156A009F5D50 /* MessageJSON.json in Resources */,
 				5AF9AF991D4A0F9800F23C1E /* Main.storyboard in Resources */,
 				5A557C351D6C6DDD00DF26DC /* ContactsVC.xib in Resources */,
 			);
@@ -2633,7 +2637,7 @@
 				GCC_PREFIX_HEADER = "${SRCROOT}/MACProject/prefixHeader.pch";
 				INFOPLIST_FILE = MACProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mackun.MACProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mackun.MACProjectt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "${PODS_ROOT}/**";
@@ -2650,7 +2654,7 @@
 				GCC_PREFIX_HEADER = "${SRCROOT}/MACProject/prefixHeader.pch";
 				INFOPLIST_FILE = MACProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mackun.MACProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mackun.MACProjectt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "${PODS_ROOT}/**";

@@ -24,5 +24,5 @@
 
 @property(nonatomic,strong) FriendsMessageModel *model;
 
-
++(CGFloat)caculateHeight:(FriendsMessageModel *)model;
 @end

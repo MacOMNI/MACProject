@@ -47,9 +47,10 @@ static NSInteger picNum = 3;//最多支持几张图片
 -(void)setDataSource:(NSArray *)dataSource{
     _dataSource = dataSource;
    // [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    CGFloat imageHeight=(appWidth-2*8-2*5)/3.0;
+    CGFloat imageHeight = (appWidth-2*8-2*5)/3.0;
+    CGFloat gridHeight  =imageHeight*((NSInteger)((dataSource.count+2)/3));
     [self mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.height.mas_equalTo(imageHeight*((NSInteger)((dataSource.count+2)/3)));
+        make.height.mas_equalTo(gridHeight);
     }];
     for (NSUInteger i=0; i<dataSource.count; i++) {
         UIImageView *iv = [_imageViewArr objectAtIndex:i];

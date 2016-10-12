@@ -33,8 +33,8 @@
     _tableView                      = [[MACTableView alloc]initWithFrame: self.view.bounds style:UITableViewStyleGrouped];
     _tableView.macTableViewDelegate = self;
     _tableView.delegate             = self;
-    _tableView.tableHeaderView      = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)]
-    ;
+    _tableView.tableHeaderView      = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];
+    _tableView.sectionHeaderHeight  = UITableViewAutomaticDimension;
     [_tableView registerClass:[MessageHeadView class] forHeaderFooterViewReuseIdentifier:@"messageHeadView"];
     [self.tableView registerClass:[CommentCell class] forCellReuseIdentifier:@"commentCell"];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:[[YYFPSLabel alloc]initWithFrame:CGRectMake(0, 5, 60, 30)]];
@@ -45,10 +45,7 @@
     _dataArr = [NSMutableArray arrayWithCapacity:20];
     FriendsMessageModel *model = [FriendsMessageModel new];
     for (NSInteger i = 0; i < 20; i++) {
-        model.commentHeight = [_tableView fd_heightForHeaderFooterViewWithIdentifier:@"messageHeadView" configuration:^(id headerFooterView) {
-           MessageHeadView *headView =(MessageHeadView *)headerFooterView;
-            headView.model = nil;
-        }];
+        model.commentHeight = [MessageHeadView caculateHeight:nil];
         [_dataArr addObject:model];
     }
 
@@ -84,18 +81,6 @@
         [self configureCell:fdCell atIndexPath:indexPath];
 
     }];
-//    
-//    CGFloat cell_height = [CommentCell hyb_heightForTableView:tableView config:^(UITableViewCell *sourceCell) {
-//        CommentCell *cell = (CommentCell *)sourceCell;
-//        [self configureCell:cell atIndexPath:indexPath];
-//    } cache:^NSDictionary *{
-//        NSDictionary *cache = @{kHYBCacheUniqueKey : @(indexPath.row),
-//                                kHYBCacheStateKey : @"cellHeight",
-//                                kHYBRecalculateForStateKey : @(NO)};
-//        //        model.shouldUpdateCache = NO;
-//        return cache;
-//    }];
-//    return cell_height;
 
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
