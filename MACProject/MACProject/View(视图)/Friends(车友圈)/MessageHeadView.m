@@ -29,18 +29,10 @@
 
 -(instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithReuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor          = [UIColor whiteColor];
-        //headView
-//        _headView                     = [UIView new];
-//        _headView.backgroundColor     = [[UIColor lightGrayColor] colorWithAlphaComponent:0.1] ;
-//        [self.contentView addSubview:_headView];
-//        [_headView mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.left.top.width.mas_equalTo(self.contentView);
-//            make.height.mas_equalTo(15.0f);
-//        }];
+        self.contentView.backgroundColor = [UIColor whiteColor];
         //头像
         _avactorImageView             = [[UIImageView alloc] init];
-        _avactorImageView.contentMode = UIViewContentModeScaleAspectFill;
+       // _avactorImageView.contentMode = UIViewContentModeScaleAspectFill;
         _avactorImageView.image       = [UIImage imageNamed:@"placeholder_dropbox"];
         [self.contentView addSubview:_avactorImageView];
         [_avactorImageView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -173,20 +165,21 @@
 }
 -(void)setModel:(FriendsMessageModel *)model{
     _model                               = model;
-    _browserNumLabel.text                = @"66次浏览";
-    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString: @"张三回复王五： 这是使用 Objective-C 整理的一套 iOS 轻量级框架，内部包含大量或自己整理或修改自网络的 Category 、Utils、DataManager、Macros & UIComponents 旨在快速构建中小型 iOS App，并尝试用其整理了个 MACProject 样例以来抛砖引玉，愿与大犇们相互学习交流，不足之处望批评指正， 更欢迎 Star。"];
+    _nameLabel.text                      = _model.userName;
+    _timeLabel.text                      = _model.time;
+    _browserNumLabel.text                = [NSString stringWithFormat:@"%ld次浏览",_model.browseNum];
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:_model.contentMessage];
     attributedString.yy_font             = [UIFont systemFontOfSize:17.0f];
     _contentLabel.attributedText         = attributedString;
+    _goodNumLabel.text                   = [NSString stringWithFormat:@"%ld人点赞",_model.goodNum];
+    _gridView.dataSource                 = _model.picArray;
+    [_avactorImageView sd_setImageWithURL:_model.avactor.macUrl placeholderImage:[UIImage imageNamed:@"placeholder_dropbox"]];
 
-    _goodNumLabel.text                   = @"66人点赞";
-    _gridView.dataSource                 = @[@"http://f1.diyitui.com/91/b2/f2/a3/5c/6d/5a/0a/97/bb/1a/09/90/d2/ff/cc.jpg",
-                              @"http://news.mydrivers.com/Img/20101001/11525723.jpg",
-                              @"http://pic1.882668.com.160cha.com/882668/2016/09/18/121526458.jpg"];
 
 }
 +(CGFloat)caculateHeight:(FriendsMessageModel *)model{
     CGFloat height       = 62.0f + 70.0f + appWidth/3.0;
-    NSMutableAttributedString *text =[[NSMutableAttributedString alloc] initWithString: @"张三回复王五： 这是使用 Objective-C 整理的一套 iOS 轻量级框架，内部包含大量或自己整理或修改自网络的 Category 、Utils、DataManager、Macros & UIComponents 旨在快速构建中小型 iOS App，并尝试用其整理了个 MACProject 样例以来抛砖引玉，愿与大犇们相互学习交流，不足之处望批评指正， 更欢迎 Star。"];
+    NSMutableAttributedString *text =[[NSMutableAttributedString alloc] initWithString:model.contentMessage];
     text.yy_font         = [UIFont systemFontOfSize:17.0f];
 
     CGSize size          = CGSizeMake(appWidth - 20, CGFLOAT_MAX);

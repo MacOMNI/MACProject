@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "CommentModel.h"
 @interface FriendsMessageModel : NSObject
 
 
@@ -19,10 +19,19 @@
  *  评论者
  */
 @property (nonatomic,copy) NSString *avactor;
+
 /**
- *  被评论者
+ *  时间
  */
-@property (nonatomic,copy) NSString *toUserName;
+@property (nonatomic,copy) NSString *time;
+/**
+ *  浏览次数
+ */
+@property (nonatomic,assign) NSInteger browseNum;
+/**
+ *  浏览次数
+ */
+@property (nonatomic,assign) NSInteger goodNum;
 
 /**
  *  评论内容
@@ -31,7 +40,11 @@
 /**
  *  图片数组
  */
-@property (nonatomic,strong) NSMutableArray *picArray;
+@property (nonatomic,strong) NSMutableArray<NSString *> *picArray;
+/**
+ *  评论数组
+ */
+@property (nonatomic,strong) NSMutableArray<CommentModel*> *conmentArray;
 
 /**
  *  高度

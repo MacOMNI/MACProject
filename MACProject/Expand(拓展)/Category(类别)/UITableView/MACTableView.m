@@ -10,7 +10,9 @@
 #import "MACRefreshHeader.h"
 #import "MJRefreshAutoFooter.h"
 
-@interface MACTableView()
+@interface MACTableView()<DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>{
+    
+}
 /**
  *  是否第一次加载就展示空白页 默认为YES
  */
@@ -33,7 +35,7 @@
     self =[super initWithFrame:frame];
     if (self) {
         [self initUI];
-        self.firstShowEmpty=NO;
+        self.firstShowEmpty = NO;
     }
     return self;
 }
@@ -41,31 +43,31 @@
     self =[super initWithFrame:frame style:style];
     if (self) {
         [self initUI];
-        self.firstShowEmpty=NO;
+        self.firstShowEmpty = NO;
     }
     return self;
 }
 -(void)initUI{
-    self.tableFooterView=[UIView new];
-    self.titleForEmpty= @"咋没数据呢,刷新试试~~";
-    self.descriptionForEmpty=@"您的数据被程序猿搬走咯~~";
-    self.imageNameForEmpty=@"placeholder_dropbox";
-    self.firstShowEmpty=YES;
-    self.isRefresh=YES;
-    self.isLoadMore=YES;
-    self.isShowEmpty=YES;
-    self.showsHorizontalScrollIndicator=NO;
-    self.showsVerticalScrollIndicator=NO;
+    self.tableFooterView                = [UIView new];
+    self.titleForEmpty                  = @"咋没数据呢,刷新试试~~";
+    self.descriptionForEmpty            = @"您的数据被程序猿搬走咯~~";
+    self.imageNameForEmpty              = @"placeholder_dropbox";
+    self.firstShowEmpty                 = YES;
+    self.isRefresh                      = YES;
+    self.isLoadMore                     = YES;
+    self.isShowEmpty                    = YES;
+    self.showsHorizontalScrollIndicator = NO;
+    self.showsVerticalScrollIndicator   = NO;
    // self.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.page=0;
+    self.page                           = 0;
 }
 -(void)setMacTableViewDelegate:(id<MACTableViewDelegate>)macTableViewDelegate{
-    _macTableViewDelegate=macTableViewDelegate;
-    self.dataSource=(id<UITableViewDataSource>)macTableViewDelegate;
-    self.delegate=(id<UITableViewDelegate>)macTableViewDelegate;
+    _macTableViewDelegate = macTableViewDelegate;
+    self.dataSource       = (id<UITableViewDataSource>)macTableViewDelegate;
+    self.delegate         = (id<UITableViewDelegate>)macTableViewDelegate;
 }
 -(void)setIsRefresh:(BOOL)isRefresh{
-    _isRefresh=isRefresh;
+    _isRefresh = isRefresh;
     if (isRefresh) {
         // header
         [self  setMj_header:
@@ -76,7 +78,7 @@
     }
 }
 -(void)setIsShowEmpty:(BOOL)isShowEmpty{
-    _isShowEmpty=isShowEmpty;
+    _isShowEmpty = isShowEmpty;
     if (isShowEmpty) {
         self.emptyDataSetDelegate=self;
         self.emptyDataSetSource=self;
@@ -87,7 +89,7 @@
 //    }
 }
 -(void)setIsLoadMore:(BOOL)isLoadMore{
-    _isLoadMore=isLoadMore;
+    _isLoadMore = isLoadMore;
     if (isLoadMore) {
         if (self.mj_footer==nil) {
             [self setMj_footer:[MJRefreshAutoNormalFooter
@@ -128,11 +130,11 @@
 //}
 -(void)refreshData{
     [self showWaiting];
-    if (self.mj_footer.state==MJRefreshStateNoMoreData) {
+    if (self.mj_footer.state == MJRefreshStateNoMoreData) {
         [self.mj_footer resetNoMoreData];
     }
     if (_macTableViewDelegate && [_macTableViewDelegate respondsToSelector:@selector(loadDataRefreshOrPull:)]) {
-        self.page=0;
+        self.page = 0;
         [_macTableViewDelegate loadDataRefreshOrPull:MACRefreshing];
     }
 }
@@ -142,8 +144,8 @@
 #pragma mark - DZNEmptyDataSetSource Methods
 - (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView
 {
-    NSString *text =self.titleForEmpty;
-    
+    NSString *text           = self.titleForEmpty;
+
     NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:18.0f],
                                  NSForegroundColorAttributeName: [UIColor darkGrayColor]};
     
@@ -151,13 +153,13 @@
 }
 - (NSAttributedString *)descriptionForEmptyDataSet:(UIScrollView *)scrollView
 {
-    NSString *text = self.descriptionForEmpty;
-    
+    NSString *text                     = self.descriptionForEmpty;
+
     NSMutableParagraphStyle *paragraph = [NSMutableParagraphStyle new];
-    paragraph.lineBreakMode = NSLineBreakByWordWrapping;
-    paragraph.alignment = NSTextAlignmentCenter;
-    
-    NSDictionary *attributes = @{NSFontAttributeName: [UIFont systemFontOfSize:14.0f],
+    paragraph.lineBreakMode            = NSLineBreakByWordWrapping;
+    paragraph.alignment                = NSTextAlignmentCenter;
+
+    NSDictionary *attributes           = @{NSFontAttributeName: [UIFont systemFontOfSize:14.0f],
                                  NSForegroundColorAttributeName: [UIColor lightGrayColor],
                                  NSParagraphStyleAttributeName: paragraph};
     
@@ -165,7 +167,7 @@
 }
 - (UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView
 {
-    if (!self.imageNameForEmpty||[self.imageNameForEmpty isBlank]) {
+    if (!self.imageNameForEmpty || [self.imageNameForEmpty isBlank]) {
         return nil;
     }
     return [UIImage imageNamed:self.imageNameForEmpty];
@@ -187,9 +189,11 @@
 - (BOOL)emptyDataSetShouldDisplay:(UIScrollView *)scrollView
 {
     if (self.firstShowEmpty) {
-        self.firstShowEmpty=NO;
+        self.firstShowEmpty = NO;
+        
         return NO;
     }
+    
     return YES;
 }
 
@@ -205,13 +209,13 @@
 - (CAAnimation *)imageAnimationForEmptyDataSet:(UIScrollView *)scrollView
 {
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath: @"transform"];
-    
-    animation.fromValue = [NSValue valueWithCATransform3D:CATransform3DIdentity];
-    animation.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI_2, 0.0, 0.0, 1.0)];
-    
-    animation.duration = 0.25;
-    animation.cumulative = YES;
-    animation.repeatCount = MAXFLOAT;
+
+    animation.fromValue         = [NSValue valueWithCATransform3D:CATransform3DIdentity];
+    animation.toValue           = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI_2, 0.0, 0.0, 1.0)];
+
+    animation.duration          = 0.25;
+    animation.cumulative        = YES;
+    animation.repeatCount       = MAXFLOAT;
     
     return animation;
 }

@@ -42,11 +42,13 @@
 
 }
 -(void)initData{
-    _dataArr = [NSMutableArray arrayWithCapacity:20];
+    NSData *data = [NSData dataWithContentsOfURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"MessageJSON" ofType:@"json"]]];
+  NSString *str  = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+    _dataArr = [FriendsMessageModel mj_objectArrayWithKeyValuesArray:[str jsonStringToDictionary]];
     FriendsMessageModel *model = [FriendsMessageModel new];
-    for (NSInteger i = 0; i < 20; i++) {
-        model.commentHeight = [MessageHeadView caculateHeight:nil];
-        [_dataArr addObject:model];
+    for (NSInteger i = 0; i < _dataArr.count; i++) {
+        model               = _dataArr[i];
+        model.commentHeight = [MessageHeadView caculateHeight:model];
     }
 
     [_tableView reloadData];
@@ -63,10 +65,10 @@
 
 #pragma mark TableView delegate datasource
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 20;
+    return _dataArr.count;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 3;
+    return _dataArr[section].conmentArray.count;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     CommentCell *cell = [tableView dequeueReusableCellWithIdentifier:@"commentCell" forIndexPath:indexPath];
@@ -88,7 +90,7 @@
 }
 -(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     MessageHeadView *headView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"messageHeadView"];
-    headView.model = nil;
+    headView.model = _dataArr[section];
     return headView;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -97,11 +99,10 @@
 //#pragma  mark  configureCell
 - (void)configureCell:(CommentCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     //cell.fd_enforceFrameLayout = NO; // Enable to use "-sizeThatFits:"
-    cell.model = nil;
+    
+    cell.model = _dataArr[indexPath.section].conmentArray[indexPath.row];
 }
--(void)configureHeadView:(MessageHeadView *)headView atIndexPath:(NSIndexPath *)indexPath{
-    headView.model = nil;
-}
+
 //#pragma  mark scrollDelegate
 //-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
 //    

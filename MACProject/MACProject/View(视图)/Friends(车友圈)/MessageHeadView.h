@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class FriendsMessageModel;
+#import "FriendsMessageModel.h"
 @protocol MessageHeadViewDelegate <NSObject>
 
 @optional

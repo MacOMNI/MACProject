@@ -30,7 +30,7 @@ typedef NS_ENUM(NSInteger, MACRefreshState) {
 
 @end
 
-@interface MACTableView : UITableView<DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>
+@interface MACTableView : UITableView
 /**
  *  macTableView delegate
  */
