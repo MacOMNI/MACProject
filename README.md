@@ -187,8 +187,8 @@ typedef NS_ENUM(NSInteger, MACRefreshState) {
 ![图片](http://upload-images.jianshu.io/upload_images/335970-14e9d75772d5e991.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 高仿朋友圈 & QQ空间
-![图片](http://oc4tpefat.bkt.clouddn.com/friends.png)
-
+![图片](https://github.com/azheng51714/MACProject/blob/master/pic/friendVC1.png)
+![图片](https://github.com/azheng51714/MACProject/blob/master/pic/friendVC2.png)
 
 
 ##云周边（暂未开放）
