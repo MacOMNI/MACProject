@@ -7,13 +7,11 @@
 //
 
 #import "CommentCell.h"
-#import "YYLabel.h"
 #import "UITableViewCell+HYBMasonryAutoCellHeight.h"
 @interface CommentCell(){
     
 }
 
-@property (nonatomic,strong) YYLabel *commentLabel;
 
 @end
 

@@ -650,11 +650,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MACProject/View(&#x89c6;&#x56fe;)/Friends(&#x8f66;&#x53cb;&#x5708;)/CommentCell.m"
-            timestampString = "497973321.200799"
+            timestampString = "498051259.947641"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "-setModel:"
             landmarkType = "5">
          </BreakpointContent>
@@ -874,11 +874,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Friends(&#x8f66;&#x53cb;&#x5708;)/SOFViewController.m"
-            timestampString = "497974506.842359"
+            timestampString = "498051042.326241"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "-initData"
             landmarkType = "5">
          </BreakpointContent>
@@ -890,27 +890,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Friends(&#x8f66;&#x53cb;&#x5708;)/SOFViewController.m"
-            timestampString = "497974506.842359"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "-initData"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Friends(&#x8f66;&#x53cb;&#x5708;)/SOFViewController.m"
-            timestampString = "497974506.842359"
+            timestampString = "498051042.326241"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "94"
             endingLineNumber = "94"
+            landmarkName = "-initData"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Friends(&#x8f66;&#x53cb;&#x5708;)/SOFViewController.m"
+            timestampString = "498051042.326241"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
             landmarkName = "-tableView:viewForHeaderInSection:"
             landmarkType = "5">
          </BreakpointContent>
@@ -922,11 +922,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Friends(&#x8f66;&#x53cb;&#x5708;)/SOFViewController.m"
-            timestampString = "497974506.842359"
+            timestampString = "498051042.326241"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "-numberOfSectionsInTableView:"
             landmarkType = "5">
          </BreakpointContent>
@@ -938,11 +938,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Friends(&#x8f66;&#x53cb;&#x5708;)/SOFViewController.m"
-            timestampString = "497974506.842359"
+            timestampString = "498051042.326241"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
             landmarkName = "-tableView:numberOfRowsInSection:"
             landmarkType = "5">
          </BreakpointContent>
@@ -954,11 +954,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Friends(&#x8f66;&#x53cb;&#x5708;)/SOFViewController.m"
-            timestampString = "497974506.842359"
+            timestampString = "498051042.326241"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "-initData"
             landmarkType = "5">
          </BreakpointContent>
@@ -970,11 +970,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Friends(&#x8f66;&#x53cb;&#x5708;)/SOFViewController.m"
-            timestampString = "497974506.842359"
+            timestampString = "498051042.326241"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
             landmarkName = "-tableView:heightForHeaderInSection:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1018,11 +1018,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Friends(&#x8f66;&#x53cb;&#x5708;)/SOFViewController.m"
-            timestampString = "497974506.842359"
+            timestampString = "498051042.326241"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "-tableView:heightForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1034,11 +1034,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Friends(&#x8f66;&#x53cb;&#x5708;)/SOFViewController.m"
-            timestampString = "497974506.842359"
+            timestampString = "498051042.326241"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1050,11 +1050,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Friends(&#x8f66;&#x53cb;&#x5708;)/SOFViewController.m"
-            timestampString = "497974506.842359"
+            timestampString = "498051042.326241"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
             landmarkName = "-tableView:viewForHeaderInSection:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1066,7 +1066,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MACProject/View(&#x89c6;&#x56fe;)/Friends(&#x8f66;&#x53cb;&#x5708;)/CommentCell.m"
-            timestampString = "497973321.200799"
+            timestampString = "498051259.947641"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "-setModel:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MACProject/View(&#x89c6;&#x56fe;)/Friends(&#x8f66;&#x53cb;&#x5708;)/CommentCell.m"
+            timestampString = "498051259.947641"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "48"
@@ -1082,39 +1098,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MACProject/View(&#x89c6;&#x56fe;)/Friends(&#x8f66;&#x53cb;&#x5708;)/CommentCell.m"
-            timestampString = "497973321.200799"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "-setModel:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MACProject/View(&#x89c6;&#x56fe;)/Friends(&#x8f66;&#x53cb;&#x5708;)/CommentCell.m"
-            timestampString = "497973321.200799"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "-setModel:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MACProject/View(&#x89c6;&#x56fe;)/Friends(&#x8f66;&#x53cb;&#x5708;)/CommentCell.m"
-            timestampString = "497973523.222831"
+            timestampString = "498051259.947641"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
@@ -1129,12 +1113,28 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Friends(&#x8f66;&#x53cb;&#x5708;)/SOFViewController.m"
-            timestampString = "497974491.843872"
+            filePath = "MACProject/View(&#x89c6;&#x56fe;)/Friends(&#x8f66;&#x53cb;&#x5708;)/CommentCell.m"
+            timestampString = "498051259.947641"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "-setModel:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Friends(&#x8f66;&#x53cb;&#x5708;)/SOFViewController.m"
+            timestampString = "498051042.326241"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "-initData"
             landmarkType = "5">
          </BreakpointContent>
@@ -1146,12 +1146,76 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Friends(&#x8f66;&#x53cb;&#x5708;)/SOFViewController.m"
-            timestampString = "497974492.462473"
+            timestampString = "498051042.326241"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "-initData"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Friends(&#x8f66;&#x53cb;&#x5708;)/SOFViewController.m"
+            timestampString = "498051042.326241"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "-initUI"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Friends(&#x8f66;&#x53cb;&#x5708;)/SOFViewController.m"
+            timestampString = "498051042.326241"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "-initUI"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Friends(&#x8f66;&#x53cb;&#x5708;)/SOFViewController.m"
+            timestampString = "498051042.326241"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "-init"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Friends(&#x8f66;&#x53cb;&#x5708;)/SOFViewController.m"
+            timestampString = "498051027.390386"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
+            landmarkName = "-tableView:didSelectRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

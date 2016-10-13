@@ -13,15 +13,45 @@
 #import "YYFPSLabel.h"
 #import "CommentCell.h"
 #import "FriendsMessageModel.h"
-@interface SOFViewController ()<MACTableViewDelegate,UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>{
+#import "ChatKeyBoard.h"
+@interface SOFViewController ()<MACTableViewDelegate,UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate,ChatKeyBoardDataSource,ChatKeyBoardDelegate>{
     
 }
+/** 聊天键盘 */
+@property (nonatomic, strong) ChatKeyBoard *chatKeyBoard;
 @property (nonatomic,strong) MACTableView *tableView;
 @property (nonatomic,strong) NSMutableArray<FriendsMessageModel *> *dataArr;
+@property (nonatomic,strong) CommentModel *selectedCommentModel;
+@property (nonatomic,strong) NSIndexPath *selectedIndexPath;
+@property (nonatomic, assign) BOOL needUpdateOffset;//控制是否刷新table的offset
+
+@property (nonatomic,assign) CGFloat tapLocationY;//当前点击cell所在屏幕位置
+
 @end
 
 @implementation SOFViewController
 
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        //注册键盘出现NSNotification
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(keyboardWillShow:)
+                                                     name:UIKeyboardWillShowNotification object:nil];
+        
+        
+        //注册键盘隐藏NSNotification
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(keyboardWillHide:)
+                                                     name:UIKeyboardWillHideNotification object:nil];
+    }
+    return self;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initUI];
@@ -29,17 +59,30 @@
     // Do any additional setup after loading the view.
 }
 -(void)initUI{
-    self.title                      = @"朋友圈";
-    _tableView                      = [[MACTableView alloc]initWithFrame: self.view.bounds style:UITableViewStyleGrouped];
-    _tableView.macTableViewDelegate = self;
-    _tableView.delegate             = self;
-    _tableView.tableHeaderView      = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];
-    _tableView.sectionHeaderHeight  = UITableViewAutomaticDimension;
+    [[IQKeyboardManager sharedManager]setEnableAutoToolbar:NO];
+    self.title                             = @"朋友圈";
+    _tableView                             = [[MACTableView alloc]initWithFrame: self.view.bounds style:UITableViewStyleGrouped];
+    _tableView.macTableViewDelegate        = self;
+   // _tableView.separatorStyle       = UITableViewCellSeparatorStyleNone;
+
+    _tableView.tableHeaderView             = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];
+    _tableView.sectionHeaderHeight         = UITableViewAutomaticDimension;
     [_tableView registerClass:[MessageHeadView class] forHeaderFooterViewReuseIdentifier:@"messageHeadView"];
-    [self.tableView registerClass:[CommentCell class] forCellReuseIdentifier:@"commentCell"];
+    [_tableView registerClass:[CommentCell class] forCellReuseIdentifier:@"commentCell"];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:[[YYFPSLabel alloc]initWithFrame:CGRectMake(0, 5, 60, 30)]];
     [self.view addSubview:_tableView];
 
+    self.chatKeyBoard                      =[ChatKeyBoard keyBoardWithNavgationBarTranslucent:YES];
+;    self.chatKeyBoard.keyBoardStyle        = KeyBoardStyleComment;
+
+    self.chatKeyBoard.delegate             = self;
+    self.chatKeyBoard.dataSource           = self;
+    self.chatKeyBoard.placeHolder          = @"说点什么~~";
+    self.chatKeyBoard.allowMore            = NO;
+    self.chatKeyBoard.allowVoice           = NO;
+    self.chatKeyBoard.associateTableView   = _tableView;
+    [self.view addSubview:self.chatKeyBoard];
+    [self.chatKeyBoard keyboardDownForComment];
 }
 -(void)initData{
     NSData *data = [NSData dataWithContentsOfURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"MessageJSON" ofType:@"json"]]];
@@ -94,6 +137,17 @@
     return headView;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    CommentCell *fdCell = [tableView cellForRowAtIndexPath:indexPath];
+    _selectedIndexPath = indexPath;
+    _selectedCommentModel = fdCell.model;
+    _chatKeyBoard.placeHolder = [NSString stringWithFormat:@"回复:%@",fdCell.model.userName];
+    //self.chatKeyBoard.hidden = NO ;
+    self.needUpdateOffset = YES;
+    
+    CGRect rect = [fdCell convertRect:fdCell.frame toView:self.view];
+    _tapLocationY = rect.origin.y + rect.size.height;
+    [self.chatKeyBoard keyboardUpforComment];
+
     
 }
 //#pragma  mark  configureCell
@@ -103,23 +157,113 @@
     cell.model = _dataArr[indexPath.section].conmentArray[indexPath.row];
 }
 
-//#pragma  mark scrollDelegate
-//-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
-//    
-//}
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    [self.chatKeyBoard keyboardDownForComment];
+}
+#pragma mark --keyBoard notifaction
+
+- (void)keyboardWillShow:(NSNotification *)notification{
+    NSDictionary *userInfo = [notification userInfo];
+    NSValue* aValue        = [userInfo objectForKey:UIKeyboardFrameEndUserInfoKey];
+    CGFloat keyboardHeight = [aValue CGRectValue].size.height;
+    if (keyboardHeight == 0) return;
+
+    CGRect keyboardRect    = [aValue CGRectValue];
+    CGPoint offset         = self.tableView.contentOffset;
+
+    keyboardRect           = [self.view convertRect:keyboardRect fromView:nil];
+    CGFloat keyboardTop    = keyboardRect.origin.y;
+
+}
+- (void)keyboardWillHide:(NSNotification *)notification{
+    self.needUpdateOffset = NO;
+}
+#pragma mark -- ChatKeyBoardDataSource
+- (NSArray<MoreItem *> *)chatKeyBoardMorePanelItems
+{
+    MoreItem *item1 = [MoreItem moreItemWithPicName:@"sharemore_location" highLightPicName:nil itemName:@"位置"];
+    MoreItem *item2 = [MoreItem moreItemWithPicName:@"sharemore_pic" highLightPicName:nil itemName:@"图片"];
+    MoreItem *item3 = [MoreItem moreItemWithPicName:@"sharemore_video" highLightPicName:nil itemName:@"拍照"];
+    MoreItem *item4 = [MoreItem moreItemWithPicName:@"sharemore_location" highLightPicName:nil itemName:@"位置"];
+    MoreItem *item5 = [MoreItem moreItemWithPicName:@"sharemore_pic" highLightPicName:nil itemName:@"图片"];
+    MoreItem *item6 = [MoreItem moreItemWithPicName:@"sharemore_video" highLightPicName:nil itemName:@"拍照"];
+    MoreItem *item7 = [MoreItem moreItemWithPicName:@"sharemore_location" highLightPicName:nil itemName:@"位置"];
+    MoreItem *item8 = [MoreItem moreItemWithPicName:@"sharemore_pic" highLightPicName:nil itemName:@"图片"];
+    MoreItem *item9 = [MoreItem moreItemWithPicName:@"sharemore_video" highLightPicName:nil itemName:@"拍照"];
+    return @[item1, item2, item3, item4, item5, item6, item7, item8, item9];
+}
+- (NSArray<ChatToolBarItem *> *)chatKeyBoardToolbarItems
+{
+    ChatToolBarItem *item1 = [ChatToolBarItem barItemWithKind:kBarItemFace normal:@"face" high:@"face_HL" select:@"keyboard"];
+    
+    ChatToolBarItem *item2 = [ChatToolBarItem barItemWithKind:kBarItemVoice normal:@"voice" high:@"voice_HL" select:@"keyboard"];
+    
+    ChatToolBarItem *item3 = [ChatToolBarItem barItemWithKind:kBarItemMore normal:@"more_ios" high:@"more_ios_HL" select:nil];
+    
+    ChatToolBarItem *item4 = [ChatToolBarItem barItemWithKind:kBarItemSwitchBar normal:@"switchDown" high:nil select:nil];
+    
+    return @[item1,item2,item3,item4];
+}
+
+- (NSArray<FaceThemeModel *> *)chatKeyBoardFacePanelSubjectItems
+{
+    NSMutableArray *subjectArray = [NSMutableArray array];
+    
+    NSArray *sources = @[@"face"];
+    
+    for (int i = 0; i < sources.count; ++i)
+    {
+        NSString *plistName = sources[i];
+        
+        NSString *plistPath = [[NSBundle mainBundle] pathForResource:plistName ofType:@"plist"];
+        NSDictionary *faceDic = [NSDictionary dictionaryWithContentsOfFile:plistPath];
+        NSArray *allkeys = faceDic.allKeys;
+        
+        FaceThemeModel *themeM = [[FaceThemeModel alloc] init];
+        themeM.themeStyle = FaceThemeStyleCustomEmoji;
+        themeM.themeDecribe = [NSString stringWithFormat:@"f%d", i];
+        
+        NSMutableArray *modelsArr = [NSMutableArray array];
+        
+        for (int i = 0; i < allkeys.count; ++i) {
+            NSString *name = allkeys[i];
+            FaceModel *fm = [[FaceModel alloc] init];
+            fm.faceTitle = name;
+            fm.faceIcon = [faceDic objectForKey:name];
+            [modelsArr addObject:fm];
+        }
+        themeM.faceModels = modelsArr;
+        
+        [subjectArray addObject:themeM];
+    }
+    
+    return subjectArray;
+}
+#pragma mark 发送文本
+-(void)chatKeyBoardSendText:(NSString *)text{
+    if (_selectedIndexPath && _selectedCommentModel) {
+        NSIndexPath *indexPath = _selectedIndexPath;
+        CommentModel *model    = _selectedCommentModel;
+        CommentModel *sendModel = [CommentModel new];
+        sendModel.userName = @"麦克坤";
+        sendModel.toUserName = model.userName;
+        sendModel.contentMessage = text;
+        [_dataArr[indexPath.section].conmentArray addObject:sendModel];
+        
+        NSMutableArray *indexPaths = [[NSMutableArray alloc] init];
+        NSIndexPath *insertIndexPath = [NSIndexPath indexPathForRow:_dataArr[indexPath.section].conmentArray.count-1 inSection:_selectedIndexPath.section];
+        [indexPaths addObject: insertIndexPath];
+        [_tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationFade];
+        //_chatKeyBoard.hidden = YES;
+        [self.chatKeyBoard keyboardDownForComment];
+
+    }
+   }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
