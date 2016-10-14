@@ -186,11 +186,6 @@ typedef NS_ENUM(NSInteger, MACRefreshState) {
 
 ##云周边（暂未开放）
 
-地图定位、大头针等；
-![图片](http://oc4tpefat.bkt.clouddn.com/location.png)
-
-
-
 ##发现（动画&控件）
 
 ![图片](http://oc4tpefat.bkt.clouddn.com/finder.png)
