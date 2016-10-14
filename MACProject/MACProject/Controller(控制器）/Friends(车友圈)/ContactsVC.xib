@@ -47,7 +47,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="contact_banji">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="班级">
+                                        <fragment content="群组">
                                             <attributes>
                                                 <color key="NSColor" red="0.021375896632937718" green="0.015653867596241974" blue="0.022095959595959558" alpha="1" colorSpace="calibratedRGB"/>
                                                 <font key="NSFont" size="16" name="STHeitiSC-Light"/>

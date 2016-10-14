@@ -10,9 +10,9 @@
 #import "AFSecurityPolicy.h"
 
 @implementation HTTPClient
-static HTTPClient *_sharedHTTPClient=nil;
+static HTTPClient *_sharedHTTPClient = nil;
 
-static NSString *baseUrl=@"http://www.361school.com:73/";
+static NSString *baseUrl = @"http://www.361school.com:73/";
 
 
 +(instancetype)sharedHTTPClient{
@@ -25,7 +25,7 @@ static NSString *baseUrl=@"http://www.361school.com:73/";
     return _sharedHTTPClient;
 }
 +(void)initHTTPClient{
-     _sharedHTTPClient=[[HTTPClient alloc]initWithBaseURL:[NSURL URLWithString:baseUrl]];
+     _sharedHTTPClient = [[HTTPClient alloc]initWithBaseURL:[NSURL URLWithString:baseUrl]];
     [_sharedHTTPClient.reachabilityManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         switch (status) {
             case AFNetworkReachabilityStatusReachableViaWWAN:
@@ -56,17 +56,17 @@ static NSString *baseUrl=@"http://www.361school.com:73/";
         return nil;
     }
     self.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html", nil];
-   
+
    // [self.requestSerializer setAuthorizationHeaderFieldWithUsername:@"XYZ" password:@"xyzzzz"];
-    self.requestSerializer = [AFHTTPRequestSerializer serializer];
-     self.responseSerializer = [AFHTTPResponseSerializer serializer];
-    self.requestSerializer.timeoutInterval = 10.0;
+    self.requestSerializer                         = [AFHTTPRequestSerializer serializer];
+    self.responseSerializer                        = [AFHTTPResponseSerializer serializer];
+    self.requestSerializer.timeoutInterval         = 10.0;
    //self.responseSerializer = [AFJSONResponseSerializer serializerWithReadingOptions:NSJSONReadingAllowFragments];
-    AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
-    securityPolicy.allowInvalidCertificates = YES;
-    
-    securityPolicy.validatesDomainName = NO;
-    self.securityPolicy = securityPolicy;
+    AFSecurityPolicy *securityPolicy               = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
+    securityPolicy.allowInvalidCertificates        = YES;
+
+    securityPolicy.validatesDomainName             = NO;
+    self.securityPolicy                            = securityPolicy;
     return self;
 }
 

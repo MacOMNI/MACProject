@@ -84,41 +84,41 @@ static inline NSString* cachePathForKey(NSString* directory, NSString* key) {
 
 - (instancetype)initWithCacheDirectory:(NSString*)cacheDirectory {
 	if((self = [super init])) {
-		_cacheInfoQueue = dispatch_queue_create("com.enormego.egocache.info", DISPATCH_QUEUE_SERIAL);
-		dispatch_queue_t priority = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
+        _cacheInfoQueue             = dispatch_queue_create("com.enormego.egocache.info", DISPATCH_QUEUE_SERIAL);
+        dispatch_queue_t priority   = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
 		dispatch_set_target_queue(priority, _cacheInfoQueue);
-		
-		_frozenCacheInfoQueue = dispatch_queue_create("com.enormego.egocache.info.frozen", DISPATCH_QUEUE_SERIAL);
-		priority = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
-		dispatch_set_target_queue(priority, _frozenCacheInfoQueue);
-		
-		_diskQueue = dispatch_queue_create("com.enormego.egocache.disk", DISPATCH_QUEUE_CONCURRENT);
-		priority = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0);
-		dispatch_set_target_queue(priority, _diskQueue);
-		
-		
-		_directory = cacheDirectory;
 
-		_cacheInfo = [[NSDictionary dictionaryWithContentsOfFile:cachePathForKey(_directory, @"EGOCache.plist")] mutableCopy];
-		
+        _frozenCacheInfoQueue       = dispatch_queue_create("com.enormego.egocache.info.frozen", DISPATCH_QUEUE_SERIAL);
+        priority                    = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
+		dispatch_set_target_queue(priority, _frozenCacheInfoQueue);
+
+        _diskQueue                  = dispatch_queue_create("com.enormego.egocache.disk", DISPATCH_QUEUE_CONCURRENT);
+        priority                    = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0);
+		dispatch_set_target_queue(priority, _diskQueue);
+
+
+        _directory                  = cacheDirectory;
+
+        _cacheInfo                  = [[NSDictionary dictionaryWithContentsOfFile:cachePathForKey(_directory, @"EGOCache.plist")] mutableCopy];
+
 		if(!_cacheInfo) {
-			_cacheInfo = [[NSMutableDictionary alloc] init];
+        _cacheInfo                  = [[NSMutableDictionary alloc] init];
 		}
-		
+
 		[[NSFileManager defaultManager] createDirectoryAtPath:_directory withIntermediateDirectories:YES attributes:nil error:NULL];
-		
-		NSTimeInterval now = [[NSDate date] timeIntervalSinceReferenceDate];
-		NSMutableArray* removedKeys = [[NSMutableArray alloc] init];
-		
+
+        NSTimeInterval now          = [[NSDate date] timeIntervalSinceReferenceDate];
+        NSMutableArray* removedKeys = [[NSMutableArray alloc] init];
+
 		for(NSString* key in _cacheInfo) {
 			if([_cacheInfo[key] timeIntervalSinceReferenceDate] <= now) {
 				[[NSFileManager defaultManager] removeItemAtPath:cachePathForKey(_directory, key) error:NULL];
 				[removedKeys addObject:key];
 			}
 		}
-		
+
 		[_cacheInfo removeObjectsForKeys:removedKeys];
-		self.frozenCacheInfo = _cacheInfo;
+        self.frozenCacheInfo        = _cacheInfo;
 		[self setDefaultTimeoutInterval:86400];
 	}
 	

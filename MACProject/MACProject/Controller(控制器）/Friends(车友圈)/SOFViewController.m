@@ -14,8 +14,14 @@
 #import "CommentCell.h"
 #import "FriendsMessageModel.h"
 #import "ChatKeyBoard.h"
+
+#import "YYImage.h"
+#import "NSDictionary+JKBlock.h"
 @interface SOFViewController ()<MACTableViewDelegate,UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate,ChatKeyBoardDataSource,ChatKeyBoardDelegate>{
-    
+     CGFloat _tapLocationY;//当前点击cell所在屏幕位置
+    CGFloat _tableViewCurrentOffsetY;//tableView 当前的 offsetY
+    BOOL _isNeedUpdateOffset;//是否需要更新 offset
+
 }
 /** 聊天键盘 */
 @property (nonatomic, strong) ChatKeyBoard *chatKeyBoard;
@@ -23,9 +29,9 @@
 @property (nonatomic,strong) NSMutableArray<FriendsMessageModel *> *dataArr;
 @property (nonatomic,strong) CommentModel *selectedCommentModel;
 @property (nonatomic,strong) NSIndexPath *selectedIndexPath;
-@property (nonatomic, assign) BOOL needUpdateOffset;//控制是否刷新table的offset
 
-@property (nonatomic,assign) CGFloat tapLocationY;//当前点击cell所在屏幕位置
+@property (nonatomic,strong) YYTextSimpleEmoticonParser *parser;
+
 
 @end
 
@@ -34,7 +40,16 @@
 -(void)dealloc{
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
-
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [[IQKeyboardManager sharedManager]setEnableAutoToolbar:NO];
+    [[IQKeyboardManager sharedManager] setEnable:NO];
+}
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [[IQKeyboardManager sharedManager]setEnableAutoToolbar:YES];
+    [[IQKeyboardManager sharedManager] setEnable:YES];
+}
 - (instancetype)init
 {
     self = [super init];
@@ -59,7 +74,6 @@
     // Do any additional setup after loading the view.
 }
 -(void)initUI{
-    [[IQKeyboardManager sharedManager]setEnableAutoToolbar:NO];
     self.title                             = @"朋友圈";
     _tableView                             = [[MACTableView alloc]initWithFrame: self.view.bounds style:UITableViewStyleGrouped];
     _tableView.macTableViewDelegate        = self;
@@ -72,15 +86,17 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:[[YYFPSLabel alloc]initWithFrame:CGRectMake(0, 5, 60, 30)]];
     [self.view addSubview:_tableView];
 
-    self.chatKeyBoard                      =[ChatKeyBoard keyBoardWithNavgationBarTranslucent:YES];
-;    self.chatKeyBoard.keyBoardStyle        = KeyBoardStyleComment;
+    self.chatKeyBoard = [ChatKeyBoard keyBoard];
+  //  [ChatKeyBoard keyBoardWithNavgationBarTranslucent:YES];
+   // [ChatKeyBoard keyBoardWithParentViewBounds:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    self.chatKeyBoard.keyBoardStyle        = KeyBoardStyleComment;
 
     self.chatKeyBoard.delegate             = self;
     self.chatKeyBoard.dataSource           = self;
     self.chatKeyBoard.placeHolder          = @"说点什么~~";
     self.chatKeyBoard.allowMore            = NO;
     self.chatKeyBoard.allowVoice           = NO;
-    self.chatKeyBoard.associateTableView   = _tableView;
+   // self.chatKeyBoard.associateTableView   = _tableView;
     [self.view addSubview:self.chatKeyBoard];
     [self.chatKeyBoard keyboardDownForComment];
 }
@@ -114,7 +130,7 @@
     return _dataArr[section].conmentArray.count;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    CommentCell *cell = [tableView dequeueReusableCellWithIdentifier:@"commentCell" forIndexPath:indexPath];
+    CommentCell *cell = [tableView dequeueReusableCellWithIdentifier:@"commentCell"];
     [self configureCell:cell atIndexPath:indexPath];
     return cell;
     
@@ -133,19 +149,21 @@
 }
 -(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     MessageHeadView *headView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"messageHeadView"];
+    headView.parser = self.parser;
     headView.model = _dataArr[section];
     return headView;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    CommentCell *fdCell = [tableView cellForRowAtIndexPath:indexPath];
-    _selectedIndexPath = indexPath;
-    _selectedCommentModel = fdCell.model;
+    CommentCell *fdCell       = [tableView cellForRowAtIndexPath:indexPath];
+    _selectedIndexPath        = indexPath;
+    _selectedCommentModel     = fdCell.model;
     _chatKeyBoard.placeHolder = [NSString stringWithFormat:@"回复:%@",fdCell.model.userName];
     //self.chatKeyBoard.hidden = NO ;
-    self.needUpdateOffset = YES;
-    
-    CGRect rect = [fdCell convertRect:fdCell.frame toView:self.view];
-    _tapLocationY = rect.origin.y + rect.size.height;
+    _isNeedUpdateOffset       = YES;
+
+    CGRect rect               = [fdCell convertRect:fdCell.commentLabel.frame toView:self.view];
+    _tapLocationY             = rect.origin.y + rect.size.height;
+    _tableViewCurrentOffsetY   = tableView.contentOffset.y;
     [self.chatKeyBoard keyboardUpforComment];
 
     
@@ -153,7 +171,7 @@
 //#pragma  mark  configureCell
 - (void)configureCell:(CommentCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     //cell.fd_enforceFrameLayout = NO; // Enable to use "-sizeThatFits:"
-    
+    cell.parser = self.parser;
     cell.model = _dataArr[indexPath.section].conmentArray[indexPath.row];
 }
 
@@ -161,6 +179,32 @@
 {
     [self.chatKeyBoard keyboardDownForComment];
 }
+#pragma mark YYLabel 
+-(YYTextSimpleEmoticonParser *)parser{
+    if (!_parser) {
+        
+        
+        NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"face" ofType:@"plist"];
+        NSDictionary *data = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
+        NSMutableDictionary *mapper = [NSMutableDictionary new];
+        [data jk_each:^(id k, id v) {
+            NSString *key = k;
+            NSString *value = v;
+            mapper[key] = [self imageWithName:value];
+        }];
+        
+        _parser = [YYTextSimpleEmoticonParser new];
+        _parser.emoticonMapper = mapper;
+    }
+    return _parser;
+}
+- (UIImage *)imageWithName:(NSString *)name {
+    YYImage *image = [YYImage imageWithData:UIImagePNGRepresentation(name.macImage)];
+    //YYImage *image = [YYImage imageWithCGImage:[UIImage imageNamed:name].CGImage];
+    image.preloadAllAnimatedImageFrames = YES;
+    return image;
+}
+
 #pragma mark --keyBoard notifaction
 
 - (void)keyboardWillShow:(NSNotification *)notification{
@@ -168,16 +212,18 @@
     NSValue* aValue        = [userInfo objectForKey:UIKeyboardFrameEndUserInfoKey];
     CGFloat keyboardHeight = [aValue CGRectValue].size.height;
     if (keyboardHeight == 0) return;
+    if (_isNeedUpdateOffset) {
+        DLog(@"LocationHeight = %lf  offset = %lf",_tapLocationY+_tableViewCurrentOffsetY,keyboardHeight+_tapLocationY+_tableViewCurrentOffsetY);
+        if (appHeight-_tapLocationY < keyboardHeight+kChatToolBarHeight) {
+            [_tableView setContentOffset:CGPointMake(0, keyboardHeight+kChatToolBarHeight+_tapLocationY-appHeight+_tableViewCurrentOffsetY) animated:NO];
+        }else{
+            [_tableView setContentOffset:CGPointMake(0, _tableViewCurrentOffsetY) animated:NO];
 
-    CGRect keyboardRect    = [aValue CGRectValue];
-    CGPoint offset         = self.tableView.contentOffset;
-
-    keyboardRect           = [self.view convertRect:keyboardRect fromView:nil];
-    CGFloat keyboardTop    = keyboardRect.origin.y;
-
+        }
+    }
 }
 - (void)keyboardWillHide:(NSNotification *)notification{
-    self.needUpdateOffset = NO;
+    _isNeedUpdateOffset = NO;
 }
 #pragma mark -- ChatKeyBoardDataSource
 - (NSArray<MoreItem *> *)chatKeyBoardMorePanelItems

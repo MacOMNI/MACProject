@@ -14,10 +14,6 @@
 
 @implementation ContactsCell
 
-- (void)awakeFromNib {
-    // Initialization code
-    //[super awakeFromNib];
-}
 
 -(void)setContactStatus:(GroupModel*)contactStatus
 {

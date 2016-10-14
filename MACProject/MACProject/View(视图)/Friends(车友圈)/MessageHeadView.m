@@ -7,9 +7,10 @@
 //
 
 #import "MessageHeadView.h"
-#import "YYLabel.h"
 #import "MACImageGroupView.h"
 #import "NSAttributedString+YYText.h"
+#import "YYImage.h"
+#import "NSDictionary+JKBlock.h"
 @interface MessageHeadView(){
     
 }
@@ -23,6 +24,7 @@
 @property (nonatomic,strong) UIButton *addGoodBtn;//点赞
 @property (nonatomic,strong) UIButton *addCommentBtn;//评论
 @property (nonatomic,strong) UILabel *goodNumLabel;//点赞数量
+
 @end
 
 @implementation MessageHeadView
@@ -158,6 +160,8 @@
             make.bottom.mas_equalTo(_gridView.mas_top);
            // make.height.mas_equalTo(20);
         }];
+        _contentLabel.textParser  = self.parser;
+
 
     }
     
@@ -178,7 +182,7 @@
 
 }
 +(CGFloat)caculateHeight:(FriendsMessageModel *)model{
-    CGFloat height       = 62.0f + 70.0f + appWidth/3.0;
+    CGFloat height       = 62.0f + 70.0f + ((model.picArray.count+2)/3)*(appWidth/3.0);
     NSMutableAttributedString *text =[[NSMutableAttributedString alloc] initWithString:model.contentMessage];
     text.yy_font         = [UIFont systemFontOfSize:17.0f];
 
@@ -187,5 +191,11 @@
     CGSize sizeText      = layout.textBoundingSize;
     height               += sizeText.height;
     return height;
+}
+-(void)setParser:(YYTextSimpleEmoticonParser *)parser{
+    if (!_parser) {
+        _parser = parser;
+        _contentLabel.textParser  = parser;
+    }
 }
 @end

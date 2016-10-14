@@ -113,11 +113,8 @@
             default:
                 break;
         }
-        
-        [GCDQueue executeInMainQueue:^{
             [_tableView.mj_header endRefreshing];
             [_tableView reloadData];
-        }];
     } cacheBlock:^(NSInteger stateCode, NSMutableArray *result, NSError *error) {
         if (stateCode==200) {
             {
@@ -134,10 +131,8 @@
                 }
                 DLog(@"请求成功");
             }
-            [GCDQueue executeInMainQueue:^{
                 [_tableView.mj_header endRefreshing];
                 [_tableView reloadData];
-            }];
         }
     }];
 }

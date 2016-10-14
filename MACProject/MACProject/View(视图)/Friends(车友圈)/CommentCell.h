@@ -8,12 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "CommentModel.h"
-#import "YYLabel.h"
+
+#import "YYText.h"
 
 @interface CommentCell : UITableViewCell
 
 @property (nonatomic,strong) CommentModel *model;
 @property (nonatomic,strong) YYLabel *commentLabel;
+
+@property (nonatomic,strong) YYTextSimpleEmoticonParser *parser;
 
 
 @end

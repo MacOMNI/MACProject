@@ -8,18 +8,24 @@
 
 #import "CommentCell.h"
 #import "UITableViewCell+HYBMasonryAutoCellHeight.h"
+#import "YYImage.h"
+#import "NSDictionary+JKBlock.h"
+
 @interface CommentCell(){
     
 }
-
 
 @end
 
 @implementation CommentCell
 
-- (void)awakeFromNib {
-    // Initialization code
+-(void)setParser:(YYTextSimpleEmoticonParser *)parser{
+    if (!_parser) {
+        _parser = parser;
+        _commentLabel.textParser  = parser;
+    }
 }
+
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
@@ -35,13 +41,18 @@
             make.right.equalTo(self.contentView).offset(-10.0f);
             make.bottom.equalTo(self.contentView).offset(-3.0f);
         }];
-        
-      //  self.hyb_lastViewInCell = _commentLabel;
-       // self.hyb_bottomOffsetToCell = 3.0;//cell底部距离为3.0个间隙
-       // self.commentLabel.constraints.
+
     }
     return self;
 }
+
+- (UIImage *)imageWithName:(NSString *)name {
+    YYImage *image = [YYImage imageWithData:UIImagePNGRepresentation(name.macImage)];
+    //YYImage *image = [YYImage imageWithCGImage:[UIImage imageNamed:name].CGImage];
+    image.preloadAllAnimatedImageFrames = YES;
+    return image;
+}
+
 -(void)setModel:(CommentModel *)model{
     _model = [CommentModel mj_objectWithKeyValues: model];
     NSString *str = [NSString stringWithFormat:@"%@回复%@：%@",_model.userName,_model.toUserName,_model.contentMessage];
@@ -52,11 +63,8 @@
     [text addAttribute:NSForegroundColorAttributeName
                  value:[UIColor orangeColor]
                  range:NSMakeRange(_model.userName.length+2, _model.toUserName.length)];
-//    _commentLabel.attributedText = text;
-   // self.textLabel.numberOfLines = 0;
-    //self.textLabel.preferredMaxLayoutWidth = appWidth-16;
+
     _commentLabel.attributedText = text;
-  //  self.textLabel.font = [UIFont systemFontOfSize:15];
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

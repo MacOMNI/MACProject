@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "FriendsMessageModel.h"
+#import "YYText.h"
+
 @protocol MessageHeadViewDelegate <NSObject>
 
 @optional
@@ -25,4 +27,7 @@
 @property(nonatomic,strong) FriendsMessageModel *model;
 
 +(CGFloat)caculateHeight:(FriendsMessageModel *)model;
+
+@property (nonatomic,strong) YYTextSimpleEmoticonParser *parser;
+
 @end

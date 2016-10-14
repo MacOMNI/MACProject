@@ -80,7 +80,7 @@
 
         _imageView.image = [UIImage imageNamed:_imgNameArr[rand()%_imgNameArr.count]];
 
-        [CoreAnimationEffect showAnimationType: @"fade"    withSubType:randomAnimationArr[rand()%randomAnimationArr.count] duration:1.0 timingFunction:kCAMediaTimingFunctionDefault view:_imageView];
+        [CoreAnimationEffect showAnimationType: @"fade"    withSubType:randomAnimationArr[rand()%randomAnimationArr.count] duration:0.25 timingFunction:kCAMediaTimingFunctionDefault view:_imageView];
         
     }];
 }
