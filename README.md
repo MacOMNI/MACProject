@@ -9,8 +9,7 @@
 ![图片](http://upload-images.jianshu.io/upload_images/335970-d8e4adf25d641f3e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > 这里对几个常用控件源代码进行简单的说明：
-基于AF网络请求库的二次封装，并对返回的状态码进行了说明，根据状态码即可知道访问请求结果。
-并且接口类型多样，包括 是否缓存访问接口数据、是否带有 网络提示、是否带有文件参数等；
+基于AF网络请求库的二次封装，根据状态码递归解析加密数据；接口类型包括： 带缓存访问接口、带有网络提示、是否带有文件参数等；
 
 ```Objective-C
 
@@ -72,7 +71,7 @@ typedef void(^ResultBlock)(NSInteger stateCode, NSMutableArray* result, NSError 
 +(void)POSTWithFormDataURL:(NSString *)URLString parameters:(id)parameters mediaData:(NSMutableArray *)mediaDatas completionBlock:(ResultBlock)requestBlock;
 
 ```
-同是对 UITableView 空白页文字、空白页图片、上拉下拉事件等进行了高度集成，命名为MacTableView:
+同是对 UITableView 空白页文字、空白页图片、上拉下拉事件等进行了高度封装，命名为MACTableView，使用简单高效，一键集成:
 
 ```Objective-C
 typedef NS_ENUM(NSInteger, MACRefreshState) {
