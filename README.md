@@ -6,7 +6,7 @@
 
 >基于MVC：对常用控件、常用扩展类、数据缓存、网络请求、工具类、常用动画进行封装或二次封装；
 
-![图片](http://upload-images.jianshu.io/upload_images/335970-7b236e4a800eb76e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)![图片](http://upload-images.jianshu.io/upload_images/335970-d8e4adf25d641f3e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片](http://upload-images.jianshu.io/upload_images/335970-d8e4adf25d641f3e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > 这里对几个常用控件源代码进行简单的说明：
 基于AF网络请求库的二次封装，并对返回的状态码进行了说明，根据状态码即可知道访问请求结果。
@@ -164,19 +164,13 @@ typedef NS_ENUM(NSInteger, MACRefreshState) {
 
 >GCD、CollectionView、Xib 约束、Frame 约束、AutoLayout 代码约束简单应用，抛砖引玉；
 
-![图片](http://upload-images.jianshu.io/upload_images/335970-9202c6eae29e6094.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![图片](http://upload-images.jianshu.io/upload_images/335970-54a3ac806799c308.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片](https://github.com/azheng51714/MACProject/blob/master/pic/homePage.gif)
 
 ###城市模糊查询：
 
 >定位 、 KMP & SearchTree 搜索实现快速数据检索 与 系统匹配不一样的感受；
 
-![image](http://upload-images.jianshu.io/upload_images/335970-e9fb0281a4e59564.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![image](http://upload-images.jianshu.io/upload_images/335970-6ca0d3c94e1c2079.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![image](http://upload-images.jianshu.io/upload_images/335970-d925a5269f0795e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image](https://github.com/azheng51714/MACProject/blob/master/pic/citySearch.gif)
 
 ##朋友圈
 
@@ -184,11 +178,10 @@ typedef NS_ENUM(NSInteger, MACRefreshState) {
 
 >高仿QQ聊天通讯录，人员分组：
 
-![图片](http://upload-images.jianshu.io/upload_images/335970-14e9d75772d5e991.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片](https://github.com/azheng51714/MACProject/blob/master/pic/QQgroup.gif)
 
 ### 高仿朋友圈 & QQ空间
-![图片](https://github.com/azheng51714/MACProject/blob/master/pic/friendVC1.png)
-![图片](https://github.com/azheng51714/MACProject/blob/master/pic/friendVC2.png)
+![图片](https://github.com/azheng51714/MACProject/blob/master/pic/friends.gif)
 
 
 ##云周边（暂未开放）
