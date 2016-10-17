@@ -54,7 +54,7 @@
 {
     self = [super init];
     if (self) {
-        [[SDWebImageManager sharedManager].imageCache clearDisk];
+       // [[SDWebImageManager sharedManager].imageCache clearDisk];
         //注册键盘出现NSNotification
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(keyboardWillShow:)

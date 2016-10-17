@@ -113,6 +113,11 @@
 		5A5827961DB49D6D00E00058 /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A5827721DB49D6D00E00058 /* rscode.c */; };
 		5A5827971DB49D6D00E00058 /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A5827741DB49D6D00E00058 /* split.c */; };
 		5A5827981DB49D6D00E00058 /* QRScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5827771DB49D6D00E00058 /* QRScanViewController.m */; };
+		5A58279E1DB4B71400E00058 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A58279D1DB4B71400E00058 /* MessageViewController.m */; };
+		5A5827A11DB4B76200E00058 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5827A01DB4B76200E00058 /* MessageCell.m */; };
+		5A5827A41DB4B79E00E00058 /* UIPaopaoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5827A31DB4B79E00E00058 /* UIPaopaoView.m */; };
+		5A5827A71DB4B7D900E00058 /* UIImageLabelHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5827A61DB4B7D900E00058 /* UIImageLabelHeaderView.m */; };
+		5A5827AA1DB4BBC100E00058 /* RandomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5827A91DB4BBC100E00058 /* RandomViewController.m */; };
 		5A6088761D928060004EC84D /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6088731D928060004EC84D /* YYFPSLabel.m */; };
 		5A6088771D928060004EC84D /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6088751D928060004EC84D /* YYWeakProxy.m */; };
 		5A65A9E01D76C303009016C3 /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A65A9DD1D76C303009016C3 /* DownloadManager.m */; };
@@ -141,9 +146,6 @@
 		5A994FB11D5DEDC0000F1A17 /* ParallaxHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A994FB01D5DEDC0000F1A17 /* ParallaxHeader.xib */; };
 		5AA23F3B1D59F665005A67FF /* UIImageView+MAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA23F3A1D59F665005A67FF /* UIImageView+MAC.m */; };
 		5AA23F481D59FB90005A67FF /* UIView+AnimationProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA23F471D59FB90005A67FF /* UIView+AnimationProperty.m */; };
-		5AAD6E061D91283F00E4C2A9 /* FaceSourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD6E051D91283F00E4C2A9 /* FaceSourceManager.m */; };
-		5AAD6E0D1D91362A00E4C2A9 /* ChatKeyBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD6E0B1D91362A00E4C2A9 /* ChatKeyBoardViewController.m */; };
-		5AAD6E0E1D91362A00E4C2A9 /* ChatKeyBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AAD6E0C1D91362A00E4C2A9 /* ChatKeyBoardViewController.xib */; };
 		5AB5208C1D53290F000C3C80 /* NSArray+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB51F731D53290F000C3C80 /* NSArray+Block.m */; };
 		5AB5208D1D53290F000C3C80 /* NSArray+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB51F751D53290F000C3C80 /* NSArray+SafeAccess.m */; };
 		5AB520921D53290F000C3C80 /* NSData+APNSToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB51F801D53290F000C3C80 /* NSData+APNSToken.m */; };
@@ -480,6 +482,16 @@
 		5A5827751DB49D6D00E00058 /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
 		5A5827761DB49D6D00E00058 /* QRScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRScanViewController.h; sourceTree = "<group>"; };
 		5A5827771DB49D6D00E00058 /* QRScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRScanViewController.m; sourceTree = "<group>"; };
+		5A58279C1DB4B71400E00058 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		5A58279D1DB4B71400E00058 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		5A58279F1DB4B76200E00058 /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
+		5A5827A01DB4B76200E00058 /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
+		5A5827A21DB4B79E00E00058 /* UIPaopaoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPaopaoView.h; sourceTree = "<group>"; };
+		5A5827A31DB4B79E00E00058 /* UIPaopaoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPaopaoView.m; sourceTree = "<group>"; };
+		5A5827A51DB4B7D900E00058 /* UIImageLabelHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageLabelHeaderView.h; sourceTree = "<group>"; };
+		5A5827A61DB4B7D900E00058 /* UIImageLabelHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageLabelHeaderView.m; sourceTree = "<group>"; };
+		5A5827A81DB4BBC100E00058 /* RandomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomViewController.h; sourceTree = "<group>"; };
+		5A5827A91DB4BBC100E00058 /* RandomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomViewController.m; sourceTree = "<group>"; };
 		5A6088721D928060004EC84D /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
 		5A6088731D928060004EC84D /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
 		5A6088741D928060004EC84D /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
@@ -539,11 +551,6 @@
 		5AA23F3A1D59F665005A67FF /* UIImageView+MAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MAC.m"; sourceTree = "<group>"; };
 		5AA23F461D59FB90005A67FF /* UIView+AnimationProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AnimationProperty.h"; sourceTree = "<group>"; };
 		5AA23F471D59FB90005A67FF /* UIView+AnimationProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AnimationProperty.m"; sourceTree = "<group>"; };
-		5AAD6E041D91283F00E4C2A9 /* FaceSourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceSourceManager.h; sourceTree = "<group>"; };
-		5AAD6E051D91283F00E4C2A9 /* FaceSourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceSourceManager.m; sourceTree = "<group>"; };
-		5AAD6E0A1D91362A00E4C2A9 /* ChatKeyBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatKeyBoardViewController.h; sourceTree = "<group>"; };
-		5AAD6E0B1D91362A00E4C2A9 /* ChatKeyBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatKeyBoardViewController.m; sourceTree = "<group>"; };
-		5AAD6E0C1D91362A00E4C2A9 /* ChatKeyBoardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatKeyBoardViewController.xib; sourceTree = "<group>"; };
 		5AB51F721D53290F000C3C80 /* NSArray+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Block.h"; sourceTree = "<group>"; };
 		5AB51F731D53290F000C3C80 /* NSArray+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Block.m"; sourceTree = "<group>"; };
 		5AB51F741D53290F000C3C80 /* NSArray+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SafeAccess.h"; sourceTree = "<group>"; };
@@ -1041,15 +1048,12 @@
 				5A557C311D6C6DDD00DF26DC /* ContactsVC.h */,
 				5A557C321D6C6DDD00DF26DC /* ContactsVC.m */,
 				5A557C331D6C6DDD00DF26DC /* ContactsVC.xib */,
-				5AAD6E041D91283F00E4C2A9 /* FaceSourceManager.h */,
-				5AAD6E051D91283F00E4C2A9 /* FaceSourceManager.m */,
 				5A02CEC51D6C27390009CBDD /* FriendsViewController.h */,
 				5A02CEC41D6C27390009CBDD /* FriendsViewController.m */,
 				5AF82FF41D6D382900DB6C67 /* SOFViewController.h */,
 				5AF82FF51D6D382900DB6C67 /* SOFViewController.m */,
-				5AAD6E0A1D91362A00E4C2A9 /* ChatKeyBoardViewController.h */,
-				5AAD6E0B1D91362A00E4C2A9 /* ChatKeyBoardViewController.m */,
-				5AAD6E0C1D91362A00E4C2A9 /* ChatKeyBoardViewController.xib */,
+				5A58279C1DB4B71400E00058 /* MessageViewController.h */,
+				5A58279D1DB4B71400E00058 /* MessageViewController.m */,
 			);
 			path = "Friends(车友圈)";
 			sourceTree = "<group>";
@@ -1165,6 +1169,12 @@
 				5A2E7CE51D93802500B6FBB7 /* CommentCell.m */,
 				5A95A1531D9504F900A7E725 /* MessageHeadView.h */,
 				5A95A1541D9504F900A7E725 /* MessageHeadView.m */,
+				5A5827A21DB4B79E00E00058 /* UIPaopaoView.h */,
+				5A5827A31DB4B79E00E00058 /* UIPaopaoView.m */,
+				5A5827A51DB4B7D900E00058 /* UIImageLabelHeaderView.h */,
+				5A5827A61DB4B7D900E00058 /* UIImageLabelHeaderView.m */,
+				5A58279F1DB4B76200E00058 /* MessageCell.h */,
+				5A5827A01DB4B76200E00058 /* MessageCell.m */,
 			);
 			path = "Friends(车友圈)";
 			sourceTree = "<group>";
@@ -2011,6 +2021,8 @@
 				5A546E9D1D5C0ACC00F9361E /* MainTabBarController.h */,
 				5A546E9E1D5C0ACC00F9361E /* MainTabBarController.m */,
 				5A8A55801DAE156A009F5D50 /* MessageJSON.json */,
+				5A5827A81DB4BBC100E00058 /* RandomViewController.h */,
+				5A5827A91DB4BBC100E00058 /* RandomViewController.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -2215,7 +2227,6 @@
 			files = (
 				5AB520E11D53290F000C3C80 /* icon_refresh_3@3x.png in Resources */,
 				5A58277D1DB49D6D00E00058 /* whiteplaceholder.png in Resources */,
-				5AAD6E0E1D91362A00E4C2A9 /* ChatKeyBoardViewController.xib in Resources */,
 				5A90A2211D61CFB9005298B3 /* CarouseView.xib in Resources */,
 				5A6751C21D65AEBB0069DF33 /* citys.xml in Resources */,
 				5AB520E01D53290F000C3C80 /* icon_refresh_3@2x.png in Resources */,
@@ -2348,7 +2359,6 @@
 				5A557C221D6C3B5D00DF26DC /* CityModel.m in Sources */,
 				5AB520BD1D53290F000C3C80 /* UIButton+TouchAreaInsets.m in Sources */,
 				5A09C0AF1D5B0BFC00B0AB5B /* CocoaSecurity.m in Sources */,
-				5AAD6E061D91283F00E4C2A9 /* FaceSourceManager.m in Sources */,
 				5A9553171D74405100A75C3C /* SpecailShowViewController.m in Sources */,
 				5A5827921DB49D6D00E00058 /* QRCodeGenerator.m in Sources */,
 				5A0528201D6EEF4B004ECE57 /* MMTweenFunction.m in Sources */,
@@ -2397,13 +2407,13 @@
 				5AB520D31D53290F000C3C80 /* UINavigationItem+Loading.m in Sources */,
 				5A441E031D78313A008DF1AC /* MMPaintView.m in Sources */,
 				5AB520EF1D53290F000C3C80 /* UIView+HUD.m in Sources */,
+				5A5827A11DB4B76200E00058 /* MessageCell.m in Sources */,
 				5AB520C71D53290F000C3C80 /* UIImageView+CornerRadius.m in Sources */,
 				5AB520ED1D53290F000C3C80 /* UIView+Find.m in Sources */,
 				5AB520F01D53290F000C3C80 /* UIView+MAC.m in Sources */,
 				5A0528421D6EEF8B004ECE57 /* WXSPercentDrivenInteractiveTransition.m in Sources */,
 				5A5827971DB49D6D00E00058 /* split.c in Sources */,
 				5A09C0AE1D5B0BFC00B0AB5B /* Base64.m in Sources */,
-				5AAD6E0D1D91362A00E4C2A9 /* ChatKeyBoardViewController.m in Sources */,
 				5A58278B1DB49D6D00E00058 /* ChatToolBar.m in Sources */,
 				5A58277C1DB49D6D00E00058 /* MACImageGroupView.m in Sources */,
 				5AB520A11D53290F000C3C80 /* NSObject+GCD.m in Sources */,
@@ -2446,6 +2456,7 @@
 				5A5827981DB49D6D00E00058 /* QRScanViewController.m in Sources */,
 				5A441DF91D783011008DF1AC /* MMAnimationViewController.m in Sources */,
 				5A15AA831D58A98D000ED86E /* NSData+JKGzip.m in Sources */,
+				5A5827A41DB4B79E00E00058 /* UIPaopaoView.m in Sources */,
 				5A58278F1DB49D6D00E00058 /* FSMediaPicker.m in Sources */,
 				5AB520E61D53290F000C3C80 /* UITableViewCell+MAC.m in Sources */,
 				5A09C0B11D5B0BFC00B0AB5B /* UserAuth.m in Sources */,
@@ -2467,6 +2478,7 @@
 				5AF82FF61D6D382900DB6C67 /* SOFViewController.m in Sources */,
 				5A95A1551D9504F900A7E725 /* MessageHeadView.m in Sources */,
 				5A15AA731D586D78000ED86E /* FileManager.m in Sources */,
+				5A58279E1DB4B71400E00058 /* MessageViewController.m in Sources */,
 				5A9074DD1D6556D90049CEC9 /* BannerCell.m in Sources */,
 				5A58278C1DB49D6D00E00058 /* OfficialAccountToolbar.m in Sources */,
 				5A0528471D6EF4E9004ECE57 /* TransitionRandomVC.m in Sources */,
@@ -2475,6 +2487,7 @@
 				5A15AA4C1D583093000ED86E /* UIView+Shake.m in Sources */,
 				5A58277F1DB49D6D00E00058 /* ChatToolBarItem.m in Sources */,
 				5AB520D41D53290F000C3C80 /* UINavigationItem+Lock.m in Sources */,
+				5A5827A71DB4B7D900E00058 /* UIImageLabelHeaderView.m in Sources */,
 				5AB520EC1D53290F000C3C80 /* UIView+Blur.m in Sources */,
 				5A97EC791D6469AF00A29247 /* CarLightViewCell.m in Sources */,
 				5A15AAA71D58ABC7000ED86E /* NSObject+JKKVOBlocks.m in Sources */,
@@ -2500,6 +2513,7 @@
 				5AB520CC1D53290F000C3C80 /* UIUnderLineLabelLabel.m in Sources */,
 				5A557C451D6C6EFD00DF26DC /* GroupModel.m in Sources */,
 				5A5827911DB49D6D00E00058 /* mask.c in Sources */,
+				5A5827AA1DB4BBC100E00058 /* RandomViewController.m in Sources */,
 				5A0528271D6EEF4B004ECE57 /* BaseModel.m in Sources */,
 				5A5827851DB49D6D00E00058 /* FaceButton.m in Sources */,
 				5AB520D21D53290F000C3C80 /* UINavigationController+MAC.m in Sources */,

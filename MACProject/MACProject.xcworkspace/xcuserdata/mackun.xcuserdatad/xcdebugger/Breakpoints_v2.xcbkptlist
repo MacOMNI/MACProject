@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Friends(&#x8f66;&#x53cb;&#x5708;)/FriendsViewController.m"
-            timestampString = "496048940.030157"
+            timestampString = "498383689.652558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MACProject/Controller(&#x63a7;&#x5236;&#x5668;&#xff09;/Friends(&#x8f66;&#x53cb;&#x5708;)/FriendsViewController.m"
-            timestampString = "496048940.030157"
+            timestampString = "498383689.652558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -432,7 +432,7 @@
             startingLineNumber = "114"
             endingLineNumber = "114"
             landmarkName = "-switchVoice:"
-            landmarkType = "7">
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -448,7 +448,7 @@
             startingLineNumber = "119"
             endingLineNumber = "119"
             landmarkName = "-switchFace:"
-            landmarkType = "7">
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

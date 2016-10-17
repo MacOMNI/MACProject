@@ -9,7 +9,6 @@
 #import "FriendsViewController.h"
 #import "FriendsCell.h"
 #import "ContactsVC.h"
-#import "ChatKeyBoardViewController.h"
 #import "SOFViewController.h"
 @interface FriendsViewController ()<UITableViewDataSource,UITableViewDelegate>{
     NSMutableArray *titleArr;
@@ -41,9 +40,9 @@
     [self.view addSubview:self.tableView];
 }
 -(void)initData{
-    titleArr = [[NSMutableArray alloc]initWithArray:@[@[@"车友圈",@"我的车友"],@[@"我的奖品",@"限时活动"]]];
+    titleArr = [[NSMutableArray alloc]initWithArray:@[@[@"车友圈",@"我的车友"],@[@"我的奖品",@"我的消息"]]];
     iconArr = [[NSMutableArray alloc]initWithArray:@[@[@"user_identify_icon",@"user_introduce_icon"],@[@"user_phone_icon",@"user_registerTime_icon"]]];
-    classArr = [[NSMutableArray alloc]initWithArray:@[@[@"SOFViewController",@"ContactsVC"],@[@"ChatKeyBoardViewController",@"ContactsVC"]]];
+    classArr = [[NSMutableArray alloc]initWithArray:@[@[@"SOFViewController",@"ContactsVC"],@[@"RandomViewController",@"MessageViewController"]]];
    // [self.tableView reloadData];
 }
 #pragma mark TableView delegate datasource
@@ -54,10 +53,10 @@
     return [titleArr arrayWithIndex:section].count;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    FriendsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FriendsCell"];
+    FriendsCell *cell   = [tableView dequeueReusableCellWithIdentifier:@"FriendsCell"];
     cell.nameLabel.text = [titleArr arrayWithIndex:indexPath.section][indexPath.row];
-    cell.imgView.image = [UIImage imageNamed:[iconArr arrayWithIndex:indexPath.section][indexPath.row]];
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    cell.imgView.image  = [UIImage imageNamed:[iconArr arrayWithIndex:indexPath.section][indexPath.row]];
+    cell.accessoryType  = UITableViewCellAccessoryDisclosureIndicator;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
     
