@@ -6,7 +6,7 @@
 
 基于MVC：对常用控件、常用扩展类、数据缓存、网络请求、工具类、常用动画进行封装或二次封装；
 
-1. 对包括UIImageView、UILabel、UIButton、UINavgationBar、UINavgationController、UITableView、UITextView、UISearchBar、UIViewController等在内的常用控件及其扩展类进行了整理，其中对常用的数据加载、提示语、AlertView、sheetView也进行了一键集成；
+1. 对包括 UIImageView、UILabel、UIButton、UINavgationBar、UINavgationController、UITableView、UITextView、UISearchBar、UIViewController 等在内的常用控件及其扩展类进行了整理，其中对常用的数据加载、提示语、AlertView、sheetView也进行了一键集成；
 
 2. 对包括 NSData、NSDate、NSString、NSArray、NSDictionary、NSNumber、NSObject 等数据类型常用的转换或解析方法进行了整理；
 
