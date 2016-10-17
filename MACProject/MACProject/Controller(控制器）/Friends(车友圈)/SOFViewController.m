@@ -54,6 +54,7 @@
 {
     self = [super init];
     if (self) {
+        [[SDWebImageManager sharedManager].imageCache clearDisk];
         //注册键盘出现NSNotification
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(keyboardWillShow:)
@@ -87,10 +88,7 @@
     [self.view addSubview:_tableView];
 
     self.chatKeyBoard = [ChatKeyBoard keyBoard];
-  //  [ChatKeyBoard keyBoardWithNavgationBarTranslucent:YES];
-   // [ChatKeyBoard keyBoardWithParentViewBounds:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     self.chatKeyBoard.keyBoardStyle        = KeyBoardStyleComment;
-
     self.chatKeyBoard.delegate             = self;
     self.chatKeyBoard.dataSource           = self;
     self.chatKeyBoard.placeHolder          = @"说点什么~~";
@@ -215,9 +213,9 @@
     if (_isNeedUpdateOffset) {
         DLog(@"LocationHeight = %lf  offset = %lf",_tapLocationY+_tableViewCurrentOffsetY,keyboardHeight+_tapLocationY+_tableViewCurrentOffsetY);
         if (appHeight-_tapLocationY < keyboardHeight+kChatToolBarHeight) {
-            [_tableView setContentOffset:CGPointMake(0, keyboardHeight+kChatToolBarHeight+_tapLocationY-appHeight+_tableViewCurrentOffsetY) animated:NO];
+            [_tableView setContentOffset:CGPointMake(0, keyboardHeight+kChatToolBarHeight+_tapLocationY-appHeight+_tableViewCurrentOffsetY) animated:YES];
         }else{
-            [_tableView setContentOffset:CGPointMake(0, _tableViewCurrentOffsetY) animated:NO];
+            [_tableView setContentOffset:CGPointMake(0, _tableViewCurrentOffsetY) animated:YES];
 
         }
     }

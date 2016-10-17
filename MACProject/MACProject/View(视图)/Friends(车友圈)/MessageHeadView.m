@@ -177,7 +177,7 @@
     _contentLabel.attributedText         = attributedString;
     _goodNumLabel.text                   = [NSString stringWithFormat:@"%ld人点赞",_model.goodNum];
     _gridView.dataSource                 = _model.picArray;
-    [_avactorImageView sd_setImageWithURL:_model.avactor.macUrl placeholderImage:[UIImage imageNamed:@"placeholder_dropbox"]];
+    [_avactorImageView mac_setImageWithURL:_model.avactor.macUrl placeholderImage:[UIImage imageNamed:@"placeholder_dropbox"]];
 
 
 }
