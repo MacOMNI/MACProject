@@ -14,7 +14,8 @@
 
 4. UIFont、UIColor、UIImage、UIApplication、NSTimer等也进行了分类整理，保证相关操作简洁高效，常用方法一键实现；
 5. 对数据下载(DownLoadManager)、网络请求(BaseService)、GCD、Animation、UserAuth等也行了简洁的封装。
->![图片](http://upload-images.jianshu.io/upload_images/335970-d8e4adf25d641f3e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![图片](http://upload-images.jianshu.io/upload_images/335970-d8e4adf25d641f3e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > 这里对几个常用控件源代码进行简单的说明：
 基于AF网络请求库的二次封装，根据状态码递归解析加密数据；接口类型包括： 带缓存访问接口、带有网络提示、是否带有文件参数等；
@@ -190,6 +191,8 @@ typedef NS_ENUM(NSInteger, MACRefreshState) {
 ### 高仿朋友圈 & QQ空间
 ![图片](https://github.com/azheng51714/MACProject/blob/master/pic/friends.gif)
 
+### 我的消息
+![图片](https://github.com/azheng51714/MACProject/blob/master/pic/message.png)
 
 ##云周边（暂未开放）
 
