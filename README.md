@@ -8,17 +8,17 @@
 
 1. 对包括UIImageView、UILabel、UIButton、UINavgationBar、UINavgationController、UITableView、UITextView、UISearchBar、UIViewController等在内的常用控件及其扩展类进行了整理，其中对常用的数据加载、提示语、AlertView、sheetView也进行了一键集成；
 
-2. 对包括NSData、NSDate、NSString、NSArray、NSDictionary、NSNumber、NSObject等数据类型常用的转换或解析方法进行了整理；
+2. 对包括 NSData、NSDate、NSString、NSArray、NSDictionary、NSNumber、NSObject 等数据类型常用的转换或解析方法进行了整理；
 
-3. 对包括NSBundle、NSFile、NSFileManger 等数据读取或操作的常用方法行了整理；
+3. 对包括 NSBundle、NSFile、NSFileManger 等数据读取或操作的常用方法行了整理；
 
-4. UIFont、UIColor、UIImage、UIApplication、NSTimer等也进行了分类整理，保证相关操作简洁高效，常用方法一键实现；
-5. 对数据下载(DownLoadManager)、网络请求(BaseService)、GCD、Animation、UserAuth等也行了简洁的封装。
+4. 对 UIFont、UIColor、UIImage、UIApplication、NSTimer 等也进行了分类整理，保证相关操作简洁高效，常用方法一键实现；
+5. 对数据下载(DownLoadManager)、网络请求(BaseService)、GCD、Animation、UserAuth 等也行了简洁的封装。
 
 ![图片](http://upload-images.jianshu.io/upload_images/335970-d8e4adf25d641f3e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > 这里对几个常用控件源代码进行简单的说明：
-基于AF网络请求库的二次封装，根据状态码递归解析加密数据；接口类型包括： 带缓存访问接口、带有网络提示、是否带有文件参数等；
+基于AF网络请求库的二次封装，根据状态码递归解析请求的加密数据；接口类型包括： 普通访问接口、带数据缓存接口、带有网络提示、带有上传文件等；
 
 ```Objective-C
 
@@ -80,7 +80,7 @@ typedef void(^ResultBlock)(NSInteger stateCode, NSMutableArray* result, NSError 
 +(void)POSTWithFormDataURL:(NSString *)URLString parameters:(id)parameters mediaData:(NSMutableArray *)mediaDatas completionBlock:(ResultBlock)requestBlock;
 
 ```
-同是对 UITableView 空白页文字、空白页图片、上拉下拉事件等进行了高度封装，命名为MACTableView，使用简单高效，一键集成:
+同时对 UITableView 空白页文字、空白页图片、上拉下拉事件等进行了高度封装，命名为MACTableView，使用简单高效，一键集成:
 
 ```Objective-C
 typedef NS_ENUM(NSInteger, MACRefreshState) {
