@@ -80,7 +80,7 @@ typedef void(^ResultBlock)(NSInteger stateCode, NSMutableArray* result, NSError 
 +(void)POSTWithFormDataURL:(NSString *)URLString parameters:(id)parameters mediaData:(NSMutableArray *)mediaDatas completionBlock:(ResultBlock)requestBlock;
 
 ```
-同时对 UITableView 空白页文字、空白页图片、上拉下拉事件等进行了高度封装，命名为MACTableView，使用简单高效，一键集成
+同时对 UITableView 空白页文字、空白页图片、上拉下拉事件等进行了高度封装，命名为MACTableView，使用简单高效,最新版传送门：
 https://github.com/azheng51714/MACTableView
 ```Objective-C
 typedef NS_ENUM(NSInteger, MACRefreshState) {
