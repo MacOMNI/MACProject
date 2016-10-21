@@ -1,6 +1,6 @@
 #MACProject
 传送门：https://github.com/azheng51714/MACProject
->这是使用 Objective-C 整理的一套 iOS 轻量级框架，内部包含大量或自己整理或修改自网络的 Category 、Utils、DataManager、Macros & UIComponents 旨在快速构建中小型 iOS App，并尝试用其整理了个 MACProject 样例以来抛砖引玉，愿与大犇们相互学习交流，不足之处望批评指正， 更欢迎 Star。
+这是使用 Objective-C 整理的一套 iOS 轻量级框架，内部包含大量或自己整理或修改自网络的 Category 、Utils、DataManager、Macros & UIComponents 旨在快速构建中小型 iOS App，并尝试用其整理了个 MACProject 样例以来抛砖引玉，愿与大犇们相互学习交流，不足之处望批评指正， 更欢迎 Star。
 
 ##目录结构
 
@@ -17,7 +17,7 @@
 
 ![图片](http://upload-images.jianshu.io/upload_images/335970-d8e4adf25d641f3e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-> 这里对几个常用控件源代码进行简单的说明：
+ 这里对几个常用控件源代码进行简单的说明：
 基于AF网络请求库的二次封装，根据状态码递归解析请求的加密数据；接口类型包括： 普通访问接口、带数据缓存接口、带有网络提示、带有上传文件等；
 
 ```Objective-C
@@ -170,13 +170,13 @@ typedef NS_ENUM(NSInteger, MACRefreshState) {
 
 ###仿闲鱼同城界面：
 
->GCD、CollectionView、Xib 约束、Frame 约束、AutoLayout 代码约束简单应用，抛砖引玉；
+GCD、CollectionView、Xib 约束、Frame 约束、AutoLayout 代码约束简单应用，抛砖引玉；
 
 ![图片](https://github.com/azheng51714/MACProject/blob/master/pic/homePage.gif)
 
 ###城市模糊查询：
 
->定位 、 KMP & SearchTree 搜索实现快速数据检索 与 系统匹配不一样的感受；
+定位 、 KMP & SearchTree 搜索实现快速数据检索 与 系统匹配不一样的感受；
 
 ![image](https://github.com/azheng51714/MACProject/blob/master/pic/citySearch.gif)
 
@@ -184,7 +184,7 @@ typedef NS_ENUM(NSInteger, MACRefreshState) {
 
 ###仿QQ通信录：
 
->高仿QQ聊天通讯录，人员分组：
+高仿QQ聊天通讯录，人员分组：
 
 ![图片](https://github.com/azheng51714/MACProject/blob/master/pic/QQgroup.gif)
 
