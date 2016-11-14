@@ -112,9 +112,9 @@
 }
 #pragma mark macTableViewDelegate
 -(void)loadDataRefreshOrPull:(MACRefreshState)state{
-    if (state==MACRefreshing) {
+    if (state == MACRefreshing) {
         
-    }else if (state==MACPulling){
+    }else if (state == MACPulling){
         
     }
     [_tableView endLoading];

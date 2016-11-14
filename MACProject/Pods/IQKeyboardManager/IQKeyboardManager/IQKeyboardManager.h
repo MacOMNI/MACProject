@@ -83,6 +83,17 @@ extern NSInteger const kIQPreviousNextButtonToolbarTag;
  */
 - (void)reloadLayoutIfNeeded;
 
+/** 
+ Boolean to know if keyboard is showing.
+ */
+@property(nonatomic, assign, readonly, getter = isKeyboardShowing) BOOL  keyboardShowing;
+
+/**
+ moved distance to the top used to maintain distance between keyboard and textField. Most of the time this will be a positive value.
+ */
+@property(nonatomic, assign, readonly) CGFloat movedDistance;
+
+
 ///-------------------------
 /// @name IQToolbar handling
 ///-------------------------

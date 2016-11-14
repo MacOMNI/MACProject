@@ -457,6 +457,8 @@ typedef struct MGSwipeAnimationData {
 
 -(void) awakeFromNib
 {
+    [super awakeFromNib];
+
     if (!_panRecognizer) {
         [self initViews:YES];
     }

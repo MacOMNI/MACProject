@@ -2,7 +2,7 @@
 
 #import <UIKit/UIKit.h>
 #import "WXSTypedefConfig.h"
-@interface WXSTransitionManager : NSObject<UIViewControllerAnimatedTransitioning>
+@interface WXSTransitionManager : NSObject<UIViewControllerAnimatedTransitioning,CAAnimationDelegate>
 
 
 @property (nonatomic,assign) NSTimeInterval animationTime;

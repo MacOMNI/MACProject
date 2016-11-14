@@ -7,7 +7,7 @@
 #import <Foundation/Foundation.h>
 #import <QuartzCore/QuartzCore.h>
 
-@interface CoreAnimationEffect : NSObject
+@interface CoreAnimationEffect : NSObject<CAAnimationDelegate>
 
 #pragma mark - Custom Animation
 

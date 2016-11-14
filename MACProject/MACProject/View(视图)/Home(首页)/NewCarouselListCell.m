@@ -20,8 +20,10 @@
     _carousel.delegate = nil;
 }
 - (void)awakeFromNib {
+    [super awakeFromNib];
+
     // Initialization code
-    DLog(@"NewCarouselListCell");
+   // DLog(@"NewCarouselListCell");
     _carousel.type = iCarouselTypeLinear;
     _carousel.dataSource = self;
     _carousel.delegate = self;

@@ -19,6 +19,8 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    [super awakeFromNib];
+
     [_btnCity setImagePosition:LXMImagePositionRight spacing:5.0f];
 }
 

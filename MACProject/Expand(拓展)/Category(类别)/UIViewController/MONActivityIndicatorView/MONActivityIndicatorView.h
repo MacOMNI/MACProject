@@ -8,7 +8,7 @@
 
 @protocol MONActivityIndicatorViewDelegate;
 
-@interface MONActivityIndicatorView : UIView
+@interface MONActivityIndicatorView : UIView<CAAnimationDelegate>
 
 /** The number of circle indicators. */
 @property (readwrite, nonatomic) NSUInteger numberOfCircles;

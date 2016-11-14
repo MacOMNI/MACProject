@@ -14,17 +14,20 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - CSStickyHeaderFlowLayout (0.2.10)
+  - CSStickyHeaderFlowLayout (0.2.11)
   - DZNEmptyDataSet (1.7.3)
   - EAIntroView (2.8.3):
     - EARestrictedScrollView (~> 1.1.0)
   - EARestrictedScrollView (1.1.0)
   - GMGridView (1.1.1)
   - HexColors (2.2.1)
-  - HMSegmentedControl (1.5.2)
-  - iCarousel (1.8.2)
+  - HMSegmentedControl (1.5.3)
+  - iCarousel (1.8.3)
   - INTULocationManager (4.2.0)
-  - IQKeyboardManager (4.0.4)
+  - IQKeyboardManager (4.0.7)
+  - MACTableView (1.1.0):
+    - DZNEmptyDataSet (~> 1.7.2)
+    - MJRefresh (~> 3.1.0)
   - Masonry (0.6.4)
   - MBProgressHUD (0.9.2)
   - MJExtension (3.0.13)
@@ -46,12 +49,12 @@ PODS:
   - UITableView+FDTemplateLayoutCell (1.5.beta)
   - VGParallaxHeader (0.0.6):
     - PureLayout
-  - YYCache (1.0.3)
-  - YYImage (1.0.3):
-    - YYImage/Core (= 1.0.3)
-  - YYImage/Core (1.0.3)
-  - YYText (1.0.5)
-  - YYWebImage (1.0.4):
+  - YYCache (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYText (1.0.7)
+  - YYWebImage (1.0.5):
     - YYCache
     - YYImage
 
@@ -64,6 +67,7 @@ DEPENDENCIES:
   - iCarousel (~> 1.8.2)
   - INTULocationManager (~> 4.2.0)
   - IQKeyboardManager (~> 4.0.0)
+  - MACTableView (~> 1.1.0)
   - Masonry (~> 0.6.2)
   - MBProgressHUD (~> 0.9.1)
   - MJExtension (~> 3.0.10)
@@ -81,16 +85,17 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  CSStickyHeaderFlowLayout: 5366582779d8b7c9ba9b9cc729c218cc23888776
+  CSStickyHeaderFlowLayout: e9bcb1762413f49d7d09e5bd0ae5efd1100116b7
   DZNEmptyDataSet: dd7cca17c1d07dfa78956859b1e70a52505678ef
   EAIntroView: e948c83e642f30010d427e643c18a6f2b529afed
   EARestrictedScrollView: b0c2a3f92fb2610bb44d71c5e4893777c89e45ef
   GMGridView: 0e91e818e8b4768cfa1132ff3fdff24391ee230c
   HexColors: abfd172e329dab59888614ccba6f216cec59289d
-  HMSegmentedControl: 83b9686022d2176fb6457d2bdb61e5d6393fed7d
-  iCarousel: 67c8a43da5a46795b56aadfc96cd36a16f6149b2
+  HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
   INTULocationManager: 73f8254b3d05c897c56bb13c190e5b7c648c0998
-  IQKeyboardManager: 4a6f83b540283c2645aaeba2bd8dc0f09b5c77f8
+  IQKeyboardManager: 69002bb4fea60596b710e57d426abc00e5063630
+  MACTableView: 3f378d6eb8d13f3abc30c4e4a804660ef8523e19
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
@@ -104,9 +109,9 @@ SPEC CHECKSUMS:
   TSMessages: c8cc7b80f2a833af533872cd02010cac061532cc
   UITableView+FDTemplateLayoutCell: 02b508ab1cb4cea16a8c17ac83d2cd1fd72124f9
   VGParallaxHeader: 1213aba58c9b0aea84f9e81ad526fde57aa4fe48
-  YYCache: 282f35b5b0990833d0b7a06d864a87141a021da2
-  YYImage: 362f44ffba1fc498f2152060f3bb54ed84600981
-  YYText: ac09660c9ccd9b817f409a20caa6f5587444d2ae
-  YYWebImage: 0431ed108e104527669b86f75efd58958425cca2
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
 COCOAPODS: 0.39.0

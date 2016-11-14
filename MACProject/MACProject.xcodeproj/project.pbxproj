@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -222,7 +222,6 @@
 		5AB520E01D53290F000C3C80 /* icon_refresh_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AB520351D53290F000C3C80 /* icon_refresh_3@2x.png */; };
 		5AB520E11D53290F000C3C80 /* icon_refresh_3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AB520361D53290F000C3C80 /* icon_refresh_3@3x.png */; };
 		5AB520E21D53290F000C3C80 /* MACRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB520381D53290F000C3C80 /* MACRefreshHeader.m */; };
-		5AB520E31D53290F000C3C80 /* MACTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB5203A1D53290F000C3C80 /* MACTableView.m */; };
 		5AB520E41D53290F000C3C80 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB5203E1D53290F000C3C80 /* MGSwipeButton.m */; };
 		5AB520E51D53290F000C3C80 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB520401D53290F000C3C80 /* MGSwipeTableCell.m */; };
 		5AB520E61D53290F000C3C80 /* UITableViewCell+MAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB520421D53290F000C3C80 /* UITableViewCell+MAC.m */; };
@@ -697,8 +696,6 @@
 		5AB520361D53290F000C3C80 /* icon_refresh_3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_refresh_3@3x.png"; sourceTree = "<group>"; };
 		5AB520371D53290F000C3C80 /* MACRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACRefreshHeader.h; sourceTree = "<group>"; };
 		5AB520381D53290F000C3C80 /* MACRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACRefreshHeader.m; sourceTree = "<group>"; };
-		5AB520391D53290F000C3C80 /* MACTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACTableView.h; sourceTree = "<group>"; };
-		5AB5203A1D53290F000C3C80 /* MACTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACTableView.m; sourceTree = "<group>"; };
 		5AB5203D1D53290F000C3C80 /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
 		5AB5203E1D53290F000C3C80 /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButton.m; sourceTree = "<group>"; };
 		5AB5203F1D53290F000C3C80 /* MGSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeTableCell.h; sourceTree = "<group>"; };
@@ -1823,8 +1820,6 @@
 				5A15AA741D587544000ED86E /* UITableView+CellClass.h */,
 				5A15AA751D587544000ED86E /* UITableView+CellClass.m */,
 				5AB520301D53290F000C3C80 /* MACRefresh(刷新) */,
-				5AB520391D53290F000C3C80 /* MACTableView.h */,
-				5AB5203A1D53290F000C3C80 /* MACTableView.m */,
 				5A994FA71D5DAC9C000F1A17 /* UITableViewHeader.h */,
 			);
 			path = UITableView;
@@ -2193,17 +2188,22 @@
 		5AF9AF831D4A0F9800F23C1E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = com.mackun;
 				TargetAttributes = {
 					5AF9AF8A1D4A0F9800F23C1E = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 5W5PJ9YVUX;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
 			buildConfigurationList = 5AF9AF861D4A0F9800F23C1E /* Build configuration list for PBXProject "MACProject" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -2474,7 +2474,6 @@
 				5A58277B1DB49D6D00E00058 /* HZPhotoBrowserView.m in Sources */,
 				5A15AA861D58A9A7000ED86E /* NSData+JKDataCache.m in Sources */,
 				5AB521281D53441B000C3C80 /* CellDataAdapter.m in Sources */,
-				5AB520E31D53290F000C3C80 /* MACTableView.m in Sources */,
 				5AF82FF61D6D382900DB6C67 /* SOFViewController.m in Sources */,
 				5A95A1551D9504F900A7E725 /* MessageHeadView.m in Sources */,
 				5A15AA731D586D78000ED86E /* FileManager.m in Sources */,
@@ -2574,8 +2573,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -2618,8 +2619,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -2650,10 +2653,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5W5PJ9YVUX;
 				GCC_PREFIX_HEADER = "${SRCROOT}/MACProject/prefixHeader.pch";
 				INFOPLIST_FILE = MACProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mackun.MACProjectt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mackun.MACProjectDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "${PODS_ROOT}/**";
@@ -2667,10 +2671,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5W5PJ9YVUX;
 				GCC_PREFIX_HEADER = "${SRCROOT}/MACProject/prefixHeader.pch";
 				INFOPLIST_FILE = MACProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mackun.MACProjectt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mackun.MACProjectDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "${PODS_ROOT}/**";

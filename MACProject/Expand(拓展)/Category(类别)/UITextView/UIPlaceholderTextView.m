@@ -21,6 +21,8 @@
 
 -(void)awakeFromNib
 {
+    [super awakeFromNib];
+
     [self addObserver];
 }
 

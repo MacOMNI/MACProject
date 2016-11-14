@@ -18,6 +18,8 @@
 @implementation CarouseView
 
 -(void)awakeFromNib{
+    [super awakeFromNib];
+
     _imgNameArr = @[@"sy_bg",@"dl_toppic",@"sy_banner"];
     randomAnimationArr = @[kCATransitionFromRight,kCATransitionFromLeft,kCATransitionFromTop,kCATransitionFromBottom];
     /** type

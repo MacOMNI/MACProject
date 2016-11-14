@@ -19,6 +19,8 @@
 @implementation CarLightViewCell
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
+
     // Initialization code
    // CSStickyHeaderFlowLayout *flowLayout=(CSStickyHeaderFlowLayout *)_collectionView.collectionViewLayout;
     self.collectionView.dataSource = self;

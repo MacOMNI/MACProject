@@ -37,7 +37,7 @@
      *  @see CAAnimationDelegate    (按下command键点击)
      */
     
-    animation.delegate = self;
+    animation.delegate = (id)self;
     
     /** duration
      *

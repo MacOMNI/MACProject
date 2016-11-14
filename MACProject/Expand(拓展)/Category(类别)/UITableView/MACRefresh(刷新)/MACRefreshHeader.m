@@ -32,5 +32,7 @@
     // 设置正在刷新状态的动画图片
     [self setImages:refreshingImages forState:MJRefreshStateRefreshing];
 }
-
++(void)load{
+ [super registerMACRefresh];
+}
 @end

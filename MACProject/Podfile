@@ -15,6 +15,8 @@ pod 'IQKeyboardManager', '~> 4.0.0'
 pod 'MJExtension', '~> 3.0.10'
 # empty scrollView
 pod 'DZNEmptyDataSet', '~> 1.7.2'
+# MACTableView
+pod 'MACTableView', '~> 1.1.0'
 # alert sheet View
 pod 'MMPopupView', '~> 1.7'
 # segmentedPager

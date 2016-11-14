@@ -11,9 +11,9 @@
 #import "ContactsVC.h"
 #import "SOFViewController.h"
 @interface FriendsViewController ()<UITableViewDataSource,UITableViewDelegate>{
-    NSMutableArray *titleArr;
-    NSMutableArray *iconArr;
-    NSMutableArray *classArr;
+    NSMutableArray *_titleArr;
+    NSMutableArray *_iconArr;
+    NSMutableArray *_classArr;
 
 }
 @property (strong, nonatomic)  UITableView *tableView;
@@ -40,22 +40,22 @@
     [self.view addSubview:self.tableView];
 }
 -(void)initData{
-    titleArr = [[NSMutableArray alloc]initWithArray:@[@[@"车友圈",@"我的车友"],@[@"我的奖品",@"我的消息"]]];
-    iconArr = [[NSMutableArray alloc]initWithArray:@[@[@"user_identify_icon",@"user_introduce_icon"],@[@"user_phone_icon",@"user_registerTime_icon"]]];
-    classArr = [[NSMutableArray alloc]initWithArray:@[@[@"SOFViewController",@"ContactsVC"],@[@"RandomViewController",@"MessageViewController"]]];
+    _titleArr = [[NSMutableArray alloc]initWithArray:@[@[@"车友圈",@"我的车友"],@[@"我的奖品",@"我的消息"]]];
+    _iconArr = [[NSMutableArray alloc]initWithArray:@[@[@"user_identify_icon",@"user_introduce_icon"],@[@"user_phone_icon",@"user_registerTime_icon"]]];
+    _classArr = [[NSMutableArray alloc]initWithArray:@[@[@"SOFViewController",@"ContactsVC"],@[@"RandomViewController",@"MessageViewController"]]];
    // [self.tableView reloadData];
 }
 #pragma mark TableView delegate datasource
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return titleArr.count;
+    return _titleArr.count;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [titleArr arrayWithIndex:section].count;
+    return [_titleArr arrayWithIndex:section].count;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     FriendsCell *cell   = [tableView dequeueReusableCellWithIdentifier:@"FriendsCell"];
-    cell.nameLabel.text = [titleArr arrayWithIndex:indexPath.section][indexPath.row];
-    cell.imgView.image  = [UIImage imageNamed:[iconArr arrayWithIndex:indexPath.section][indexPath.row]];
+    cell.nameLabel.text = [_titleArr arrayWithIndex:indexPath.section][indexPath.row];
+    cell.imgView.image  = [UIImage imageNamed:[_iconArr arrayWithIndex:indexPath.section][indexPath.row]];
     cell.accessoryType  = UITableViewCellAccessoryDisclosureIndicator;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
@@ -66,7 +66,7 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UIViewController *viewController = [[NSClassFromString([classArr arrayWithIndex:indexPath.section][indexPath.row]) alloc] init];
+    UIViewController *viewController = [[NSClassFromString([_classArr arrayWithIndex:indexPath.section][indexPath.row]) alloc] init];
 
     [self.navigationController pushViewControllerHideTabBar:viewController animated:YES];
 
