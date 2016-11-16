@@ -260,6 +260,8 @@
 		5AB773561D75884E00D7E113 /* SepeicalAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AB773541D75884E00D7E113 /* SepeicalAnimationViewController.xib */; };
 		5AB7735E1D758E2F00D7E113 /* POPNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7735C1D758E2F00D7E113 /* POPNumberViewController.m */; };
 		5AB7735F1D758E2F00D7E113 /* POPNumberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AB7735D1D758E2F00D7E113 /* POPNumberViewController.xib */; };
+		5AEA43381DDC0E6F005457D7 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA43371DDC0E6F005457D7 /* LoadingView.m */; };
+		5AEA433B1DDC0E89005457D7 /* LogoLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA433A1DDC0E89005457D7 /* LogoLoadingViewController.m */; };
 		5AF82FF61D6D382900DB6C67 /* SOFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF82FF51D6D382900DB6C67 /* SOFViewController.m */; };
 		5AF9AF901D4A0F9800F23C1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF9AF8F1D4A0F9800F23C1E /* main.m */; };
 		5AF9AF931D4A0F9800F23C1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF9AF921D4A0F9800F23C1E /* AppDelegate.m */; };
@@ -772,6 +774,10 @@
 		5AB7735B1D758E2F00D7E113 /* POPNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPNumberViewController.h; sourceTree = "<group>"; };
 		5AB7735C1D758E2F00D7E113 /* POPNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POPNumberViewController.m; sourceTree = "<group>"; };
 		5AB7735D1D758E2F00D7E113 /* POPNumberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = POPNumberViewController.xib; sourceTree = "<group>"; };
+		5AEA43361DDC0E6F005457D7 /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		5AEA43371DDC0E6F005457D7 /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		5AEA43391DDC0E89005457D7 /* LogoLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoLoadingViewController.h; sourceTree = "<group>"; };
+		5AEA433A1DDC0E89005457D7 /* LogoLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoLoadingViewController.m; sourceTree = "<group>"; };
 		5AF82FF41D6D382900DB6C67 /* SOFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOFViewController.h; sourceTree = "<group>"; };
 		5AF82FF51D6D382900DB6C67 /* SOFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOFViewController.m; sourceTree = "<group>"; };
 		5AF9AF8B1D4A0F9800F23C1E /* MACProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MACProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1137,13 +1143,6 @@
 			children = (
 			);
 			path = "Near(云周边)";
-			sourceTree = "<group>";
-		};
-		5A557C241D6C3B7800DF26DC /* Find(发现) */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Find(发现)";
 			sourceTree = "<group>";
 		};
 		5A557C251D6C3B7800DF26DC /* Friends(车友圈) */ = {
@@ -2036,8 +2035,8 @@
 		5AB5210E1D532E3D000C3C80 /* View(视图) */ = {
 			isa = PBXGroup;
 			children = (
+				5AEA43351DDC0E6F005457D7 /* Finder */,
 				5A557C261D6C3B7D00DF26DC /* Near(云周边) */,
-				5A557C241D6C3B7800DF26DC /* Find(发现) */,
 				5A557C251D6C3B7800DF26DC /* Friends(车友圈) */,
 				5A546EA61D5C153B00F9361E /* Home(首页) */,
 			);
@@ -2095,6 +2094,8 @@
 				5AB7735B1D758E2F00D7E113 /* POPNumberViewController.h */,
 				5AB7735C1D758E2F00D7E113 /* POPNumberViewController.m */,
 				5AB7735D1D758E2F00D7E113 /* POPNumberViewController.xib */,
+				5AEA43391DDC0E89005457D7 /* LogoLoadingViewController.h */,
+				5AEA433A1DDC0E89005457D7 /* LogoLoadingViewController.m */,
 			);
 			name = "乱象动画";
 			sourceTree = "<group>";
@@ -2105,6 +2106,15 @@
 				5A58272B1DB49D6D00E00058 /* UIView */,
 			);
 			path = "UIComponent(组件类)";
+			sourceTree = "<group>";
+		};
+		5AEA43351DDC0E6F005457D7 /* Finder */ = {
+			isa = PBXGroup;
+			children = (
+				5AEA43361DDC0E6F005457D7 /* LoadingView.h */,
+				5AEA43371DDC0E6F005457D7 /* LoadingView.m */,
+			);
+			path = Finder;
 			sourceTree = "<group>";
 		};
 		5AF9AF821D4A0F9800F23C1E = {
@@ -2433,6 +2443,7 @@
 				5AB520EA1D53290F000C3C80 /* UITextView+Placeholder.m in Sources */,
 				5A95530F1D743C4100A75C3C /* EAFeatureItem.m in Sources */,
 				5AB520E81D53290F000C3C80 /* UITextFieldView.m in Sources */,
+				5AEA43381DDC0E6F005457D7 /* LoadingView.m in Sources */,
 				5AB520921D53290F000C3C80 /* NSData+APNSToken.m in Sources */,
 				5A5827871DB49D6D00E00058 /* FacePanel.m in Sources */,
 				5AB520D91D53290F000C3C80 /* UIScrollView+APParallaxHeader.m in Sources */,
@@ -2451,6 +2462,7 @@
 				5AB520CE1D53290F000C3C80 /* KMSwizzle.m in Sources */,
 				5AB5209D1D53290F000C3C80 /* NSNumber+Round.m in Sources */,
 				5A994F971D5D7813000F1A17 /* ParallaxHeaderViewCell.m in Sources */,
+				5AEA433B1DDC0E89005457D7 /* LogoLoadingViewController.m in Sources */,
 				5AB520D61D53290F000C3C80 /* UIResponder+Chain.m in Sources */,
 				5AB520D11D53290F000C3C80 /* UIViewController+KMNavigationBarTransition.m in Sources */,
 				5A5827981DB49D6D00E00058 /* QRScanViewController.m in Sources */,
