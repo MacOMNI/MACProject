@@ -260,6 +260,9 @@
 		5AB773561D75884E00D7E113 /* SepeicalAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AB773541D75884E00D7E113 /* SepeicalAnimationViewController.xib */; };
 		5AB7735E1D758E2F00D7E113 /* POPNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7735C1D758E2F00D7E113 /* POPNumberViewController.m */; };
 		5AB7735F1D758E2F00D7E113 /* POPNumberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AB7735D1D758E2F00D7E113 /* POPNumberViewController.xib */; };
+		5ABC19CB1E12A0F700A306A7 /* WaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABC19C91E12A0F700A306A7 /* WaveViewController.m */; };
+		5ABC19CC1E12A0F700A306A7 /* WaveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABC19CA1E12A0F700A306A7 /* WaveViewController.xib */; };
+		5ABC19CF1E12A18F00A306A7 /* MACWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABC19CE1E12A18F00A306A7 /* MACWaveView.m */; };
 		5AEA43381DDC0E6F005457D7 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA43371DDC0E6F005457D7 /* LoadingView.m */; };
 		5AEA433B1DDC0E89005457D7 /* LogoLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA433A1DDC0E89005457D7 /* LogoLoadingViewController.m */; };
 		5AF82FF61D6D382900DB6C67 /* SOFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF82FF51D6D382900DB6C67 /* SOFViewController.m */; };
@@ -774,6 +777,11 @@
 		5AB7735B1D758E2F00D7E113 /* POPNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPNumberViewController.h; sourceTree = "<group>"; };
 		5AB7735C1D758E2F00D7E113 /* POPNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POPNumberViewController.m; sourceTree = "<group>"; };
 		5AB7735D1D758E2F00D7E113 /* POPNumberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = POPNumberViewController.xib; sourceTree = "<group>"; };
+		5ABC19C81E12A0F700A306A7 /* WaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveViewController.h; sourceTree = "<group>"; };
+		5ABC19C91E12A0F700A306A7 /* WaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveViewController.m; sourceTree = "<group>"; };
+		5ABC19CA1E12A0F700A306A7 /* WaveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaveViewController.xib; sourceTree = "<group>"; };
+		5ABC19CD1E12A18F00A306A7 /* MACWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACWaveView.h; sourceTree = "<group>"; };
+		5ABC19CE1E12A18F00A306A7 /* MACWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACWaveView.m; sourceTree = "<group>"; };
 		5AEA43361DDC0E6F005457D7 /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
 		5AEA43371DDC0E6F005457D7 /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
 		5AEA43391DDC0E89005457D7 /* LogoLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoLoadingViewController.h; sourceTree = "<group>"; };
@@ -2096,6 +2104,9 @@
 				5AB7735D1D758E2F00D7E113 /* POPNumberViewController.xib */,
 				5AEA43391DDC0E89005457D7 /* LogoLoadingViewController.h */,
 				5AEA433A1DDC0E89005457D7 /* LogoLoadingViewController.m */,
+				5ABC19C81E12A0F700A306A7 /* WaveViewController.h */,
+				5ABC19C91E12A0F700A306A7 /* WaveViewController.m */,
+				5ABC19CA1E12A0F700A306A7 /* WaveViewController.xib */,
 			);
 			name = "乱象动画";
 			sourceTree = "<group>";
@@ -2111,6 +2122,8 @@
 		5AEA43351DDC0E6F005457D7 /* Finder */ = {
 			isa = PBXGroup;
 			children = (
+				5ABC19CD1E12A18F00A306A7 /* MACWaveView.h */,
+				5ABC19CE1E12A18F00A306A7 /* MACWaveView.m */,
 				5AEA43361DDC0E6F005457D7 /* LoadingView.h */,
 				5AEA43371DDC0E6F005457D7 /* LoadingView.m */,
 			);
@@ -2242,6 +2255,7 @@
 				5AB520E01D53290F000C3C80 /* icon_refresh_3@2x.png in Resources */,
 				5A557C3D1D6C6ECA00DF26DC /* contacts_rocket@2x.png in Resources */,
 				5A9553181D74405100A75C3C /* SpecailShowViewController.xib in Resources */,
+				5ABC19CC1E12A0F700A306A7 /* WaveViewController.xib in Resources */,
 				5AB520DD1D53290F000C3C80 /* icon_refresh_1@3x.png in Resources */,
 				5AB520DF1D53290F000C3C80 /* icon_refresh_2@3x.png in Resources */,
 				5A5827841DB49D6D00E00058 /* systemEmoji.plist in Resources */,
@@ -2454,6 +2468,7 @@
 				5AB520C41D53290F000C3C80 /* UIImage+SuperCompress.m in Sources */,
 				5AB520EB1D53290F000C3C80 /* UIView+BlockGesture.m in Sources */,
 				5AB520F41D53290F000C3C80 /* UIView+ViewController.m in Sources */,
+				5ABC19CF1E12A18F00A306A7 /* MACWaveView.m in Sources */,
 				5A0528401D6EEF8B004ECE57 /* UINavigationController+WXSTransition.m in Sources */,
 				5A6088771D928060004EC84D /* YYWeakProxy.m in Sources */,
 				5AF9AF931D4A0F9800F23C1E /* AppDelegate.m in Sources */,
@@ -2493,6 +2508,7 @@
 				5A9074DD1D6556D90049CEC9 /* BannerCell.m in Sources */,
 				5A58278C1DB49D6D00E00058 /* OfficialAccountToolbar.m in Sources */,
 				5A0528471D6EF4E9004ECE57 /* TransitionRandomVC.m in Sources */,
+				5ABC19CB1E12A0F700A306A7 /* WaveViewController.m in Sources */,
 				5AFD7B151D941B0C007EC7C2 /* UITableView+HYBCacheHeight.m in Sources */,
 				5AB520F71D53290F000C3C80 /* MONActivityIndicatorView.m in Sources */,
 				5A15AA4C1D583093000ED86E /* UIView+Shake.m in Sources */,
@@ -2669,7 +2685,7 @@
 				GCC_PREFIX_HEADER = "${SRCROOT}/MACProject/prefixHeader.pch";
 				INFOPLIST_FILE = MACProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mackun.MACProjectDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mackun.MACProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "${PODS_ROOT}/**";
@@ -2687,7 +2703,7 @@
 				GCC_PREFIX_HEADER = "${SRCROOT}/MACProject/prefixHeader.pch";
 				INFOPLIST_FILE = MACProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mackun.MACProjectDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mackun.MACProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "${PODS_ROOT}/**";

@@ -30,8 +30,8 @@
     self.tableView.dataSource = self;
 }
 -(void)initData{
-    _nameArr = @[@"POPNumberAnimation(数字动画)",@"LoadingView(加载logo动画)"];
-    _classArr = @[@"POPNumberViewController",@"LogoLoadingViewController"];
+    _nameArr = @[@"POPNumberAnimation(数字动画)",@"LoadingView(加载logo动画)",@"WaveView(波浪动画)"];
+    _classArr = @[@"POPNumberViewController",@"LogoLoadingViewController",@"WaveViewController"];
 }
 
 #pragma mark tableView
