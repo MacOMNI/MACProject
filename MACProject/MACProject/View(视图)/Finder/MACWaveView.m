@@ -28,12 +28,18 @@
 @end
 
 @implementation MACWaveView
-
+//解决当父View释放时，当前视图因为被Timer强引用而不能释放的问题
+- (void)willMoveToSuperview:(UIView *)newSuperview
+{
+    if (!newSuperview) {
+        [_displayLink invalidate];
+        _displayLink = nil;
+    }
+}
 -(instancetype)initWithCoder:(NSCoder *)aDecoder{
     if(self = [super initWithCoder:aDecoder]){
-        
+        [self configAndStartWave];
     }
-    
     return self;
 }
 -(instancetype)initWithFrame:(CGRect)frame{
@@ -47,8 +53,8 @@
 -(CAShapeLayer *)layerWaveUp{
     if (!_layerWaveUp) {
         _layerWaveUp  = [CAShapeLayer layer];
-        _layerWaveUp.fillColor =[UIColor colorWithRed:50/255.0 green:160/255.0 blue:250/255.0 alpha:0.5].CGColor;
-       
+        _layerWaveUp.fillColor = [UIColor colorWithRed:110/255.0 green:190/255.0 blue:250/255.0 alpha:0.3].CGColor;
+        
     }
     
     return _layerWaveUp;
@@ -70,14 +76,14 @@
         _displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateWaveLayer)];
         [_displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
     }
-
+    
     return _displayLink;
 }
 /**更新 WaveLayer 展示情况*/
 -(void)updateWaveLayer{
     CGFloat waveA = 20.0f;//振幅
     CGFloat width = self.frame.size.width;
-     _waveOffsetφ = _waveOffsetφ+waveA/2.0/width;//位移
+    _waveOffsetφ = _waveOffsetφ+waveA/2.0/width;//位移
     [self updateUpWaveLayer];
     [self updateDownWaveLayer];
 }
@@ -100,7 +106,7 @@
     [pathUp moveToPoint:CGPointMake(0, waveA)];
     
     for (CGFloat x = 0.0; x <= width; x++) {
-        CGFloat offsetY = _waveAmplitudeUp*sin(waveω*x+_waveOffsetφ)+waveHeight+5;
+        CGFloat offsetY = _waveAmplitudeUp*sin(waveω*x+_waveOffsetφ)+waveHeight;
         [pathUp addLineToPoint:CGPointMake(x, offsetY)];
     }
     [pathUp addLineToPoint:CGPointMake(width,height)];
@@ -109,14 +115,14 @@
     
     
     self.layerWaveUp.path = pathUp.CGPath;
-
+    
 }
 -(void)updateDownWaveLayer{
     UIBezierPath *pathDown = [UIBezierPath bezierPath];
     CGFloat height = self.frame.size.height;
     CGFloat width = self.frame.size.width;
     
-    CGFloat waveA = 20.0f;//振幅
+    CGFloat waveA = 25.0f;//振幅
     CGFloat waveω = 1.5*M_PI/width;//周期
     
     CGFloat waveHeight = 100.0f;//Y 位置
@@ -130,14 +136,14 @@
     [pathDown moveToPoint:CGPointMake(0, waveA+50.f)];
     
     for (CGFloat x = 0.0; x <= width; x++) {
-        CGFloat offsetY = _waveAmplitudeDown*cos(waveω*x+_waveOffsetφ)+waveHeight;
+        CGFloat offsetY = _waveAmplitudeDown*cos(waveω*x+_waveOffsetφ+10.0)+waveHeight;
         [pathDown addLineToPoint:CGPointMake(x, offsetY)];
     }
     [pathDown addLineToPoint:CGPointMake(width,height)];
     [pathDown addLineToPoint:CGPointMake(0, height)];
     [pathDown closePath];
     self.layerWaveDown.path = pathDown.CGPath;
-
+    
 }
 /**开始生成波浪*/
 -(void)configAndStartWave{
@@ -145,7 +151,7 @@
     _waveAmplitudeDown = 15;
     [self.layer addSublayer:self.layerWaveUp];
     [self.layer addSublayer:self.layerWaveDown];
-
+    
     self.displayLink.paused = false;
 }
 @end

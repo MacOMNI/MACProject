@@ -23,7 +23,7 @@
     self.title = @"波浪动画";
 
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"kebiao_back"]];
-    MACWaveView *waveView = [[MACWaveView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height-300, self.view.frame.size.width, 300)];
+    MACWaveView *waveView = [[MACWaveView alloc]initWithFrame:CGRectMake(0, appHeight-300, appWidth, 300)];
     [self.view addSubview:waveView];
 }
 

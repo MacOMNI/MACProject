@@ -7,7 +7,6 @@
 //
 
 #import "CarouseView.h"
-#import "CoreAnimationEffect.h"
 
 @interface CarouseView(){
     NSArray *randomAnimationArr;
@@ -82,7 +81,6 @@
 
         _imageView.image = [UIImage imageNamed:_imgNameArr[rand()%_imgNameArr.count]];
 
-        [CoreAnimationEffect showAnimationType: @"fade"    withSubType:randomAnimationArr[rand()%randomAnimationArr.count] duration:0.25 timingFunction:kCAMediaTimingFunctionDefault view:_imageView];
         
     }];
 }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5A02CEC61D6C27390009CBDD /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A02CEC41D6C27390009CBDD /* FriendsViewController.m */; };
-		5A05281E1D6EEF4B004ECE57 /* CoreAnimationEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0527EB1D6EEF4B004ECE57 /* CoreAnimationEffect.m */; };
 		5A05281F1D6EEF4B004ECE57 /* MMTweenAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0527EE1D6EEF4B004ECE57 /* MMTweenAnimation.m */; };
 		5A0528201D6EEF4B004ECE57 /* MMTweenFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0527F01D6EEF4B004ECE57 /* MMTweenFunction.m */; };
 		5A0528211D6EEF4B004ECE57 /* POPNumberAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0527F31D6EEF4B004ECE57 /* POPNumberAnimation.m */; };
@@ -235,7 +234,6 @@
 		5AB520EF1D53290F000C3C80 /* UIView+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB520571D53290F000C3C80 /* UIView+HUD.m */; };
 		5AB520F01D53290F000C3C80 /* UIView+MAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB520591D53290F000C3C80 /* UIView+MAC.m */; };
 		5AB520F11D53290F000C3C80 /* UIView+Nib.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB5205B1D53290F000C3C80 /* UIView+Nib.m */; };
-		5AB520F21D53290F000C3C80 /* UIView+RecursiveDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB5205D1D53290F000C3C80 /* UIView+RecursiveDescription.m */; };
 		5AB520F31D53290F000C3C80 /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB5205F1D53290F000C3C80 /* UIView+Screenshot.m */; };
 		5AB520F41D53290F000C3C80 /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB520611D53290F000C3C80 /* UIView+ViewController.m */; };
 		5AB520F51D53290F000C3C80 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB520651D53290F000C3C80 /* UINavigationController+FDFullscreenPopGesture.m */; };
@@ -281,8 +279,6 @@
 		34ED505CBF42FA657FA65818 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A02CEC41D6C27390009CBDD /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
 		5A02CEC51D6C27390009CBDD /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
-		5A0527EA1D6EEF4B004ECE57 /* CoreAnimationEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreAnimationEffect.h; sourceTree = "<group>"; };
-		5A0527EB1D6EEF4B004ECE57 /* CoreAnimationEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationEffect.m; sourceTree = "<group>"; };
 		5A0527ED1D6EEF4B004ECE57 /* MMTweenAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTweenAnimation.h; sourceTree = "<group>"; };
 		5A0527EE1D6EEF4B004ECE57 /* MMTweenAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTweenAnimation.m; sourceTree = "<group>"; };
 		5A0527EF1D6EEF4B004ECE57 /* MMTweenFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTweenFunction.h; sourceTree = "<group>"; };
@@ -727,8 +723,6 @@
 		5AB520591D53290F000C3C80 /* UIView+MAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MAC.m"; sourceTree = "<group>"; };
 		5AB5205A1D53290F000C3C80 /* UIView+Nib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Nib.h"; sourceTree = "<group>"; };
 		5AB5205B1D53290F000C3C80 /* UIView+Nib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Nib.m"; sourceTree = "<group>"; };
-		5AB5205C1D53290F000C3C80 /* UIView+RecursiveDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RecursiveDescription.h"; sourceTree = "<group>"; };
-		5AB5205D1D53290F000C3C80 /* UIView+RecursiveDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RecursiveDescription.m"; sourceTree = "<group>"; };
 		5AB5205E1D53290F000C3C80 /* UIView+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Screenshot.h"; sourceTree = "<group>"; };
 		5AB5205F1D53290F000C3C80 /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
 		5AB520601D53290F000C3C80 /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
@@ -833,8 +827,6 @@
 		5A0527E91D6EEF4B004ECE57 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
-				5A0527EA1D6EEF4B004ECE57 /* CoreAnimationEffect.h */,
-				5A0527EB1D6EEF4B004ECE57 /* CoreAnimationEffect.m */,
 				5A0528341D6EEF8B004ECE57 /* TransitionAnimation */,
 				5A0527EC1D6EEF4B004ECE57 /* MMTweenAnimation */,
 				5A0527F11D6EEF4B004ECE57 /* POPNumberAnimation */,
@@ -1920,8 +1912,6 @@
 				5AB520591D53290F000C3C80 /* UIView+MAC.m */,
 				5AB5205A1D53290F000C3C80 /* UIView+Nib.h */,
 				5AB5205B1D53290F000C3C80 /* UIView+Nib.m */,
-				5AB5205C1D53290F000C3C80 /* UIView+RecursiveDescription.h */,
-				5AB5205D1D53290F000C3C80 /* UIView+RecursiveDescription.m */,
 				5AB5205E1D53290F000C3C80 /* UIView+Screenshot.h */,
 				5AB5205F1D53290F000C3C80 /* UIView+Screenshot.m */,
 				5AB520601D53290F000C3C80 /* UIView+ViewController.h */,
@@ -2339,7 +2329,6 @@
 				5AB520A71D53290F000C3C80 /* NSString+Emoji.m in Sources */,
 				5A15AA981D58AAD1000ED86E /* NSDictionary+JKSafeAccess.m in Sources */,
 				5AB520BB1D53290F000C3C80 /* UIButton+MiddleAligning.m in Sources */,
-				5AB520F21D53290F000C3C80 /* UIView+RecursiveDescription.m in Sources */,
 				5AB520A51D53290F000C3C80 /* NSString+HLHanZiToPinYin.m in Sources */,
 				5AB5209C1D53290F000C3C80 /* NSNumber+RomanNumerals.m in Sources */,
 				5AB520AC1D53290F000C3C80 /* NSString+Trims.m in Sources */,
@@ -2417,7 +2406,6 @@
 				5AB520951D53290F000C3C80 /* NSDate+Mac.m in Sources */,
 				5AB520E41D53290F000C3C80 /* MGSwipeButton.m in Sources */,
 				5AB520FB1D53290F000C3C80 /* MACSideMenuController.m in Sources */,
-				5A05281E1D6EEF4B004ECE57 /* CoreAnimationEffect.m in Sources */,
 				5AB520D01D53290F000C3C80 /* UINavigationController+KMNavigationBarTransition.m in Sources */,
 				5AB520971D53290F000C3C80 /* NSException+Trace.m in Sources */,
 				5AFD7B161D941B0C007EC7C2 /* UITableViewCell+HYBMasonryAutoCellHeight.m in Sources */,
