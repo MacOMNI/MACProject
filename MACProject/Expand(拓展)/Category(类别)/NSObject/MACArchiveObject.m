@@ -18,9 +18,10 @@
         Ivar *ivarList = class_copyIvarList(self.class, &ivarCount);
         
         for (int i = 0; i < ivarCount; i++) {
-            Ivar ivar = ivarList[i];
-            const char *key = ivar_getName(ivar);
+            
+            const char *key = ivar_getName(ivarList[i]);
             NSString *_key = [NSString stringWithUTF8String:key];
+            
             if (_key) {
                 id value = [aDecoder decodeObjectForKey:_key];//解档取值
                 [self setValue:value forKey:_key];
@@ -39,8 +40,8 @@
     Ivar *ivarList = class_copyIvarList(self.class, &ivarCount);
     
     for (int i = 0; i < ivarCount; i++) {
-        Ivar ivar = ivarList[i];
-        const char *key = ivar_getName(ivar);
+        
+        const char *key = ivar_getName(ivarList[i]);
         NSString *_key = [NSString stringWithUTF8String:key];
         
         if (_key) {
@@ -49,6 +50,7 @@
             
         }
     }
+    free(ivarList);
     
 }
 
