@@ -123,6 +123,7 @@
 		5A65A9E11D76C303009016C3 /* DownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A65A9DF1D76C303009016C3 /* DownloadOperation.m */; };
 		5A6751BA1D65AE240069DF33 /* CitysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6751B91D65AE240069DF33 /* CitysViewController.m */; };
 		5A6751C21D65AEBB0069DF33 /* citys.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5A6751C11D65AEBB0069DF33 /* citys.xml */; };
+		5A7BA9131E14F8B700BFB2AE /* MACArchiveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7BA9121E14F8B700BFB2AE /* MACArchiveObject.m */; };
 		5A8A55811DAE156A009F5D50 /* MessageJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A8A55801DAE156A009F5D50 /* MessageJSON.json */; };
 		5A9074DD1D6556D90049CEC9 /* BannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9074DC1D6556D90049CEC9 /* BannerCell.m */; };
 		5A90A2181D61AC28005298B3 /* NewCarouselListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A90A2161D61AC28005298B3 /* NewCarouselListCell.m */; };
@@ -503,6 +504,8 @@
 		5A6751B81D65AE240069DF33 /* CitysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitysViewController.h; sourceTree = "<group>"; };
 		5A6751B91D65AE240069DF33 /* CitysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitysViewController.m; sourceTree = "<group>"; };
 		5A6751C11D65AEBB0069DF33 /* citys.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = citys.xml; sourceTree = "<group>"; };
+		5A7BA9111E14F8B700BFB2AE /* MACArchiveObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACArchiveObject.h; sourceTree = "<group>"; };
+		5A7BA9121E14F8B700BFB2AE /* MACArchiveObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACArchiveObject.m; sourceTree = "<group>"; };
 		5A8A55801DAE156A009F5D50 /* MessageJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MessageJSON.json; sourceTree = "<group>"; };
 		5A9074DB1D6556D90049CEC9 /* BannerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerCell.h; sourceTree = "<group>"; };
 		5A9074DC1D6556D90049CEC9 /* BannerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerCell.m; sourceTree = "<group>"; };
@@ -1535,6 +1538,8 @@
 				5AB51FA31D53290F000C3C80 /* NSObject+GCD.m */,
 				5AB51FA41D53290F000C3C80 /* NSObject+KVOBlocks.h */,
 				5AB51FA51D53290F000C3C80 /* NSObject+KVOBlocks.m */,
+				5A7BA9111E14F8B700BFB2AE /* MACArchiveObject.h */,
+				5A7BA9121E14F8B700BFB2AE /* MACArchiveObject.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -2413,6 +2418,7 @@
 				5AA23F481D59FB90005A67FF /* UIView+AnimationProperty.m in Sources */,
 				5AB520FD1D53290F000C3C80 /* UIViewController+MAC.m in Sources */,
 				5A65A9E11D76C303009016C3 /* DownloadOperation.m in Sources */,
+				5A7BA9131E14F8B700BFB2AE /* MACArchiveObject.m in Sources */,
 				5A58277E1DB49D6D00E00058 /* ChatKeyBoard.m in Sources */,
 				5AA23F3B1D59F665005A67FF /* UIImageView+MAC.m in Sources */,
 				5A5827801DB49D6D00E00058 /* FaceThemeModel.m in Sources */,
