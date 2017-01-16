@@ -254,7 +254,6 @@
 		5AB6D2371D92243000E9676B /* FriendsMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB6D2351D92243000E9676B /* FriendsMessageCell.m */; };
 		5AB6D23B1D922FAB00E9676B /* FriendsMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB6D23A1D922FAB00E9676B /* FriendsMessageModel.m */; };
 		5AB771AF1D75868700D7E113 /* BasicShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB771AD1D75868700D7E113 /* BasicShowViewController.m */; };
-		5AB771B01D75868700D7E113 /* BasicShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AB771AE1D75868700D7E113 /* BasicShowViewController.xib */; };
 		5AB773551D75884E00D7E113 /* SepeicalAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB773531D75884E00D7E113 /* SepeicalAnimationViewController.m */; };
 		5AB773561D75884E00D7E113 /* SepeicalAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AB773541D75884E00D7E113 /* SepeicalAnimationViewController.xib */; };
 		5AB7735E1D758E2F00D7E113 /* POPNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7735C1D758E2F00D7E113 /* POPNumberViewController.m */; };
@@ -262,6 +261,9 @@
 		5ABC19CB1E12A0F700A306A7 /* WaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABC19C91E12A0F700A306A7 /* WaveViewController.m */; };
 		5ABC19CC1E12A0F700A306A7 /* WaveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABC19CA1E12A0F700A306A7 /* WaveViewController.xib */; };
 		5ABC19CF1E12A18F00A306A7 /* MACWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABC19CE1E12A18F00A306A7 /* MACWaveView.m */; };
+		5ACF0BF81E2CCECF00DC4A45 /* MACChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF0BF51E2CCECF00DC4A45 /* MACChartView.m */; };
+		5ACF0BF91E2CCECF00DC4A45 /* GraphChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF0BF71E2CCECF00DC4A45 /* GraphChartView.m */; };
+		5ACF0BFC1E2CCFEB00DC4A45 /* ChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF0BFB1E2CCFEB00DC4A45 /* ChartViewController.m */; };
 		5AEA43381DDC0E6F005457D7 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA43371DDC0E6F005457D7 /* LoadingView.m */; };
 		5AEA433B1DDC0E89005457D7 /* LogoLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA433A1DDC0E89005457D7 /* LogoLoadingViewController.m */; };
 		5AF82FF61D6D382900DB6C67 /* SOFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF82FF51D6D382900DB6C67 /* SOFViewController.m */; };
@@ -767,7 +769,6 @@
 		5AB6D23A1D922FAB00E9676B /* FriendsMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsMessageModel.m; sourceTree = "<group>"; };
 		5AB771AC1D75868700D7E113 /* BasicShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicShowViewController.h; sourceTree = "<group>"; };
 		5AB771AD1D75868700D7E113 /* BasicShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicShowViewController.m; sourceTree = "<group>"; };
-		5AB771AE1D75868700D7E113 /* BasicShowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicShowViewController.xib; sourceTree = "<group>"; };
 		5AB773521D75884E00D7E113 /* SepeicalAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SepeicalAnimationViewController.h; sourceTree = "<group>"; };
 		5AB773531D75884E00D7E113 /* SepeicalAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SepeicalAnimationViewController.m; sourceTree = "<group>"; };
 		5AB773541D75884E00D7E113 /* SepeicalAnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SepeicalAnimationViewController.xib; sourceTree = "<group>"; };
@@ -779,6 +780,12 @@
 		5ABC19CA1E12A0F700A306A7 /* WaveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaveViewController.xib; sourceTree = "<group>"; };
 		5ABC19CD1E12A18F00A306A7 /* MACWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACWaveView.h; sourceTree = "<group>"; };
 		5ABC19CE1E12A18F00A306A7 /* MACWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACWaveView.m; sourceTree = "<group>"; };
+		5ACF0BF41E2CCECF00DC4A45 /* MACChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACChartView.h; sourceTree = "<group>"; };
+		5ACF0BF51E2CCECF00DC4A45 /* MACChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACChartView.m; sourceTree = "<group>"; };
+		5ACF0BF61E2CCECF00DC4A45 /* GraphChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphChartView.h; sourceTree = "<group>"; };
+		5ACF0BF71E2CCECF00DC4A45 /* GraphChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphChartView.m; sourceTree = "<group>"; };
+		5ACF0BFA1E2CCFEB00DC4A45 /* ChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartViewController.h; sourceTree = "<group>"; };
+		5ACF0BFB1E2CCFEB00DC4A45 /* ChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartViewController.m; sourceTree = "<group>"; };
 		5AEA43361DDC0E6F005457D7 /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
 		5AEA43371DDC0E6F005457D7 /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
 		5AEA43391DDC0E89005457D7 /* LogoLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoLoadingViewController.h; sourceTree = "<group>"; };
@@ -2083,7 +2090,8 @@
 			children = (
 				5AB771AC1D75868700D7E113 /* BasicShowViewController.h */,
 				5AB771AD1D75868700D7E113 /* BasicShowViewController.m */,
-				5AB771AE1D75868700D7E113 /* BasicShowViewController.xib */,
+				5ACF0BFA1E2CCFEB00DC4A45 /* ChartViewController.h */,
+				5ACF0BFB1E2CCFEB00DC4A45 /* ChartViewController.m */,
 			);
 			name = "基础控件";
 			sourceTree = "<group>";
@@ -2117,6 +2125,10 @@
 		5AEA43351DDC0E6F005457D7 /* Finder */ = {
 			isa = PBXGroup;
 			children = (
+				5ACF0BF41E2CCECF00DC4A45 /* MACChartView.h */,
+				5ACF0BF51E2CCECF00DC4A45 /* MACChartView.m */,
+				5ACF0BF61E2CCECF00DC4A45 /* GraphChartView.h */,
+				5ACF0BF71E2CCECF00DC4A45 /* GraphChartView.m */,
 				5ABC19CD1E12A18F00A306A7 /* MACWaveView.h */,
 				5ABC19CE1E12A18F00A306A7 /* MACWaveView.m */,
 				5AEA43361DDC0E6F005457D7 /* LoadingView.h */,
@@ -2256,7 +2268,6 @@
 				5A5827841DB49D6D00E00058 /* systemEmoji.plist in Resources */,
 				5A0528311D6EEF4B004ECE57 /* multipy_unicode.dat in Resources */,
 				5A994F981D5D7813000F1A17 /* ParallaxHeaderViewCell.xib in Resources */,
-				5AB771B01D75868700D7E113 /* BasicShowViewController.xib in Resources */,
 				5AF9AF9B1D4A0F9800F23C1E /* Assets.xcassets in Resources */,
 				5A90A2191D61AC28005298B3 /* NewCarouselListCell.xib in Resources */,
 				5A994FB11D5DEDC0000F1A17 /* ParallaxHeader.xib in Resources */,
@@ -2345,6 +2356,7 @@
 				5AB520C91D53290F000C3C80 /* UIImageView+Reflect.m in Sources */,
 				5A15AA9E1D58AB17000ED86E /* NSDictionary+JKBlock.m in Sources */,
 				5AB520AD1D53290F000C3C80 /* NSString+UUID.m in Sources */,
+				5ACF0BF91E2CCECF00DC4A45 /* GraphChartView.m in Sources */,
 				5AB520FF1D53290F000C3C80 /* UIWebView+Blocks.m in Sources */,
 				5AB520D71D53290F000C3C80 /* UIResponder+FirstResponder.m in Sources */,
 				5AB521341D534D65000C3C80 /* MACBaseCell.m in Sources */,
@@ -2447,6 +2459,7 @@
 				5A15AA431D582AA0000ED86E /* UIFont+Fonts.m in Sources */,
 				5AB520A61D53290F000C3C80 /* MF_Base64Additions.m in Sources */,
 				5AB520AF1D53290F000C3C80 /* NSTimer+MAC.m in Sources */,
+				5ACF0BF81E2CCECF00DC4A45 /* MACChartView.m in Sources */,
 				5A441E001D783132008DF1AC /* CGPointExtension.m in Sources */,
 				5AB520EA1D53290F000C3C80 /* UITextView+Placeholder.m in Sources */,
 				5A95530F1D743C4100A75C3C /* EAFeatureItem.m in Sources */,
@@ -2510,6 +2523,7 @@
 				5AB520D41D53290F000C3C80 /* UINavigationItem+Lock.m in Sources */,
 				5A5827A71DB4B7D900E00058 /* UIImageLabelHeaderView.m in Sources */,
 				5AB520EC1D53290F000C3C80 /* UIView+Blur.m in Sources */,
+				5ACF0BFC1E2CCFEB00DC4A45 /* ChartViewController.m in Sources */,
 				5A97EC791D6469AF00A29247 /* CarLightViewCell.m in Sources */,
 				5A15AAA71D58ABC7000ED86E /* NSObject+JKKVOBlocks.m in Sources */,
 				5A557C421D6C6ED000DF26DC /* HeadView.m in Sources */,
