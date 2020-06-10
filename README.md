@@ -118,7 +118,7 @@ GCD、CollectionView、Xib 约束、Frame 约束、AutoLayout 代码约束简单
 
 ![图片](http://oc4tpefat.bkt.clouddn.com/finder.png)
 ### 加载 Logo 动画 loadingView
-![加载loadView ](https://github.com/azheng51714/MACProject/blob/master/pic/loadingView.gif)
+![加载loadView ](https://github.com/MacOMNI/MACProject/blob/master/pic/loadingView.gif)
 ### 加载 波浪 动画 MACWaveView
 ![加载MACWaveView ](https://github.com/azheng51714/MACProject/blob/master/pic/MACWaveView.gif)
 ### 基础 ChartView
