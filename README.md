@@ -107,7 +107,7 @@ GCD、CollectionView、Xib 约束、Frame 约束、AutoLayout 代码约束简单
 ![图片](https://github.com/azheng51714/MACProject/blob/master/pic/QQgroup.gif)
 
 ### 高仿朋友圈 & QQ空间
-![图片](https://github.com/azheng51714/MACProject/blob/master/pic/friends.gif)
+![图片](https://github.com/MacOMNI/MACProject/blob/master/pic/friends.gif)
 
 ### 我的消息
 ![图片](https://github.com/azheng51714/MACProject/blob/master/pic/message.png)
